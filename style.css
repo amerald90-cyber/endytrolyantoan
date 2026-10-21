@@ -69,6 +69,7 @@ body {
 
 .view-screen.active {
   display: flex !important;
+  flex-direction: column !important;
   animation: fadeIn 0.35s ease-out forwards;
   z-index: 10;
 }
@@ -419,19 +420,17 @@ body {
     display: none;
   }
 }
-  }
-  .cover-click-hint {
-    font-size: 11.5px;
-    padding: 4px 16px;
-  }
-}
 
 /* ==========================================================================
    SCREEN 2: GIAO DIỆN CHATBOT ENDY (MAIN WEB APP)
    ========================================================================== */
 #app-screen {
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
   background-color: var(--bg-app);
+  overflow: hidden;
 }
 
 /* 1. Header Bar */
@@ -590,6 +589,7 @@ body {
 .app-main {
   flex: 1;
   display: flex;
+  flex-direction: row;
   overflow: hidden;
   position: relative;
   max-width: 1440px;
@@ -597,6 +597,7 @@ body {
   margin: 0 auto;
   padding: 14px 18px 18px 18px;
   gap: 16px;
+  box-sizing: border-box;
 }
 
 /* Left Sidebar */
@@ -727,6 +728,7 @@ body {
 /* 3. Main Chat Panel */
 .app-chat-panel {
   flex: 1;
+  min-width: 0;
   background: #ffffff;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
@@ -1413,4 +1415,32 @@ body {
     width: 70px;
     height: 70px;
   }
+}
+
+/* ==========================================================================
+   SECURITY TOAST (ANTI-RIGHTCLICK & ANTI-F12 NOTIFICATION)
+   ========================================================================== */
+.security-toast-notice {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  background: rgba(15, 23, 42, 0.94);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  font-size: 13.5px;
+  font-weight: 800;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  border: 1.5px solid #38bdf8;
+  backdrop-filter: blur(10px);
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+
+.security-toast-notice.visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }

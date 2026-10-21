@@ -973,3 +973,70 @@ document.addEventListener('DOMContentLoaded', () => {
     playTingSound();
   }, 1000);
 });
+
+// =============================================================================
+// 12. BẢO VỆ AN TOÀN TRẺ EM: CHẶN CHUỘT PHẢI & PHÍM F12 / DEVTOOLS
+// =============================================================================
+function initSecurityProtection() {
+  // 1. Chặn chuột phải (Context Menu)
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    showSecurityToast('🛡️ Chuột phải đã được khóa để bảo vệ ứng dụng an toàn cho các bạn nhỏ!');
+    return false;
+  });
+
+  // 2. Chặn các phím tắt F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U, Ctrl+S
+  document.addEventListener('keydown', (e) => {
+    // F12
+    if (e.key === 'F12' || e.keyCode === 123) {
+      e.preventDefault();
+      e.stopPropagation();
+      showSecurityToast('🛡️ Phím F12 đã được khóa theo quy định an toàn học đường!');
+      return false;
+    }
+
+    // Ctrl + Shift + I (DevTools), Ctrl + Shift + J (Console), Ctrl + Shift + C (Inspect)
+    if (e.ctrlKey && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)) {
+      e.preventDefault();
+      e.stopPropagation();
+      showSecurityToast('🛡️ Chức năng kiểm tra mã nguồn đã được bảo mật!');
+      return false;
+    }
+
+    // Ctrl + U (View Source)
+    if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+      e.stopPropagation();
+      showSecurityToast('🛡️ Chức năng xem mã nguồn đã được khóa!');
+      return false;
+    }
+
+    // Ctrl + S (Save Page)
+    if (e.ctrlKey && (e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  }, { capture: true });
+}
+
+let securityToastTimer = null;
+function showSecurityToast(message) {
+  let toast = document.getElementById('security-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'security-toast';
+    toast.className = 'security-toast-notice';
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add('visible');
+
+  if (securityToastTimer) clearTimeout(securityToastTimer);
+  securityToastTimer = setTimeout(() => {
+    toast.classList.remove('visible');
+  }, 2500);
+}
+
+initSecurityProtection();
