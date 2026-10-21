@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endy - Trợ lý an toàn cho trẻ em | Trường Tiểu học Thanh Bình</title>
+  <link rel="icon" type="image/png" href="assets/avatar_endy.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BACKGROUND MUSIC AUDIO ELEMENT -->
+  <audio id="bg-music" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <!-- ========================================================================
+       SCREEN 1: TRANG BÌA GỐC (ORIGINAL POSTER COVER)
+       ======================================================================== -->
+  <section id="cover-screen" class="view-screen active">
+    <!-- Top Navigation Bar on Cover -->
+    <header class="cover-top-bar">
+      <div class="cover-school-pill">
+        <img src="assets/avatar_endy.png" alt="Endy Logo">
+        <span>Trường Tiểu học Thanh Bình • Phân hiệu 1 🏫</span>
+      </div>
+
+      <!-- Floating Glassmorphic Music Pill -->
+      <div class="cover-music-pill">
+        <div class="music-equalizer playing" id="cover-eq">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+        <button class="music-pill-btn" id="cover-music-toggle" title="Bật / Tắt nhạc nền">
+          <span id="cover-music-icon">⏸</span>
+        </button>
+        <span class="music-pill-text" id="cover-music-title">🎵 Nhạc nền: Đang phát</span>
+        <input type="range" class="music-slider" id="cover-volume" min="0" max="1" step="0.05" value="0.7" title="Âm lượng nhạc">
+      </div>
+    </header>
+
+    <!-- Main Original Poster Stage (100% unobstructed, clicking opens chat) -->
+    <main class="cover-poster-stage" id="cover-stage-click" title="Nhấp vào ảnh để gặp Endy ngay">
+      <div class="cover-poster-wrap">
+        <img src="cover.png" alt="Endy - Trợ lý an toàn cho trẻ em | Trường Tiểu học Thanh Bình" class="cover-poster-image" id="cover-poster-img">
+      </div>
+
+      <!-- Outer Bottom Hint Bar (does NOT overlap poster cards) -->
+      <div class="cover-bottom-hint-bar">
+        <span>✨ Chạm vào ảnh hoặc bấm vào Endy ở góc phải để bắt đầu ngay!</span>
+      </div>
+    </main>
+
+    <!-- Floating Endy Mascot CTA at Bottom Right Corner (Never blocks poster cards!) -->
+    <div class="cover-bottom-right-cta" id="corner-endy-cta">
+      <div class="mascot-speech-mini">
+        <span>Bấm vào tớ để chat nhé! 💬</span>
+      </div>
+      <button class="btn-endy-corner" id="btn-enter-chat" title="Bắt đầu trò chuyện cùng Endy">
+        <div class="corner-avatar-ring">
+          <img src="endy.png" alt="Endy Mascot" class="corner-endy-avatar">
+        </div>
+        <div class="corner-cta-content">
+          <span class="corner-cta-title">TRÒ CHUYỆN CÙNG ENDY</span>
+          <span class="corner-cta-sub">Bấm để bắt đầu ngay ➜</span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SCREEN 2: GIAO DIỆN CHATBOT ENDY (WEB APP INTERFACE)
+       ======================================================================== -->
+  <section id="app-screen" class="view-screen">
+    <!-- 1. Header Bar -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="endy-logo-wrap" id="logo-back-cover" title="Bấm để về Trang bìa">
+          <img src="assets/avatar_endy.png" alt="Endy Shield Logo" class="endy-logo-img">
+          <div class="endy-logo-text">
+            <span class="endy-brand-name">Endy</span>
+            <span class="endy-brand-sub">Lá chắn an toàn của các bạn nhỏ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Motto Badge -->
+      <div class="header-center">
+        <div class="safety-motto-badge">
+          <span class="motto-icon">🛡️</span>
+          <div class="motto-text">
+            Học an toàn hôm nay<br>Cho ngày mai tươi sáng
+          </div>
+          <span class="motto-icon">☀️</span>
+        </div>
+      </div>
+
+      <!-- Header Right Actions -->
+      <div class="header-right">
+        <!-- Background Music Mini Control -->
+        <button class="header-btn music-toggle active" id="app-music-toggle" title="Bật / Tắt nhạc nền">
+          <span id="app-music-icon">🎶</span>
+          <span id="app-music-text">Nhạc nền</span>
+        </button>
+
+        <!-- Safety Quiz Button -->
+        <button class="header-btn" id="btn-open-quiz" title="Đố vui kiến thức an toàn cùng Endy">
+          <span>🎯</span>
+          <span>Đố vui</span>
+        </button>
+
+        <!-- Notification Bell -->
+        <button class="header-btn" id="btn-open-tips" title="Mẹo an toàn mỗi ngày">
+          <span>🔔</span>
+        </button>
+
+        <!-- User Profile Capsule -->
+        <div class="user-profile-capsule" id="btn-profile" title="Đổi tên và hình đại diện bạn nhỏ">
+          <img src="assets/avatar_boy.svg" alt="Bạn nhỏ" class="user-avatar-img" id="user-avatar-display">
+          <div class="user-greeting">
+            <span style="font-size: 10px; color: #64748b; display: block;">Xin chào</span>
+            <span id="user-name-display">Bạn nhỏ!</span> ▾
+          </div>
+        </div>
+
+        <!-- Back to Cover Button -->
+        <button class="header-btn" id="btn-back-cover" title="Về trang bìa">
+          <span>🏠</span>
+          <span>Trang bìa</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 2. Main App Content (Sidebar + Chat Panel) -->
+    <main class="app-main">
+      <!-- Left Sidebar Navigation -->
+      <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+          <button class="category-btn cat-home active" data-category="all">
+            <div class="cat-icon-badge">🏠</div>
+            <span>Trang chủ</span>
+          </button>
+          <button class="category-btn cat-drowning" data-category="drowning">
+            <div class="cat-icon-badge">🛟</div>
+            <span>Đuối nước</span>
+          </button>
+          <button class="category-btn cat-traffic" data-category="traffic">
+            <div class="cat-icon-badge">🚦</div>
+            <span>An toàn giao thông</span>
+          </button>
+          <button class="category-btn cat-fire" data-category="fire">
+            <div class="cat-icon-badge">🧯</div>
+            <span>Phòng cháy chữa cháy</span>
+          </button>
+          <button class="category-btn cat-injury" data-category="injury">
+            <div class="cat-icon-badge">🩹</div>
+            <span>Tai nạn thương tích</span>
+          </button>
+          <button class="category-btn cat-electric" data-category="electric">
+            <div class="cat-icon-badge">⚡</div>
+            <span>An toàn điện</span>
+          </button>
+          <button class="category-btn cat-quick" data-category="quick">
+            <div class="cat-icon-badge">💬</div>
+            <span>Câu hỏi nhanh</span>
+          </button>
+        </nav>
+
+        <!-- Sidebar Bottom: School Kids Illustration & Hotlines -->
+        <div class="sidebar-bottom">
+          <div class="sidebar-kids-card">
+            <img src="assets/sidebar_kids.png" alt="Các bạn học sinh cùng Endy" class="sidebar-kids-img">
+          </div>
+          <div class="sidebar-hotlines" title="Các số điện thoại cứu hộ khẩn cấp miễn phí">
+            <div class="hotline-chip" onclick="askEndyHotline('111')">📞 111</div>
+            <div class="hotline-chip" onclick="askEndyHotline('114')">🚒 114</div>
+            <div class="hotline-chip" onclick="askEndyHotline('115')">🚑 115</div>
+            <div class="hotline-chip" onclick="askEndyHotline('113')">👮 113</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Chat Panel -->
+      <section class="app-chat-panel">
+        <!-- Top Hero Banner inside Chat Area -->
+        <div class="chat-hero-banner">
+          <div class="hero-banner-content">
+            <h2 class="hero-title-greeting">
+              Xin chào! <span>Mình là Endy</span>
+            </h2>
+            <p class="hero-subtitle">
+              Tớ giúp bạn học về an toàn giao thông, phòng chống đuối nước, phòng cháy chữa cháy và phòng tránh tai nạn thương tích.
+            </p>
+          </div>
+
+          <div class="hero-banner-right">
+            <img src="assets/avatar_endy.png" alt="Mascot Endy" class="hero-mascot-img" id="chat-hero-mascot">
+            <div class="hero-signboard">
+              HỌC AN TOÀN<br>SỐNG TỰ TIN<br>LỚN LÊN VỮNG VÀNG ❤️
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Messages Container (Empty initially - Endy will bounce in and greet first!) -->
+        <div class="chat-messages-container" id="chat-messages">
+          <!-- Typing Indicator -->
+          <div class="typing-row" id="typing-indicator">
+            <div class="typing-dots">
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+            </div>
+            <span class="typing-text">Endy đang suy nghĩ câu trả lời cho em...</span>
+          </div>
+        </div>
+
+        <!-- Suggested Questions Row -->
+        <div class="chat-suggestions-bar" id="suggestions-bar">
+          <span class="suggestions-label">⚡ Gợi ý câu hỏi cho em:</span>
+          <button class="suggestion-chip" onclick="sendSuggestion('Nếu thấy bạn rơi xuống nước thì làm gì?')">🛟 Nếu thấy bạn rơi xuống nước?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Cháy điện có được dội nước không?')">🚒 Cháy điện dội nước được không?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Đi qua đường thế nào cho an toàn?')">🚦 Đi qua đường an toàn?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Em bị hóc nghẹn thì sao?')">🔍 Em bị hóc nghẹn thì sao?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Gặp chó lạ làm gì?')">🐶 Gặp chó lạ làm gì?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Số cứu hỏa là gì?')">🔥 Số cứu hỏa là gì?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Không tự ý nghịch điện')">⚡ Không tự ý nghịch điện</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Bị chuột rút khi bơi làm sao?')">🏊 Bị chuột rút khi bơi?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Bị bỏng nước sôi làm gì?')">🩹 Bị bỏng nước sôi?</button>
+          <button class="suggestion-chip" onclick="sendSuggestion('Đội mũ bảo hiểm đúng cách?')">🪖 Đội mũ bảo hiểm đúng?</button>
+        </div>
+
+        <!-- Chat Input Bar -->
+        <div class="chat-input-bar">
+          <button class="btn-clear-chat" id="btn-clear-chat" title="Bắt đầu đoạn chat mới">🧹</button>
+
+          <div class="input-field-wrap">
+            <span class="input-pencil-icon">✏️</span>
+            <input type="text" class="chat-input" id="chat-input" placeholder="Nhập câu hỏi của em..." autocomplete="off">
+            <button class="voice-input-btn" id="btn-voice-input" title="Nói câu hỏi của em bằng giọng nói">🎙️</button>
+          </div>
+
+          <button class="btn-send-msg" id="btn-send-msg">
+            <span>✈️</span>
+            <span>Gửi</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <!-- ========================================================================
+       MODAL 1: ĐỐ VUI AN TOÀN CÙNG ENDY (SAFETY QUIZ)
+       ======================================================================== -->
+  <div class="modal-overlay" id="quiz-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><span>🎯</span> Đố vui an toàn cùng Endy</h3>
+        <button class="modal-close-btn" onclick="closeModal('quiz-modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="quiz-container">
+          <div id="quiz-step-indicator" style="font-size: 12px; font-weight: 700; color: #0284c7; margin-bottom: 8px;">
+            Câu 1 / 5
+          </div>
+          <div class="quiz-q-title" id="quiz-question-text">
+            Khi thấy bạn rơi xuống nước, việc đầu tiên em nên làm là gì?
+          </div>
+          <div class="quiz-options" id="quiz-options-list">
+            <!-- Dynamic options -->
+          </div>
+          <div class="quiz-feedback" id="quiz-feedback-box"></div>
+          <button class="btn-send-msg" id="quiz-next-btn" style="margin-top: 16px; display: none; width: 100%; justify-content: center;">
+            Câu tiếp theo ➜
+          </button>
+        </div>
+
+        <div id="quiz-result-container" style="display: none; text-align: center; padding: 20px 0;">
+          <div style="font-size: 52px; margin-bottom: 12px;">🏆</div>
+          <h3 style="font-size: 20px; color: #0284c7; margin-bottom: 8px;">Chúc mừng em đã hoàn thành thử thách!</h3>
+          <p id="quiz-score-text" style="font-size: 15px; font-weight: 700; color: #334155; margin-bottom: 16px;">
+            Em trả lời đúng 5 / 5 câu!
+          </p>
+          <div style="background: #fef08a; padding: 12px; border-radius: 12px; border: 2px dashed #ca8a04; font-weight: 800; color: #854d0e; margin-bottom: 20px;">
+            🎖️ Danh hiệu: "Dũng Sĩ An Toàn Endy Cấp 1"
+          </div>
+          <button class="btn-send-msg" onclick="restartQuiz()" style="margin: 0 auto;">
+            🔄 Chơi lại lần nữa
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: TÙY CHỈNH THÔNG TIN BẠN NHỎ (USER PROFILE)
+       ======================================================================== -->
+  <div class="modal-overlay" id="profile-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><span>👤</span> Thông tin của Bạn nhỏ</h3>
+        <button class="modal-close-btn" onclick="closeModal('profile-modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="profile-input-group">
+          <label for="input-child-name">Tên hoặc biệt danh của em:</label>
+          <input type="text" id="input-child-name" placeholder="Ví dụ: Minh Quân, Bảo Anh, Bạn nhỏ...">
+        </div>
+
+        <div class="profile-input-group">
+          <label>Chọn hình đại diện của em:</label>
+          <div class="profile-avatar-select">
+            <div class="avatar-choice selected" data-avatar="assets/avatar_boy.svg" onclick="selectAvatar(this)">
+              <img src="assets/avatar_boy.svg" alt="Bạn Nam">
+            </div>
+            <div class="avatar-choice" data-avatar="assets/avatar_girl.svg" onclick="selectAvatar(this)">
+              <img src="assets/avatar_girl.svg" alt="Bạn Nữ">
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-send-msg" onclick="saveProfile()" style="width: 100%; justify-content: center; margin-top: 16px;">
+          💾 Lưu thông tin
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 3: MẸO AN TOÀN MỖI NGÀY (DAILY TIPS)
+       ======================================================================== -->
+  <div class="modal-overlay" id="tips-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><span>💡</span> Cẩm nang an toàn mỗi ngày cùng Endy</h3>
+        <button class="modal-close-btn" onclick="closeModal('tips-modal')">&times;</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 12px; font-size: 13.5px; line-height: 1.6;">
+        <div style="background: #e0f2fe; padding: 12px; border-radius: 12px; border-left: 4px solid #0284c7;">
+          <b>🛟 Nguyên tắc vàng khi bơi:</b> Tuyệt đối không tự ý đi tắm sông, ao, hồ khi không có người lớn biết bơi đi cùng giám sát.
+        </div>
+        <div style="background: #dcfce7; padding: 12px; border-radius: 12px; border-left: 4px solid #16a34a;">
+          <b>🚦 Khi sang đường:</b> Dừng bên lề, nhìn trái - nhìn phải - nhìn trái, giơ cao tay và đi đúng vạch kẻ đường khi đèn xanh.
+        </div>
+        <div style="background: #fee2e2; padding: 12px; border-radius: 12px; border-left: 4px solid #dc2626;">
+          <b>🧯 Khi có cháy:</b> Bò thấp người men theo tường, dùng khăn ướt bịt mũi miệng, không dùng thang máy và gọi 114.
+        </div>
+        <div style="background: #fef3c7; padding: 12px; border-radius: 12px; border-left: 4px solid #d97706;">
+          <b>⚡ An toàn điện:</b> Không chạm vào thiết bị điện khi tay ướt, không chọc vật kim loại vào ổ điện.
+        </div>
+        <div style="background: #f3e8ff; padding: 12px; border-radius: 12px; border-left: 4px solid #9333ea;">
+          <b>📞 Tổng đài 111:</b> Là tổng đài quốc gia bảo vệ trẻ em, hoàn toàn miễn phí 24/7.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="chatbot-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

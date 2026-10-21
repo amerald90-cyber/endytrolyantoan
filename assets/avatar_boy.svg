@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#e0f2fe" stroke="#38bdf8" stroke-width="3"/>
+  
+  <!-- Yellow Shirt -->
+  <path d="M 22 92 C 24 72 38 68 50 68 C 62 68 76 72 78 92 Z" fill="#fbbf24"/>
+  <path d="M 46 68 L 50 82 L 54 68 Z" fill="#f59e0b"/>
+  <!-- Collar -->
+  <polygon points="40,68 50,78 45,84 34,72" fill="#ffffff"/>
+  <polygon points="60,68 50,78 55,84 66,72" fill="#ffffff"/>
+  
+  <!-- Neck -->
+  <rect x="44" y="58" width="12" height="14" rx="4" fill="#fed7aa"/>
+  
+  <!-- Head & Face -->
+  <ellipse cx="50" cy="42" rx="22" ry="24" fill="#ffedd5"/>
+  <ellipse cx="28" cy="44" rx="4" ry="7" fill="#fed7aa"/>
+  <ellipse cx="72" cy="44" rx="4" ry="7" fill="#fed7aa"/>
+  
+  <!-- Cheeks -->
+  <ellipse cx="36" cy="48" rx="4" ry="2.5" fill="#fca5a5" opacity="0.6"/>
+  <ellipse cx="64" cy="48" rx="4" ry="2.5" fill="#fca5a5" opacity="0.6"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="40" cy="40" rx="3.5" ry="4.5" fill="#1e293b"/>
+  <ellipse cx="60" cy="40" rx="3.5" ry="4.5" fill="#1e293b"/>
+  <circle cx="41.5" cy="38.5" r="1.5" fill="#ffffff"/>
+  <circle cx="61.5" cy="38.5" r="1.5" fill="#ffffff"/>
+  
+  <!-- Smile -->
+  <path d="M 43 49 Q 50 56 57 49" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Hair (Boy Style) -->
+  <path d="M 28 36 C 26 22 36 16 50 16 C 64 16 74 22 72 36 C 70 33 66 28 62 29 C 56 30 54 26 48 26 C 42 26 38 31 34 29 C 30 28 28 33 28 36 Z" fill="#1e293b"/>
+  <path d="M 32 30 Q 36 22 46 22 Q 38 28 32 30 Z" fill="#334155"/>
+</svg>
