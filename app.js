@@ -975,13 +975,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // =============================================================================
-// 12. BẢO VỆ AN TOÀN TRẺ EM: CHẶN CHUỘT PHẢI & PHÍM F12 / DEVTOOLS
+// 12. BẢO VỆ AN TOÀN TRẺ EM: CHẶN CHUỘT PHẢI & PHÍM F12 / DEVTOOLS (SILENT LOCK)
 // =============================================================================
 function initSecurityProtection() {
-  // 1. Chặn chuột phải (Context Menu)
+  // 1. Chặn chuột phải hoàn toàn (Không hiện thông báo làm phiền)
   document.addEventListener('contextmenu', (e) => {
     e.preventDefault();
-    showSecurityToast('🛡️ Chuột phải đã được khóa để bảo vệ ứng dụng an toàn cho các bạn nhỏ!');
     return false;
   });
 
@@ -991,7 +990,6 @@ function initSecurityProtection() {
     if (e.key === 'F12' || e.keyCode === 123) {
       e.preventDefault();
       e.stopPropagation();
-      showSecurityToast('🛡️ Phím F12 đã được khóa theo quy định an toàn học đường!');
       return false;
     }
 
@@ -999,7 +997,6 @@ function initSecurityProtection() {
     if (e.ctrlKey && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)) {
       e.preventDefault();
       e.stopPropagation();
-      showSecurityToast('🛡️ Chức năng kiểm tra mã nguồn đã được bảo mật!');
       return false;
     }
 
@@ -1007,7 +1004,6 @@ function initSecurityProtection() {
     if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
       e.preventDefault();
       e.stopPropagation();
-      showSecurityToast('🛡️ Chức năng xem mã nguồn đã được khóa!');
       return false;
     }
 
@@ -1018,25 +1014,6 @@ function initSecurityProtection() {
       return false;
     }
   }, { capture: true });
-}
-
-let securityToastTimer = null;
-function showSecurityToast(message) {
-  let toast = document.getElementById('security-toast');
-  if (!toast) {
-    toast = document.createElement('div');
-    toast.id = 'security-toast';
-    toast.className = 'security-toast-notice';
-    document.body.appendChild(toast);
-  }
-
-  toast.textContent = message;
-  toast.classList.add('visible');
-
-  if (securityToastTimer) clearTimeout(securityToastTimer);
-  securityToastTimer = setTimeout(() => {
-    toast.classList.remove('visible');
-  }, 2500);
 }
 
 initSecurityProtection();
