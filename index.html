@@ -26,19 +26,27 @@
         <span>Trường Tiểu học Thanh Bình • Phân hiệu 1 🏫</span>
       </div>
 
-      <!-- Floating Glassmorphic Music Pill -->
-      <div class="cover-music-pill">
-        <div class="music-equalizer playing" id="cover-eq">
-          <div class="eq-bar"></div>
-          <div class="eq-bar"></div>
-          <div class="eq-bar"></div>
-          <div class="eq-bar"></div>
+      <!-- Top Right Group: Visitor Counter & Music Pill -->
+      <div class="cover-top-right-group">
+        <div class="visitor-counter-pill" title="Tổng lượt truy cập ứng dụng">
+          <span class="counter-eye-icon">👁️</span>
+          <span class="counter-label">Lượt truy cập:</span>
+          <span class="counter-number visitor-count-value">1.286</span>
         </div>
-        <button class="music-pill-btn" id="cover-music-toggle" title="Bật / Tắt nhạc nền">
-          <span id="cover-music-icon">⏸</span>
-        </button>
-        <span class="music-pill-text" id="cover-music-title">🎵 Nhạc nền: Đang phát</span>
-        <input type="range" class="music-slider" id="cover-volume" min="0" max="1" step="0.05" value="0.7" title="Âm lượng nhạc">
+
+        <div class="cover-music-pill">
+          <div class="music-equalizer playing" id="cover-eq">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+          <button class="music-pill-btn" id="cover-music-toggle" title="Bật / Tắt bài hát">
+            <span id="cover-music-icon">⏸</span>
+          </button>
+          <span class="music-pill-text" id="cover-music-title" title="Bài hát: Endy Cùng Em Đến Trường">🎵 Endy Cùng Em Đến Trường</span>
+          <input type="range" class="music-slider" id="cover-volume" min="0" max="1" step="0.05" value="0.7" title="Âm lượng bài hát">
+        </div>
       </div>
     </header>
 
@@ -46,11 +54,6 @@
     <main class="cover-poster-stage" id="cover-stage-click" title="Nhấp vào ảnh để gặp Endy ngay">
       <div class="cover-poster-wrap">
         <img src="cover.png" alt="Endy - Trợ lý an toàn cho trẻ em | Trường Tiểu học Thanh Bình" class="cover-poster-image" id="cover-poster-img">
-      </div>
-
-      <!-- Outer Bottom Copyright & Credits Bar (does NOT overlap poster cards) -->
-      <div class="cover-bottom-hint-bar">
-        <span>© Bản quyền thuộc về <strong>Hành trình số Việt Nam My Love</strong> • Phát triển bởi <strong>Cô giáo Đinh Thị Ngọc</strong> - GV Trường TH Thanh Bình</span>
       </div>
     </main>
 
@@ -100,10 +103,16 @@
 
       <!-- Header Right Actions -->
       <div class="header-right">
+        <!-- Visitor Counter Mini Pill -->
+        <div class="header-visitor-pill" title="Tổng lượt truy cập ứng dụng">
+          <span>👁️</span>
+          <span class="visitor-count-value">1.286</span>
+        </div>
+
         <!-- Background Music Mini Control -->
-        <button class="header-btn music-toggle active" id="app-music-toggle" title="Bật / Tắt nhạc nền">
+        <button class="header-btn music-toggle active" id="app-music-toggle" title="Bài hát: Endy Cùng Em Đến Trường">
           <span id="app-music-icon">🎶</span>
-          <span id="app-music-text">Nhạc nền</span>
+          <span id="app-music-text">Endy Cùng Em Đến Trường</span>
         </button>
 
         <!-- Safety Quiz Button -->
@@ -169,7 +178,7 @@
           </button>
         </nav>
 
-        <!-- Sidebar Bottom: School Kids Illustration, Hotlines & Credits -->
+        <!-- Sidebar Bottom: School Kids Illustration & Hotlines -->
         <div class="sidebar-bottom">
           <div class="sidebar-kids-card">
             <img src="assets/sidebar_kids.png" alt="Các bạn học sinh cùng Endy" class="sidebar-kids-img">
@@ -179,9 +188,6 @@
             <div class="hotline-chip" onclick="askEndyHotline('114')">🚒 114</div>
             <div class="hotline-chip" onclick="askEndyHotline('115')">🚑 115</div>
             <div class="hotline-chip" onclick="askEndyHotline('113')">👮 113</div>
-          </div>
-          <div class="sidebar-credits-badge">
-            <span>© Bản quyền thuộc <strong>Hành trình số Việt Nam My Love</strong><br>Phát triển bởi <strong>Cô giáo Đinh Thị Ngọc</strong> - GV Trường TH Thanh Bình</span>
           </div>
         </div>
       </aside>

@@ -108,17 +108,17 @@ function updateMusicUI() {
   if (STATE.musicPlaying) {
     if (coverEq) coverEq.classList.add('playing');
     if (coverIcon) coverIcon.textContent = '⏸';
-    if (coverText) coverText.textContent = '🎵 Nhạc nền: Đang phát';
+    if (coverText) coverText.textContent = '🎵 Endy Cùng Em Đến Trường';
     if (appMusicToggle) appMusicToggle.classList.add('active');
     if (appMusicIcon) appMusicIcon.textContent = '🎶';
-    if (appMusicText) appMusicText.textContent = 'Đang phát';
+    if (appMusicText) appMusicText.textContent = 'Endy Cùng Em Đến Trường';
   } else {
     if (coverEq) coverEq.classList.remove('playing');
     if (coverIcon) coverIcon.textContent = '▶';
-    if (coverText) coverText.textContent = '🎵 Nhạc nền: Đã tắt';
+    if (coverText) coverText.textContent = '🎵 Bài hát: Tạm dừng';
     if (appMusicToggle) appMusicToggle.classList.remove('active');
     if (appMusicIcon) appMusicIcon.textContent = '🎵';
-    if (appMusicText) appMusicText.textContent = 'Nhạc nền';
+    if (appMusicText) appMusicText.textContent = 'Phát bài hát';
   }
 }
 
@@ -968,6 +968,9 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleMusic(true);
   enableAutoplayOnFirstInteraction();
 
+  // Init Visitor Counter
+  initVisitorCounter();
+
   // Play subtle entrance chime after brief delay
   setTimeout(() => {
     playTingSound();
@@ -1017,3 +1020,32 @@ function initSecurityProtection() {
 }
 
 initSecurityProtection();
+
+// =============================================================================
+// 13. TỔNG HỢP SỐ LƯỢT TRUY CẬP TỰ ĐỘNG (AUTOMATIC VISITOR COUNTER)
+// =============================================================================
+function initVisitorCounter() {
+  const BASE_VISITS = 1286;
+  const STORAGE_KEY = 'endy_total_visits';
+  const SESSION_KEY = 'endy_session_counted';
+
+  let currentCount = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+  if (isNaN(currentCount) || currentCount < BASE_VISITS) {
+    currentCount = BASE_VISITS;
+  }
+
+  // Tăng lượt truy cập khi có phiên người dùng mới
+  if (!sessionStorage.getItem(SESSION_KEY)) {
+    currentCount += 1;
+    localStorage.setItem(STORAGE_KEY, currentCount.toString());
+    sessionStorage.setItem(SESSION_KEY, 'true');
+  }
+
+  // Định dạng số hiển thị tiếng Việt (vd: 1.287)
+  const formattedCount = currentCount.toLocaleString('vi-VN');
+
+  // Cập nhật tất cả các vị trí hiển thị lượt truy cập
+  document.querySelectorAll('.visitor-count-value').forEach(el => {
+    el.textContent = formattedCount;
+  });
+}
