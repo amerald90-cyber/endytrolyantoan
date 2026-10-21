@@ -26,13 +26,12 @@
         <span>Trường Tiểu học Thanh Bình • Phân hiệu 1 🏫</span>
       </div>
 
-      <!-- Top Right Group: Visitor Counter & Music Pill -->
+      <!-- Top Right Group: QR Code & Music Pill -->
       <div class="cover-top-right-group">
-        <div class="visitor-counter-pill" title="Tổng lượt truy cập ứng dụng">
-          <span class="counter-eye-icon">👁️</span>
-          <span class="counter-label">Lượt truy cập:</span>
-          <span class="counter-number visitor-count-value">1.286</span>
-        </div>
+        <button class="cover-qr-pill-btn" id="btn-open-qr-cover" title="Quét mã QR để mở trên điện thoại">
+          <span>📱</span>
+          <span>Mã QR</span>
+        </button>
 
         <div class="cover-music-pill">
           <div class="music-equalizer playing" id="cover-eq">
@@ -103,11 +102,11 @@
 
       <!-- Header Right Actions -->
       <div class="header-right">
-        <!-- Visitor Counter Mini Pill -->
-        <div class="header-visitor-pill" title="Tổng lượt truy cập ứng dụng">
-          <span>👁️</span>
-          <span class="visitor-count-value">1.286</span>
-        </div>
+        <!-- QR Code Button in Chat Header -->
+        <button class="header-btn" id="btn-open-qr-app" title="Quét mã QR để mở trên điện thoại">
+          <span>📱</span>
+          <span>Mã QR</span>
+        </button>
 
         <!-- Background Music Mini Control -->
         <button class="header-btn music-toggle active" id="app-music-toggle" title="Bài hát: Endy Cùng Em Đến Trường">
@@ -367,6 +366,40 @@
         <div style="background: #f3e8ff; padding: 12px; border-radius: 12px; border-left: 4px solid #9333ea;">
           <b>📞 Tổng đài 111:</b> Là tổng đài quốc gia bảo vệ trẻ em, hoàn toàn miễn phí 24/7.
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 3: MÃ QR TRUY CẬP ỨNG DỤNG (QR CODE MODAL)
+       ======================================================================== -->
+  <div class="modal-overlay" id="qr-modal">
+    <div class="modal-card qr-modal-card">
+      <div class="modal-header">
+        <h3><span>📱</span> Quét mã QR mở Web App Endy</h3>
+        <button class="modal-close-btn" onclick="closeModal('qr-modal')">&times;</button>
+      </div>
+      <div class="modal-body qr-modal-body">
+        <div class="qr-school-badge">
+          <img src="assets/avatar_endy.png" alt="Endy Logo">
+          <span>Trường Tiểu học Thanh Bình • Phân hiệu 1 🏫</span>
+        </div>
+        
+        <div class="qr-code-display-wrap">
+          <img src="assets/qrcode_endy.png" alt="Mã QR Endy - Trợ lý an toàn cho trẻ em" class="qr-code-img">
+          <div class="qr-scan-guide">
+            <span>📷 Dùng Camera điện thoại hoặc Zalo để quét</span>
+          </div>
+        </div>
+
+        <div class="qr-link-box">
+          <span class="qr-link-url" id="display-qr-url">https://endytrolyantoan.vercel.app</span>
+          <button class="btn-copy-url" id="btn-copy-web-url" onclick="copyWebUrl(this)">📋 Sao chép</button>
+        </div>
+
+        <a href="assets/qrcode_endy.png" download="QRCode_Endy_TroLyAnToan.png" class="btn-download-qr">
+          <span>📥 Tải ảnh mã QR về máy (để in áp phích / gửi Zalo)</span>
+        </a>
       </div>
     </div>
   </div>

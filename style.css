@@ -139,29 +139,30 @@ body {
   gap: 12px;
 }
 
-/* Visitor Counter Pill on Cover */
-.visitor-counter-pill {
+/* QR Code Pill Button on Cover */
+.cover-qr-pill-btn {
+  pointer-events: auto;
   display: inline-flex;
   align-items: center;
   gap: 7px;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: var(--radius-full);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   border: 1.5px solid #bae6fd;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 800;
   color: #0369a1;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.visitor-counter-pill .counter-number {
-  color: #ea580c;
-  font-weight: 900;
-  background: #fff7ed;
-  padding: 2px 8px;
-  border-radius: 8px;
-  border: 1px solid #fed7aa;
+.cover-qr-pill-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
+  color: #0284c7;
 }
 
 /* Floating Glassmorphic Music Pill */
@@ -559,24 +560,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.header-visitor-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #f0f9ff;
-  border: 1.5px solid #bae6fd;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 12.5px;
-  font-weight: 800;
-  color: #0369a1;
-}
-
-.header-visitor-pill .visitor-count-value {
-  color: #ea580c;
-  font-weight: 900;
 }
 
 .header-btn {
@@ -1431,6 +1414,125 @@ body {
   height: 48px;
   border-radius: 50%;
   display: block;
+}
+
+/* ==========================================================================
+   QR CODE MODAL
+   ========================================================================== */
+.qr-modal-card {
+  max-width: 440px;
+  text-align: center;
+}
+
+.qr-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 20px;
+}
+
+.qr-school-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0f9ff;
+  border: 1.5px solid #bae6fd;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0369a1;
+}
+
+.qr-school-badge img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.qr-code-display-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.15);
+  border: 3px solid #e0f2fe;
+}
+
+.qr-code-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.qr-scan-guide {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0284c7;
+}
+
+.qr-link-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.qr-link-url {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-copy-url {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+.btn-copy-url:hover {
+  background: #0369a1;
+}
+
+.btn-download-qr {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 12px 18px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+.btn-download-qr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45);
 }
 
 /* ==========================================================================

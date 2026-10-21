@@ -961,15 +961,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnTips = document.getElementById('btn-open-tips');
   if (btnTips) btnTips.addEventListener('click', () => openModal('tips-modal'));
 
+  // QR Code Modals
+  const btnQrCover = document.getElementById('btn-open-qr-cover');
+  if (btnQrCover) btnQrCover.addEventListener('click', () => openModal('qr-modal'));
+
+  const btnQrApp = document.getElementById('btn-open-qr-app');
+  if (btnQrApp) btnQrApp.addEventListener('click', () => openModal('qr-modal'));
+
   // Init Voice Input
   initVoiceInput();
 
   // Try auto-playing music immediately & fallback on first click
   toggleMusic(true);
   enableAutoplayOnFirstInteraction();
-
-  // Init Visitor Counter
-  initVisitorCounter();
 
   // Play subtle entrance chime after brief delay
   setTimeout(() => {
@@ -1022,30 +1026,20 @@ function initSecurityProtection() {
 initSecurityProtection();
 
 // =============================================================================
-// 13. TỔNG HỢP SỐ LƯỢT TRUY CẬP TỰ ĐỘNG (AUTOMATIC VISITOR COUNTER)
+// 13. SAO CHÉP ĐƯỜNG LINK WEB APP
 // =============================================================================
-function initVisitorCounter() {
-  const BASE_VISITS = 1286;
-  const STORAGE_KEY = 'endy_total_visits';
-  const SESSION_KEY = 'endy_session_counted';
-
-  let currentCount = parseInt(localStorage.getItem(STORAGE_KEY), 10);
-  if (isNaN(currentCount) || currentCount < BASE_VISITS) {
-    currentCount = BASE_VISITS;
+function copyWebUrl(btn) {
+  const url = 'https://endytrolyantoan.vercel.app';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => {
+      const orig = btn.textContent;
+      btn.textContent = '✅ Đã sao chép!';
+      setTimeout(() => { btn.textContent = orig; }, 2000);
+    }).catch(() => {
+      prompt('Đường link trang web:', url);
+    });
+  } else {
+    prompt('Đường link trang web:', url);
   }
-
-  // Tăng lượt truy cập khi có phiên người dùng mới
-  if (!sessionStorage.getItem(SESSION_KEY)) {
-    currentCount += 1;
-    localStorage.setItem(STORAGE_KEY, currentCount.toString());
-    sessionStorage.setItem(SESSION_KEY, 'true');
-  }
-
-  // Định dạng số hiển thị tiếng Việt (vd: 1.287)
-  const formattedCount = currentCount.toLocaleString('vi-VN');
-
-  // Cập nhật tất cả các vị trí hiển thị lượt truy cập
-  document.querySelectorAll('.visitor-count-value').forEach(el => {
-    el.textContent = formattedCount;
-  });
 }
+window.copyWebUrl = copyWebUrl;
