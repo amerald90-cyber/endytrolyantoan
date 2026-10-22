@@ -402,12 +402,37 @@ function appendUserMessage(text) {
   scrollChatToBottom();
 }
 
-function appendBotMessage(text, badgeImgUrl, isGreeting = false) {
+// Trạng thái ngữ cảnh trò chuyện thông minh
+const CONVERSATION_STATE = {
+  lastCategory: null,
+  lastItemId: null,
+  lastQuery: null
+};
+
+function appendBotMessage(text, badgeImgUrl, isGreeting = false, followups = []) {
   const container = document.getElementById('chat-messages');
   const time = getCurrentTimeStr();
 
   const formattedHtml = formatMarkdown(text);
   const badgeHtml = badgeImgUrl ? `<img src="${badgeImgUrl}" alt="Minh họa an toàn" class="bot-illustration-img">` : '';
+
+  let followupsHtml = '';
+  if (followups && followups.length > 0) {
+    const chips = followups.map(f => {
+      const escaped = f.replace(/'/g, "\\'");
+      return `<button class="smart-chip-btn" onclick="sendSuggestion('${escaped}')">💡 ${f}</button>`;
+    }).join('');
+    followupsHtml = `
+      <div class="bot-smart-followups">
+        <div class="smart-followup-title">
+          <span>Hỏi tiếp thông minh cùng Endy:</span>
+        </div>
+        <div class="smart-followup-chips">
+          ${chips}
+        </div>
+      </div>
+    `;
+  }
 
   const row = document.createElement('div');
   row.className = `msg-row bot ${isGreeting ? 'endy-greeting' : ''}`;
@@ -425,6 +450,7 @@ function appendBotMessage(text, badgeImgUrl, isGreeting = false) {
           </div>
           ${badgeHtml}
         </div>
+        ${followupsHtml}
         <div class="msg-actions">
           <button class="msg-action-btn" onclick="speakText(this)">🔊 Đọc to</button>
           <button class="msg-action-btn" onclick="copyMsgText(this)">📋 Sao chép</button>
@@ -462,18 +488,24 @@ function handleSendMessage() {
   if (typing) typing.classList.add('active');
   scrollChatToBottom();
 
-  // 3. Search Endy Knowledge Base
+  // 3. Search Endy Knowledge Base với ngữ cảnh thông minh
   setTimeout(() => {
     if (typing) typing.classList.remove('active');
 
     let botResponse = null;
     let badge = '';
+    let followups = [];
 
     if (window.searchEndyKB) {
-      const match = window.searchEndyKB(rawText);
+      const match = window.searchEndyKB(rawText, CONVERSATION_STATE);
       if (match && match.item) {
         botResponse = match.item.response;
         badge = match.item.badge || '';
+        followups = match.followups || [];
+        // Cập nhật ngữ cảnh hội thoại
+        CONVERSATION_STATE.lastCategory = match.item.category;
+        CONVERSATION_STATE.lastItemId = match.item.id;
+        CONVERSATION_STATE.lastQuery = rawText;
       }
     }
 
@@ -481,7 +513,7 @@ function handleSendMessage() {
       botResponse = `Xin lỗi **${STATE.userName}**, câu hỏi của em hơi vắn tắt nên Endy chưa tìm được câu trả lời chính xác nhất! 😊\n\nEm có thể hỏi mình về:\n• **Bơi lội an toàn & cứu đuối** (như: *thấy bạn đuối nước làm gì?*)\n• **An toàn giao thông** (như: *đi qua đường an toàn*, *mũ bảo hiểm*)\n• **Phòng cháy chữa cháy** (như: *cháy điện có dội nước không?*, *số 114*)\n• **Tai nạn thương tích** (như: *bị hóc nghẹn*, *bị bỏng*, *gặp chó lạ*)\n\nHoặc em hãy bấm vào các gợi ý có sẵn bên dưới nhé! ❤️`;
     }
 
-    appendBotMessage(botResponse, badge);
+    appendBotMessage(botResponse, badge, false, followups);
     playTingSound();
   }, 450);
 }
@@ -509,6 +541,11 @@ function clearChat() {
     const typing = document.getElementById('typing-indicator');
     container.innerHTML = '';
     container.appendChild(typing);
+
+    // Xóa ngữ cảnh thông minh khi bắt đầu mới
+    CONVERSATION_STATE.lastCategory = null;
+    CONVERSATION_STATE.lastItemId = null;
+    CONVERSATION_STATE.lastQuery = null;
 
     appendBotMessage(
       `Chào **${STATE.userName}**! Mình là **Endy - Lá chắn an toàn của các bạn nhỏ 🛡️**.\nEm muốn học hoặc hỏi về tình huống an toàn nào hôm nay? 😊`

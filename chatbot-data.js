@@ -1,5 +1,5 @@
 // DỮ LIỆU TRI THỨC VÀ BỘ MÁY TÌM KIẾM CỦA CHATBOT ENDY
-// Lá chắn an toàn của các bạn nhỏ - Tổng cộng 560 tình huống & kiến thức an toàn
+// Lá chắn an toàn của các bạn nhỏ - Tổng cộng 619 tình huống & kiến thức an toàn
 
 window.ENDY_KB = [
   {
@@ -13,7 +13,12 @@ window.ENDY_KB = [
       "bốn số điện thoại cứu hộ khẩn cấp",
       "số cứu hộ"
     ],
-    "response": "**Bốn số điện thoại cứu hộ khẩn cấp quan trọng nhất mà em cần thuộc lòng:** 📞🚨\n\n• **111 - Tổng đài Quốc gia Bảo vệ Trẻ em** (Miễn phí 24/7): Gọi khi bị bạo lực, xâm hại hoặc cần hỗ trợ bảo vệ trẻ em.\n• **113 - Cảnh sát phản ứng nhanh**: Gọi khi gặp tội phạm, trộm cướp, mất trật tự an ninh.\n• **114 - Cứu hỏa và cứu nạn**: Gọi khi có hỏa hoạn, cháy nổ, sập đổ công trình.\n• **115 - Cấp cứu y tế**: Gọi khi có người bị thương tích nặng, đuối nước, bất tỉnh.\n\n*(Tất cả 4 số này đều miễn phí cước gọi và trực 24/24 giờ!)*"
+    "response": "**Bốn số điện thoại cứu hộ khẩn cấp quan trọng nhất mà em cần thuộc lòng:** 📞🚨\n\n• **111 - Tổng đài Quốc gia Bảo vệ Trẻ em** (Miễn phí 24/7): Gọi khi bị bạo lực, xâm hại hoặc cần hỗ trợ bảo vệ trẻ em.\n• **113 - Cảnh sát phản ứng nhanh**: Gọi khi gặp tội phạm, trộm cướp, mất trật tự an ninh.\n• **114 - Cứu hỏa và cứu nạn**: Gọi khi có hỏa hoạn, cháy nổ, sập đổ công trình.\n• **115 - Cấp cứu y tế**: Gọi khi có người bị thương tích nặng, đuối nước, bất tỉnh.\n\n*(Tất cả 4 số này đều miễn phí cước gọi và trực 24/24 giờ!)*",
+    "followups": [
+      "Thấy người đuối nước có nên nhảy xuống cứu không?",
+      "Cháy do điện có được dội nước không?",
+      "Quy tắc 5 ngón tay là gì?"
+    ]
   },
   {
     "id": "frayed_wire_safety",
@@ -26,12 +31,17 @@ window.ENDY_KB = [
       "phát hiện dây điện bị hở",
       "dây điện rách vỏ"
     ],
-    "response": "**Khi phát hiện dây điện bị hở hoặc rách vỏ cách điện:** 🔌⚡\n\n1. **Tuyệt đối không chạm tay vào:** Kể cả khi chưa thấy phát ra tia lửa điện.\n2. **Báo ngay cho bố mẹ hoặc người lớn trong nhà:** Để người lớn ngắt nguồn điện và dùng băng dính cách điện chuyên dụng quấn chặt lại hoặc thay dây mới.\n3. Nhắc nhở các bạn nhỏ khác trong nhà không được đến gần khu vực dây điện hở đó!"
+    "response": "**Khi phát hiện dây điện bị hở hoặc rách vỏ cách điện:** 🔌⚡\n\n1. **Tuyệt đối không chạm tay vào:** Kể cả khi chưa thấy phát ra tia lửa điện.\n2. **Báo ngay cho bố mẹ hoặc người lớn trong nhà:** Để người lớn ngắt nguồn điện và dùng băng dính cách điện chuyên dụng quấn chặt lại hoặc thay dây mới.\n3. Nhắc nhở các bạn nhỏ khác trong nhà không được đến gần khu vực dây điện hở đó!",
+    "followups": [
+      "Ngắt cầu dao ở đâu?",
+      "Dùng que gỗ gạt dây điện được không?",
+      "Tay ướt có được chạm vào ổ cắm không?"
+    ]
   },
   {
     "id": "lightning_thunderstorm_safety",
     "category": "electric",
-    "badge": "",
+    "badge": "assets/illust_electric.png",
     "keywords": [
       "tránh sét đánh khi trời mưa dông",
       "tranh set danh khi troi mua dong",
@@ -39,7 +49,12 @@ window.ENDY_KB = [
       "sét đánh trú ẩn ở đâu",
       "trời mưa sấm sét làm gì"
     ],
-    "response": "**Quy tắc vàng phòng tránh sét đánh khi trời mưa dông, sấm sét:** ⛈️⚡\n\n• **Nhanh chóng vào trong nhà kiên cố:** Đóng kín cửa sổ và cửa ra vào.\n• **TUYỆT ĐỐI KHÔNG:**\n  ❌ Không trú mưa dưới gốc cây to hoặc cột điện ngoài trời.\n  ❌ Không ở gần các vật kim loại (xe đạp, hàng rào sắt).\n  ❌ Không tắm ao, hồ, sông, bể bơi khi trời đang sấm sét.\n  ❌ Hạn chế dùng các thiết bị điện đang cắm sạc.\n• **Nếu đang ở giữa đồng trống:** Ngồi xổm thấp người, chụm hai chân lại, gục đầu vào đầu gối, không nằm áp sát xuống mặt đất!"
+    "response": "**Quy tắc vàng phòng tránh sét đánh khi trời mưa dông, sấm sét:** ⛈️⚡\n\n• **Nhanh chóng vào trong nhà kiên cố:** Đóng kín cửa sổ và cửa ra vào.\n• **TUYỆT ĐỐI KHÔNG:**\n  ❌ Không trú mưa dưới gốc cây to hoặc cột điện ngoài trời.\n  ❌ Không ở gần các vật kim loại (xe đạp, hàng rào sắt).\n  ❌ Không tắm ao, hồ, sông, bể bơi khi trời đang sấm sét.\n  ❌ Hạn chế dùng các thiết bị điện đang cắm sạc.\n• **Nếu đang ở giữa đồng trống:** Ngồi xổm thấp người, chụm hai chân lại, gục đầu vào đầu gối, không nằm áp sát xuống mặt đất!",
+    "followups": [
+      "Thấy dây điện rơi xuống đất làm gì?",
+      "Tay ướt có được chạm vào ổ cắm không?",
+      "Bốn số điện thoại cứu hộ khẩn cấp"
+    ]
   },
   {
     "id": "fallen_power_line_safety",
@@ -52,7 +67,12 @@ window.ENDY_KB = [
       "dây điện rơi xuống đất",
       "gặp dây điện đứt"
     ],
-    "response": "**Khi thấy dây điện bị đứt rơi xuống đất hoặc vỉa hè:** ⚡⚠️\n\n1. **Tránh xa ngay lập tức:** Giữ khoảng cách an toàn **ít nhất 10 mét** tính từ vị trí sợi dây điện rơi.\n2. **Tuyệt đối không chạm vào:** Không dùng que gậy chọc vào dây điện hay các vũng nước gần đó.\n3. **Cảnh báo mọi người xung quanh:** Hô to để người khác không bước vào vùng nguy hiểm.\n4. **Báo ngay cho người lớn** hoặc gọi điện báo cơ quan điện lực để cắt điện khẩn cấp!"
+    "response": "**Khi thấy dây điện bị đứt rơi xuống đất hoặc vỉa hè:** ⚡⚠️\n\n1. **Tránh xa ngay lập tức:** Giữ khoảng cách an toàn **ít nhất 10 mét** tính từ vị trí sợi dây điện rơi.\n2. **Tuyệt đối không chạm vào:** Không dùng que gậy chọc vào dây điện hay các vũng nước gần đó.\n3. **Cảnh báo mọi người xung quanh:** Hô to để người khác không bước vào vùng nguy hiểm.\n4. **Báo ngay cho người lớn** hoặc gọi điện báo cơ quan điện lực để cắt điện khẩn cấp!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Dây điện bị hở phải làm sao?"
+    ]
   },
   {
     "id": "wet_hands_touch_socket_danger",
@@ -66,7 +86,12 @@ window.ENDY_KB = [
       "tại sao tay ướt không được chạm vào điện",
       "tay ướt chạm vào điện"
     ],
-    "response": "**Tuyệt đối KHÔNG được chạm vào ổ cắm, công tắc hay thiết bị điện khi tay đang ướt!** ⚡💧\n\n• Nước là chất dẫn điện cực mạnh. Khi tay bị ướt, điện trở của da người giảm đi hàng trăm lần, dòng điện sẽ dễ dàng phóng qua cơ thể gây giật điện tử vong ngay lập tức!\n• **Em cần nhớ:** Luôn lau thật khô tay bằng khăn sạch trước khi chạm vào bất kỳ thiết bị điện nào nhé!"
+    "response": "**Tuyệt đối KHÔNG được chạm vào ổ cắm, công tắc hay thiết bị điện khi tay đang ướt!** ⚡💧\n\n• Nước là chất dẫn điện cực mạnh. Khi tay bị ướt, điện trở của da người giảm đi hàng trăm lần, dòng điện sẽ dễ dàng phóng qua cơ thể gây giật điện tử vong ngay lập tức!\n• **Em cần nhớ:** Luôn lau thật khô tay bằng khăn sạch trước khi chạm vào bất kỳ thiết bị điện nào nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Dây điện bị hở phải làm sao?"
+    ]
   },
   {
     "id": "medical_helpline_115",
@@ -79,7 +104,12 @@ window.ENDY_KB = [
       "tổng đài 115",
       "số cấp cứu 115"
     ],
-    "response": "**Số điện thoại khẩn cấp 115 là tổng đài Cấp cứu Y tế:** 🚑🚨\n\n• Gọi miễn phí 24/7 khi có người bị tai nạn thương tích nặng, đuối nước, bất tỉnh, ngộ độc, khó thở hoặc nguy kịch tính mạng cần xe cứu thương đến cấp cứu khẩn cấp."
+    "response": "**Số điện thoại khẩn cấp 115 là tổng đài Cấp cứu Y tế:** 🚑🚨\n\n• Gọi miễn phí 24/7 khi có người bị tai nạn thương tích nặng, đuối nước, bất tỉnh, ngộ độc, khó thở hoặc nguy kịch tính mạng cần xe cứu thương đến cấp cứu khẩn cấp.",
+    "followups": [
+      "Bị hóc dị vật hoặc nghẹn đồ ăn làm sao?",
+      "Bị bỏng nước sôi phải làm sao?",
+      "Bốn số điện thoại cứu hộ khẩn cấp"
+    ]
   },
   {
     "id": "police_helpline_113",
@@ -92,7 +122,12 @@ window.ENDY_KB = [
       "tổng đài 113",
       "số cảnh sát 113"
     ],
-    "response": "**Số điện thoại khẩn cấp 113 là số của Cảnh sát phản ứng nhanh:** 👮🚨\n\n• Gọi miễn phí 24/7 khi gặp: Tội phạm trộm cướp, đánh nhau, gây rối trật tự an ninh, hoặc khi phát hiện các hành vi vi phạm pháp luật nguy hiểm cần can thiệp khẩn cấp."
+    "response": "**Số điện thoại khẩn cấp 113 là số của Cảnh sát phản ứng nhanh:** 👮🚨\n\n• Gọi miễn phí 24/7 khi gặp: Tội phạm trộm cướp, đánh nhau, gây rối trật tự an ninh, hoặc khi phát hiện các hành vi vi phạm pháp luật nguy hiểm cần can thiệp khẩn cấp.",
+    "followups": [
+      "Ở nhà một mình người lạ gõ cửa thì làm gì?",
+      "Người lạ cho kẹo rủ đi theo thì làm sao?",
+      "Bốn số điện thoại cứu hộ khẩn cấp"
+    ]
   },
   {
     "id": "child_protection_helpline_111",
@@ -107,7 +142,12 @@ window.ENDY_KB = [
       "khi nào gọi 111",
       "tổng đài quốc gia bảo vệ trẻ em"
     ],
-    "response": "**Tổng đài Quốc gia Bảo vệ Trẻ em 111:** 📞🛡️\n\n• **Đây là đường dây nóng miễn phí 24/7** của Nhà nước dành riêng để bảo vệ các bạn nhỏ trên toàn quốc.\n• **Em hãy gọi 111 khi:**\n  1. Bản thân em hoặc bạn bè bị bạo lực, đánh đập, bóc lột.\n  2. Bị người khác đụng chạm vào vùng kín, quấy rối hoặc xâm hại.\n  3. Bị bắt nạt học đường hoặc gặp hoàn cảnh nguy hiểm cần tư vấn tâm lý, pháp lý.\n• Các cô chú ở tổng đài 111 luôn lắng nghe, bảo mật và can thiệp bảo vệ em kịp thời!"
+    "response": "**Tổng đài Quốc gia Bảo vệ Trẻ em 111:** 📞🛡️\n\n• **Đây là đường dây nóng miễn phí 24/7** của Nhà nước dành riêng để bảo vệ các bạn nhỏ trên toàn quốc.\n• **Em hãy gọi 111 khi:**\n  1. Bản thân em hoặc bạn bè bị bạo lực, đánh đập, bóc lột.\n  2. Bị người khác đụng chạm vào vùng kín, quấy rối hoặc xâm hại.\n  3. Bị bắt nạt học đường hoặc gặp hoàn cảnh nguy hiểm cần tư vấn tâm lý, pháp lý.\n• Các cô chú ở tổng đài 111 luôn lắng nghe, bảo mật và can thiệp bảo vệ em kịp thời!",
+    "followups": [
+      "Quy tắc 5 ngón tay là gì?",
+      "Quy tắc đồ lót là gì?",
+      "Bốn số điện thoại cứu hộ khẩn cấp"
+    ]
   },
   {
     "id": "sharp_objects_safety",
@@ -121,7 +161,12 @@ window.ENDY_KB = [
       "vật sắc nhọn",
       "bị đứt tay"
     ],
-    "response": "**Quy tắc an toàn với dao kéo và các vật sắc nhọn:** ✂️🔪\n\n• **Không đùa nghịch:** Tuyệt đối không cầm dao, kéo, compa, que nhọn chạy nhảy hoặc đùa giỡn.\n• **Cách đưa kéo an toàn:** Luôn nắm phần lưỡi kéo (đã khép chặt) trong lòng bàn tay và đưa phần cán cầm cho người khác.\n• **Nếu bị đứt tay chảy máu:** Rửa sạch vết thương dưới vòi nước, dùng gạc hoặc khăn sạch ấn chặt vào vết thương 5 - 10 phút để cầm máu, rồi báo người lớn băng bó!"
+    "response": "**Quy tắc an toàn với dao kéo và các vật sắc nhọn:** ✂️🔪\n\n• **Không đùa nghịch:** Tuyệt đối không cầm dao, kéo, compa, que nhọn chạy nhảy hoặc đùa giỡn.\n• **Cách đưa kéo an toàn:** Luôn nắm phần lưỡi kéo (đã khép chặt) trong lòng bàn tay và đưa phần cán cầm cho người khác.\n• **Nếu bị đứt tay chảy máu:** Rửa sạch vết thương dưới vòi nước, dùng gạc hoặc khăn sạch ấn chặt vào vết thương 5 - 10 phút để cầm máu, rồi báo người lớn băng bó!",
+    "followups": [
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "Chó xông vào cắn thì làm gì?",
+      "Số điện thoại 115 là gì?"
+    ]
   },
   {
     "id": "fire_escape_high_rise_building",
@@ -134,216 +179,592 @@ window.ENDY_KB = [
       "thoát hiểm chung cư",
       "cháy ở nhà cao tầng"
     ],
-    "response": "**Kỹ năng thoát hiểm sinh tử khi có cháy ở nhà cao tầng, chung cư:** 🏢🚨\n\n1. **TUYỆT ĐỐI KHÔNG DÙNG THANG MÁY:** Khi cháy, nguồn điện thường bị ngắt hoặc chập, em sẽ bị kẹt chết ngạt trong thang máy. Hãy luôn dùng **thang bộ thoát hiểm**.\n2. **Kiểm tra nhiệt độ tay nắm cửa:** Chạm mu bàn tay vào tay nắm cửa, nếu thấy nóng ran thì tuyệt đối không mở vì bên ngoài lửa đang cháy to.\n3. **Nếu bị kẹt trong phòng:** Dùng chăn/khăn ướt chèn kín khe cửa, ra ban công vẫy khăn sáng màu ra hiệu kêu cứu và gọi ngay **114**!"
+    "response": "**Kỹ năng thoát hiểm sinh tử khi có cháy ở nhà cao tầng, chung cư:** 🏢🚨\n\n1. **TUYỆT ĐỐI KHÔNG DÙNG THANG MÁY:** Khi cháy, nguồn điện thường bị ngắt hoặc chập, em sẽ bị kẹt chết ngạt trong thang máy. Hãy luôn dùng **thang bộ thoát hiểm**.\n2. **Kiểm tra nhiệt độ tay nắm cửa:** Chạm mu bàn tay vào tay nắm cửa, nếu thấy nóng ran thì tuyệt đối không mở vì bên ngoài lửa đang cháy to.\n3. **Nếu bị kẹt trong phòng:** Dùng chăn/khăn ướt chèn kín khe cửa, ra ban công vẫy khăn sáng màu ra hiệu kêu cứu và gọi ngay **114**!",
+    "followups": [
+      "Cửa nóng thì làm sao?",
+      "Không có khăn ướt thì sao?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
-    "id": "fire_escape_wet_towel",
+    "id": "wet_towel_fire_smoke_filter",
     "category": "fire",
     "badge": "assets/illust_electric.png",
     "keywords": [
-      "dùng khăn ướt bịt mũi miệng khi cháy",
-      "dung khan uot bit mui mieng khi chay",
-      "khăn ướt khi có cháy",
+      "dùng khăn ướt che mũi miệng khi có cháy để làm gì",
+      "dung khan uot che mui mieng khi co chay de lam gi",
+      "tại sao dùng khăn ướt khi cháy",
       "tại sao dùng khăn ướt",
       "bịt khăn ướt lọc khói",
       "khăn ướt lọc khói"
     ],
-    "response": "**Tác dụng tuyệt vời của chiếc khăn ướt khi có hỏa hoạn:** 💧🧯\n\n• **Lọc khí độc:** Nước trong khăn ướt hấp thụ khí độc (như CO, CO2, bụi than mịn) và làm nguội luồng khí nóng trước khi hít vào phổi.\n• **Cách dùng:**\n  1. Nhúng đẫm khăn mặt, khẩu trang hoặc vạt áo vào nước sạch.\n  2. Gấp lại 3 - 4 lớp rồi áp chặt che kín mũi và miệng.\n  3. Thở chậm rãi, đều đặn qua khăn trong lúc bò thấp thoát ra ngoài an toàn!"
+    "response": "**Tác dụng tuyệt vời của chiếc khăn ướt khi có hỏa hoạn:** 💧🧯\n\n• **Lọc khí độc:** Nước trong khăn ướt hấp thụ khí độc (như CO, CO2, bụi than mịn) và làm nguội luồng khí nóng trước khi hít vào phổi.\n• **Cách dùng:**\n  1. Nhúng đẫm khăn mặt, khẩu trang hoặc vạt áo vào nước sạch.\n  2. Gấp lại 3 - 4 lớp rồi áp chặt che kín mũi và miệng.\n  3. Thở chậm rãi, đều đặn qua khăn trong lúc bò thấp thoát ra ngoài an toàn!",
+    "followups": [
+      "Không có khăn ướt thì sao?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
-    "id": "fire_escape_crawl_low",
-    "category": "fire",
-    "badge": "assets/illust_electric.png",
+    "id": "dog_bite_safety_first_aid",
+    "category": "injury",
+    "badge": "",
     "keywords": [
-      "cách bò thấp thoát khỏi đám khói",
-      "cach bo thap thoat khoi dam khoi",
-      "bò thấp khi có cháy",
-      "tại sao phải bò thấp",
-      "thoát khỏi khói độc",
-      "bò men theo tường",
-      "bò thấp"
+      "gặp chó dữ ngoài đường thì phải làm gì",
+      "gap cho du ngoai duong thi phai lam gi",
+      "gặp chó dữ",
+      "bị chó đuổi",
+      "chó cắn",
+      "phòng tránh chó cắn"
     ],
-    "response": "**Tại sao phải bò thấp khi thoát khỏi đám khói cháy?** 🧯🏃‍♂️\n\n• **Lý do:** Khói độc và hơi nóng nhẹ hơn không khí nên sẽ bốc ngược lên trần nhà. Lớp không khí mát và sạch nhất luôn nằm sát mặt sàn (cách sàn 20 - 30cm).\n• **Cách thực hiện:**\n  1. Cúi gập người hoặc bò bằng hai bàn tay và hai đầu gối sát sàn nhà.\n  2. Một tay men theo chân tường để định hướng lối thoát hiểm ra cửa.\n  3. Đầu cúi thấp, miệng và mũi luôn được che chắn bằng khăn ướt!"
+    "response": "**Kỹ năng đối phó an toàn khi gặp chó dữ:** 🐕⚠️\n\n1. **Đứng im như khúc gỗ:** Không bỏ chạy, không la hét. Chó có bản năng săn đuổi, nếu em chạy nó sẽ đuổi theo và cắn ngay!\n2. **Không nhìn thẳng vào mắt chó:** Vì chó coi đó là hành động khiêu chiến thách thức.\n3. **Từ từ lùi bước:** Giữ bình tĩnh, bước lùi chậm rãi ra xa.\n4. **Nếu bị ngã:** Cuộn tròn người lại như quả bóng, hai tay ôm chặt lấy đầu và cổ.\n5. **Nếu bị chó cắn:** Rửa ngay vết thương dưới vòi nước xà phòng 15 phút và đi tiêm phòng dại ngay!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "choking_first_aid_heimlich",
+    "category": "choking",
+    "badge": "",
+    "keywords": [
+      "bị hóc dị vật hoặc nghẹn đồ ăn thì làm sao",
+      "bi hoc di vat hoac nghen do an thi lam sao",
+      "hóc dị vật",
+      "sơ cứu hóc xương",
+      "nghẹn thức ăn",
+      "sơ cứu hóc dị vật",
+      "bị nghẹn đồ ăn"
+    ],
+    "response": "**Khi bị hóc dị vật hoặc thấy bạn bị nghẹn không thở được:** 🍎⚠️\n\n1. **Nếu nạn nhân vẫn ho hoặc nói được:** Khuyến khích họ ho thật mạnh để tống dị vật ra ngoài.\n2. **Nếu nạn nhân tím tái, không thở được:** Cần thực hiện ngay **thủ thuật Heimlich** (vỗ lưng và ấn ngực/ép bụng).\n3. **TUYỆT ĐỐI:** Không dùng tay móc mò dị vật trong họng vì có thể đẩy dị vật vào sâu hơn, và không nuốt thêm cục cơm to!\n4. Gọi cấp cứu **115** ngay lập tức.",
+    "followups": [
+      "Bị hóc nuốt cơm to được không?",
+      "Thủ thuật Heimlich cấp cứu hóc dị vật",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "nosebleed_first_aid_lean_forward",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "chảy máu cam thì làm thế nào",
+      "chay mau cam thi lam the nao",
+      "chảy máu cam cúi hay ngửa",
+      "sơ cứu chảy máu cam",
+      "bị chảy máu cam",
+      "xử lý chảy máu cam"
+    ],
+    "response": "**Cách sơ cứu chảy máu cam ĐÚNG CHUẨN:** 🩸👃\n\n• **Tư thế đúng:** Ngồi thẳng lưng và **CÚI ĐẦU HƠI VỀ PHÍA TRƯỚC**.\n• **TUYỆT ĐỐI KHÔNG NGỬA ĐẦU RA SAU:** Vì máu sẽ chảy ngược vào họng gây sặc vào khí quản hoặc nôn ói!\n• **Cách bóp mũi cầm máu:** Dùng ngón cái và ngón trỏ bóp chặt hai cánh mũi trong **10 - 15 phút**, thở bằng miệng.\n• Có thể chườm khăn mát hoặc đá lạnh lên sống mũi để mạch máu co lại.",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "An toàn với dao kéo sắc nhọn",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "burn_first_aid_water_not_toothpaste",
+    "category": "burn",
+    "badge": "",
+    "keywords": [
+      "bị bỏng nước sôi phải làm sao",
+      "bi bong nuoc soi phai lam sao",
+      "sơ cứu bỏng",
+      "bị bỏng",
+      "bỏng nước sôi",
+      "bỏng lửa"
+    ],
+    "response": "**Các bước sơ cứu bỏng chuẩn y tế mà em cần thuộc lòng:** 🔥💧\n\n1. **Xả nước mát ngay lập tức:** Đặt vùng bị bỏng dưới vòi nước sạch chảy nhẹ trong **15 - 20 phút** để hạ nhiệt độ và giảm tổn thương sâu.\n2. **TUYỆT ĐỐI KHÔNG:**\n   ❌ Không bôi kem đánh răng, mỡ trăn, nước mắm, trứng gà lên vết bỏng.\n   ❌ Không tự ý chọc vỡ các bọng nước phồng rộp.\n3. Che nhẹ bằng gạc sạch vô khuẩn và nhờ người lớn đưa đến cơ sở y tế!",
+    "followups": [
+      "Bôi kem đánh răng lên vết bỏng được không?",
+      "Xử lý bỏng độ 1 độ 2 thế nào?",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "school_bullying_what_to_do",
+    "category": "school",
+    "badge": "",
+    "keywords": [
+      "bị bạn bắt nạt ở trường thì làm sao",
+      "bi ban bat nat o truong thi lam sao",
+      "bắt nạt học đường",
+      "bị bạn đánh ở trường",
+      "bị cô lập ở lớp",
+      "bạn bè bắt nạt"
+    ],
+    "response": "**Khi bị bạn bè bắt nạt, đe dọa hoặc cô lập ở trường:** 🏫🎒\n\n1. **Bình tĩnh, không sợ hãi:** Kẻ bắt nạt thường thích thú khi thấy em khóc lóc hay hoảng sợ. Hãy nhìn thẳng và nói to: \"Dừng lại ngay!\".\n2. **Tìm cách thoát khỏi chỗ vắng:** Nhanh chóng di chuyển về nơi đông bạn bè hoặc phòng giáo viên.\n3. **LẬP TỨC KỂ CHO NGƯỜI LỚN:** Kể ngay với cô giáo chủ nhiệm, ban giám hiệu và bố mẹ. Báo cáo không phải là mách lẻo mà là dũng cảm bảo vệ chính mình!\n4. Em cũng có thể gọi tổng đài miễn phí **111** để được các chuyên gia bảo vệ hỗ trợ bí mật.",
+    "followups": [
+      "Làm sao để hòa đồng với bạn bè?",
+      "Quy tắc 5 ngón tay là gì?",
+      "Số điện thoại 111 là gì?"
+    ]
+  },
+  {
+    "id": "five_fingers_rule",
+    "category": "abuse",
+    "badge": "",
+    "keywords": [
+      "quy tắc 5 ngón tay là gì",
+      "quy tac 5 ngon tay la gi",
+      "quy tắc năm ngón tay",
+      "5 ngón tay phòng tránh xâm hại",
+      "quy tắc năm ngón tay bảo vệ bản thân"
+    ],
+    "response": "**Quy tắc 5 ngón tay dạy em cách giao tiếp an toàn:** 🖐️\n\n1. **Ngón cái (Gần nhất):** Bố mẹ, ông bà, anh chị em ruột -> Được ôm hôn, thể hiện tình cảm.\n2. **Ngón trỏ:** Thầy cô, bạn bè, họ hàng -> Khoác tay, nắm tay, bắt tay.\n3. **Ngón giữa:** Người quen (hàng xóm, bạn bố mẹ) -> Bắt tay, chào hỏi.\n4. **Ngón áp út:** Người mới gặp lần đầu -> Cười và vẫy tay chào từ xa.\n5. **Ngón út (Xa nhất):** Người hoàn toàn xa lạ -> Xua tay, giữ khoảng cách, bỏ chạy nếu họ cố tình lại gần!",
+    "followups": [
+      "Quy tắc đồ lót là gì?",
+      "Người lạ cho kẹo rủ đi theo thì làm sao?",
+      "Số điện thoại 111 là gì?"
+    ]
+  },
+  {
+    "id": "body_safety_underwear_rule",
+    "category": "abuse",
+    "badge": "",
+    "keywords": [
+      "quy tắc đồ lót là gì",
+      "quy tac do lot la gi",
+      "quy tắc pan-ts",
+      "vùng riêng tư trên cơ thể",
+      "vùng kín cơ thể",
+      "bảo vệ vùng riêng tư"
+    ],
+    "response": "**Quy tắc Đồ Lót (PANTS) giúp em bảo vệ bản thân khỏi bị xâm hại:** 🩲🛡️\n\n• **Vùng riêng tư:** Là những phần cơ thể được che bởi đồ bơi hoặc đồ lót (ngực, mông, giữa hai đùi) và cả miệng.\n• **Không ai được phép chạm vào:** Trừ bác sĩ khám bệnh khi có mặt bố mẹ em ở đó.\n• **Em cũng không được chạm vào vùng riêng tư của người khác**.\n• Nếu ai đó cố tình chạm vào, bắt em chạm hoặc chụp ảnh vùng kín của em, hãy hét to **\"KHÔNG!\"**, bỏ chạy và kể ngay với bố mẹ hoặc gọi **111**!",
+    "followups": [
+      "Quy tắc 5 ngón tay phòng xâm hại",
+      "Bị bạn bắt nạt ở trường làm sao?",
+      "Số điện thoại 111 là gì?"
+    ]
+  },
+  {
+    "id": "home_alone_stranger_knocks",
+    "category": "stranger",
+    "badge": "",
+    "keywords": [
+      "ở nhà một mình người lạ gõ cửa thì làm gì",
+      "o nha mot minh nguoi la go cua thi lam gi",
+      "người lạ gõ cửa khi ở nhà một mình",
+      "ở nhà một mình có người lạ",
+      "người lạ bấm chuông"
+    ],
+    "response": "**Khi ở nhà một mình mà có người lạ gõ cửa hoặc bấm chuông:** 🏠🚪\n\n1. **TUYỆT ĐỐI KHÔNG MỞ CỬA:** Giữ then chốt cửa thật chắc chắn.\n2. **Không để lộ là em đang ở nhà một mình:** Không nói to \"cháu ở nhà một mình\", hãy nói vọng ra: \"Bố mẹ cháu đang bận, hẹn chú/cô lát nữa quay lại sau\".\n3. **Gọi điện ngay cho bố mẹ** hoặc người thân để báo tin.\n4. Nếu người lạ cố tình cạy cửa hoặc có dấu hiệu đột nhập, bấm gọi ngay **113** hoặc gọi to cầu cứu hàng xóm!",
+    "followups": [
+      "Người lạ cho kẹo rủ đi theo thì làm sao?",
+      "Quy tắc 5 ngón tay phòng xâm hại",
+      "Bốn số điện thoại cứu hộ khẩn cấp"
+    ]
+  },
+  {
+    "id": "stranger_danger_candy_gift",
+    "category": "stranger",
+    "badge": "",
+    "keywords": [
+      "người lạ cho kẹo rủ đi theo thì làm sao",
+      "nguoi la cho keo ru di theo thi lam sao",
+      "người lạ cho quà",
+      "người lạ rủ đi",
+      "người lạ cho bánh kẹo",
+      "người lạ dẫn đi"
+    ],
+    "response": "**Khi người lạ cho quà, bánh kẹo, đồ chơi hoặc rủ em đi theo:** 🍭🚫\n\n1. **Nói \"KHÔNG\" dứt khoát:** Lùi lại cách xa người đó ít nhất 2 - 3 bước chân.\n2. **Tuyệt đối không nhận đồ:** Đồ ăn hoặc nước uống của người lạ có thể tẩm thuốc mê hoặc độc chất.\n3. **Tuyệt đối không đi theo:** Bất kể người đó nói là \"bố mẹ nhờ đón\" hay \"nhờ tìm đồ giúp\".\n4. **Chạy ngay đến nơi đông người hoặc thầy cô, bố mẹ** để thông báo!",
+    "followups": [
+      "Ở nhà một mình người lạ gõ cửa thì làm gì?",
+      "Quy tắc 5 ngón tay phòng xâm hại",
+      "Số điện thoại 113 là gì?"
+    ]
+  },
+  {
+    "id": "helmet_safety_on_motorbike",
+    "category": "traffic",
+    "badge": "assets/illust_traffic.png",
+    "keywords": [
+      "ngồi trên xe máy có phải đội mũ bảo hiểm không",
+      "ngoi tren xe may co phai doi mu bao hiem khong",
+      "đội mũ bảo hiểm xe máy",
+      "tại sao phải đội mũ bảo hiểm"
+    ],
+    "response": "**Bắt buộc phải đội mũ bảo hiểm khi ngồi trên xe mô tô, xe gắn máy, xe máy điện và xe đạp điện!** 🛵🪖\n\n• Trẻ em từ **6 tuổi trở lên** bắt buộc phải đội mũ bảo hiểm đạt chuẩn.\n• Mũ phải cài quai chắc chắn (vừa vặn, lọt không quá 2 ngón tay dưới cằm) để bảo vệ vùng đầu não nếu không may xảy ra tai nạn.",
+    "followups": [
+      "Đi xe đạp trên đường cần chú ý gì?",
+      "Đèn giao thông màu vàng có được đi không?",
+      "Đi qua đường thế nào cho an toàn?"
+    ]
   },
   {
     "id": "bicycle_safety_on_road",
     "category": "traffic",
     "badge": "assets/illust_traffic.png",
     "keywords": [
-      "đi xe đạp trên đường cần nhớ gì",
-      "di xe dap tren duong can nho gi",
+      "đi xe đạp trên đường cần chú ý gì",
+      "di xe dap tren duong can chu y gi",
+      "an toàn khi đi xe đạp",
       "đi xe đạp an toàn",
-      "quy tắc đi xe đạp",
-      "học sinh đi xe đạp",
       "lưu ý khi đi xe đạp"
     ],
-    "response": "**Khi đi xe đạp trên đường, các bạn học sinh cần ghi nhớ:** 🚲🚦\n\n1. **Kiểm tra xe trước khi đi:** Phanh (thắng), lốp xe và chuông xe phải hoạt động tốt.\n2. **Đi đúng phần đường:** Đi sát lề đường bên phải, không đi vào làn đường dành cho xe máy, ô tô.\n3. **Tuyệt đối KHÔNG:** Không buông cả hai tay, không lạng lách, không dàn hàng 3 hàng 4, không bám kéo xe khác.\n4. **Khi muốn rẽ:** Giảm tốc độ, giơ tay xin đường và quan sát kỹ trước sau!"
-  },
-  {
-    "id": "walking_on_road_without_sidewalk",
-    "category": "traffic",
-    "badge": "assets/illust_traffic.png",
-    "keywords": [
-      "đi bộ trên đường không có vỉa hè",
-      "di bo tren duong khong co via he",
-      "đường không có vỉa hè đi thế nào",
-      "đi bộ dưới lòng đường",
-      "quy tắc đi bộ an toàn",
-      "không có vỉa hè"
-    ],
-    "response": "**Khi đi bộ trên đoạn đường không có vỉa hè, em hãy nhớ quy tắc sống còn sau:** 🚶‍♂️⚠️\n\n• **Đi sát vào mép đường bên tay phải** theo chiều đi của mình.\n• **Luôn chú ý quan sát xe cộ:** Nhìn trước ngó sau, không đùa nghịch, chạy nhảy hoặc xô đẩy bạn bè.\n• **Không đeo tai nghe hoặc bấm điện thoại:** Để có thể nghe rõ tiếng còi xe từ xa.\n• **Mặc quần áo sáng màu:** Nếu đi vào lúc trời nhá nhem tối để tài xế từ xa dễ dàng nhìn thấy em!"
+    "response": "**Những lưu ý sống còn khi đi xe đạp trên đường:** 🚲🛡️\n\n• **Kiểm tra xe trước khi đi:** Phanh (thắng), lốp xe và chuông phải hoạt động tốt.\n• **Đội mũ bảo hiểm:** Bảo vệ vùng đầu của em khi không may xảy ra va quệt.\n• **Tuyệt đối KHÔNG:** Dàn hàng ngang, đùa giỡn, buông tay lái, chở quá số người quy định hoặc đeo tai nghe nghe nhạc khi đang lái xe.",
+    "followups": [
+      "Trời mưa đi xe đạp thế nào?",
+      "Đèn giao thông màu vàng có được đi không?",
+      "Không có vạch kẻ đường thì sao?"
+    ]
   },
   {
     "id": "yellow_traffic_light_rule",
     "category": "traffic",
     "badge": "assets/illust_traffic.png",
     "keywords": [
-      "đèn giao thông màu vàng phải làm sao",
-      "den giao thong mau vang phai lam sao",
-      "đèn vàng làm gì",
-      "ý nghĩa đèn vàng",
-      "gặp đèn vàng",
-      "tín hiệu đèn vàng giao thông",
-      "đèn vàng giao thông"
+      "đèn giao thông màu vàng có được đi không",
+      "den giao thong mau vang co duoc di khong",
+      "đèn vàng có được đi tiếp không",
+      "ý nghĩa đèn vàng giao thông",
+      "đèn vàng làm gì"
     ],
-    "response": "**Khi gặp đèn tín hiệu giao thông màu vàng, em cần nhớ:** 🟡🚦\n\n• **Quy tắc chuẩn:** Phải dừng lại trước vạch dừng xe.\n• **Trường hợp đã vượt quá vạch dừng:** Nếu xe đã đi quá vạch dừng mà dừng lại sẽ gây nguy hiểm cho xe phía sau thì được phép tiếp tục đi tiếp.\n• **Đèn vàng nhấp nháy:** Báo hiệu được đi nhưng phải giảm tốc độ, chú ý quan sát và nhường đường cho người đi bộ!"
+    "response": "**Khi thấy đèn tín hiệu giao thông chuyển sang màu vàng:** 🟡🚦\n\n• **Quy tắc chuẩn:** Phải dừng lại trước vạch dừng xe.\n• **Ngoại lệ:** Nếu xe đã vượt quá vạch dừng trước khi đèn chuyển vàng thì được phép đi tiếp.\n• **Lời khuyên an toàn:** Khi thấy đèn vàng hoặc đồng hồ đếm ngược sắp hết đèn xanh, em hãy chủ động giảm tốc độ để dừng xe an toàn, không cố tăng ga vượt qua nhé!",
+    "followups": [
+      "Đi qua đường thế nào cho an toàn?",
+      "Không có vạch kẻ đường thì sao?",
+      "Đi xe đạp trời mưa thế nào?"
+    ]
   },
   {
-    "id": "bee_sting_first_aid",
-    "category": "injury",
-    "badge": "",
-    "keywords": [
-      "bị ong đốt xử lý thế nào",
-      "bi ong dot xu ly the nao",
-      "bị ong đốt",
-      "bi ong dot lam sao",
-      "ong chích",
-      "xử lý khi bị ong đốt",
-      "sơ cứu ong đốt"
-    ],
-    "response": "**Khi bị ong đốt, em hãy bình tĩnh xử lý như sau:** 🐝🩹\n\n1. Nhanh chóng rời khỏi nơi có ong để tránh bị đốt thêm.\n2. Nhờ người lớn dùng móng tay hoặc cạnh thẻ nhựa gạt nhẹ ngòi ong ra (không bóp mạnh vào vết đốt).\n3. Rửa sạch bằng xà phòng và nước sạch, sau đó chườm khăn mát.\n4. Báo ngay người lớn nếu cảm thấy khó thở, chóng mặt hoặc sưng phù to để đi bệnh viện cấp cứu kịp thời!"
-  },
-  {
-    "id": "helmet_safety",
+    "id": "traffic_safety_children_general",
     "category": "traffic",
-    "badge": "",
+    "badge": "assets/illust_traffic.png",
     "keywords": [
-      "đội mũ bảo hiểm đúng cách",
-      "doi mu bao hiem dung cach",
-      "đội mũ bảo hiểm",
-      "tại sao phải đội mũ bảo hiểm",
-      "đi xe máy đội mũ",
-      "đội mũ an toàn",
-      "quy tắc đội mũ bảo hiểm đúng cách"
+      "an toàn giao thông cho học sinh",
+      "an toan giao thong cho hoc sinh",
+      "luật giao thông học sinh",
+      "đi đường an toàn",
+      "an toàn giao thông"
     ],
-    "response": "**Đội mũ bảo hiểm là bắt buộc để bảo vệ vùng đầu của em khi ngồi trên xe máy, xe đạp điện!** 🪖🛵\n\n**3 Bước đội mũ bảo hiểm đúng cách:**\n1. Chọn mũ vừa vặn với kích cỡ đầu của em.\n2. Cài quai khóa chắc chắn dưới cằm.\n3. Quai mũ vừa khít (đút lọt 2 ngón tay), không đội mũ quá lỏng hoặc lật ra sau gáy.\n\n*Nhớ luôn nhắc bố mẹ và người thân cùng đội mũ bảo hiểm mỗi khi đi xe nhé!*"
-  },
-  {
-    "id": "burn_emergency_first_aid",
-    "category": "injury",
-    "badge": "",
-    "keywords": [
-      "bị bỏng nước sôi làm gì",
-      "bi bong nuoc soi lam gi",
-      "bi bong nuoc soi",
-      "sơ cứu khi bị bỏng",
-      "bị bỏng làm sao",
-      "bỏng nước sôi",
-      "bỏng bô xe máy",
-      "bôi gì khi bị bỏng",
-      "bị bỏng nước sôi"
-    ],
-    "response": "**Khi bị bỏng nước sôi, bỏng lửa hoặc bô xe máy:** 🩹💧\n\n1. **Xả nước mát sạch:** Ngay lập tức ngâm hoặc xối nhẹ vùng bị bỏng dưới vòi nước mát sạch trong 15 - 20 phút để giảm nhiệt độ và bớt đau rát.\n2. **Tuyệt đối KHÔNG:** Không bôi kem đánh răng, mỡ trăn, nước mắm, xà phòng hay chườm đá lạnh trực tiếp vì sẽ làm vết thương nặng thêm.\n3. **Che vết bỏng:** Dùng gạc sạch hoặc khăn mềm che nhẹ vết thương.\n4. Báo ngay bố mẹ để đưa em đến cơ sở y tế gần nhất kiểm tra nhé!"
+    "response": "**Quy tắc an toàn giao thông quan trọng dành cho học sinh:** 🚦🚶‍♂️🚲\n\n1. **Đi bộ:** Luôn đi trên vỉa hè hoặc sát lề đường bên phải; sang đường ở vạch kẻ đường và chú ý quan sát kỹ hai bên.\n2. **Đi xe đạp:** Đi đúng làn đường quy định, không dàn hàng ba hàng bốn, không lạng lách đánh võng hay buông cả hai tay.\n3. **Ngồi trên xe máy:** Luôn đội mũ bảo hiểm đạt chuẩn, cài quai chắc chắn và ôm chặt người lái xe.",
+    "followups": [
+      "Không có vạch kẻ đường thì sao?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "electrical_safety_dont_play",
     "category": "electric",
     "badge": "assets/illust_electric.png",
     "keywords": [
-      "không tự ý nghịch điện",
-      "khong tu y nghich dien",
-      "nghịch điện",
-      "an toàn điện cho bé",
-      "chơi với ổ điện",
-      "cắm điện",
-      "nguy hiểm từ điện",
-      "chơi đồ điện",
-      "khong nghich dien"
+      "tại sao không được nghịch ổ cắm điện",
+      "tai sao khong duoc nghich o cam dien",
+      "nghịch ổ điện",
+      "chọc que vào ổ cắm",
+      "an toàn điện"
     ],
-    "response": "**Đúng rồi em nhé! Điện rất nguy hiểm, tuyệt đối không tự ý nghịch điện!** ⚡🔌\n\n**Những điều em cần ghi nhớ để an toàn:**\n• Không dùng que sắt, bút, thìa hay ngón tay chọc vào ổ cắm điện.\n• Không chạm vào công tắc, phích cắm khi **tay đang ướt** hoặc chân trần trên sàn ướt.\n• Không tự ý cắm hoặc rút phích cắm điện, hãy nhờ người lớn giúp.\n• Tránh xa các trạm biến áp, dây điện đứt rơi trên mặt đất (giữ khoảng cách ít nhất 10m).\n• Khi trời mưa dông sấm sét, không đứng dưới gốc cây to và hạn chế dùng thiết bị điện trong nhà!"
+    "response": "**Tuyệt đối không bao giờ được nghịch ổ cắm hay thiết bị điện em nhé!** ⚡🔌\n\n• Dòng điện trong nhà có điện áp 220V cực kỳ mạnh, có thể gây bỏng sâu, co giật tim và đe dọa tính mạng chỉ trong một giây!\n• Không dùng que sắt, dây kim loại chọc vào lỗ cắm.\n• Không tự ý cắm hay rút phích điện khi tay ướt hoặc không có người lớn hướng dẫn.",
+    "followups": [
+      "Tay ướt có được chạm vào ổ cắm không?",
+      "Dây điện bị hở phải làm sao?",
+      "Dùng que gỗ gạt dây điện được không?"
+    ]
   },
   {
-    "id": "fire_emergency_number_114",
+    "id": "dog_attack_defense",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "nó xông vào cắn thì sao",
+      "no xong vao can thi sao",
+      "chó xông vào cắn thì làm gì",
+      "cho xong vao can thi lam gi",
+      "chó tấn công thì làm sao",
+      "bị chó lao vào cắn",
+      "cách tự vệ khi bị chó dữ tấn công",
+      "chó cắn thì làm thế nào"
+    ],
+    "response": "**Nếu chẳng may bị chó dữ lao vào tấn công, em hãy nhớ kỹ các động tác tự vệ sinh tử sau:** 🐕⚠️\n\n1. **Đưa vật cản ra phía trước:** Nhanh chóng đưa cặp sách, áo khoác, ba lô, mũ bảo hiểm hoặc cành cây ra phía trước để chó cắn vào vật đó thay vì cắn vào cơ thể em.\n2. **Tư thế bảo vệ tính mạng (nếu bị xô ngã):**\n   - Cuộn tròn người lại như một quả bóng.\n   - Áp đầu gối vào ngực, đan chặt hai bàn tay ôm chặt lấy đầu và gáy để bảo vệ cổ, mặt và tai (những vị trí nguy hiểm nhất).\n   - Nằm im, nhắm mắt và không vùng vẫy hay la hét kích động thêm.\n3. **Sau khi thoát khỏi chó:** Rửa ngay vết thương dưới vòi nước chảy với xà phòng trong 15 phút, sát trùng cồn và đi tiêm phòng dại khẩn cấp cùng người lớn!",
+    "followups": [
+      "Gặp chó dữ ngoài đường làm gì?",
+      "Bị chó cắn xử lý thế nào?",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "choking_rice_swallow_danger",
+    "category": "choking",
+    "badge": "",
+    "keywords": [
+      "nuốt cơm được không",
+      "nuot com duoc khong",
+      "bị hóc nuốt cơm được không",
+      "bi hoc nuot com duoc khong",
+      "hóc xương nuốt miếng cơm to",
+      "hóc xương nuốt cơm nguội",
+      "bị hóc xương nuốt cơm được không",
+      "hóc xương uống nhiều nước được không"
+    ],
+    "response": "**TUYỆT ĐỐI KHÔNG nuốt cục cơm to hay uống nhiều nước khi bị hóc xương em nhé!** 🐟🍚❌\n\n• **Vì sao rất nguy hiểm?**\n  - Miếng cơm to khi nuốt trôi xuống sẽ đè và đẩy mạnh chiếc xương găm sâu hơn vào thành thực quản, thậm chí làm rách, thủng thực quản và đâm vào mạch máu lớn cực kỳ nguy hiểm!\n• **Cách xử lý đúng khi bị hóc xương:**\n  1. Ngừng ăn, ngừng nuốt ngay lập tức.\n  2. Khạc nhổ nhẹ nhàng vào khăn giấy nếu xương ở gần vòm họng.\n  3. Báo ngay bố mẹ dùng đèn pin soi họng; nếu thấy xương ở nông có thể dùng kẹp y tế gắp ra, nếu sâu hãy đến ngay bệnh viện để bác sĩ nội soi gắp an toàn!",
+    "followups": [
+      "Bị hóc dị vật hoặc nghẹn đồ ăn làm sao?",
+      "Thủ thuật Heimlich cấp cứu hóc dị vật",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "burn_toothpaste_forbidden",
+    "category": "burn",
+    "badge": "",
+    "keywords": [
+      "bôi kem đánh răng được không",
+      "boi kem danh rang duoc khong",
+      "bị bỏng bôi kem đánh răng được không",
+      "bi bong boi kem danh rang duoc khong",
+      "bị bỏng có được bôi kem đánh răng không",
+      "bỏng bôi kem đánh răng",
+      "bỏng bôi mỡ trăn được không",
+      "bỏng bôi nước mắm được không",
+      "bỏng bôi trứng gà được không"
+    ],
+    "response": "**TUYỆT ĐỐI KHÔNG bôi kem đánh răng, nước mắm, mỡ trăn hay trứng gà lên vết bỏng em nhé!** 🚫🧴\n\n• **Vì sao nguy hiểm?**\n  - Kem đánh răng chứa bạc hà và kiềm sẽ làm vết bỏng bị kích ứng, rát buốt dữ dội hơn và giữ nhiệt dưới da.\n  - Nước mắm, mỡ trăn, trứng gà rất dễ làm vi khuẩn xâm nhập gây nhiễm trùng, hoại tử da để lại sẹo xấu vĩnh viễn!\n• **Cách xử lý ĐÚNG DUY NHẤT:**\n  1. Ngâm hoặc xả nhẹ vết bỏng dưới **vòi nước sạch mát** (nước sinh hoạt bình thường 15 - 20°C) liên tục trong **15 - 20 phút** để hạ nhiệt tức thì.\n  2. Dùng gạc sạch hoặc khăn mềm sạch che nhẹ vết bỏng (không băng chặt).\n  3. Báo ngay người lớn đưa đến cơ sở y tế gần nhất!",
+    "followups": [
+      "Bị bỏng nước sôi phải làm sao?",
+      "Xử lý bỏng độ 1 độ 2 thế nào?",
+      "Số điện thoại 115 là gì?"
+    ]
+  },
+  {
+    "id": "traffic_bicycle_rain_safety",
+    "category": "traffic",
+    "badge": "assets/illust_traffic.png",
+    "keywords": [
+      "trời mưa đi xe đạp thế nào",
+      "troi mua di xe dap the nao",
+      "đi xe đạp trời mưa thì làm sao",
+      "di xe dap troi mua thi lam sao",
+      "mưa đi xe đạp có được che ô không",
+      "đi xe đạp trời mưa",
+      "an toàn đi xe đạp mùa mưa",
+      "trời mưa đi xe đạp an toàn"
+    ],
+    "response": "**Quy tắc an toàn khi đi xe đạp dưới trời mưa:** 🚲🌧️\n\n• **TUYỆT ĐỐI KHÔNG:**\n  ❌ **Không vừa đi xe đạp vừa cầm ô (dù):** Cầm ô làm mất thăng bằng, gió tạt ngã và che khuất tầm nhìn, rất dễ gây tai nạn nguy hiểm!\n  ❌ Không phóng nhanh, vượt ẩu hoặc phanh gấp vì đường mưa rất trơn trượt.\n  ❌ Không đi qua các vũng nước đục lớn vì dưới đó có thể là ổ gà sâu, hố ga mất nắp.\n• **NÊN LÀM:**\n  ✅ Mặc áo mưa bộ gọn gàng (không để tà áo mưa cuốn vào nan hoa xe).\n  ✅ Đội mũ bảo hiểm có kính chắn mưa.\n  ✅ Đi chậm, giữ khoảng cách xa gấp đôi với các xe phía trước và bóp phanh từ từ!",
+    "followups": [
+      "Đi xe đạp trên đường cần chú ý gì?",
+      "Đèn giao thông màu vàng có được đi không?",
+      "Đi qua đường thế nào cho an toàn?"
+    ]
+  },
+  {
+    "id": "traffic_no_crosswalk",
+    "category": "traffic",
+    "badge": "assets/illust_traffic.png",
+    "keywords": [
+      "không có vạch kẻ đường thì sao",
+      "khong co vach ke duong thi sao",
+      "qua đường không có vạch kẻ đường",
+      "qua duong khong co vach ke duong",
+      "nơi không có vạch kẻ đường qua đường thế nào",
+      "không có vạch kẻ đường thì qua thế nào",
+      "đường không có vạch đi bộ làm sao qua"
+    ],
+    "response": "**Khi cần qua đường ở đoạn đường KHÔNG CÓ vạch kẻ đường cho người đi bộ:** 🚶‍♂️🛣️\n\n1. **Chọn vị trí quan sát tốt nhất:** Tuyệt đối không băng qua đường ở góc cua gấp, đoạn dốc khuất tầm nhìn hoặc nơi có xe ô tô to đang đỗ che khuất.\n2. **Dừng lại trên vỉa hè/lề đường:** Quan sát kỹ dòng xe theo thứ tự: **Nhìn Trái -> Nhìn Phải -> Nhìn Trái lần nữa**.\n3. **Giơ cao một tay lên:** Để các tài xế từ xa dễ dàng nhìn thấy em.\n4. **Đi dứt khoát, tập trung:** Khi thấy khoảng trống xe thật xa và an toàn, đi đều bước qua đường. **Tuyệt đối KHÔNG chạy vụt qua hay vừa đi vừa cắm đầu nhìn điện thoại!**\n5. Nếu có người lớn ở gần, hãy xin người lớn dắt em qua đường cùng nhé!",
+    "followups": [
+      "Đi qua đường thế nào cho an toàn?",
+      "Đèn giao thông màu vàng có được đi không?",
+      "Đi xe đạp trời mưa thế nào?"
+    ]
+  },
+  {
+    "id": "fire_hot_doorknob",
     "category": "fire",
-    "badge": "",
+    "badge": "assets/illust_electric.png",
     "keywords": [
-      "số cứu hỏa là gì",
-      "so cuu hoa la gi",
-      "số điện thoại cứu hỏa",
-      "cháy gọi số mấy",
-      "số 114",
-      "gọi cứu hỏa",
-      "số báo cháy",
-      "cứu hỏa số mấy",
-      "số điện thoại 114 là gì",
-      "số 114 là gì"
+      "cửa nóng thì làm sao",
+      "cua nong thi lam sao",
+      "tay nắm cửa nóng thì sao",
+      "tay nam cua nong thi sao",
+      "sờ thấy tay nắm cửa nóng",
+      "sờ cửa thấy nóng thì làm gì",
+      "nếu tay nắm cửa bị nóng có mở không",
+      "cửa bị nóng có mở không"
     ],
-    "response": "**Số điện thoại cứu hỏa khẩn cấp là 114 em nhé!** 🚒🔥\n\n• Cuộc gọi đến **114 là hoàn toàn miễn phí** và có thể gọi được ngay cả khi điện thoại hết tiền.\n• **Khi gọi 114, em cần nói rõ:**\n  1. Địa chỉ chính xác nơi đang cháy (số nhà, đường, trường học...).\n  2. Cháy cái gì và có ai bị kẹt không.\n  3. Tên và số điện thoại của em.\n• Sau khi gọi, hãy nhanh chóng di chuyển ra nơi thoáng khí an toàn chờ các chú lính cứu hỏa đến nhé!"
+    "response": "**Nếu kiểm tra bằng mu bàn tay thấy tay nắm cửa NÓNG RAN: Tuyệt đối KHÔNG ĐƯỢC MỞ CỬA!** 🔥🚪❌\n\n• **Vì sao?** Tay nắm cửa nóng chứng tỏ ngọn lửa lớn và khói độc đang bao trùm ngay phía bên kia cánh cửa. Mở cửa ra sẽ làm ngọn lửa và khí độc ập thẳng vào thiêu rụi căn phòng ngay lập tức!\n• **Em phải làm gì ngay lúc đó?**\n  1. Lập tức lùi lại, đóng chặt cửa.\n  2. Dùng chăn, quần áo, rèm cửa (thấm ướt nếu có nước) chèn thật kín các khe hở quanh cửa để ngăn khói độc lọt vào.\n  3. Di chuyển ra ban công hoặc cửa sổ thoáng khí (nơi không có khói), vẫy khăn áo sáng màu kêu cứu to và gọi số **114** báo rõ số phòng của em!",
+    "followups": [
+      "Không có khăn ướt thì sao?",
+      "Thoát hiểm nhà cao tầng khi có cháy",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
-    "id": "strange_dog_safety",
-    "category": "injury",
-    "badge": "",
+    "id": "fire_no_wet_towel",
+    "category": "fire",
+    "badge": "assets/illust_electric.png",
     "keywords": [
-      "gặp chó lạ làm gì",
-      "gap cho la lam gi",
-      "chó lạ",
-      "bị chó đuổi",
-      "chó dữ",
-      "gặp chó ngoài đường",
-      "chó tấn công",
-      "chó cắn làm sao",
-      "gặp chó hung dữ",
-      "gap cho la"
+      "không có khăn ướt thì sao",
+      "khong co khan uot thi sao",
+      "không có khăn ướt thì làm gì",
+      "khong co khan uot thi lam the nao",
+      "lấy gì bịt mũi nếu không có khăn",
+      "không có khăn lấy gì bịt mũi",
+      "không có nước làm ướt khăn thì sao",
+      "hết nước làm ướt khăn thì làm sao"
     ],
-    "response": "**Khi gặp chó lạ hoặc chó hung dữ, em hãy nhớ:** 🐶🛑\n\n• **Đứng yên như một cái cây:** Hai tay khép sát người, chân đứng thẳng, không cử động.\n• **Không nhìn thẳng vào mắt chó:** Vì chó sẽ tưởng em đang thách thức nó.\n• **Tuyệt đối không bỏ chạy hoặc la hét:** Chó có bản năng săn mồi, thấy chạy nó sẽ lao theo đuổi cắn.\n• Từ từ lùi lại phía sau thật chậm rãi khi chó đã quay đi.\n• **Nếu bị ngã:** Cuộn tròn người lại, hai tay ôm che kín đầu, tai và cổ.\n• **Nếu bị cắn:** Rửa vết thương bằng xà phòng dưới vòi nước 15 phút và bảo bố mẹ đưa đi tiêm phòng dại ngay!"
+    "response": "**Nếu không có khăn ướt khi xảy ra cháy nổ, em hãy bình tĩnh xử lý ngay:** 🧯💨\n\n1. **Dùng ngay vạt áo hoặc khẩu trang:** Cởi áo ngoài, gấp vạt áo lại 3-4 lớp hoặc dùng khẩu trang vải có sẵn bịt kín mũi và miệng.\n2. **Làm ướt bằng bất kỳ chất lỏng an toàn nào:** Nước uống trong chai, nước canh, nước trà... nhúng áo/khẩu trang vào để lọc khói độc.\n3. **Nếu không có bất kỳ nguồn nước nào:** Gấp nhiều lớp vải khô che mũi miệng, và **bò sát sát mặt sàn (cách sàn 20-30cm)** vì khói độc nhẹ hơn không khí sẽ bay lên trần nhà, phía sát sàn vẫn còn lớp không khí sạch hơn để thở!\n4. Di chuyển thật nhanh men theo mép tường ra lối thoát hiểm!",
+    "followups": [
+      "Cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi có cháy làm gì?",
+      "Số điện thoại 114 là gì?"
+    ]
   },
   {
-    "id": "choking_first_aid",
-    "category": "injury",
-    "badge": "",
+    "id": "electric_bird_no_shock",
+    "category": "electric",
+    "badge": "assets/illust_electric.png",
     "keywords": [
-      "em bị hóc nghẹn thì sao",
-      "em bi hoc nghen thi sao",
-      "bị hóc nghẹn",
-      "hóc xương",
-      "hóc dị vật",
-      "nghẹn thức ăn",
-      "xử lý khi bị hóc",
-      "hóc nghẹn làm gì",
-      "sơ cứu hóc dị vật",
-      "hóc nghẹn",
-      "em bi hoc nghen"
+      "sao chim không bị giật",
+      "sao chim khong bi giat",
+      "tại sao chim đậu trên dây điện không bị giật",
+      "tai sao chim dau tren day dien khong bi giat",
+      "chim đứng trên dây điện có bị giật không",
+      "tại sao chim không bị điện giật",
+      "vì sao chim đậu trên dây điện không chết"
     ],
-    "response": "**Nếu em hoặc bạn bị hóc nghẹn thức ăn hoặc dị vật:** 🍎⚠️\n\n1. **Nếu còn ho được:** Hãy khuyến khích ho thật mạnh liên tục để tống dị vật ra ngoài. Tuyệt đối không dùng tay móc họng bừa bãi vì có thể đẩy dị vật sâu hơn.\n2. **Hô to báo người lớn ngay lập tức!**\n3. **Người lớn sơ cứu:** Thực hiện vỗ lưng 5 cái giữa 2 xương bả vai, hoặc ép bụng (thủ thuật Heimlich) để đẩy dị vật ra ngoài.\n4. Nếu khó thở, tím tái: Gọi ngay **115** để đưa đi cấp cứu khẩn cấp!"
+    "response": "**Lý do chim đậu trên dây điện cao thế mà không bị giật:** 🐦⚡\n\n1. **Hai chân chim cùng đậu trên một sợi dây:** Cả hai chân của chú chim đều đứng trên cùng một dây điện, nên điện thế ở hai chân bằng nhau (không có sự chênh lệch điện áp), dòng điện sẽ không chạy qua cơ thể chim.\n2. **Chim không chạm đất hay dây khác:** Chim hoàn toàn lơ lửng trên không trung, không tạo thành mạch điện kín xuống đất.\n\n⚠️ **Ngược lại với con người:** Con người chúng ta đứng trên mặt đất (hoặc chạm vào tường), nếu chạm vào dây điện sẽ tạo thành mạch điện chạy thẳng từ dây qua người xuống đất, gây điện giật tử vong ngay lập tức! Vì thế em tuyệt đối không bao giờ được chạm vào dây điện nhé!",
+    "followups": [
+      "Dây điện bị hở phải làm sao?",
+      "Thấy dây điện rơi xuống đất làm gì?",
+      "Dùng que gỗ gạt dây điện được không?"
+    ]
+  },
+  {
+    "id": "electric_breaker_location",
+    "category": "electric",
+    "badge": "assets/illust_electric.png",
+    "keywords": [
+      "ngắt cầu dao ở đâu",
+      "ngat cau dao o dau",
+      "cầu dao nằm ở chỗ nào",
+      "cau dao nam o cho nao",
+      "vị trí cầu dao trong nhà",
+      "hộp aptomat ở đâu",
+      "tìm cầu dao điện ở đâu",
+      "ngắt điện ở đâu"
+    ],
+    "response": "**Vị trí của cầu dao (Aptomat) trong gia đình thường nằm ở:** ⚡🏠\n\n1. **Gần cửa ra vào chính** của phòng khách.\n2. **Dưới chân gầm cầu thang** hoặc hành lang tầng 1.\n3. **Ngay phía trên cao của cửa vào** mỗi phòng hoặc mỗi tầng nhà.\n\n💡 **Cách ngắt an toàn:** Khi cần ngắt điện, hãy đi dép nhựa/cao su khô ráo, dùng tay khô (hoặc que gỗ khô) gạt công tắc Aptomat dứt khoát xuống phía dưới (về chữ **OFF** hoặc màu xanh) là toàn bộ điện trong nhà sẽ được ngắt an toàn!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Cháy điện dội nước được không?",
+      "Tay ướt có được chạm vào ổ cắm không?"
+    ]
+  },
+  {
+    "id": "electric_dry_wood_stick",
+    "category": "electric",
+    "badge": "assets/illust_electric.png",
+    "keywords": [
+      "dùng que gỗ được không",
+      "dung que go duoc khong",
+      "dùng gậy gỗ gạt dây điện được không",
+      "dung gay go gat day dien duoc khong",
+      "dùng que tre gạt dây điện",
+      "dùng cây gạt dây điện",
+      "lấy que gỗ đẩy dây điện được không",
+      "que gỗ có dẫn điện không"
+    ],
+    "response": "**Được em nhé! Nhưng que gỗ phải HOÀN TOÀN KHÔ RÁO và đủ dài:** 🪵⚡\n\n• **Chỉ dùng khi que gỗ thật khô:** Que gỗ khô là chất cách điện tốt, em có thể dùng que gỗ dài khô hoặc cán chổi nhựa khô để gạt dây điện ra khỏi người bị nạn.\n• **TUYỆT ĐỐI KHÔNG:**\n  ❌ Không dùng gậy gỗ ẩm ướt, que tre tươi hoặc dính nước vì nước dẫn điện cực mạnh!\n  ❌ Tuyệt đối không dùng thanh kim loại, que sắt, chổi cán inox.\n• **An toàn nhất:** Vẫn là tìm cách ngắt cầu dao (Aptomat) tổng ngay trước khi tiếp cận!",
+    "followups": [
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?",
+      "Tại sao chim đậu trên dây điện không giật?"
+    ]
+  },
+  {
+    "id": "drowning_throw_floating_objects",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "không có phao thì ném gì",
+      "khong co phao thi nem gi",
+      "không có phao thì làm sao",
+      "khong co phao cuu sinh nem gi",
+      "vật nổi cứu người đuối nước",
+      "ném vật gì khi không có phao",
+      "vật dụng có thể nổi dưới nước"
+    ],
+    "response": "**Nếu không có sẵn phao cứu sinh, em có thể tận dụng ngay các vật dụng nổi sau để ném cho bạn:** 🛟✨\n\n1. **Can nhựa, thùng rỗng:** Can dầu ăn, can nước 5L - 20L (vặn chặt nắp kín), thùng xốp, hộp xốp giữ nhiệt.\n2. **Bóng thể thao:** Bóng chuyền, bóng đá, bóng rổ bằng da hoặc cao su bơm căng hơi.\n3. **Thân cây chuối, khúc gỗ khô:** Cây chuối chứa nhiều bọt khí nên nổi rất tốt trên mặt nước.\n4. **Ba lô hoặc chai lọ nhựa buộc chùm:** Cho nhiều chai nhựa rỗng vào ba lô kéo khóa kín hoặc buộc chùm lại ném xuống cho bạn ôm!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Nếu thấy bạn rơi xuống nước có nên nhảy xuống cứu không?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "drowning_hugged_by_victim",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "nếu bị bạn kéo thì sao",
+      "neu bi ban keo thi sao",
+      "bị người đuối nước ôm chặt thì làm sao",
+      "bi nguoi duoi nuoc om chat thi lam sao",
+      "bị kéo xuống nước thì làm sao",
+      "người đuối nước ôm chặt",
+      "lỡ bị bạn đuối nước kéo theo",
+      "bị người chết đuối ôm"
+    ],
+    "response": "**Nếu vô tình bị người đang đuối nước ôm chặt hoặc kéo xuống nước:** ⚠️🌊\n\n• **Quy luật sinh tồn:** Người đuối nước đang rất hoảng loạn nên theo bản năng sẽ bám víu và ghì mọi thứ xuống để ngoi đầu lên thở.\n• **Cách thoát hiểm sinh tử:**\n  1. **Lặn sâu xuống nước:** Hãy hít một hơi thật sâu rồi lặn hẳn người xuống đáy nước. Khi thấy em chìm xuống, người bị nạn theo phản xạ sinh tồn sẽ tự động buông tay ra để tìm cách trồi lên.\n  2. **Thoát ra sau lưng:** Ngay khi họ buông tay, lập tức bơi lùi ra xa hoặc luồn ra phía sau lưng họ.\n  3. **Không để họ ôm lại:** Tuyệt đối không đối mặt trực diện, hãy bơi cách xa một sải tay và tìm vật nổi ném cho bạn bám!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "drowning_cannot_call_anyone",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "gọi không được ai thì sao",
+      "goi khong duoc ai thi sao",
+      "kêu không có ai thì làm sao",
+      "keu khong co ai thi lam sao",
+      "không có ai thì làm sao",
+      "khong co ai thi lam sao",
+      "không có ai thì làm thế nào",
+      "khong co ai thi lam the nao",
+      "gọi không có ai nghe",
+      "nếu xung quanh không có ai",
+      "kêu cứu không ai nghe",
+      "gọi mà không ai tới thì sao",
+      "vắng người không có ai thì cứu thế nào",
+      "không có ai ở đó thì làm sao",
+      "nơi vắng người thấy người đuối nước"
+    ],
+    "response": "**Nếu thấy người rơi xuống nước mà xung quanh vắng vẻ, hô hoán gọi không có ai, em hãy thật bình tĩnh và TUYỆT ĐỐI KHÔNG nhảy xuống nước! Hãy xử lý khẩn cấp theo 4 bước sau:** 🏊‍♂️🚨\n\n1. **Ném ngay mọi vật nổi xung quanh xuống:** Ném can nhựa rỗng (đậy kín nắp), thùng xốp, chai nhựa to, bóng cao su, thân cây chuối hoặc tấm ván gỗ xuống sát vị trí nạn nhân để bạn bám vào nổi mặt nước.\n2. **Tìm cành cây dài hoặc dây thừng:** Đưa cành cây dài, sào tre, sào phơi đồ, hoặc cởi áo khoác buộc nối lại ném ra cho nạn nhân túm lấy. **LƯU Ý QUAN TRỌNG:** Em phải **nằm sấp hoặc quỳ thấp người thật vững trên mặt đất** khi kéo để không bị sức nặng kéo ngã nhào xuống nước!\n3. **Bấm gọi ngay số khẩn cấp 114 hoặc 115:** Bật loa ngoài, đọc to địa chỉ vị trí ao hồ sông suối nơi bạn gặp nạn.\n4. **Chạy nhanh tìm người lớn:** Khi bạn đã ôm được vật nổi, chạy thật nhanh về phía nhà dân hoặc đường lộ gần nhất vừa chạy vừa hô to để người lớn đến cứu!",
+    "followups": [
+      "Không có phao thì ném gì?",
+      "Nếu bị bạn kéo thì sao?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "see_friend_falling_water_screenshot",
     "category": "drowning",
     "badge": "assets/illust_drowning.png",
     "keywords": [
-      "nếu thấy bạn rơi xuống nước thì làm gì",
-      "neu thay ban roi xuong nuoc thi lam gi",
-      "thấy bạn rơi xuống nước làm gì",
-      "bạn rơi xuống ao làm sao",
-      "thấy bạn chìm làm gì",
-      "cứu bạn rơi xuống nước",
-      "bạn ngã xuống nước",
-      "thấy bạn rơi xuống sông",
-      "thấy bạn đuối nước thì làm gì",
-      "nếu thấy bạn rơi xuống nước"
+      "thấy bạn bị rơi xuống nước có nên nhảy xuống cứu không",
+      "thay ban bi roi xuong nuoc co nen nhay xuong cuu khong",
+      "nếu thấy người rơi xuống nước có nên xuống cứu không",
+      "neu thay nguoi roi xuong nuoc co nen xuong cuu khong",
+      "thấy người rơi xuống nước có nên xuống cứu không",
+      "thấy người rơi xuống nước có nên nhảy xuống cứu không",
+      "thấy người rơi xuống nước có nhảy xuống cứu không",
+      "thấy bạn đuối nước có nên nhảy xuống cứu không",
+      "thấy bạn đuối nước có nhảy xuống cứu không",
+      "nhảy xuống cứu bạn đuối nước được không",
+      "có nên nhảy xuống cứu người đuối nước không"
     ],
-    "response": "**Khi thấy bạn rơi xuống nước, em không nên nhảy xuống cứu bạn.** 🛟⚠️\n\nHãy **hét to để gọi người lớn**, tìm **vật nổi** (như phao, can nhựa, dây, cành cây...) để ném xuống cho bạn và gọi số **115** để được giúp đỡ nhé!"
+    "response": "**Tuyệt đối KHÔNG ĐƯỢC NHẢY XUỐNG CỨU nhé!** 🏊‍♂️⚠️\n\nKể cả khi em biết bơi, việc nhảy xuống cứu người đang hoảng loạn vì đuối nước cực kỳ nguy hiểm, họ sẽ ôm chặt và có thể kéo em chìm theo.\n\n**Cách xử lý đúng và an toàn nhất:**\n1. **Hô to kêu cứu thật lớn** để người lớn gần đó nghe thấy chạy đến giúp ngay.\n2. **Tìm vật cứu sinh:** Ném phao, can nhựa rỗng có nắp, quả bóng, tấm xốp, hoặc đưa cành cây dài, sào tre, dây thừng cho bạn bám vào.\n3. **Gọi ngay 114 hoặc 115** nếu xung quanh vắng người!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Nếu bị bạn kéo thì sao?"
+    ]
   },
   {
     "id": "pedestrian_crosswalk_safety",
@@ -362,7 +783,12 @@ window.ENDY_KB = [
       "an toàn khi qua đường",
       "đi qua đường an toàn"
     ],
-    "response": "**Khi đi qua đường, em hãy:** 🚶‍♂️🚦\n\n• **Đi ở vạch kẻ đường** dành cho người đi bộ.\n• **Nhìn trái - phải - trái**, quan sát xe thật cẩn thận trước khi bước xuống lòng đường.\n• **Chỉ đi khi đèn dành cho người đi bộ bật xanh** và khi đường thật an toàn.\n• Giơ cao một tay lên khi qua đường để tài xế dễ dàng quan sát thấy em.\n• **Luôn đi cùng người lớn** nhé!"
+    "response": "**Khi đi qua đường, em hãy:** 🚶‍♂️🚦\n\n• **Đi ở vạch kẻ đường** dành cho người đi bộ.\n• **Nhìn trái - phải - trái**, quan sát xe thật cẩn thận trước khi bước xuống lòng đường.\n• **Chỉ đi khi đèn dành cho người đi bộ bật xanh** và khi đường thật an toàn.\n• Giơ cao một tay lên khi qua đường để tài xế dễ dàng quan sát thấy em.\n• **Luôn đi cùng người lớn** nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì sao?",
+      "Đèn giao thông màu vàng có được đi không?",
+      "Đi xe đạp trời mưa thế nào?"
+    ]
   },
   {
     "id": "electrical_fire_water_forbidden",
@@ -381,7 +807,12 @@ window.ENDY_KB = [
       "cháy điện",
       "cháy quạt điện"
     ],
-    "response": "**Không được dội nước vào đám cháy do điện nhé!** ⚠️⚡\n\nVì nước có thể dẫn điện, làm nguy hiểm hơn và người xung quanh có nguy cơ bị điện giật tử vong.\n\n**Em hãy nhớ các bước xử lý:**\n1. Bình tĩnh và **ngắt ngay nguồn điện** (cầu dao aptomat) nếu ở vị trí an toàn.\n2. **Hô to báo người lớn** xung quanh.\n3. Chỉ dùng bình chữa cháy CO2 hoặc bình bột (tuyệt đối không dùng nước hay chăn ướt khi chưa ngắt điện).\n4. Nhanh chóng di chuyển ra ngoài và gọi số **114** để được đội cứu hỏa giúp đỡ."
+    "response": "**Không được dội nước vào đám cháy do điện nhé!** ⚠️⚡\n\nVì nước có thể dẫn điện, làm nguy hiểm hơn và người xung quanh có nguy cơ bị điện giật tử vong.\n\n**Em hãy nhớ các bước xử lý:**\n1. Bình tĩnh và **ngắt ngay nguồn điện** (cầu dao aptomat) nếu ở vị trí an toàn.\n2. **Hô to báo người lớn** xung quanh.\n3. Chỉ dùng bình chữa cháy CO2 hoặc bình bột (tuyệt đối không dùng nước hay chăn ướt khi chưa ngắt điện).\n4. Nhanh chóng di chuyển ra ngoài và gọi số **114** để được đội cứu hỏa giúp đỡ.",
+    "followups": [
+      "Ngắt cầu dao ở đâu?",
+      "Dùng que gỗ gạt dây điện được không?",
+      "Không có khăn ướt thì làm gì?"
+    ]
   },
   {
     "id": "cramp_swimming_what_to_do",
@@ -399,7 +830,12 @@ window.ENDY_KB = [
       "chuột rút khi đang bơi làm gì",
       "cách xử lý khi bị chuột rút"
     ],
-    "response": "**Khi bị chuột rút dưới nước, em hãy bình tĩnh xử lý theo 4 bước an toàn sau:** 🏊⚠️\n\n1. **Giữ bình tĩnh tối đa:** Tuyệt đối không hoảng loạn hay vùng vẫy mạnh vì càng vùng vẫy sẽ càng nhanh chìm và đau đớn hơn.\n2. **Thả lỏng cơ thể & chuyển sang tư thế nổi ngửa:** Ngửa đầu ra sau, hít một hơi sâu và thả lỏng chân tay để cơ thể tự nổi trên mặt nước.\n3. **Hô to hoặc giơ tay kêu cứu:** Hướng về phía bờ hoặc người lớn cứu hộ xung quanh.\n4. **Duỗi nhẹ cơ bị chuột rút:** Nếu chuột rút ở bắp chân, hãy dùng tay kéo nhẹ các đầu ngón chân gập ngược về phía đầu gối để giãn cơ.\n5. Từ từ bơi bằng hai tay hoặc chờ người hỗ trợ đưa vào bờ!"
+    "response": "**Khi bị chuột rút dưới nước, em hãy bình tĩnh xử lý theo 4 bước an toàn sau:** 🏊⚠️\n\n1. **Giữ bình tĩnh tối đa:** Tuyệt đối không hoảng loạn hay vùng vẫy mạnh vì càng vùng vẫy sẽ càng nhanh chìm và đau đớn hơn.\n2. **Thả lỏng cơ thể & chuyển sang tư thế nổi ngửa:** Ngửa đầu ra sau, hít một hơi sâu và thả lỏng chân tay để cơ thể tự nổi trên mặt nước.\n3. **Hô to hoặc giơ tay kêu cứu:** Hướng về phía bờ hoặc người lớn cứu hộ xung quanh.\n4. **Duỗi nhẹ cơ bị chuột rút:** Nếu chuột rút ở bắp chân, hãy dùng tay kéo nhẹ các đầu ngón chân gập ngược về phía đầu gối để giãn cơ.\n5. Từ từ bơi bằng hai tay hoặc chờ người hỗ trợ đưa vào bờ!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Nếu thấy bạn rơi xuống nước có nên nhảy xuống cứu không?"
+    ]
   },
   {
     "id": "greeting",
@@ -515,7 +951,8 @@ window.ENDY_KB = [
       "thế nào là đuối nc",
       "tn la duoi nuoc"
     ],
-    "response": "**Đuối nước là gì?**\n\nĐuối nước xảy ra khi một người bị chìm hoặc ngập trong nước làm cho đường thở bị ảnh hưởng và cơ thể không nhận đủ ôxy.\n\nĐuối nước có thể xảy ra ở ao, hồ, sông, suối, biển, bể bơi và cả những vật chứa nước trong gia đình. Đuối nước rất nguy hiểm vì có thể gây tổn thương nghiêm trọng cho cơ thể, thậm chí dẫn đến tử vong.\n\nVì vậy, khi ở gần nước, em cần luôn cẩn thận, nghe lời người lớn và tuân thủ các quy tắc an toàn."
+    "response": "**Đuối nước là gì?**\n\nĐuối nước xảy ra khi một người bị chìm hoặc ngập trong nước làm cho đường thở bị ảnh hưởng và cơ thể không nhận đủ ôxy.\n\nĐuối nước có thể xảy ra ở ao, hồ, sông, suối, biển, bể bơi và cả những vật chứa nước trong gia đình. Đuối nước rất nguy hiểm vì có thể gây tổn thương nghiêm trọng cho cơ thể, thậm chí dẫn đến tử vong.\n\nVì vậy, khi ở gần nước, em cần luôn cẩn thận, nghe lời người lớn và tuân thủ các quy tắc an toàn.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "drowning_can_happen_anywhere",
@@ -530,7 +967,8 @@ window.ENDY_KB = [
       "đuối nước ở nhà được không",
       "duoi o nha dc k"
     ],
-    "response": "**Đuối nước có thể xảy ra ở rất nhiều nơi.**\n\nKhông chỉ sông, hồ hoặc biển mới nguy hiểm. Đuối nước còn có thể xảy ra ở ao, suối, kênh, mương, bể bơi, giếng, hố nước, bể chứa nước, chum, vại hoặc những vật dụng có chứa nước.\n\nĐiều quan trọng là em không được nghĩ rằng một nơi có ít nước thì chắc chắn an toàn. Với trẻ nhỏ, chỉ một lượng nước không nhiều cũng có thể gây nguy hiểm.\n\nHãy tránh xa những nơi có nước nếu không có người lớn đi cùng."
+    "response": "**Đuối nước có thể xảy ra ở rất nhiều nơi.**\n\nKhông chỉ sông, hồ hoặc biển mới nguy hiểm. Đuối nước còn có thể xảy ra ở ao, suối, kênh, mương, bể bơi, giếng, hố nước, bể chứa nước, chum, vại hoặc những vật dụng có chứa nước.\n\nĐiều quan trọng là em không được nghĩ rằng một nơi có ít nước thì chắc chắn an toàn. Với trẻ nhỏ, chỉ một lượng nước không nhiều cũng có thể gây nguy hiểm.\n\nHãy tránh xa những nơi có nước nếu không có người lớn đi cùng.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "dangerous_water_places",
@@ -663,7 +1101,8 @@ window.ENDY_KB = [
       "đuối nước có la không",
       "duoi co la dc ko"
     ],
-    "response": "**Đuối nước có thể xảy ra rất nhanh và đôi khi rất âm thầm.**\n\nNgười gặp nạn dưới nước có thể không đủ sức để kêu cứu lớn hoặc vẫy tay như chúng ta thường nghĩ.\n\nVì vậy, trẻ em cần luôn có người lớn giám sát khi ở gần nước. Nếu em thấy một bạn có biểu hiện bất thường dưới nước, hãy gọi người lớn hoặc nhân viên cứu hộ ngay."
+    "response": "**Đuối nước có thể xảy ra rất nhanh và đôi khi rất âm thầm.**\n\nNgười gặp nạn dưới nước có thể không đủ sức để kêu cứu lớn hoặc vẫy tay như chúng ta thường nghĩ.\n\nVì vậy, trẻ em cần luôn có người lớn giám sát khi ở gần nước. Nếu em thấy một bạn có biểu hiện bất thường dưới nước, hãy gọi người lớn hoặc nhân viên cứu hộ ngay.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "drowning_causes_general",
@@ -674,7 +1113,8 @@ window.ENDY_KB = [
       "vì sao xảy ra đuối nước",
       "những nguyên nhân nào gây đuối nước"
     ],
-    "response": "**Vì sao trẻ em có thể bị đuối nước?**\n\nĐuối nước có thể xảy ra do nhiều nguyên nhân khác nhau, chẳng hạn như:\n\n1. **Chưa nhận biết được nguy hiểm:** Trẻ em thường hiếu động, tò mò, thích khám phá nhưng chưa có nhiều kinh nghiệm để nhận biết nơi nào an toàn hoặc nguy hiểm.\n2. **Thiếu kỹ năng an toàn:** Chưa biết bơi, chưa biết cách tự cứu hoặc không biết phải làm gì khi gặp sự cố dưới nước.\n3. **Không có người lớn giám sát:** Tự chơi gần ao, hồ, sông, suối hoặc tự đi bơi khi không có người lớn đi cùng.\n4. **Môi trường không an toàn:** Ao, hồ, giếng, hố nước không có rào chắn hoặc biển cảnh báo.\n5. **Thời tiết, thiên tai:** Mưa lớn, lũ lụt, dòng nước chảy xiết hoặc nước dâng bất ngờ cũng có thể gây nguy hiểm.\n\nVì vậy, em cần học cách nhận biết nguy hiểm và luôn tuân thủ các quy tắc an toàn khi ở gần nước."
+    "response": "**Vì sao trẻ em có thể bị đuối nước?**\n\nĐuối nước có thể xảy ra do nhiều nguyên nhân khác nhau, chẳng hạn như:\n\n1. **Chưa nhận biết được nguy hiểm:** Trẻ em thường hiếu động, tò mò, thích khám phá nhưng chưa có nhiều kinh nghiệm để nhận biết nơi nào an toàn hoặc nguy hiểm.\n2. **Thiếu kỹ năng an toàn:** Chưa biết bơi, chưa biết cách tự cứu hoặc không biết phải làm gì khi gặp sự cố dưới nước.\n3. **Không có người lớn giám sát:** Tự chơi gần ao, hồ, sông, suối hoặc tự đi bơi khi không có người lớn đi cùng.\n4. **Môi trường không an toàn:** Ao, hồ, giếng, hố nước không có rào chắn hoặc biển cảnh báo.\n5. **Thời tiết, thiên tai:** Mưa lớn, lũ lụt, dòng nước chảy xiết hoặc nước dâng bất ngờ cũng có thể gây nguy hiểm.\n\nVì vậy, em cần học cách nhận biết nguy hiểm và luôn tuân thủ các quy tắc an toàn khi ở gần nước.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "children_curious_water_risk",
@@ -724,7 +1164,8 @@ window.ENDY_KB = [
       "mua lu gay duoi nuoc",
       "vì sao lũ lụt nguy hiểm với trẻ em"
     ],
-    "response": "**Mưa lớn và lũ lụt có thể làm nguy cơ đuối nước tăng rất cao.**\n\nKhi mưa lớn, nước có thể dâng nhanh, dòng chảy mạnh hơn và xuất hiện những vùng nước xoáy hoặc chảy xiết.\n\nNước lũ còn có thể che khuất hố sâu, cống thoát nước hoặc những vật nguy hiểm ở dưới chân.\n\nVì vậy, khi có mưa lớn hoặc lũ, em không được tự ý đi qua vùng nước ngập và phải làm theo hướng dẫn của người lớn."
+    "response": "**Mưa lớn và lũ lụt có thể làm nguy cơ đuối nước tăng rất cao.**\n\nKhi mưa lớn, nước có thể dâng nhanh, dòng chảy mạnh hơn và xuất hiện những vùng nước xoáy hoặc chảy xiết.\n\nNước lũ còn có thể che khuất hố sâu, cống thoát nước hoặc những vật nguy hiểm ở dưới chân.\n\nVì vậy, khi có mưa lớn hoặc lũ, em không được tự ý đi qua vùng nước ngập và phải làm theo hướng dẫn của người lớn.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "go_swimming_without_permission",
@@ -1091,7 +1532,8 @@ window.ENDY_KB = [
       "những chỗ nguy hiểm có nước trong nhà",
       "ở nhà cần chú ý gì để tránh đuối nước"
     ],
-    "response": "**Trong gia đình cũng có nhiều nơi có thể gây nguy cơ đuối nước.**\n\nMột số nơi cần đặc biệt chú ý là giếng, bể nước, lu, chum, thùng chứa nước, ao cá, hồ bơi, mương hoặc hố nước quanh nhà.\n\nVới học sinh tiểu học, nguy cơ thường gặp hơn là chơi đùa, bắt cá hoặc đến gần ao, hồ, sông, suối quanh nhà mà không có người lớn giám sát.\n\nVì vậy, em cần biết những khu vực nguy hiểm quanh nhà và không tự ý đến gần hoặc xuống nước."
+    "response": "**Trong gia đình cũng có nhiều nơi có thể gây nguy cơ đuối nước.**\n\nMột số nơi cần đặc biệt chú ý là giếng, bể nước, lu, chum, thùng chứa nước, ao cá, hồ bơi, mương hoặc hố nước quanh nhà.\n\nVới học sinh tiểu học, nguy cơ thường gặp hơn là chơi đùa, bắt cá hoặc đến gần ao, hồ, sông, suối quanh nhà mà không có người lớn giám sát.\n\nVì vậy, em cần biết những khu vực nguy hiểm quanh nhà và không tự ý đến gần hoặc xuống nước.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "cover_water_containers",
@@ -1423,7 +1865,8 @@ window.ENDY_KB = [
       "hố điện",
       "hố chưa lấp"
     ],
-    "response": "**Hố đào để chôn cột điện nếu chưa được lấp hoặc che chắn có thể gây tai nạn.**\n\nSau mưa, hố có thể đầy nước khiến chúng ta không biết được độ sâu thật sự.\n\nEm không được đến gần, nhảy qua hoặc thò chân xuống thử.\n\nHãy báo người lớn nếu thấy hố không có rào chắn."
+    "response": "**Hố đào để chôn cột điện nếu chưa được lấp hoặc che chắn có thể gây tai nạn.**\n\nSau mưa, hố có thể đầy nước khiến chúng ta không biết được độ sâu thật sự.\n\nEm không được đến gần, nhảy qua hoặc thò chân xuống thử.\n\nHãy báo người lớn nếu thấy hố không có rào chắn.",
+    "badge": "assets/illust_electric.png"
   },
   {
     "id": "no_warning_sign_water_area",
@@ -3089,10 +3532,20 @@ window.ENDY_KB = [
       "thấy bạn chìm",
       "ban roi xuong nuoc",
       "nguoi bi duoi lam sao",
-      "thấy người đuối"
+      "thấy người đuối",
+      "thấy người đuối nước phải làm gì",
+      "thay nguoi duoi nuoc phai lam gi",
+      "thấy người bị đuối nước",
+      "gặp người đuối nước",
+      "cứu người đuối nước"
     ],
-    "response": "**Nếu thấy một người đang bị đuối nước, em cần hành động nhanh nhưng phải bảo đảm an toàn cho mình.**\n\nViệc đầu tiên là **hô thật to để gọi người lớn, nhân viên cứu hộ hoặc người xung quanh đến giúp**.\n\nEm không được tự nhảy xuống nước để cứu, kể cả khi em biết bơi.\n\nNếu có thể hỗ trợ từ trên bờ, hãy tìm phao, dây, gậy, cành cây hoặc vật nổi để đưa hoặc ném cho người gặp nạn.",
-    "badge": "assets/illust_drowning.png"
+    "response": "**Khi thấy người bị đuối nước, em hãy bình tĩnh và nhớ kỹ nguyên tắc \"CỨU TRÊN BỜ - KHÔNG NHẢY XUỐNG\":** 🏊‍♂️⚠️\n\n1. **Hô hoán thật to:** Kêu cứu để người lớn xung quanh lập tức chạy đến hỗ trợ.\n2. **Quăng vật nổi:** Ném phao cứu sinh, can nhựa rỗng, can dầu ăn, thùng xốp xuống cho nạn nhân bám vào.\n3. **Dùng sào dài hoặc dây thừng:** Đưa cành cây, sào tre, cây gậy dài hoặc buộc quần áo lại ném ra cho nạn nhân túm lấy và nằm rạp xuống đất kéo vào bờ.\n4. **Gọi 114 hoặc 115** để cứu hộ chuyên nghiệp ứng cứu kịp thời.",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Nếu bị bạn kéo thì sao?"
+    ]
   },
   {
     "id": "do_not_jump_rescue",
@@ -3131,7 +3584,8 @@ window.ENDY_KB = [
       "gọi người lớn",
       "gọi cứu hộ"
     ],
-    "response": "**Khi thấy người gặp nạn dưới nước, hãy gọi người lớn hoặc nhân viên cứu hộ ngay.**\n\nEm có thể hô thật to: **“Có người bị đuối nước! Cứu với!”** để mọi người chú ý.\n\nNếu có điện thoại và tình huống cần cấp cứu y tế, có thể gọi **115**.\n\nTrong khi chờ người lớn, chỉ hỗ trợ từ vị trí an toàn."
+    "response": "**Khi thấy người gặp nạn dưới nước, hãy gọi người lớn hoặc nhân viên cứu hộ ngay.**\n\nEm có thể hô thật to: **“Có người bị đuối nước! Cứu với!”** để mọi người chú ý.\n\nNếu có điện thoại và tình huống cần cấp cứu y tế, có thể gọi **115**.\n\nTrong khi chờ người lớn, chỉ hỗ trợ từ vị trí an toàn.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "rescue_from_shore_general",
@@ -3273,7 +3727,8 @@ window.ENDY_KB = [
       "bảo bạn bình tĩnh",
       "động viên người đuối"
     ],
-    "response": "**Nếu người gặp nạn còn nghe được, em có thể nói thật to để giúp họ bình tĩnh.**\n\nVí dụ: **“Bình tĩnh nhé! Bám vào phao!”**, **“Có người đang đến giúp!”** hoặc **“Giữ lấy cây này!”**\n\nViệc trấn an có thể giúp họ bớt hoảng sợ và thực hiện theo hướng dẫn."
+    "response": "**Nếu người gặp nạn còn nghe được, em có thể nói thật to để giúp họ bình tĩnh.**\n\nVí dụ: **“Bình tĩnh nhé! Bám vào phao!”**, **“Có người đang đến giúp!”** hoặc **“Giữ lấy cây này!”**\n\nViệc trấn an có thể giúp họ bớt hoảng sợ và thực hiện theo hướng dẫn.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "safe_position_when_pulling",
@@ -3377,7 +3832,8 @@ window.ENDY_KB = [
       "len bo lam gi",
       "sau khi cứu người"
     ],
-    "response": "**Sau khi đưa người gặp nạn lên bờ, cần nhanh chóng kiểm tra tình trạng của họ và gọi người lớn hỗ trợ.**\n\nHãy đưa người bị nạn đến vị trí an toàn, quan sát xem họ có tỉnh táo, phản ứng và thở hay không.\n\nNếu tình trạng nghiêm trọng, cần gọi cấp cứu **115** ngay.\n\nHọc sinh không nên tự thực hiện những kỹ thuật sơ cấp cứu phức tạp nếu chưa được hướng dẫn và luyện tập đúng cách."
+    "response": "**Sau khi đưa người gặp nạn lên bờ, cần nhanh chóng kiểm tra tình trạng của họ và gọi người lớn hỗ trợ.**\n\nHãy đưa người bị nạn đến vị trí an toàn, quan sát xem họ có tỉnh táo, phản ứng và thở hay không.\n\nNếu tình trạng nghiêm trọng, cần gọi cấp cứu **115** ngay.\n\nHọc sinh không nên tự thực hiện những kỹ thuật sơ cấp cứu phức tạp nếu chưa được hướng dẫn và luyện tập đúng cách.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "check_drowning_person_response",
@@ -3388,7 +3844,8 @@ window.ENDY_KB = [
       "kiểm tra phản ứng",
       "gọi mà không trả lời"
     ],
-    "response": "**Sau khi người gặp nạn đã ở nơi an toàn, cần kiểm tra xem họ có phản ứng hay không.**\n\nCó thể gọi to, nói chuyện với họ và quan sát xem họ có trả lời hoặc cử động hay không.\n\nNếu người đó không phản ứng, hãy gọi người lớn và cấp cứu **115** ngay."
+    "response": "**Sau khi người gặp nạn đã ở nơi an toàn, cần kiểm tra xem họ có phản ứng hay không.**\n\nCó thể gọi to, nói chuyện với họ và quan sát xem họ có trả lời hoặc cử động hay không.\n\nNếu người đó không phản ứng, hãy gọi người lớn và cấp cứu **115** ngay.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "drowning_person_awake",
@@ -3399,7 +3856,8 @@ window.ENDY_KB = [
       "người đuối nói được",
       "còn phản ứng"
     ],
-    "response": "**Nếu người gặp nạn còn tỉnh, hãy giúp họ ở nơi an toàn và trấn an để họ bình tĩnh.**\n\nKhông nên để họ tiếp tục xuống nước hoặc tự ý bỏ đi ngay.\n\nHãy gọi người lớn đến hỗ trợ và tiếp tục quan sát tình trạng của họ.\n\nNếu xuất hiện ho nhiều, khó thở, mệt bất thường hoặc nhận thức không bình thường thì cần được đưa đến cơ sở y tế."
+    "response": "**Nếu người gặp nạn còn tỉnh, hãy giúp họ ở nơi an toàn và trấn an để họ bình tĩnh.**\n\nKhông nên để họ tiếp tục xuống nước hoặc tự ý bỏ đi ngay.\n\nHãy gọi người lớn đến hỗ trợ và tiếp tục quan sát tình trạng của họ.\n\nNếu xuất hiện ho nhiều, khó thở, mệt bất thường hoặc nhận thức không bình thường thì cần được đưa đến cơ sở y tế.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "drowning_person_unconscious",
@@ -3410,7 +3868,8 @@ window.ENDY_KB = [
       "không phản ứng",
       "người đuối nằm im"
     ],
-    "response": "**Nếu người bị đuối nước không tỉnh hoặc không phản ứng, đây là tình huống khẩn cấp.**\n\nHãy gọi thật to để tìm người lớn trợ giúp và gọi cấp cứu **115** ngay.\n\nNếu có người đã được huấn luyện sơ cấp cứu, họ cần nhanh chóng kiểm tra hô hấp và thực hiện các bước cấp cứu phù hợp.\n\nKhông mất thời gian làm những việc như dốc ngược hoặc xốc nước."
+    "response": "**Nếu người bị đuối nước không tỉnh hoặc không phản ứng, đây là tình huống khẩn cấp.**\n\nHãy gọi thật to để tìm người lớn trợ giúp và gọi cấp cứu **115** ngay.\n\nNếu có người đã được huấn luyện sơ cấp cứu, họ cần nhanh chóng kiểm tra hô hấp và thực hiện các bước cấp cứu phù hợp.\n\nKhông mất thời gian làm những việc như dốc ngược hoặc xốc nước.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "drowning_person_not_breathing",
@@ -3426,7 +3885,8 @@ window.ENDY_KB = [
       "ko thấy thở",
       "bất tỉnh không thở"
     ],
-    "response": "**Nếu người gặp nạn không thở, cần gọi cấp cứu 115 và người lớn hỗ trợ ngay lập tức.**\n\nĐây là tình huống cần sơ cấp cứu khẩn cấp.\n\nNgười đã được học và thực hành kỹ năng hồi sức cần thực hiện theo đúng kỹ thuật đã được hướng dẫn.\n\nTuyệt đối không dốc ngược người bị nạn để cố làm nước chảy ra."
+    "response": "**Nếu người gặp nạn không thở, cần gọi cấp cứu 115 và người lớn hỗ trợ ngay lập tức.**\n\nĐây là tình huống cần sơ cấp cứu khẩn cấp.\n\nNgười đã được học và thực hành kỹ năng hồi sức cần thực hiện theo đúng kỹ thuật đã được hướng dẫn.\n\nTuyệt đối không dốc ngược người bị nạn để cố làm nước chảy ra.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "call_115_drowning",
@@ -3442,7 +3902,8 @@ window.ENDY_KB = [
       "goi cap cuu",
       "115 duoi nuoc"
     ],
-    "response": "**Trong tình huống đuối nước nghiêm trọng, hãy gọi cấp cứu y tế 115.**\n\nĐặc biệt cần gọi ngay nếu người gặp nạn bất tỉnh, không thở, khó thở hoặc có biểu hiện bất thường sau khi được đưa lên bờ.\n\nNếu em là học sinh, hãy vừa gọi người lớn vừa nhờ người khác gọi 115 càng sớm càng tốt."
+    "response": "**Trong tình huống đuối nước nghiêm trọng, hãy gọi cấp cứu y tế 115.**\n\nĐặc biệt cần gọi ngay nếu người gặp nạn bất tỉnh, không thở, khó thở hoặc có biểu hiện bất thường sau khi được đưa lên bờ.\n\nNếu em là học sinh, hãy vừa gọi người lớn vừa nhờ người khác gọi 115 càng sớm càng tốt.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "first_aid_get_adult_help",
@@ -3515,7 +3976,8 @@ window.ENDY_KB = [
       "doc nguoc nguoi",
       "dốc cho nước ra"
     ],
-    "response": "**Tuyệt đối không xốc nước hoặc dốc ngược người bị đuối nước.**\n\nKhông nên vác người gặp nạn lên vai rồi chạy hoặc treo ngược để cố làm nước chảy ra.\n\nViệc này làm chậm thời gian cấp cứu cần thiết và có thể khiến tình trạng nguy hiểm hơn.\n\nHãy gọi cấp cứu và tập trung vào các bước sơ cấp cứu đúng đã được hướng dẫn."
+    "response": "**Tuyệt đối không xốc nước hoặc dốc ngược người bị đuối nước.**\n\nKhông nên vác người gặp nạn lên vai rồi chạy hoặc treo ngược để cố làm nước chảy ra.\n\nViệc này làm chậm thời gian cấp cứu cần thiết và có thể khiến tình trạng nguy hiểm hơn.\n\nHãy gọi cấp cứu và tập trung vào các bước sơ cấp cứu đúng đã được hướng dẫn.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "why_not_upend_drowning_victim",
@@ -3525,7 +3987,8 @@ window.ENDY_KB = [
       "dốc ngược có sao không",
       "xốc nước nguy hiểm"
     ],
-    "response": "**Không nên xốc nước vì vấn đề nguy hiểm chính của người bị đuối nước là thiếu oxy, không phải cần dốc cho nước chảy ra trước.**\n\nXốc ngược người gặp nạn sẽ làm chậm việc cung cấp oxy và cấp cứu cần thiết.\n\nTài liệu cũng cảnh báo việc này có thể làm chất trong dạ dày trào ngược vào đường thở."
+    "response": "**Không nên xốc nước vì vấn đề nguy hiểm chính của người bị đuối nước là thiếu oxy, không phải cần dốc cho nước chảy ra trước.**\n\nXốc ngược người gặp nạn sẽ làm chậm việc cung cấp oxy và cấp cứu cần thiết.\n\nTài liệu cũng cảnh báo việc này có thể làm chất trong dạ dày trào ngược vào đường thở.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "do_not_waste_time_drain_water",
@@ -3569,7 +4032,8 @@ window.ENDY_KB = [
       "sặc nước rồi ho",
       "người đuối ho nhiều"
     ],
-    "response": "**Sau khi tắm, bơi hoặc bị sặc nước, nếu người đó ho nhiều hoặc có biểu hiện bất thường thì cần được người lớn theo dõi.**\n\nNếu có khó thở, mệt nhiều, khó chịu hoặc nhận thức không bình thường, tài liệu khuyến cáo cần đến cơ sở y tế gần nhất để kiểm tra."
+    "response": "**Sau khi tắm, bơi hoặc bị sặc nước, nếu người đó ho nhiều hoặc có biểu hiện bất thường thì cần được người lớn theo dõi.**\n\nNếu có khó thở, mệt nhiều, khó chịu hoặc nhận thức không bình thường, tài liệu khuyến cáo cần đến cơ sở y tế gần nhất để kiểm tra.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "breathing_difficulty_after_water",
@@ -3624,7 +4088,8 @@ window.ENDY_KB = [
       "cứu lên khóc",
       "nói gì sau khi cứu"
     ],
-    "response": "**Sau khi đưa người gặp nạn lên nơi an toàn, hãy giúp họ bình tĩnh.**\n\nCó thể nói nhẹ nhàng rằng đã có người giúp và bảo họ nghỉ tại chỗ.\n\nĐồng thời gọi người lớn đến kiểm tra tình trạng và bảo vệ họ khỏi những nguy cơ khác."
+    "response": "**Sau khi đưa người gặp nạn lên nơi an toàn, hãy giúp họ bình tĩnh.**\n\nCó thể nói nhẹ nhàng rằng đã có người giúp và bảo họ nghỉ tại chỗ.\n\nĐồng thời gọi người lớn đến kiểm tra tình trạng và bảo vệ họ khỏi những nguy cơ khác.",
+    "badge": "assets/illust_drowning.png"
   },
   {
     "id": "first_aid_scene_safety",
@@ -3772,7 +4237,8 @@ window.ENDY_KB = [
       "dây điện rơi xuống nước",
       "nước lũ có điện ko"
     ],
-    "response": "**Nước ngập có thể có nguy cơ điện giật.**\n\nĐiện có thể truyền qua nước nếu có dây điện hoặc thiết bị điện bị hỏng, rò điện.\n\nEm không nên đến gần dây điện, cột điện hoặc vùng nước nghi có điện.\n\nHãy báo ngay cho người lớn và tránh xa khu vực đó."
+    "response": "**Nước ngập có thể có nguy cơ điện giật.**\n\nĐiện có thể truyền qua nước nếu có dây điện hoặc thiết bị điện bị hỏng, rò điện.\n\nEm không nên đến gần dây điện, cột điện hoặc vùng nước nghi có điện.\n\nHãy báo ngay cho người lớn và tránh xa khu vực đó.",
+    "badge": "assets/illust_electric.png"
   },
   {
     "id": "flooded_home_electricity",
@@ -3783,7 +4249,8 @@ window.ENDY_KB = [
       "nước vào nhà có nguy hiểm không",
       "điện khi nhà ngập"
     ],
-    "response": "**Nếu nhà bị ngập, điện là một nguy cơ rất nguy hiểm.**\n\nTài liệu lưu ý cần chú ý ngắt các nguồn điện khi nhà bị ngập.\n\nTrẻ em không được tự chạm vào ổ cắm, dây điện hoặc thiết bị điện đang ở gần nước.\n\nHãy để người lớn xử lý."
+    "response": "**Nếu nhà bị ngập, điện là một nguy cơ rất nguy hiểm.**\n\nTài liệu lưu ý cần chú ý ngắt các nguồn điện khi nhà bị ngập.\n\nTrẻ em không được tự chạm vào ổ cắm, dây điện hoặc thiết bị điện đang ở gần nước.\n\nHãy để người lớn xử lý.",
+    "badge": "assets/illust_electric.png"
   },
   {
     "id": "flood_life_jacket",
@@ -5397,7 +5864,13 @@ window.ENDY_KB = [
       "sao không nhảy xuống vớt bạn",
       "nhảy xuống cứu bạn thân"
     ],
-    "response": "**Endy hiểu em rất thương bạn và muốn làm người hùng, nhưng tuyệt đối KHÔNG NHẢY XUỐNG! 🦸‍♂️🚫**\n\n**Vì sao ư?**\n1. Khi sắp chìm, bạn đang cực kỳ hoảng loạn. Bạn sẽ coi em như một cây cọc và **dìm chặt đầu em xuống nước** để ngoi lên thở.\n2. Sức của bạn lúc đó mạnh gấp 3 lần bình thường, em sẽ bị kéo chìm theo ngay lập tức!\n3. **Cứu thông minh mới là dũng cảm:** Hô thật to gọi người lớn, tìm cành cây dài hoặc ném can nhựa/phao xuống cho bạn bám. Đó mới là cách cứu sống bạn thực sự!"
+    "response": "**Endy hiểu em rất thương bạn và muốn làm người hùng, nhưng tuyệt đối KHÔNG NHẢY XUỐNG! 🦸‍♂️🚫**\n\n**Vì sao ư?**\n1. Khi sắp chìm, bạn đang cực kỳ hoảng loạn. Bạn sẽ coi em như một cây cọc và **dìm chặt đầu em xuống nước** để ngoi lên thở.\n2. Sức của bạn lúc đó mạnh gấp 3 lần bình thường, em sẽ bị kéo chìm theo ngay lập tức!\n3. **Cứu thông minh mới là dũng cảm:** Hô thật to gọi người lớn, tìm cành cây dài hoặc ném can nhựa/phao xuống cho bạn bám. Đó mới là cách cứu sống bạn thực sự!",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "dog_paddle_overconfidence",
@@ -5410,7 +5883,13 @@ window.ENDY_KB = [
       "bơi được một đoạn rồi sao phải sợ",
       "em bơi được mà sao cấm"
     ],
-    "response": "**Bơi chó chỉ giúp em nổi được một đoạn ngắn ở chỗ nước êm thôi nhé! 🐶💦**\n\n• Ở sông, suối, biển có **dòng nước ngầm** chảy rất xiết và nhiệt độ nước lạnh bất ngờ.\n• Kiểu bơi chó làm em **nhanh mất sức gấp đôi** bơi chuẩn. Chỉ sau 2-3 phút là chân tay em mỏi nhừ, cứng đờ (chuột rút) và không tự bơi vào bờ được nữa.\n• Muốn an toàn, em cần học bơi bài bản và kỹ năng thả nổi ngửa ngơi sức nhé!"
+    "response": "**Bơi chó chỉ giúp em nổi được một đoạn ngắn ở chỗ nước êm thôi nhé! 🐶💦**\n\n• Ở sông, suối, biển có **dòng nước ngầm** chảy rất xiết và nhiệt độ nước lạnh bất ngờ.\n• Kiểu bơi chó làm em **nhanh mất sức gấp đôi** bơi chuẩn. Chỉ sau 2-3 phút là chân tay em mỏi nhừ, cứng đờ (chuột rút) và không tự bơi vào bờ được nữa.\n• Muốn an toàn, em cần học bơi bài bản và kỹ năng thả nổi ngửa ngơi sức nhé!",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "why_clear_water_is_deep",
@@ -5423,7 +5902,13 @@ window.ENDY_KB = [
       "sao nước nhìn cạn queo",
       "đáy ao nhìn gần xịt"
     ],
-    "response": "**Đó là một 'chiếc bẫy ảo giác' của mắt đấy em! 👀⚠️**\n\n• Khi nhìn qua mặt nước trong suốt, mắt mình sẽ bị đánh lừa: **Đáy nước trông có vẻ rất nông nhưng thực tế lại sâu hơn cả cái đầu của em!**\n• Chưa kể mép bờ thường trơn tuột hoặc hụt chân bất ngờ (hố sâu sụt cát).\n• Đừng bao giờ tin vào mắt mình khi nhìn xuống nước tự nhiên: Luôn có người lớn kiểm tra độ sâu trước nhé!"
+    "response": "**Đó là một 'chiếc bẫy ảo giác' của mắt đấy em! 👀⚠️**\n\n• Khi nhìn qua mặt nước trong suốt, mắt mình sẽ bị đánh lừa: **Đáy nước trông có vẻ rất nông nhưng thực tế lại sâu hơn cả cái đầu của em!**\n• Chưa kể mép bờ thường trơn tuột hoặc hụt chân bất ngờ (hố sâu sụt cát).\n• Đừng bao giờ tin vào mắt mình khi nhìn xuống nước tự nhiên: Luôn có người lớn kiểm tra độ sâu trước nhé!",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "peer_pressure_dare_swim",
@@ -5448,7 +5933,13 @@ window.ENDY_KB = [
       "chó cưng bị chìm",
       "cún con ngã xuống nước"
     ],
-    "response": "**Bình tĩnh nghe Endy dặn này: Tuyệt đối KHÔNG nhảy xuống vớt cún/mèo nhé! 🐶🐱❌**\n\n1. Loài chó và mèo có bản năng sinh tồn tự bơi vào bờ giỏi hơn chúng ta tưởng rất nhiều.\n2. Bờ ao dốc trơn, em nhảy xuống sẽ bị trượt chân và ngạt nước trước cả thú cưng đấy!\n3. **Cách làm đúng:** Hô to nhờ người lớn, hoặc tìm một cành cây to/tấm ván gác thoai thoải xuống mép nước để cún tự bám trèo lên bờ."
+    "response": "**Bình tĩnh nghe Endy dặn này: Tuyệt đối KHÔNG nhảy xuống vớt cún/mèo nhé! 🐶🐱❌**\n\n1. Loài chó và mèo có bản năng sinh tồn tự bơi vào bờ giỏi hơn chúng ta tưởng rất nhiều.\n2. Bờ ao dốc trơn, em nhảy xuống sẽ bị trượt chân và ngạt nước trước cả thú cưng đấy!\n3. **Cách làm đúng:** Hô to nhờ người lớn, hoặc tìm một cành cây to/tấm ván gác thoai thoải xuống mép nước để cún tự bám trèo lên bờ.",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "why_no_upending_victim",
@@ -5473,7 +5964,13 @@ window.ENDY_KB = [
       "phao tròn có an toàn không",
       "phao xì hơi thì sao"
     ],
-    "response": "**Phao chỉ là đồ chơi hỗ trợ, KHÔNG PHẢI bùa hộ mệnh đâu nhé! 🛟⚠️**\n\n• Phao tay hoặc phao tròn có thể bị **tuột khỏi người, bị lật úp** làm em chúi đầu xuống nước không ngóc lên được.\n• Phao bơi bằng cao su rất dễ bị cành cây, đá nhọn châm thủng xì hơi bất ngờ.\n• Dòng nước mạnh hoặc sóng biển có thể cuốn bay cả em và chiếc phao ra xa bờ.\n👉 Dù đeo phao, em vẫn luôn phải có người lớn đứng cạnh trong tầm với tay!"
+    "response": "**Phao chỉ là đồ chơi hỗ trợ, KHÔNG PHẢI bùa hộ mệnh đâu nhé! 🛟⚠️**\n\n• Phao tay hoặc phao tròn có thể bị **tuột khỏi người, bị lật úp** làm em chúi đầu xuống nước không ngóc lên được.\n• Phao bơi bằng cao su rất dễ bị cành cây, đá nhọn châm thủng xì hơi bất ngờ.\n• Dòng nước mạnh hoặc sóng biển có thể cuốn bay cả em và chiếc phao ra xa bờ.\n👉 Dù đeo phao, em vẫn luôn phải có người lớn đứng cạnh trong tầm với tay!",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "why_water_conducts_electricity",
@@ -5484,7 +5981,13 @@ window.ENDY_KB = [
       "vì sao tay ướt chạm ổ điện nguy hiểm",
       "chân ướt sờ vào tủ lạnh"
     ],
-    "response": "**Tưởng tượng da khô như một lớp áo giáp, còn nước là 'đường cao tốc' cho điện chạy qua! ⚡💧**\n\n• Khi tay em khô, điện khó chui vào người.\n• Nhưng khi tay bị ướt, nước lập tức mở đường cho dòng điện lao thẳng qua tim chỉ trong chớp mắt!\n• Vì vậy: **Tay ướt, chân ướt tuyệt đối không được sờ vào công tắc, ổ cắm hay phích cắm điện nhé!**"
+    "response": "**Tưởng tượng da khô như một lớp áo giáp, còn nước là 'đường cao tốc' cho điện chạy qua! ⚡💧**\n\n• Khi tay em khô, điện khó chui vào người.\n• Nhưng khi tay bị ướt, nước lập tức mở đường cho dòng điện lao thẳng qua tim chỉ trong chớp mắt!\n• Vì vậy: **Tay ướt, chân ướt tuyệt đối không được sờ vào công tắc, ổ cắm hay phích cắm điện nhé!**",
+    "badge": "assets/illust_electric.png",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "drowning_in_small_bucket",
@@ -5495,7 +5998,13 @@ window.ENDY_KB = [
       "chậu nước có tí tẹo sao nguy hiểm",
       "chậu tắm của em bé có nguy hiểm không"
     ],
-    "response": "**Chỉ cần một lượng nước ngập qua mũi và miệng là đã có thể bị đuối nước rồi! 🪣⚠️**\n\n• Các em bé nhỏ đầu rất nặng nhưng cổ và tay còn yếu. Khi cúi đầu cắm vào xô/chậu để với đồ chơi, bé sẽ bị **lộn nhào đầu xuống đáy**.\n• Bé không tự chống tay đứng dậy được và không thể cất tiếng kêu cứu.\n• Hãy nhắc bố mẹ đổ hết nước trong xô chậu và đậy nắp bồn cầu lại nhé!"
+    "response": "**Chỉ cần một lượng nước ngập qua mũi và miệng là đã có thể bị đuối nước rồi! 🪣⚠️**\n\n• Các em bé nhỏ đầu rất nặng nhưng cổ và tay còn yếu. Khi cúi đầu cắm vào xô/chậu để với đồ chơi, bé sẽ bị **lộn nhào đầu xuống đáy**.\n• Bé không tự chống tay đứng dậy được và không thể cất tiếng kêu cứu.\n• Hãy nhắc bố mẹ đổ hết nước trong xô chậu và đậy nắp bồn cầu lại nhé!",
+    "badge": "assets/illust_drowning.png",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "why_no_toothpaste_on_burn",
@@ -5506,7 +6015,12 @@ window.ENDY_KB = [
       "bôi mỡ trăn vào vết bỏng",
       "tại sao cấm bôi kem đánh răng"
     ],
-    "response": "**Tuyệt đối KHÔNG bôi kem đánh răng, nước mắm hay mỡ trăn vào vết bỏng nhé! 🛑🩹**\n\n• Kem đánh răng có chất kiềm, bôi vào vết da đang trợt sẽ làm vết bỏng **nhiễm trùng và ăn sâu vào thịt hơn**.\n• Nước mắm chứa vi khuẩn, mỡ trăn giữ nhiệt làm vết bỏng càng hầm nóng và thối rữa.\n👉 **Cách DUY NHẤT đúng:** Ngâm hoặc xả nhẹ vùng bị bỏng dưới **vòi nước mát sạch** trong 15-20 phút rồi đến gặp bác sĩ!"
+    "response": "**Tuyệt đối KHÔNG bôi kem đánh răng, nước mắm hay mỡ trăn vào vết bỏng nhé! 🛑🩹**\n\n• Kem đánh răng có chất kiềm, bôi vào vết da đang trợt sẽ làm vết bỏng **nhiễm trùng và ăn sâu vào thịt hơn**.\n• Nước mắm chứa vi khuẩn, mỡ trăn giữ nhiệt làm vết bỏng càng hầm nóng và thối rữa.\n👉 **Cách DUY NHẤT đúng:** Ngâm hoặc xả nhẹ vùng bị bỏng dưới **vòi nước mát sạch** trong 15-20 phút rồi đến gặp bác sĩ!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "drink_lake_water_not_drown",
@@ -5520,7 +6034,12 @@ window.ENDY_KB = [
       "uống nước ao cho đỡ chìm",
       "uống hết nước sông"
     ],
-    "response": "**Endy cười xỉu với ý tưởng này luôn! 😂 Nhưng tuyệt đối đừng làm thế nhé!**\n\n• Bụng của em chỉ bé bằng chiếc bình nước nhỏ, làm sao chứa hết cả hồ nước khổng lồ được!\n• Khi cố uống, nước sẽ tràn vào **đường thở (phổi)** làm em bị sặc, ho sặc sụa và ngạt thở ngay lập tức.\n👉 **Nhớ nè:** Khi bị chìm, hãy ngậm chặt miệng lại, ngửa cổ lên trời để mũi đón không khí và thả lỏng người để tự nổi lên nhé!"
+    "response": "**Endy cười xỉu với ý tưởng này luôn! 😂 Nhưng tuyệt đối đừng làm thế nhé!**\n\n• Bụng của em chỉ bé bằng chiếc bình nước nhỏ, làm sao chứa hết cả hồ nước khổng lồ được!\n• Khi cố uống, nước sẽ tràn vào **đường thở (phổi)** làm em bị sặc, ho sặc sụa và ngạt thở ngay lập tức.\n👉 **Nhớ nè:** Khi bị chìm, hãy ngậm chặt miệng lại, ngửa cổ lên trời để mũi đón không khí và thả lỏng người để tự nổi lên nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "dip_feet_riverbank_safe",
@@ -5535,7 +6054,12 @@ window.ENDY_KB = [
       "chỉ rửa chân thôi mà",
       "ngồi bờ ao rửa chân"
     ],
-    "response": "**Tưởng chỉ rửa chân là an toàn nhưng lại cực kỳ nguy hiểm đấy em! ⚠️🦶**\n\n• Bờ ao, bờ sông phủ đầy rong rêu trơn như bôi mỡ. Rất nhiều bạn chỉ cúi xuống rửa chân là **trượt chân rơi tọt xuống vùng nước sâu**!\n• Ngoài ra mép bờ có thể bị sụt lún bất ngờ kéo em ngã nhào.\n👉 Nếu chân dính bẩn, hãy múc nước bằng gáo mang lên bãi đất bằng phẳng để rửa, không ngồi sát mép nước nhé!"
+    "response": "**Tưởng chỉ rửa chân là an toàn nhưng lại cực kỳ nguy hiểm đấy em! ⚠️🦶**\n\n• Bờ ao, bờ sông phủ đầy rong rêu trơn như bôi mỡ. Rất nhiều bạn chỉ cúi xuống rửa chân là **trượt chân rơi tọt xuống vùng nước sâu**!\n• Ngoài ra mép bờ có thể bị sụt lún bất ngờ kéo em ngã nhào.\n👉 Nếu chân dính bẩn, hãy múc nước bằng gáo mang lên bãi đất bằng phẳng để rửa, không ngồi sát mép nước nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "hold_breath_contest_danger",
@@ -5549,7 +6073,12 @@ window.ENDY_KB = [
       "tro choi nin tho",
       "thi lặn xem ai lâu hơn"
     ],
-    "response": "**Trò thi nín thở dưới nước nguy hiểm lắm, đừng bao giờ chơi nhé! 🛑⏱️**\n\n• Cố nhịn thở quá lâu sẽ làm não thiếu ô-xy đột ngột, khiến em **ngất xỉu trong tích tắc** mà chính em cũng không nhận ra.\n• Khi ngất dưới nước, cơ thể sẽ tự hít nước vào phổi và chìm nghỉm trong khi bạn bè tưởng em đang 'nhịn thở giỏi'.\n👉 Đi bơi là để khỏe mạnh và vui vẻ, không phải để thi nhịn thở đâu nha!"
+    "response": "**Trò thi nín thở dưới nước nguy hiểm lắm, đừng bao giờ chơi nhé! 🛑⏱️**\n\n• Cố nhịn thở quá lâu sẽ làm não thiếu ô-xy đột ngột, khiến em **ngất xỉu trong tích tắc** mà chính em cũng không nhận ra.\n• Khi ngất dưới nước, cơ thể sẽ tự hít nước vào phổi và chìm nghỉm trong khi bạn bè tưởng em đang 'nhịn thở giỏi'.\n👉 Đi bơi là để khỏe mạnh và vui vẻ, không phải để thi nhịn thở đâu nha!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "water_in_ear_deaf",
@@ -5575,7 +6104,12 @@ window.ENDY_KB = [
       "mặc phao nhảy từ trên cao",
       "nhảy cầu bơi"
     ],
-    "response": "**Tuyệt đối KHÔNG ĐƯỢC làm trò mạo hiểm này nhé! 🌉🚫**\n\n• Khi nhảy từ trên cao xuống, mặt nước cứng đập vào người **mạnh như một bức tường bê tông**!\n• Cú va đập có thể làm chấn thương cổ, gãy xương hoặc cổ áo phao bị giật ngược siết nghẹn họng.\n👉 Áo phao chỉ dùng để bơi và giữ an toàn khi đi tàu thuyền, không bảo vệ được em khi nhảy từ trên cao xuống đâu!"
+    "response": "**Tuyệt đối KHÔNG ĐƯỢC làm trò mạo hiểm này nhé! 🌉🚫**\n\n• Khi nhảy từ trên cao xuống, mặt nước cứng đập vào người **mạnh như một bức tường bê tông**!\n• Cú va đập có thể làm chấn thương cổ, gãy xương hoặc cổ áo phao bị giật ngược siết nghẹn họng.\n👉 Áo phao chỉ dùng để bơi và giữ an toàn khi đi tàu thuyền, không bảo vệ được em khi nhảy từ trên cao xuống đâu!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "hide_under_bed_during_fire",
@@ -5589,7 +6123,12 @@ window.ENDY_KB = [
       "trốn trong phòng khi cháy",
       "cháy thì trốn ở đâu"
     ],
-    "response": "**TUYỆT ĐỐI KHÔNG trốn vào gầm giường hay tủ quần áo khi có cháy! 🛏️🚪❌**\n\n• Khói độc bốc lên sẽ len lỏi vào gầm giường và tủ làm em ngạt thở rất nhanh.\n• Các chú lính cứu hỏa khi vào cứu cũng **không thể nhìn thấy em** giữa đám khói đen mịt mù.\n👉 **Cách làm đúng:** Lấy khăn ướt che mũi miệng, bò sát sàn nhà men theo tường chạy nhanh ra cửa thoát hiểm và hô to cầu cứu!"
+    "response": "**TUYỆT ĐỐI KHÔNG trốn vào gầm giường hay tủ quần áo khi có cháy! 🛏️🚪❌**\n\n• Khói độc bốc lên sẽ len lỏi vào gầm giường và tủ làm em ngạt thở rất nhanh.\n• Các chú lính cứu hỏa khi vào cứu cũng **không thể nhìn thấy em** giữa đám khói đen mịt mù.\n👉 **Cách làm đúng:** Lấy khăn ướt che mũi miệng, bò sát sàn nhà men theo tường chạy nhanh ra cửa thoát hiểm và hô to cầu cứu!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "blow_fire_extinguish_myth",
@@ -5602,7 +6141,12 @@ window.ENDY_KB = [
       "lửa cháy lấy quạt thổi",
       "thổi lửa như nến sinh nhật"
     ],
-    "response": "**Đừng lấy miệng thổi vào đám lửa đang cháy nhé! 🎂🔥❌**\n\n• Thổi nến sinh nhật thì tắt, nhưng đám cháy lớn cần rất nhiều gió. Khi em thổi hoặc lấy quạt phẩy, em đang **cung cấp thêm khí giúp lửa bùng to hơn** và táp thẳng vào mặt gây bỏng nặng.\n👉 Khi thấy lửa cháy: Hô to báo người lớn ngay lập tức, không tự dùng miệng thổi nhé!"
+    "response": "**Đừng lấy miệng thổi vào đám lửa đang cháy nhé! 🎂🔥❌**\n\n• Thổi nến sinh nhật thì tắt, nhưng đám cháy lớn cần rất nhiều gió. Khi em thổi hoặc lấy quạt phẩy, em đang **cung cấp thêm khí giúp lửa bùng to hơn** và táp thẳng vào mặt gây bỏng nặng.\n👉 Khi thấy lửa cháy: Hô to báo người lớn ngay lập tức, không tự dùng miệng thổi nhé!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "ice_cube_on_burn_myth",
@@ -5615,7 +6159,12 @@ window.ENDY_KB = [
       "chườm đá vào chỗ bỏng",
       "đá lạnh xoa vết bỏng"
     ],
-    "response": "**Không được đắp trực tiếp đá lạnh ngắt vào vết bỏng đâu nha! 🧊🚫**\n\n• Da vừa bị bỏng nhiệt đang rất yếu, gặp đá buốt đột ngột sẽ bị **'bỏng lạnh'**, làm các mô da bị tổn thương và hoại tử sâu hơn.\n👉 **Cách chuẩn nhất:** Xả nhẹ vùng bị bỏng dưới **vòi nước máy mát sạch** chảy từ từ trong 15-20 phút rồi bảo bố mẹ đưa đi trạm y tế nhé!"
+    "response": "**Không được đắp trực tiếp đá lạnh ngắt vào vết bỏng đâu nha! 🧊🚫**\n\n• Da vừa bị bỏng nhiệt đang rất yếu, gặp đá buốt đột ngột sẽ bị **'bỏng lạnh'**, làm các mô da bị tổn thương và hoại tử sâu hơn.\n👉 **Cách chuẩn nhất:** Xả nhẹ vùng bị bỏng dưới **vòi nước máy mát sạch** chảy từ từ trong 15-20 phút rồi bảo bố mẹ đưa đi trạm y tế nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "run_when_clothes_catch_fire",
@@ -5628,7 +6177,12 @@ window.ENDY_KB = [
       "lửa cháy trên người làm gì",
       "quần áo bắt lửa"
     ],
-    "response": "**Lửa bén vào người mà chạy là lửa càng cháy to hơn đấy! 🏃‍♂️🔥❌**\n\n• Gió khi em chạy sẽ tiếp thêm ô-xy làm ngọn lửa bùng lên dữ dội hơn.\n👉 **Quy tắc vàng 3 bước:**\n1. **DỪNG LẠI (Stop):** Đứng yên, không chạy lung tung.\n2. **NẰM XUỐNG (Drop):** Nằm úp hoặc nằm nghiêng xuống đất, lấy hai tay che mặt.\n3. **LĂN QUA LĂN LẠI (Roll):** Lăn tròn thân mình liên tục xuống nền đất để đè tắt ngọn lửa!"
+    "response": "**Lửa bén vào người mà chạy là lửa càng cháy to hơn đấy! 🏃‍♂️🔥❌**\n\n• Gió khi em chạy sẽ tiếp thêm ô-xy làm ngọn lửa bùng lên dữ dội hơn.\n👉 **Quy tắc vàng 3 bước:**\n1. **DỪNG LẠI (Stop):** Đứng yên, không chạy lung tung.\n2. **NẰM XUỐNG (Drop):** Nằm úp hoặc nằm nghiêng xuống đất, lấy hai tay che mặt.\n3. **LĂN QUA LĂN LẠI (Roll):** Lăn tròn thân mình liên tục xuống nền đất để đè tắt ngọn lửa!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "birds_on_wire_why_not_shocked",
@@ -5641,7 +6195,12 @@ window.ENDY_KB = [
       "sao chim đậu trên dây điện được",
       "con chim đậu dây điện"
     ],
-    "response": "**Một câu hỏi tò mò cực kỳ thú vị! 🐦⚡**\n\n• Chú chim đậu cả hai chân trên **cùng một sợi dây**, nên điện cứ thế chạy thẳng theo dây chứ không thèm chạy qua người chú chim.\n• Còn con người chúng ta đứng dưới đất hoặc chạm vào tường. Nếu chạm tay vào dây điện, dòng điện sẽ **chọn người em làm đường tắt phóng thẳng xuống đất** và gây giật rất nguy hiểm!\n👉 Vì vậy, tuyệt đối không được bắt chước chim sờ vào dây điện đâu nhé!"
+    "response": "**Một câu hỏi tò mò cực kỳ thú vị! 🐦⚡**\n\n• Chú chim đậu cả hai chân trên **cùng một sợi dây**, nên điện cứ thế chạy thẳng theo dây chứ không thèm chạy qua người chú chim.\n• Còn con người chúng ta đứng dưới đất hoặc chạm vào tường. Nếu chạm tay vào dây điện, dòng điện sẽ **chọn người em làm đường tắt phóng thẳng xuống đất** và gây giật rất nguy hiểm!\n👉 Vì vậy, tuyệt đối không được bắt chước chim sờ vào dây điện đâu nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "touch_socket_toy_battery",
@@ -5654,7 +6213,12 @@ window.ENDY_KB = [
       "pin điều khiển có điện giật không",
       "pin đồng hồ giật không"
     ],
-    "response": "**Pin tiểu, pin đồ chơi (1.5V - 9V) dòng điện rất nhỏ nên chạm tay vào không bị giật chết người! 🔋😊**\n\n• Nhưng em **tuyệt đối không được cắn, ngậm pin vào miệng hoặc ném vào lửa** vì hóa chất độc hại bên trong có thể phát nổ hoặc làm cháy bỏng lưỡi.\n• Khác hẳn với pin, ổ điện trên tường nhà em có dòng điện 220V cực mạnh - chạm vào là nguy hiểm tính mạng ngay!"
+    "response": "**Pin tiểu, pin đồ chơi (1.5V - 9V) dòng điện rất nhỏ nên chạm tay vào không bị giật chết người! 🔋😊**\n\n• Nhưng em **tuyệt đối không được cắn, ngậm pin vào miệng hoặc ném vào lửa** vì hóa chất độc hại bên trong có thể phát nổ hoặc làm cháy bỏng lưỡi.\n• Khác hẳn với pin, ổ điện trên tường nhà em có dòng điện 220V cực mạnh - chạm vào là nguy hiểm tính mạng ngay!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "poke_socket_with_plastic_pen",
@@ -5667,7 +6231,12 @@ window.ENDY_KB = [
       "chọc que gỗ vào ổ điện",
       "chọc bút chì vào ổ điện"
     ],
-    "response": "**Tuyệt đối KHÔNG lấy bất cứ vật gì chọc vào ổ điện! ⚡🖊️❌**\n\n• Ruột bút chì làm từ than chì dẫn điện cực mạnh!\n• Đũa gỗ hoặc que nhựa có thể bị ẩm ướt hoặc dính mồ hôi tay, nguồn điện 220V vẫn có thể phóng tia lửa điện làm nổ tung và giật cháy bàn tay.\n👉 Ổ cắm điện là nơi cấm đùa của các bạn nhỏ thông minh nhé!"
+    "response": "**Tuyệt đối KHÔNG lấy bất cứ vật gì chọc vào ổ điện! ⚡🖊️❌**\n\n• Ruột bút chì làm từ than chì dẫn điện cực mạnh!\n• Đũa gỗ hoặc que nhựa có thể bị ẩm ướt hoặc dính mồ hôi tay, nguồn điện 220V vẫn có thể phóng tia lửa điện làm nổ tung và giật cháy bàn tay.\n👉 Ổ cắm điện là nơi cấm đùa của các bạn nhỏ thông minh nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "family_dog_bite_rabies",
@@ -5681,7 +6250,12 @@ window.ENDY_KB = [
       "mèo nhà cào có cần tiêm không",
       "chó quen cắn"
     ],
-    "response": "**Dù là chó mèo nhà mình nuôi rất ngoan thì bị cắn VẪN PHẢI tiêm phòng dại nhé! 🐶💉**\n\n• Mầm bệnh dại có thể ẩn sẵn trong nước bọt của thú cưng trước khi chúng phát bệnh mà mắt thường không thể thấy.\n• Bệnh dại khi đã phát cơn thì **không thể chữa khỏi**.\n👉 Nếu bị cắn hoặc cào chảy máu: Rửa ngay vết thương bằng xà phòng dưới vòi nước 15 phút, rồi nói ngay với bố mẹ để đi tiêm phòng vắc-xin kịp thời!"
+    "response": "**Dù là chó mèo nhà mình nuôi rất ngoan thì bị cắn VẪN PHẢI tiêm phòng dại nhé! 🐶💉**\n\n• Mầm bệnh dại có thể ẩn sẵn trong nước bọt của thú cưng trước khi chúng phát bệnh mà mắt thường không thể thấy.\n• Bệnh dại khi đã phát cơn thì **không thể chữa khỏi**.\n👉 Nếu bị cắn hoặc cào chảy máu: Rửa ngay vết thương bằng xà phòng dưới vòi nước 15 phút, rồi nói ngay với bố mẹ để đi tiêm phòng vắc-xin kịp thời!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "poke_beehive_for_honey",
@@ -5695,7 +6269,12 @@ window.ENDY_KB = [
       "chọc tổ ong chơi",
       "phá tổ ong"
     ],
-    "response": "**Đừng dại dột chọc phá tổ ong nha em ơi! 🐝😱🚫**\n\n• Một tổ ong có hàng trăm con ong thợ bảo vệ. Khi bị quấy rầy, cả đàn sẽ túa ra đốt kín mặt, mắt và đầu em.\n• Nọc ong vò vẽ, ong đất rất độc, đốt nhiều nốt có thể làm suy thở và đe dọa tính mạng!\n👉 Thấy tổ ong trên cây hoặc mái nhà: Tránh xa ra và báo người lớn xử lý an toàn!"
+    "response": "**Đừng dại dột chọc phá tổ ong nha em ơi! 🐝😱🚫**\n\n• Một tổ ong có hàng trăm con ong thợ bảo vệ. Khi bị quấy rầy, cả đàn sẽ túa ra đốt kín mặt, mắt và đầu em.\n• Nọc ong vò vẽ, ong đất rất độc, đốt nhiều nốt có thể làm suy thở và đe dọa tính mạng!\n👉 Thấy tổ ong trên cây hoặc mái nhà: Tránh xa ra và báo người lớn xử lý an toàn!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "suck_snake_venom_myth",
@@ -5708,7 +6287,12 @@ window.ENDY_KB = [
       "rạch vết rắn cắn",
       "lấy miệng hút máu rắn cắn"
     ],
-    "response": "**Hút nọc độc rắn bằng miệng chỉ có trên phim thôi, ngoài đời cấm làm theo nhé! 🐍❌**\n\n• Trong khoang miệng có rất nhiều vết xước nhỏ xíu. Khi hút, chất độc sẽ ngấm thẳng qua niêm mạc miệng vào tim của người hút còn nhanh hơn!\n👉 **Cách xử lý đúng:** Rửa sạch vết thương, giữ yên chân/tay bị cắn thấp hơn tim, không cử động mạnh và gọi ngay người lớn đưa đi bệnh viện cấp cứu!"
+    "response": "**Hút nọc độc rắn bằng miệng chỉ có trên phim thôi, ngoài đời cấm làm theo nhé! 🐍❌**\n\n• Trong khoang miệng có rất nhiều vết xước nhỏ xíu. Khi hút, chất độc sẽ ngấm thẳng qua niêm mạc miệng vào tim của người hút còn nhanh hơn!\n👉 **Cách xử lý đúng:** Rửa sạch vết thương, giữ yên chân/tay bị cắn thấp hơn tim, không cử động mạnh và gọi ngay người lớn đưa đi bệnh viện cấp cứu!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "empty_street_red_light",
@@ -5721,7 +6305,12 @@ window.ENDY_KB = [
       "đèn đỏ không có công an",
       "đèn đỏ vắng tanh"
     ],
-    "response": "**Đường có vắng tanh không một bóng người thì đèn đỏ VẪN PHẢI DỪNG LẠI! 🔴🚦**\n\n• Vì đường vắng nên các xe ở hướng cắt ngang thường chạy rất nhanh. Nếu em vượt qua, xe khác lao tới bất ngờ sẽ không phanh kịp và tông trúng em.\n• Dừng đúng đèn tín hiệu chứng minh em là một bạn nhỏ có ý thức tự giác bảo vệ chính mình đấy! 😊"
+    "response": "**Đường có vắng tanh không một bóng người thì đèn đỏ VẪN PHẢI DỪNG LẠI! 🔴🚦**\n\n• Vì đường vắng nên các xe ở hướng cắt ngang thường chạy rất nhanh. Nếu em vượt qua, xe khác lao tới bất ngờ sẽ không phanh kịp và tông trúng em.\n• Dừng đúng đèn tín hiệu chứng minh em là một bạn nhỏ có ý thức tự giác bảo vệ chính mình đấy! 😊",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "head_out_car_window",
@@ -5734,7 +6323,12 @@ window.ENDY_KB = [
       "thò người ra cửa sổ xe",
       "ngó đầu ra ngoài ô tô"
     ],
-    "response": "**Cực kỳ nguy hiểm! Tuyệt đối không được thò đầu hay tay ra ngoài cửa kính xe! 🚗💨❌**\n\n• Xe máy hoặc ô tô khác chạy vụt qua sát bên có thể va quẹt làm gãy tay hoặc chấn thương đầu trong tích tắc.\n• Cành cây ven đường hoặc đá dăm do bánh xe khác bắn lên cũng có thể bay thẳng vào mắt.\n• Em hãy ngồi ngay ngắn, thắt dây an toàn và ngắm cảnh qua cửa kính nhé!"
+    "response": "**Cực kỳ nguy hiểm! Tuyệt đối không được thò đầu hay tay ra ngoài cửa kính xe! 🚗💨❌**\n\n• Xe máy hoặc ô tô khác chạy vụt qua sát bên có thể va quẹt làm gãy tay hoặc chấn thương đầu trong tích tắc.\n• Cành cây ven đường hoặc đá dăm do bánh xe khác bắn lên cũng có thể bay thẳng vào mắt.\n• Em hãy ngồi ngay ngắn, thắt dây an toàn và ngắm cảnh qua cửa kính nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "headphones_while_biking",
@@ -5746,7 +6340,12 @@ window.ENDY_KB = [
       "đeo tai nghe nghe nhạc khi đi xe",
       "vừa đi xe vừa nghe nhạc"
     ],
-    "response": "**Đừng vừa đi xe đạp vừa đeo tai nghe nhé! 🚲🎧❌**\n\n• Tiếng nhạc sẽ bịt kín tai em, làm em **không nghe thấy tiếng còi xe ô tô bóp còi xin đường** hoặc tiếng phanh gấp phía sau.\n• Em cũng dễ bị phân tâm mải nghe nhạc mà không kịp nhận ra chướng ngại vật phía trước.\n👉 Muốn nghe nhạc, hãy về đến nhà rồi ngồi thưởng thức thật thư thả nhé!"
+    "response": "**Đừng vừa đi xe đạp vừa đeo tai nghe nhé! 🚲🎧❌**\n\n• Tiếng nhạc sẽ bịt kín tai em, làm em **không nghe thấy tiếng còi xe ô tô bóp còi xin đường** hoặc tiếng phanh gấp phía sau.\n• Em cũng dễ bị phân tâm mải nghe nhạc mà không kịp nhận ra chướng ngại vật phía trước.\n👉 Muốn nghe nhạc, hãy về đến nhà rồi ngồi thưởng thức thật thư thả nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "umbrella_parachute_myth",
@@ -5759,7 +6358,12 @@ window.ENDY_KB = [
       "nhay du bang cay du",
       "cầm ô nhảy cầu thang"
     ],
-    "response": "**Cầm ô che mưa không thể biến thành chiếc dù bay được đâu em ơi! ☂️🪂❌**\n\n• Chiếc ô che mưa chỉ làm bằng vải mỏng và nan sắt yếu ớt. Khi nhảy từ trên cao xuống, sức cản của gió sẽ làm **chiếc ô bị lật ngược hoặc gãy vụn ngay lập tức**!\n• Em sẽ rơi thẳng xuống đất và bị gãy chân, gãy tay hoặc chấn thương cột sống.\n• Đừng bao giờ bắt chước phim hoạt hình nhảy từ bàn, cầu thang hay trên cây xuống nhé!"
+    "response": "**Cầm ô che mưa không thể biến thành chiếc dù bay được đâu em ơi! ☂️🪂❌**\n\n• Chiếc ô che mưa chỉ làm bằng vải mỏng và nan sắt yếu ớt. Khi nhảy từ trên cao xuống, sức cản của gió sẽ làm **chiếc ô bị lật ngược hoặc gãy vụn ngay lập tức**!\n• Em sẽ rơi thẳng xuống đất và bị gãy chân, gãy tay hoặc chấn thương cột sống.\n• Đừng bao giờ bắt chước phim hoạt hình nhảy từ bàn, cầu thang hay trên cây xuống nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "hide_in_fridge_washing_machine",
@@ -5772,7 +6376,12 @@ window.ENDY_KB = [
       "chơi trốn tìm trong máy giặt",
       "chui vào tủ đông"
     ],
-    "response": "**Tuyệt đối KHÔNG chui vào máy giặt hoặc tủ lạnh để chơi trốn tìm! 🧺❄️🚫**\n\n• Cửa máy giặt và tủ lạnh một khi đã đóng sập vào thì **từ bên trong không thể tự mở ra được**.\n• Bên trong hoàn toàn kín khí, em sẽ bị ngạt thở chỉ sau ít phút mà không ai nghe thấy tiếng kêu cứu.\n👉 Chơi trốn tìm hãy chọn nơi thoáng mát, sáng sủa và dễ quan sát em nhé!"
+    "response": "**Tuyệt đối KHÔNG chui vào máy giặt hoặc tủ lạnh để chơi trốn tìm! 🧺❄️🚫**\n\n• Cửa máy giặt và tủ lạnh một khi đã đóng sập vào thì **từ bên trong không thể tự mở ra được**.\n• Bên trong hoàn toàn kín khí, em sẽ bị ngạt thở chỉ sau ít phút mà không ai nghe thấy tiếng kêu cứu.\n👉 Chơi trốn tìm hãy chọn nơi thoáng mát, sáng sủa và dễ quan sát em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "fake_drowning_prank",
@@ -5786,7 +6395,12 @@ window.ENDY_KB = [
       "giả vờ đuối nước cho vui",
       "đùa giả vờ ngạt nước"
     ],
-    "response": "**Tuyệt đối KHÔNG ĐƯỢC giả vờ đuối nước để trêu đùa nhé! 🛑🏊‍♂️**\n\n• Đây là trò đùa 'cậu bé chăn cừu' cực kỳ tai hại! Khi em đùa nhiều lần, mọi người sẽ tưởng em giỡn chơi nên không ai đến giúp.\n• Đến khi em **bị chuột rút hoặc sặc nước thật**, dù em có vẫy tay kêu cứu thì người trên bờ vẫn tưởng em đang đóng kịch!\n👉 Bể bơi và sông nước là nơi rèn luyện, không phải sân khấu diễn kịch nguy hiểm đâu nha!"
+    "response": "**Tuyệt đối KHÔNG ĐƯỢC giả vờ đuối nước để trêu đùa nhé! 🛑🏊‍♂️**\n\n• Đây là trò đùa 'cậu bé chăn cừu' cực kỳ tai hại! Khi em đùa nhiều lần, mọi người sẽ tưởng em giỡn chơi nên không ai đến giúp.\n• Đến khi em **bị chuột rút hoặc sặc nước thật**, dù em có vẫy tay kêu cứu thì người trên bờ vẫn tưởng em đang đóng kịch!\n👉 Bể bơi và sông nước là nơi rèn luyện, không phải sân khấu diễn kịch nguy hiểm đâu nha!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "swim_with_heavy_clothes",
@@ -5800,7 +6414,12 @@ window.ENDY_KB = [
       "mặc đồ đi học nhảy xuống tắm",
       "quần áo ướt có nặng không"
     ],
-    "response": "**Đừng bao giờ mặc nguyên quần áo thường (nhất là quần bò, áo khoác) xuống bơi nhé! 👖💦❌**\n\n• Vải quần áo thường khi ngậm no nước sẽ **nặng như những bao cát** quấn chặt lấy chân tay em.\n• Nó làm em mất sức cực nhanh, chân không đạp nước được và cơ thể bị kéo chìm nghỉm xuống đáy.\n👉 Đi bơi bắt buộc phải mặc đồ bơi chuyên dụng gọn nhẹ, ôm sát để cơ thể dễ dàng nổi nhé!"
+    "response": "**Đừng bao giờ mặc nguyên quần áo thường (nhất là quần bò, áo khoác) xuống bơi nhé! 👖💦❌**\n\n• Vải quần áo thường khi ngậm no nước sẽ **nặng như những bao cát** quấn chặt lấy chân tay em.\n• Nó làm em mất sức cực nhanh, chân không đạp nước được và cơ thể bị kéo chìm nghỉm xuống đáy.\n👉 Đi bơi bắt buộc phải mặc đồ bơi chuyên dụng gọn nhẹ, ôm sát để cơ thể dễ dàng nổi nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "swim_under_diving_board",
@@ -5813,7 +6432,12 @@ window.ENDY_KB = [
       "bơi ngang qua chỗ người ta đang nhảy",
       "đứng dưới chỗ nhảy cầu"
     ],
-    "response": "**Tránh xa khu vực chân cầu nhảy ra ngay lập tức em ơi! ⚠️🏊‍♂️**\n\n• Một người từ trên cao lao xuống nước có sức nặng và tốc độ như một quả đạn đại bác rơi trúng người em!\n• Cú va chạm có thể làm em gãy xương cổ, vỡ đầu hoặc ngất xỉu chìm ngay dưới đáy hồ.\n👉 Luôn quan sát trên đầu và chỉ bơi ở các làn bơi trống an toàn nhé!"
+    "response": "**Tránh xa khu vực chân cầu nhảy ra ngay lập tức em ơi! ⚠️🏊‍♂️**\n\n• Một người từ trên cao lao xuống nước có sức nặng và tốc độ như một quả đạn đại bác rơi trúng người em!\n• Cú va chạm có thể làm em gãy xương cổ, vỡ đầu hoặc ngất xỉu chìm ngay dưới đáy hồ.\n👉 Luôn quan sát trên đầu và chỉ bơi ở các làn bơi trống an toàn nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
   },
   {
     "id": "drink_stream_river_water_raw",
@@ -5839,7 +6463,12 @@ window.ENDY_KB = [
       "vừa ngâm bồn vừa bấm điện thoại cắm sạc",
       "mang cục sạc vào phòng tắm"
     ],
-    "response": "**CỰC KỲ NGUY HIỂM TÍNH MẠNG! Tuyệt đối không mang sạc điện thoại vào nhà tắm! 🛁📱⚡**\n\n• Phòng tắm ngập đầy hơi nước và sàn nhà luôn ướt sũng. Hơi nước làm ẩm củ sạc, khiến điện 220V dễ dàng rò rỉ phóng ra ngoài.\n• Chỉ cần chiếc điện thoại đang cắm sạc tuột tay rơi vào bồn nước, em sẽ bị điện giật tử vong trong tích tắc!\n👉 Hãy sạc điện thoại ở bàn học khô ráo và chỉ dùng khi tay khô ráo thôi nhé!"
+    "response": "**CỰC KỲ NGUY HIỂM TÍNH MẠNG! Tuyệt đối không mang sạc điện thoại vào nhà tắm! 🛁📱⚡**\n\n• Phòng tắm ngập đầy hơi nước và sàn nhà luôn ướt sũng. Hơi nước làm ẩm củ sạc, khiến điện 220V dễ dàng rò rỉ phóng ra ngoài.\n• Chỉ cần chiếc điện thoại đang cắm sạc tuột tay rơi vào bồn nước, em sẽ bị điện giật tử vong trong tích tắc!\n👉 Hãy sạc điện thoại ở bàn học khô ráo và chỉ dùng khi tay khô ráo thôi nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "pull_cord_unplug_appliance",
@@ -5852,7 +6481,12 @@ window.ENDY_KB = [
       "kéo dây điện để rút phích",
       "rút điện bằng cách giật dây"
     ],
-    "response": "**Đừng cầm sợi dây mà giật mạnh phích cắm ra khỏi ổ nhé! 🔌⚡❌**\n\n• Giật mạnh sợi dây sẽ làm đứt ngầm các sợi đồng bên trong hoặc làm toác vỏ cao su bảo vệ, khiến tia lửa điện tóe ra gây cháy nổ và giật vào tay em.\n👉 **Cách rút đúng:** Dùng các ngón tay cầm chắc vào **phần đầu cắm bằng nhựa cứng**, giữ chặt mặt ổ điện rồi nhẹ nhàng rút thẳng ra!"
+    "response": "**Đừng cầm sợi dây mà giật mạnh phích cắm ra khỏi ổ nhé! 🔌⚡❌**\n\n• Giật mạnh sợi dây sẽ làm đứt ngầm các sợi đồng bên trong hoặc làm toác vỏ cao su bảo vệ, khiến tia lửa điện tóe ra gây cháy nổ và giật vào tay em.\n👉 **Cách rút đúng:** Dùng các ngón tay cầm chắc vào **phần đầu cắm bằng nhựa cứng**, giữ chặt mặt ổ điện rồi nhẹ nhàng rút thẳng ra!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "touch_hot_iron_test_heat",
@@ -5865,7 +6499,12 @@ window.ENDY_KB = [
       "sờ bếp từ xem có nóng không",
       "chạm ngón tay vào đĩa thức ăn nóng"
     ],
-    "response": "**Ôi đừng lấy ngón tay chạm vào mặt bàn là để 'thử độ nóng' nha! 👕🔥🚫**\n\n• Mặt bàn là có thể nóng tới hơn 200 độ C! Chỉ cần chạm nhẹ 1 giây là da tay em dính chặt vào mặt sắt, phồng rộp và cháy xém thịt ngay lập tức.\n👉 Muốn biết bàn là nóng hay chưa, hãy nhìn đèn báo hiệu hoặc nhờ người lớn kiểm tra, trẻ con không tự ý thử bằng tay nhé!"
+    "response": "**Ôi đừng lấy ngón tay chạm vào mặt bàn là để 'thử độ nóng' nha! 👕🔥🚫**\n\n• Mặt bàn là có thể nóng tới hơn 200 độ C! Chỉ cần chạm nhẹ 1 giây là da tay em dính chặt vào mặt sắt, phồng rộp và cháy xém thịt ngay lập tức.\n👉 Muốn biết bàn là nóng hay chưa, hãy nhìn đèn báo hiệu hoặc nhờ người lớn kiểm tra, trẻ con không tự ý thử bằng tay nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "elevator_jump_when_falling",
@@ -5878,7 +6517,12 @@ window.ENDY_KB = [
       "thang máy đứt cáp nhảy lên",
       "mẹo nhảy khi thang máy rơi"
     ],
-    "response": "**Mẹo 'nhảy lên khi thang máy rơi' chỉ có trong phim hoạt hình thôi, ngoài đời không có tác dụng đâu! 🏢❌**\n\n• Thang máy rơi với tốc độ cực nhanh, em không thể nào căn đúng tích tắc chạm sàn để nhảy lên được. Khi nhảy, đầu em còn bị va đập vỡ trần thang máy!\n👉 **Tư thế sống còn khi thang máy gặp sự cố:** Lập tức nằm ngửa áp sát lưng xuống giữa sàn thang máy, gập một cánh tay gối dưới đầu, tay kia che mặt để phân tán lực va đập!"
+    "response": "**Mẹo 'nhảy lên khi thang máy rơi' chỉ có trong phim hoạt hình thôi, ngoài đời không có tác dụng đâu! 🏢❌**\n\n• Thang máy rơi với tốc độ cực nhanh, em không thể nào căn đúng tích tắc chạm sàn để nhảy lên được. Khi nhảy, đầu em còn bị va đập vỡ trần thang máy!\n👉 **Tư thế sống còn khi thang máy gặp sự cố:** Lập tức nằm ngửa áp sát lưng xuống giữa sàn thang máy, gập một cánh tay gối dưới đầu, tay kia che mặt để phân tán lực va đập!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "stuck_head_in_railings",
@@ -5891,7 +6535,12 @@ window.ENDY_KB = [
       "thò đầu qua khe lan can",
       "nghịch chui đầu vào cửa sổ"
     ],
-    "response": "**Đừng bao giờ nghịch dại chui đầu qua các khe song sắt lan can nhé! 🚪🤕🚫**\n\n• Đầu của em khi chui qua thì dễ, nhưng hai vành tai và xương quai hàm sẽ mở rộng ra khiến em **bị mắc kẹt cứng ngắc không rút ra được**.\n• Ở trên cao, nếu bị kẹt đầu mà trượt chân, thân người rơi xuống sẽ làm gãy cổ cực kỳ nguy hiểm!\n👉 Lan can là để bảo vệ em không ngã, không phải nơi để chui đầu chơi đùa đâu nè!"
+    "response": "**Đừng bao giờ nghịch dại chui đầu qua các khe song sắt lan can nhé! 🚪🤕🚫**\n\n• Đầu của em khi chui qua thì dễ, nhưng hai vành tai và xương quai hàm sẽ mở rộng ra khiến em **bị mắc kẹt cứng ngắc không rút ra được**.\n• Ở trên cao, nếu bị kẹt đầu mà trượt chân, thân người rơi xuống sẽ làm gãy cổ cực kỳ nguy hiểm!\n👉 Lan can là để bảo vệ em không ngã, không phải nơi để chui đầu chơi đùa đâu nè!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "trapped_in_hot_car",
@@ -5904,7 +6553,12 @@ window.ENDY_KB = [
       "kẹt trong xe ô tô làm gì",
       "bấm còi khi bị kẹt trong xe"
     ],
-    "response": "**Nếu lỡ bị kẹt một mình trong xe ô tô đóng kín cửa, em hãy làm ngay các bước sau:** 🚗🚨\n\n1. **Trèo lên ghế lái:** Bấm liên tục vào **chính giữa vô-lăng** để còi xe kêu inh ỏi báo động cho người xung quanh.\n2. **Bật nút đèn khẩn cấp:** Nút có hình **tam giác màu đỏ** trên bảng điều khiển để đèn xe nhấp nháy liên tục.\n3. **Mở chốt cửa:** Tìm nút gạt khóa cửa hình ổ khóa bên cạnh tay nắm để tự mở cửa từ bên trong.\n4. Đập mạnh vào cửa kính vẫy tay kêu cứu, không trùm chăn ngủ vì trong xe sẽ rất nóng và thiếu khí!"
+    "response": "**Nếu lỡ bị kẹt một mình trong xe ô tô đóng kín cửa, em hãy làm ngay các bước sau:** 🚗🚨\n\n1. **Trèo lên ghế lái:** Bấm liên tục vào **chính giữa vô-lăng** để còi xe kêu inh ỏi báo động cho người xung quanh.\n2. **Bật nút đèn khẩn cấp:** Nút có hình **tam giác màu đỏ** trên bảng điều khiển để đèn xe nhấp nháy liên tục.\n3. **Mở chốt cửa:** Tìm nút gạt khóa cửa hình ổ khóa bên cạnh tay nắm để tự mở cửa từ bên trong.\n4. Đập mạnh vào cửa kính vẫy tay kêu cứu, không trùm chăn ngủ vì trong xe sẽ rất nóng và thiếu khí!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "run_with_lollipop_chopsticks",
@@ -5917,7 +6571,12 @@ window.ENDY_KB = [
       "ngậm thìa chạy chơi",
       "vừa ngậm bút vừa đùa"
     ],
-    "response": "**Đây là thói quen vô cùng nguy hiểm mà rất nhiều bạn nhỏ mắc phải! 🍭🥢⚠️**\n\n• Khi em đang ngậm que kẹo, đũa hoặc bút mà bị vấp ngã đập mặt xuống đất, que nhọn sẽ **chọc thẳng thủng vòm họng hoặc khí quản**, gây rách họng và chảy máu ồ ạt nguy kịch tính mạng!\n👉 Muốn ăn kẹo mút hay ăn cơm: Ngồi yên một chỗ ăn xong rồi mới đứng dậy đi chơi em nhé!"
+    "response": "**Đây là thói quen vô cùng nguy hiểm mà rất nhiều bạn nhỏ mắc phải! 🍭🥢⚠️**\n\n• Khi em đang ngậm que kẹo, đũa hoặc bút mà bị vấp ngã đập mặt xuống đất, que nhọn sẽ **chọc thẳng thủng vòm họng hoặc khí quản**, gây rách họng và chảy máu ồ ạt nguy kịch tính mạng!\n👉 Muốn ăn kẹo mút hay ăn cơm: Ngồi yên một chỗ ăn xong rồi mới đứng dậy đi chơi em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "climb_balcony_fetch_toy",
@@ -5930,7 +6589,12 @@ window.ENDY_KB = [
       "với tay ra ngoài ban công lấy dép",
       "trèo qua rào chắn nhặt đồ"
     ],
-    "response": "**Món đồ chơi có thể mua lại được, nhưng mạng sống thì KHÔNG! Tuyệt đối không trèo ra ngoài! 🏢🚫**\n\n• Chỉ cần nghiêng người quá mép lan can một chút, sức nặng của đầu sẽ kéo em mất thăng bằng lộn nhào từ trên cao xuống đất.\n👉 Nếu bóng, dép hay đồ chơi bị rơi ra gờ cửa sổ hay ban công: Hãy đứng yên bên trong và **nhờ người lớn dùng gậy dài khều vào** giúp em nhé!"
+    "response": "**Món đồ chơi có thể mua lại được, nhưng mạng sống thì KHÔNG! Tuyệt đối không trèo ra ngoài! 🏢🚫**\n\n• Chỉ cần nghiêng người quá mép lan can một chút, sức nặng của đầu sẽ kéo em mất thăng bằng lộn nhào từ trên cao xuống đất.\n👉 Nếu bóng, dép hay đồ chơi bị rơi ra gờ cửa sổ hay ban công: Hãy đứng yên bên trong và **nhờ người lớn dùng gậy dài khều vào** giúp em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "swallow_watermelon_seed_harness",
@@ -5970,7 +6634,12 @@ window.ENDY_KB = [
       "vuốt ve chó đang ngủ say",
       "đụng vào chó đang gặm xương"
     ],
-    "response": "**Đừng bao giờ trêu chọc hay đụng vào khi chú chó đang ăn hoặc đang ngủ nhé! 🐶🍖🛑**\n\n• Khi đang ăn, chó có bản năng bảo vệ miếng mồi rất hung dữ. Nếu em thò tay vào, nó sẽ tưởng em cướp thức ăn và cắn nát bàn tay em!\n• Khi đang ngủ say mà bị giật mình ôm bất ngờ, chú chó sẽ giật thót và ngoạm cắn theo phản xạ tự vệ.\n👉 Hãy để các bạn cún ăn no, ngủ dậy tỉnh táo rồi mới chơi đùa cùng nhé!"
+    "response": "**Đừng bao giờ trêu chọc hay đụng vào khi chú chó đang ăn hoặc đang ngủ nhé! 🐶🍖🛑**\n\n• Khi đang ăn, chó có bản năng bảo vệ miếng mồi rất hung dữ. Nếu em thò tay vào, nó sẽ tưởng em cướp thức ăn và cắn nát bàn tay em!\n• Khi đang ngủ say mà bị giật mình ôm bất ngờ, chú chó sẽ giật thót và ngoạm cắn theo phản xạ tự vệ.\n👉 Hãy để các bạn cún ăn no, ngủ dậy tỉnh táo rồi mới chơi đùa cùng nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "laser_pointer_in_eyes",
@@ -5983,7 +6652,12 @@ window.ENDY_KB = [
       "đèn pin laser đồ chơi",
       "rọi đèn laser vào mắt"
     ],
-    "response": "**Tuyệt đối KHÔNG ĐƯỢC chiếu tia laser vào mắt bạn hoặc mắt mình! 🔦👁️❌**\n\n• Tia laser là chùm ánh sáng mang năng lượng nhiệt cực mạnh. Chỉ cần chiếu vào mắt trong 1 giây là có thể **đốt cháy võng mạc, làm hỏng điểm vàng và gây mù lòa vĩnh viễn** không thể chữa được!\n👉 Đèn laser chỉ dùng để thuyết trình hoặc chỉ bảng, không phải đồ chơi chiếu vào mặt nhau đâu nhé!"
+    "response": "**Tuyệt đối KHÔNG ĐƯỢC chiếu tia laser vào mắt bạn hoặc mắt mình! 🔦👁️❌**\n\n• Tia laser là chùm ánh sáng mang năng lượng nhiệt cực mạnh. Chỉ cần chiếu vào mắt trong 1 giây là có thể **đốt cháy võng mạc, làm hỏng điểm vàng và gây mù lòa vĩnh viễn** không thể chữa được!\n👉 Đèn laser chỉ dùng để thuyết trình hoặc chỉ bảng, không phải đồ chơi chiếu vào mặt nhau đâu nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "stare_at_sun_with_sunglasses",
@@ -5996,7 +6670,12 @@ window.ENDY_KB = [
       "nhìn nhật thực bằng kính râm",
       "nhìn mặt trời buổi trưa"
     ],
-    "response": "**Dù có đeo kính râm đen kịt thì cũng KHÔNG ĐƯỢC nhìn thẳng vào mặt trời! 🕶️☀️🚫**\n\n• Kính râm thông thường chỉ làm giảm độ chói chứ không cản được các **tia tử ngoại (UV) vô hình cực độc**.\n• Nhìn thẳng vào mặt trời sẽ làm 'cháy xém' tế bào mắt của em giống như lấy kính lúp đốt cháy tờ giấy vậy!\n👉 Muốn ngắm nhật thực phải dùng kính quan sát chuyên dụng có màng lọc đạt chuẩn của nhà khoa học nhé!"
+    "response": "**Dù có đeo kính râm đen kịt thì cũng KHÔNG ĐƯỢC nhìn thẳng vào mặt trời! 🕶️☀️🚫**\n\n• Kính râm thông thường chỉ làm giảm độ chói chứ không cản được các **tia tử ngoại (UV) vô hình cực độc**.\n• Nhìn thẳng vào mặt trời sẽ làm 'cháy xém' tế bào mắt của em giống như lấy kính lúp đốt cháy tờ giấy vậy!\n👉 Muốn ngắm nhật thực phải dùng kính quan sát chuyên dụng có màng lọc đạt chuẩn của nhà khoa học nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "drink_cleaning_chemical_syrup",
@@ -6009,7 +6688,12 @@ window.ENDY_KB = [
       "uong nuoc tay rua",
       "nước tẩy bồn cầu nhìn giống siro"
     ],
-    "response": "**Cảnh báo cực nguy hiểm! Các chai lọ tẩy rửa KHÔNG PHẢI là nước ngọt hay siro! 🧴☠️🚫**\n\n• Nước lau sàn, nước xả vải hay nước tẩy bồn cầu thường có màu xanh, hồng rất thơm giống nước ngọt, nhưng chúng chứa toàn **hóa chất kiềm và axit cực độc**!\n• Uống vào sẽ làm cháy bỏng miệng, thủng thực quản và loét dạ dày.\n👉 **Quy tắc:** Thấy chai lọ lạ trong nhà tắm, gầm bếp tuyệt đối không được mở nắp ngửi hay nếm thử!"
+    "response": "**Cảnh báo cực nguy hiểm! Các chai lọ tẩy rửa KHÔNG PHẢI là nước ngọt hay siro! 🧴☠️🚫**\n\n• Nước lau sàn, nước xả vải hay nước tẩy bồn cầu thường có màu xanh, hồng rất thơm giống nước ngọt, nhưng chúng chứa toàn **hóa chất kiềm và axit cực độc**!\n• Uống vào sẽ làm cháy bỏng miệng, thủng thực quản và loét dạ dày.\n👉 **Quy tắc:** Thấy chai lọ lạ trong nhà tắm, gầm bếp tuyệt đối không được mở nắp ngửi hay nếm thử!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "eat_wild_mushrooms_fruits",
@@ -6023,7 +6707,12 @@ window.ENDY_KB = [
       "hái nấm đẹp ăn thử",
       "nấm độc nhìn thế nào"
     ],
-    "response": "**Nấm càng sặc sỡ, càng đẹp mắt thì lại CÀNG ĐỘC nhé em! 🍄☠️⚠️**\n\n• Rất nhiều cây nấm rừng chứa chất kịch độc giết người chỉ sau vài giờ ăn phải.\n• Cả những quả dại mọc bờ rào ven đường cũng có thể có độc tố hoặc bị phun thuốc sâu.\n👉 Chỉ ăn những loại nấm và hoa quả đã được bố mẹ rửa sạch, nấu chín trên mâm cơm thôi nhé!"
+    "response": "**Nấm càng sặc sỡ, càng đẹp mắt thì lại CÀNG ĐỘC nhé em! 🍄☠️⚠️**\n\n• Rất nhiều cây nấm rừng chứa chất kịch độc giết người chỉ sau vài giờ ăn phải.\n• Cả những quả dại mọc bờ rào ven đường cũng có thể có độc tố hoặc bị phun thuốc sâu.\n👉 Chỉ ăn những loại nấm và hoa quả đã được bố mẹ rửa sạch, nấu chín trên mâm cơm thôi nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "play_with_matches_lighters",
@@ -6037,7 +6726,12 @@ window.ENDY_KB = [
       "đốt giấy vụn chơi trong nhà",
       "thử quẹt diêm"
     ],
-    "response": "**Que diêm hay bật lửa không phải là đồ chơi đâu em ơi! 🕯️🔥❌**\n\n• Một tàn lửa que diêm rơi vào rèm cửa, đệm giường hay đống quần áo có thể biến thành một **đám cháy khổng lồ thiêu rụi cả căn nhà chỉ sau 3 phút**!\n• Bật lửa ga nếu để gần nguồn nhiệt còn có thể phát nổ tung làm nát ngón tay em.\n👉 Thấy diêm hay bật lửa, hãy để yên ở chỗ cao cho người lớn sử dụng nhé!"
+    "response": "**Que diêm hay bật lửa không phải là đồ chơi đâu em ơi! 🕯️🔥❌**\n\n• Một tàn lửa que diêm rơi vào rèm cửa, đệm giường hay đống quần áo có thể biến thành một **đám cháy khổng lồ thiêu rụi cả căn nhà chỉ sau 3 phút**!\n• Bật lửa ga nếu để gần nguồn nhiệt còn có thể phát nổ tung làm nát ngón tay em.\n👉 Thấy diêm hay bật lửa, hãy để yên ở chỗ cao cho người lớn sử dụng nhé!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "lick_phone_charging_cable",
@@ -6051,7 +6745,12 @@ window.ENDY_KB = [
       "đầu dây sạc có giật không",
       "liếm chân sạc"
     ],
-    "response": "**Tuyệt đối KHÔNG ĐƯỢC ngậm hay liếm đầu dây sạc đang cắm điện nhé! ⚡👅🚫**\n\n• Nước bọt trong miệng em dẫn điện cực kỳ tốt. Dù nguồn điện đầu ra chỉ 5V hay 9V, khi tiếp xúc trực tiếp với lưỡi ẩm ướt vẫn gây **cháy bỏng rát lưỡi, co giật cơ miệng và hoại tử niêm mạc**.\n• Nếu củ sạc bị lỗi rò điện 220V, nó sẽ phóng điện thẳng vào tim làm em ngất lịm ngay tức khắc!\n👉 Thấy dây sạc đang cắm vào ổ, hãy để yên trên bàn, tuyệt đối không cho vào miệng cắn hay liếm em nhé!"
+    "response": "**Tuyệt đối KHÔNG ĐƯỢC ngậm hay liếm đầu dây sạc đang cắm điện nhé! ⚡👅🚫**\n\n• Nước bọt trong miệng em dẫn điện cực kỳ tốt. Dù nguồn điện đầu ra chỉ 5V hay 9V, khi tiếp xúc trực tiếp với lưỡi ẩm ướt vẫn gây **cháy bỏng rát lưỡi, co giật cơ miệng và hoại tử niêm mạc**.\n• Nếu củ sạc bị lỗi rò điện 220V, nó sẽ phóng điện thẳng vào tim làm em ngất lịm ngay tức khắc!\n👉 Thấy dây sạc đang cắm vào ổ, hãy để yên trên bàn, tuyệt đối không cho vào miệng cắn hay liếm em nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "cut_live_electric_wire_scissors",
@@ -6065,7 +6764,12 @@ window.ENDY_KB = [
       "cắt dây điện xem có gì bên trong",
       "kéo bấm dây điện"
     ],
-    "response": "**Trời ơi, chớ dại dột lấy dao kéo cắt dây điện đang cắm nhé! ✂️⚡😱**\n\n• Lưỡi dao, lưỡi kéo làm bằng kim loại dẫn điện tức thì. Khi em cắt qua vỏ nhựa chạm vào lõi đồng, một tiếng nổ lớn như quả pháo sẽ bùng lên, kèm tia lửa điện tóe ra thiêu cháy mắt và truyền thẳng luồng điện cực mạnh làm co giật bàn tay em.\n👉 Muốn cắt dây buộc đồ, hãy nhìn kỹ xem đó có phải dây điện không, và tuyệt đối không đụng vào dây nối với ổ điện nhé!"
+    "response": "**Trời ơi, chớ dại dột lấy dao kéo cắt dây điện đang cắm nhé! ✂️⚡😱**\n\n• Lưỡi dao, lưỡi kéo làm bằng kim loại dẫn điện tức thì. Khi em cắt qua vỏ nhựa chạm vào lõi đồng, một tiếng nổ lớn như quả pháo sẽ bùng lên, kèm tia lửa điện tóe ra thiêu cháy mắt và truyền thẳng luồng điện cực mạnh làm co giật bàn tay em.\n👉 Muốn cắt dây buộc đồ, hãy nhìn kỹ xem đó có phải dây điện không, và tuyệt đối không đụng vào dây nối với ổ điện nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "kite_stuck_power_lines",
@@ -6079,7 +6783,12 @@ window.ENDY_KB = [
       "thả diều gần đường điện cao thế",
       "gỡ diều trên dây điện"
     ],
-    "response": "**Diều bị vướng vào dây điện thì BỎ LUÔN, tuyệt đối không được trèo lên gỡ! 🪁⚡🛑**\n\n• Dây điện cao thế có thể **phóng tia lửa điện xuyên qua không khí** ngay cả khi em chưa kịp chạm tay vào!\n• Dùng que gỗ, sào trúc để chọc cũng nguy hiểm vì nếu cây ẩm ướt, điện sẽ truyền thẳng xuống đất giật cháy người em.\n👉 Mất một con diều có thể làm lại con khác, nhưng tính mạng thì chỉ có một. Hãy luôn thả diều ở bãi đất trống, xa đường dây điện nhé!"
+    "response": "**Diều bị vướng vào dây điện thì BỎ LUÔN, tuyệt đối không được trèo lên gỡ! 🪁⚡🛑**\n\n• Dây điện cao thế có thể **phóng tia lửa điện xuyên qua không khí** ngay cả khi em chưa kịp chạm tay vào!\n• Dùng que gỗ, sào trúc để chọc cũng nguy hiểm vì nếu cây ẩm ướt, điện sẽ truyền thẳng xuống đất giật cháy người em.\n👉 Mất một con diều có thể làm lại con khác, nhưng tính mạng thì chỉ có một. Hãy luôn thả diều ở bãi đất trống, xa đường dây điện nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "metal_spoon_in_microwave",
@@ -6093,7 +6802,12 @@ window.ENDY_KB = [
       "kim loại trong lò vi sóng",
       "bọc giấy bạc quay lò vi sóng"
     ],
-    "response": "**Tuyệt đối KHÔNG để thìa, dĩa, bát sắt, bát nhôm hay giấy bạc vào lò vi sóng! 🥣⚡💥**\n\n• Sóng vi ba trong lò gặp kim loại sẽ bị phản xạ dồn dập, tạo thành những **tia lửa điện nổ lách tách như sấm sét** bên trong khoang lò.\n• Lò vi sóng có thể bị chập mạch bốc cháy dữ dội và nổ tung cánh cửa kính bay vào người em!\n👉 Chỉ quay thức ăn bằng bát đĩa sứ, thủy tinh chịu nhiệt chuyên dụng thôi nhé!"
+    "response": "**Tuyệt đối KHÔNG để thìa, dĩa, bát sắt, bát nhôm hay giấy bạc vào lò vi sóng! 🥣⚡💥**\n\n• Sóng vi ba trong lò gặp kim loại sẽ bị phản xạ dồn dập, tạo thành những **tia lửa điện nổ lách tách như sấm sét** bên trong khoang lò.\n• Lò vi sóng có thể bị chập mạch bốc cháy dữ dội và nổ tung cánh cửa kính bay vào người em!\n👉 Chỉ quay thức ăn bằng bát đĩa sứ, thủy tinh chịu nhiệt chuyên dụng thôi nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "touch_street_lamp_post_rain",
@@ -6106,7 +6820,12 @@ window.ENDY_KB = [
       "sờ vào cột điện khi ngập nước",
       "dựa lưng vào cột đèn ngoài đường"
     ],
-    "response": "**Khi trời mưa hoặc đường ngập, TUYỆT ĐỐI KHÔNG ôm hay chạm vào cột đèn đường! 🌧️💡⚠️**\n\n• Các hộp điện và mối nối dưới chân cột đèn lâu ngày ngoài trời có thể bị hở hoặc chuột cắn. Trời mưa làm nước dẫn luồng điện rò rỉ ra toàn bộ thân cột bằng kim loại!\n• Đã có nhiều bạn bị điện giật bất tỉnh chỉ vì vô tình vịn tay vào cột đèn khi chờ bố mẹ đón dưới mưa.\n👉 Trời mưa dông: Đi cách xa các cột điện, trạm biến áp và cột đèn chiếu sáng ít nhất 2 mét nhé!"
+    "response": "**Khi trời mưa hoặc đường ngập, TUYỆT ĐỐI KHÔNG ôm hay chạm vào cột đèn đường! 🌧️💡⚠️**\n\n• Các hộp điện và mối nối dưới chân cột đèn lâu ngày ngoài trời có thể bị hở hoặc chuột cắn. Trời mưa làm nước dẫn luồng điện rò rỉ ra toàn bộ thân cột bằng kim loại!\n• Đã có nhiều bạn bị điện giật bất tỉnh chỉ vì vô tình vịn tay vào cột đèn khi chờ bố mẹ đón dưới mưa.\n👉 Trời mưa dông: Đi cách xa các cột điện, trạm biến áp và cột đèn chiếu sáng ít nhất 2 mét nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "overload_multi_plug_adapter",
@@ -6119,7 +6838,12 @@ window.ENDY_KB = [
       "ổ điện nóng ran",
       "cắm chồng ổ cắm lên nhau"
     ],
-    "response": "**Cắm chồng chất quá nhiều thiết bị vào một ổ cắm sẽ làm bốc cháy đấy em! 🔌🔥⚠️**\n\n• Khi cắm nồi cơm, quạt, bếp từ, máy sấy tóc cùng một lúc vào một ổ chia nhỏ xíu, dòng điện quá tải sẽ làm dây dẫn **nóng rực lên như sợi dây may-so**.\n• Lớp vỏ nhựa xung quanh sẽ chảy mềm, bốc mùi khét lẹt và bùng lửa thành đám cháy lớn trong đêm.\n👉 Nếu thấy ổ cắm nóng ran hoặc có mùi khét, hãy nhờ người lớn rút bớt thiết bị ra ngay nhé!"
+    "response": "**Cắm chồng chất quá nhiều thiết bị vào một ổ cắm sẽ làm bốc cháy đấy em! 🔌🔥⚠️**\n\n• Khi cắm nồi cơm, quạt, bếp từ, máy sấy tóc cùng một lúc vào một ổ chia nhỏ xíu, dòng điện quá tải sẽ làm dây dẫn **nóng rực lên như sợi dây may-so**.\n• Lớp vỏ nhựa xung quanh sẽ chảy mềm, bốc mùi khét lẹt và bùng lửa thành đám cháy lớn trong đêm.\n👉 Nếu thấy ổ cắm nóng ran hoặc có mùi khét, hãy nhờ người lớn rút bớt thiết bị ra ngay nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "play_tag_football_on_street",
@@ -6132,7 +6856,12 @@ window.ENDY_KB = [
       "đá cầu dưới đường phố",
       "đường trong xóm đá bóng được không"
     ],
-    "response": "**Lòng đường là nơi dành riêng cho xe chạy, KHÔNG PHẢI sân chơi bóng! ⚽🚗🛑**\n\n• Khi mải tranh cướp bóng hoặc đuổi bắt bạn bè, em sẽ hoàn toàn mất tập trung và không nhìn thấy xe máy, ô tô đang lao tới.\n• Xe cộ qua khúc cua khuất tầm nhìn sẽ không kịp phanh gấp và đâm thẳng vào em.\n👉 Muốn đá bóng, đá cầu hay rượt đuổi: Hãy rủ các bạn vào công viên, sân trường hoặc sân thể thao có rào chắn an toàn nhé!"
+    "response": "**Lòng đường là nơi dành riêng cho xe chạy, KHÔNG PHẢI sân chơi bóng! ⚽🚗🛑**\n\n• Khi mải tranh cướp bóng hoặc đuổi bắt bạn bè, em sẽ hoàn toàn mất tập trung và không nhìn thấy xe máy, ô tô đang lao tới.\n• Xe cộ qua khúc cua khuất tầm nhìn sẽ không kịp phanh gấp và đâm thẳng vào em.\n👉 Muốn đá bóng, đá cầu hay rượt đuổi: Hãy rủ các bạn vào công viên, sân trường hoặc sân thể thao có rào chắn an toàn nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "blind_spot_large_vehicles_hide",
@@ -6145,7 +6874,12 @@ window.ENDY_KB = [
       "đứng sau đuôi xe ô tô to",
       "chui gầm xe tải nhặt bóng"
     ],
-    "response": "**Điểm mù của xe tải và xe buýt là 'chiếc bẫy tử thần' vô hình! 🚚🚌❌**\n\n• Xe tải rất to và cao, tài xế ngồi trên buồng lái **hoàn toàn KHÔNG NHÌN THẤY em** khi em đứng sát bên hông, ngay trước đầu xe hoặc sát đuôi xe!\n• Khi bác tài lùi xe hoặc đánh lái rẽ cua, bánh xe sau khổng lồ sẽ quét qua vùng điểm mù và chèn qua những ai đứng gần.\n👉 **Ghi nhớ:** Luôn đứng cách xa các xe ô tô to ít nhất 3-5 mét, và tuyệt đối không bao giờ chui gầm xe nhặt đồ!"
+    "response": "**Điểm mù của xe tải và xe buýt là 'chiếc bẫy tử thần' vô hình! 🚚🚌❌**\n\n• Xe tải rất to và cao, tài xế ngồi trên buồng lái **hoàn toàn KHÔNG NHÌN THẤY em** khi em đứng sát bên hông, ngay trước đầu xe hoặc sát đuôi xe!\n• Khi bác tài lùi xe hoặc đánh lái rẽ cua, bánh xe sau khổng lồ sẽ quét qua vùng điểm mù và chèn qua những ai đứng gần.\n👉 **Ghi nhớ:** Luôn đứng cách xa các xe ô tô to ít nhất 3-5 mét, và tuyệt đối không bao giờ chui gầm xe nhặt đồ!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "no_hands_bike_stunt_trick",
@@ -6159,7 +6893,12 @@ window.ENDY_KB = [
       "bốc đầu xe đạp thể hiện",
       "lạng lách xe đạp"
     ],
-    "response": "**Bỏ hai tay lái xe đạp không hề ngầu, mà là cực kỳ dại dột! 🚲🤕🚫**\n\n• Chỉ cần bánh trước vấp phải một viên sỏi nhỏ hoặc một gờ nắp cống, tay lái sẽ bị quặt ngoắt lại làm em **lộn nhào cắm đầu xuống đường**.\n• Răng cửa, cằm và trán em sẽ va thẳng vào mặt đường nhựa cứng gây gãy răng, chấn thương sọ não.\n👉 Người đi xe đạp thông minh luôn cầm chắc 2 tay lái và sẵn sàng ngón tay ở cần phanh nhé!"
+    "response": "**Bỏ hai tay lái xe đạp không hề ngầu, mà là cực kỳ dại dột! 🚲🤕🚫**\n\n• Chỉ cần bánh trước vấp phải một viên sỏi nhỏ hoặc một gờ nắp cống, tay lái sẽ bị quặt ngoắt lại làm em **lộn nhào cắm đầu xuống đường**.\n• Răng cửa, cằm và trán em sẽ va thẳng vào mặt đường nhựa cứng gây gãy răng, chấn thương sọ não.\n👉 Người đi xe đạp thông minh luôn cầm chắc 2 tay lái và sẵn sàng ngón tay ở cần phanh nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "climb_over_median_barrier",
@@ -6172,7 +6911,12 @@ window.ENDY_KB = [
       "trèo hàng rào qua đường cho nhanh",
       "nhảy qua dải phân cách"
     ],
-    "response": "**Tuyệt đối KHÔNG trèo qua dải phân cách hay rào chắn giữa đường! 🚧🏃‍♂️❌**\n\n• Làn đường sát dải phân cách là nơi ô tô chạy với tốc độ nhanh nhất (60-80 km/h). Khi em bất thình lình nhảy từ dải phân cách xuống, tài xế không tài nào phanh kịp!\n• Rào sắt nhọn cũng có thể móc rách quần áo, đâm thủng chân làm em mắc kẹt giữa làn xe lao vun vút.\n👉 Chịu khó đi thêm vài chục mét đến đúng **vạch kẻ đường cho người đi bộ hoặc cầu vượt** để qua đường an toàn nhé!"
+    "response": "**Tuyệt đối KHÔNG trèo qua dải phân cách hay rào chắn giữa đường! 🚧🏃‍♂️❌**\n\n• Làn đường sát dải phân cách là nơi ô tô chạy với tốc độ nhanh nhất (60-80 km/h). Khi em bất thình lình nhảy từ dải phân cách xuống, tài xế không tài nào phanh kịp!\n• Rào sắt nhọn cũng có thể móc rách quần áo, đâm thủng chân làm em mắc kẹt giữa làn xe lao vun vút.\n👉 Chịu khó đi thêm vài chục mét đến đúng **vạch kẻ đường cho người đi bộ hoặc cầu vượt** để qua đường an toàn nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "stand_on_motorbike_footrest",
@@ -6185,7 +6929,12 @@ window.ENDY_KB = [
       "không ôm người lớn khi đi xe máy",
       "ngồi quay lưng lại trên xe máy"
     ],
-    "response": "**Ngồi sau xe máy phải ngồi ngay ngắn và ôm chặt lấy người lớn! 🛵⚠️**\n\n• Đứng ở phần để chân phía trước của xe ga, nếu xe phanh gấp hoặc va quẹt, em sẽ bị **hất bay văng qua tay lái đập thẳng mặt xuống đất** hoặc bị tay lái dập vào ngực.\n• Đứng trên yên phía sau thì chỉ cần một cú xóc gà là em ngã ngửa ra sau đường.\n👉 Hãy đội mũ bảo hiểm vừa đầu, ngồi áp sát người lớn và hai tay ôm chắc eo bố mẹ suốt chuyến đi nhé!"
+    "response": "**Ngồi sau xe máy phải ngồi ngay ngắn và ôm chặt lấy người lớn! 🛵⚠️**\n\n• Đứng ở phần để chân phía trước của xe ga, nếu xe phanh gấp hoặc va quẹt, em sẽ bị **hất bay văng qua tay lái đập thẳng mặt xuống đất** hoặc bị tay lái dập vào ngực.\n• Đứng trên yên phía sau thì chỉ cần một cú xóc gà là em ngã ngửa ra sau đường.\n👉 Hãy đội mũ bảo hiểm vừa đầu, ngồi áp sát người lớn và hai tay ôm chắc eo bố mẹ suốt chuyến đi nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "cross_railway_when_barrier_down",
@@ -6198,7 +6947,12 @@ window.ENDY_KB = [
       "chui qua thanh chắn đường ray",
       "tàu hỏa còn xa chạy qua kịp"
     ],
-    "response": "**Thanh rào chắn đường tàu đã hạ xuống là TUYỆT ĐỐI CẤM BƯỚC QUA! 🚂🛑🚫**\n\n• Đoàn tàu hỏa nặng hàng ngàn tấn lao đi cực nhanh và **cần cả 1 cây số mới phanh dừng lại được**! Bác lái tàu dù nhìn thấy em cũng không thể dừng tàu gấp được đâu.\n• Bước chân em có thể bị vấp kẹt vào khe thanh ray kim loại không rút ra kịp.\n👉 Chuông reo, cần chắn hạ xuống: Hãy đứng kiên nhẫn sau vạch an toàn, ngắm đoàn tàu đi qua rồi mới đi tiếp nhé!"
+    "response": "**Thanh rào chắn đường tàu đã hạ xuống là TUYỆT ĐỐI CẤM BƯỚC QUA! 🚂🛑🚫**\n\n• Đoàn tàu hỏa nặng hàng ngàn tấn lao đi cực nhanh và **cần cả 1 cây số mới phanh dừng lại được**! Bác lái tàu dù nhìn thấy em cũng không thể dừng tàu gấp được đâu.\n• Bước chân em có thể bị vấp kẹt vào khe thanh ray kim loại không rút ra kịp.\n👉 Chuông reo, cần chắn hạ xuống: Hãy đứng kiên nhẫn sau vạch an toàn, ngắm đoàn tàu đi qua rồi mới đi tiếp nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "ride_wrong_way_short_distance",
@@ -6211,7 +6965,12 @@ window.ENDY_KB = [
       "đi ngược đường vì nhà gần",
       "xe đạp đi ngược chiều"
     ],
-    "response": "**Dù chỉ đi 5 mét thì cũng KHÔNG ĐƯỢC đi ngược chiều nhé! 🚴‍♂️⚠️❌**\n\n• Các xe đi đúng chiều hoàn toàn không ngờ tới việc có một bạn nhỏ đang lao thẳng ngược lại phía mình, họ sẽ bị giật mình không kịp xử lý.\n• Rất nhiều vụ tai nạn xảy ra chỉ vì suy nghĩ chủ quan *'nhà cháu ngay đây nên cháu đi ngược chiều một tí cho tiện'*.\n👉 Luôn đi sát lề bên tay phải theo đúng chiều đường quy định để bảo vệ an toàn cho chính mình nhé!"
+    "response": "**Dù chỉ đi 5 mét thì cũng KHÔNG ĐƯỢC đi ngược chiều nhé! 🚴‍♂️⚠️❌**\n\n• Các xe đi đúng chiều hoàn toàn không ngờ tới việc có một bạn nhỏ đang lao thẳng ngược lại phía mình, họ sẽ bị giật mình không kịp xử lý.\n• Rất nhiều vụ tai nạn xảy ra chỉ vì suy nghĩ chủ quan *'nhà cháu ngay đây nên cháu đi ngược chiều một tí cho tiện'*.\n👉 Luôn đi sát lề bên tay phải theo đúng chiều đường quy định để bảo vệ an toàn cho chính mình nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "pull_chair_prank_friend",
@@ -6224,7 +6983,12 @@ window.ENDY_KB = [
       "chơi khăm giật ghế",
       "bạn ngồi kéo ghế ra"
     ],
-    "response": "**Trò rút ghế trêu bạn là trò đùa ÁC Ý và có thể làm bạn bị LIỆT đấy! 🪑💥❌**\n\n• Khi bị hụt ghế ngồi bất ngờ, toàn bộ sức nặng cơ thể bạn sẽ đập mạnh vùng xương cụt và cột sống xuống sàn nhà cứng ngắc.\n• Cú ngã này có thể làm **gãy đốt sống lưng, chấn thương tủy sống gây liệt hai chân vĩnh viễn** hoặc dập não nếu gáy đập vào cạnh bàn!\n👉 Đừng bao giờ chơi trò dại dột này và hãy nhắc nhở ngay nếu thấy bạn khác định làm nhé!"
+    "response": "**Trò rút ghế trêu bạn là trò đùa ÁC Ý và có thể làm bạn bị LIỆT đấy! 🪑💥❌**\n\n• Khi bị hụt ghế ngồi bất ngờ, toàn bộ sức nặng cơ thể bạn sẽ đập mạnh vùng xương cụt và cột sống xuống sàn nhà cứng ngắc.\n• Cú ngã này có thể làm **gãy đốt sống lưng, chấn thương tủy sống gây liệt hai chân vĩnh viễn** hoặc dập não nếu gáy đập vào cạnh bàn!\n👉 Đừng bao giờ chơi trò dại dột này và hãy nhắc nhở ngay nếu thấy bạn khác định làm nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "button_battery_swallowed_or_nose",
@@ -6237,7 +7001,12 @@ window.ENDY_KB = [
       "nhét viên pin tròn vào tai",
       "nuốt cục pin nhỏ xíu"
     ],
-    "response": "**Viên pin cúc áo nhỏ xíu là 'sát thủ thầm lặng' cực kỳ nguy hiểm! ⚪⚠️☠️**\n\n• Khi bị nuốt hoặc kẹt trong mũi/tai, chất ẩm ướt trong cơ thể sẽ kích hoạt dòng điện của pin, tạo ra chất kiềm ăn mòn cực mạnh **làm thủng thực quản hoặc cháy thủng vách ngăn mũi chỉ sau 2 giờ đồng hồ**!\n👉 Tuyệt đối không ngậm pin hay nhét đồ chơi vào mũi, tai. Nếu lỡ nuốt phải, hãy báo ngay bố mẹ đưa đi bệnh viện cấp cứu mổ gắp ra khẩn cấp!"
+    "response": "**Viên pin cúc áo nhỏ xíu là 'sát thủ thầm lặng' cực kỳ nguy hiểm! ⚪⚠️☠️**\n\n• Khi bị nuốt hoặc kẹt trong mũi/tai, chất ẩm ướt trong cơ thể sẽ kích hoạt dòng điện của pin, tạo ra chất kiềm ăn mòn cực mạnh **làm thủng thực quản hoặc cháy thủng vách ngăn mũi chỉ sau 2 giờ đồng hồ**!\n👉 Tuyệt đối không ngậm pin hay nhét đồ chơi vào mũi, tai. Nếu lỡ nuốt phải, hãy báo ngay bố mẹ đưa đi bệnh viện cấp cứu mổ gắp ra khẩn cấp!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "slide_down_stair_handrail",
@@ -6250,7 +7019,12 @@ window.ENDY_KB = [
       "trượt cầu thang xiếc",
       "trượt máng cầu thang trường"
     ],
-    "response": "**Tay vịn cầu thang để vịn tay đi bộ, không phải cầu trượt công viên đâu nha! 🎢🤕🚫**\n\n• Khi trượt với tốc độ cao, chỉ cần mất thăng bằng nghiêng người một tí là em sẽ **rơi lộn nhào từ tầng trên xuống giếng trời cầu thang**.\n• Cú rơi tự do từ trên cao xuống nền gạch men sẽ gây vỡ sọ, gãy xương và đe dọa trực tiếp mạng sống!\n👉 Hãy đi bộ từng bậc thong thả, tay vịn chắc chắn để lên xuống lớp học an toàn nhé!"
+    "response": "**Tay vịn cầu thang để vịn tay đi bộ, không phải cầu trượt công viên đâu nha! 🎢🤕🚫**\n\n• Khi trượt với tốc độ cao, chỉ cần mất thăng bằng nghiêng người một tí là em sẽ **rơi lộn nhào từ tầng trên xuống giếng trời cầu thang**.\n• Cú rơi tự do từ trên cao xuống nền gạch men sẽ gây vỡ sọ, gãy xương và đe dọa trực tiếp mạng sống!\n👉 Hãy đi bộ từng bậc thong thả, tay vịn chắc chắn để lên xuống lớp học an toàn nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "broken_mercury_thermometer_play",
@@ -6263,7 +7037,12 @@ window.ENDY_KB = [
       "thủy ngân có độc không",
       "lỡ cắn vỡ nhiệt kế đo sốt"
     ],
-    "response": "**Thủy ngân bên trong nhiệt kế là một chất kịch độc, tuyệt đối không được chạm vào! 🌡️☠️⚠️**\n\n• Những viên bi bạc lấp lánh lăn trên sàn trông rất vui mắt nhưng chúng bốc hơi độc vô hình. Hít phải hơi thủy ngân sẽ gây hỏng phổi, suy thận và ngộ độc não.\n👉 **Cách xử lý khi vỡ nhiệt kế:**\n1. Không chạy nhảy quanh đó, mở toang cửa sổ cho thoáng khí.\n2. Báo ngay người lớn vào quét dọn bằng bột lưu huỳnh hoặc giấy bìa hót cẩn thận, không dùng máy hút bụi hút nhé!"
+    "response": "**Thủy ngân bên trong nhiệt kế là một chất kịch độc, tuyệt đối không được chạm vào! 🌡️☠️⚠️**\n\n• Những viên bi bạc lấp lánh lăn trên sàn trông rất vui mắt nhưng chúng bốc hơi độc vô hình. Hít phải hơi thủy ngân sẽ gây hỏng phổi, suy thận và ngộ độc não.\n👉 **Cách xử lý khi vỡ nhiệt kế:**\n1. Không chạy nhảy quanh đó, mở toang cửa sổ cho thoáng khí.\n2. Báo ngay người lớn vào quét dọn bằng bột lưu huỳnh hoặc giấy bìa hót cẩn thận, không dùng máy hút bụi hút nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "choking_game_fainting_prank",
@@ -6276,7 +7055,12 @@ window.ENDY_KB = [
       "ép ngực cho ngất đi",
       "tro choi ngat tho tren mạng"
     ],
-    "response": "**CẢNH BÁO TỬ VONG! Tuyệt đối không tham gia trò bóp cổ hay ép tim cho ngất xỉu! 🛑🫁💀**\n\n• Đây là thử thách mù quáng trên mạng đã cướp đi tính mạng của rất nhiều bạn học sinh trên thế giới!\n• Khi bóp cổ hoặc nén ngực, máu và ô-xy lên não bị cắt đứt đột ngột. Chỉ sau vài giây, các tế bào não bắt đầu chết hàng loạt, dẫn đến **đột quỵ não, co giật, sống thực vật hoặc ngừng tim tử vong ngay tại chỗ**!\n👉 Hãy kiên quyết từ chối và báo ngay thầy cô giáo nếu thấy nhóm bạn nào rủ rê trò chơi quỷ quái này nhé!"
+    "response": "**CẢNH BÁO TỬ VONG! Tuyệt đối không tham gia trò bóp cổ hay ép tim cho ngất xỉu! 🛑🫁💀**\n\n• Đây là thử thách mù quáng trên mạng đã cướp đi tính mạng của rất nhiều bạn học sinh trên thế giới!\n• Khi bóp cổ hoặc nén ngực, máu và ô-xy lên não bị cắt đứt đột ngột. Chỉ sau vài giây, các tế bào não bắt đầu chết hàng loạt, dẫn đến **đột quỵ não, co giật, sống thực vật hoặc ngừng tim tử vong ngay tại chỗ**!\n👉 Hãy kiên quyết từ chối và báo ngay thầy cô giáo nếu thấy nhóm bạn nào rủ rê trò chơi quỷ quái này nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "drink_gasoline_in_water_bottle",
@@ -6289,7 +7073,12 @@ window.ENDY_KB = [
       "chai nước suối đựng dầu hỏa",
       "uống nhầm thuốc trừ sâu"
     ],
-    "response": "**Thói quen ngửi và uống bừa bãi nước trong chai lạ rất nguy hiểm! 🥤⛽☠️**\n\n• Rất nhiều gia đình hay tận dụng chai trà xanh, chai nước khoáng cũ để đựng xăng, dầu hỏa hoặc cồn sát trùng.\n• Uống nhầm phải một ngụm xăng dầu sẽ làm bỏng loét thực quản, hít hơi xăng vào phổi gây **viêm phổi hoại tử cấp tính rất khó chữa**.\n👉 **Quy tắc vàng:** Luôn nhìn kỹ và hỏi người lớn trước khi uống bất kỳ chai nước nào để ở góc nhà, nhà kho hay bàn sửa xe nhé!"
+    "response": "**Thói quen ngửi và uống bừa bãi nước trong chai lạ rất nguy hiểm! 🥤⛽☠️**\n\n• Rất nhiều gia đình hay tận dụng chai trà xanh, chai nước khoáng cũ để đựng xăng, dầu hỏa hoặc cồn sát trùng.\n• Uống nhầm phải một ngụm xăng dầu sẽ làm bỏng loét thực quản, hít hơi xăng vào phổi gây **viêm phổi hoại tử cấp tính rất khó chữa**.\n👉 **Quy tắc vàng:** Luôn nhìn kỹ và hỏi người lớn trước khi uống bất kỳ chai nước nào để ở góc nhà, nhà kho hay bàn sửa xe nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "cotton_swab_deep_ear_cleaning",
@@ -6302,7 +7091,12 @@ window.ENDY_KB = [
       "chọc tăm xỉa răng vào tai",
       "ngoáy tai bị chảy máu"
     ],
-    "response": "**Đừng lấy tăm bông hay que cứng chọc thật sâu vào lỗ tai nhé! 👂🛑❌**\n\n• Màng nhĩ trong tai em mỏng manh như một tờ giấy lụa vậy. Chọc que sâu vào có thể **đâm rách thủng màng nhĩ, gây đau nhói chảy máu và điếc tai**!\n• Ngoài ra, tăm bông còn vô tình dồn cục ráy tai bết chặt lại sâu hơn gây viêm tai mưng mủ.\n👉 Chỉ dùng khăn bông mềm lau nhẹ xung quanh vành tai ngoài thôi, còn việc làm sạch tai hãy để bố mẹ hoặc bác sĩ giúp nhé!"
+    "response": "**Đừng lấy tăm bông hay que cứng chọc thật sâu vào lỗ tai nhé! 👂🛑❌**\n\n• Màng nhĩ trong tai em mỏng manh như một tờ giấy lụa vậy. Chọc que sâu vào có thể **đâm rách thủng màng nhĩ, gây đau nhói chảy máu và điếc tai**!\n• Ngoài ra, tăm bông còn vô tình dồn cục ráy tai bết chặt lại sâu hơn gây viêm tai mưng mủ.\n👉 Chỉ dùng khăn bông mềm lau nhẹ xung quanh vành tai ngoài thôi, còn việc làm sạch tai hãy để bố mẹ hoặc bác sĩ giúp nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "play_game_while_phone_charging",
@@ -6315,7 +7109,12 @@ window.ENDY_KB = [
       "vừa cắm sạc vừa xem youtube",
       "sao điện thoại vừa sạc vừa dùng lại nóng"
     ],
-    "response": "**Vừa sạc vừa chơi game là 'kích hoạt quả bom mini' trên tay đấy em! 📱💥⚠️**\n\n• **Nguyên nhân:** Khi vừa nạp điện vừa bắt máy hoạt động hết công suất, pin sẽ bị 'tra tấn' 2 đầu làm nhiệt độ tăng vọt dữ dội.\n• **Tác hại:** Pin phồng rộp, chập mạch phát nổ tung làm toác nát bàn tay, mảnh kính vỡ găm thẳng vào mắt và mặt!\n👉 **Quy tắc vàng:** Đã sạc pin thì để máy yên trên bàn nghỉ ngơi. Muốn chơi thì rút sạc ra rồi mới chơi nhé!"
+    "response": "**Vừa sạc vừa chơi game là 'kích hoạt quả bom mini' trên tay đấy em! 📱💥⚠️**\n\n• **Nguyên nhân:** Khi vừa nạp điện vừa bắt máy hoạt động hết công suất, pin sẽ bị 'tra tấn' 2 đầu làm nhiệt độ tăng vọt dữ dội.\n• **Tác hại:** Pin phồng rộp, chập mạch phát nổ tung làm toác nát bàn tay, mảnh kính vỡ găm thẳng vào mắt và mặt!\n👉 **Quy tắc vàng:** Đã sạc pin thì để máy yên trên bàn nghỉ ngơi. Muốn chơi thì rút sạc ra rồi mới chơi nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "paper_tape_wrap_frayed_wire",
@@ -6328,7 +7127,12 @@ window.ENDY_KB = [
       "lay bang dinh dan day dien",
       "băng keo trong quấn điện được không"
     ],
-    "response": "**Băng dính dán vở hay băng keo giấy KHÔNG THỂ cách điện được đâu nhé! 🩹⚡❌**\n\n• **Nguyên nhân:** Băng keo dán vở rất mỏng và dễ bắt lửa, không có khả năng chặn dòng điện 220V như băng dính cao su cách điện chuyên dụng.\n• **Tác hại:** Điện vẫn phóng xuyên qua lớp keo giật thẳng vào tay em, hoặc tia lửa làm cháy lớp giấy bùng lên ngọn lửa thiêu rụi đồ đạc xung quanh.\n👉 Thấy dây điện rách vỏ: Tránh xa và bảo bố mẹ dùng băng dính điện màu đen chuyên dụng quấn lại nhé!"
+    "response": "**Băng dính dán vở hay băng keo giấy KHÔNG THỂ cách điện được đâu nhé! 🩹⚡❌**\n\n• **Nguyên nhân:** Băng keo dán vở rất mỏng và dễ bắt lửa, không có khả năng chặn dòng điện 220V như băng dính cao su cách điện chuyên dụng.\n• **Tác hại:** Điện vẫn phóng xuyên qua lớp keo giật thẳng vào tay em, hoặc tia lửa làm cháy lớp giấy bùng lên ngọn lửa thiêu rụi đồ đạc xung quanh.\n👉 Thấy dây điện rách vỏ: Tránh xa và bảo bố mẹ dùng băng dính điện màu đen chuyên dụng quấn lại nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "water_on_lithium_battery_fire",
@@ -6341,12 +7145,17 @@ window.ENDY_KB = [
       "chay pin dien thoai do nuoc",
       "pin cháy có dập bằng nước được không"
     ],
-    "response": "**Dội nước vào cục pin Lithium đang cháy sẽ làm nó nổ to hơn đấy! 🔋💥🌊**\n\n• **Nguyên nhân:** Kim loại Lithium trong pin điện thoại, xe đạp điện khi gặp nước sẽ phản ứng hóa học cực mạnh, giải phóng khí Hydro dễ cháy làm lửa bùng lên dữ dội hơn.\n• **Tác hại:** Cục pin sẽ nổ tung bắn các tia kim loại nóng hàng nghìn độ và xả ra khói độc làm bỏng phổi người đứng gần.\n👉 Gặp cháy pin/sạc dự phòng: Hô hoán mọi người chạy ra xa, lấy cát khô hoặc chăn chống cháy trùm lên và gọi ngay **114**!"
+    "response": "**Dội nước vào cục pin Lithium đang cháy sẽ làm nó nổ to hơn đấy! 🔋💥🌊**\n\n• **Nguyên nhân:** Kim loại Lithium trong pin điện thoại, xe đạp điện khi gặp nước sẽ phản ứng hóa học cực mạnh, giải phóng khí Hydro dễ cháy làm lửa bùng lên dữ dội hơn.\n• **Tác hại:** Cục pin sẽ nổ tung bắn các tia kim loại nóng hàng nghìn độ và xả ra khói độc làm bỏng phổi người đứng gần.\n👉 Gặp cháy pin/sạc dự phòng: Hô hoán mọi người chạy ra xa, lấy cát khô hoặc chăn chống cháy trùm lên và gọi ngay **114**!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "mini_gas_canister_near_stove",
     "category": "fire",
-    "badge": "",
+    "badge": "assets/illust_electric.png",
     "keywords": [
       "để bình ga mini cạnh bếp lửa",
       "bình ga mini phát nổ vì sao",
@@ -6354,7 +7163,12 @@ window.ENDY_KB = [
       "bình xịt muỗi ném vào đống lửa",
       "sao bình xịt lại nổ"
     ],
-    "response": "**Bình ga mini hay bình xịt muỗi gặp lửa sẽ biến thành một 'quả lựu đạn'! 💣🔥🛑**\n\n• **Nguyên nhân:** Vỏ bình xịt bằng nhôm rất mỏng. Gặp hơi nóng, khí nén bên trong giãn nở cực nhanh tạo áp suất khủng khiếp xé toạc vỏ bình.\n• **Tác hại:** Bình phát nổ xé toạc ra hàng trăm mảnh kim loại sắc bén văng với tốc độ đạn bắn, gây rách da, mù mắt và chấn thương nặng nề.\n👉 Không bao giờ để bình ga mini hay bình xịt cạnh bếp nấu, và tuyệt đối cấm ném vỏ lon xịt vào đống lửa!"
+    "response": "**Bình ga mini hay bình xịt muỗi gặp lửa sẽ biến thành một 'quả lựu đạn'! 💣🔥🛑**\n\n• **Nguyên nhân:** Vỏ bình xịt bằng nhôm rất mỏng. Gặp hơi nóng, khí nén bên trong giãn nở cực nhanh tạo áp suất khủng khiếp xé toạc vỏ bình.\n• **Tác hại:** Bình phát nổ xé toạc ra hàng trăm mảnh kim loại sắc bén văng với tốc độ đạn bắn, gây rách da, mù mắt và chấn thương nặng nề.\n👉 Không bao giờ để bình ga mini hay bình xịt cạnh bếp nấu, và tuyệt đối cấm ném vỏ lon xịt vào đống lửa!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "dark_clothes_night_walking",
@@ -6367,7 +7181,12 @@ window.ENDY_KB = [
       "đi bộ ban đêm mặc đồ tối",
       "tại sao cấm mặc áo đen đi đường tối"
     ],
-    "response": "**Vì mặc áo đen ban đêm biến em thành 'người vô hình' trước mũi xe ô tô! 🌑🚗⚠️**\n\n• **Nguyên nhân:** Đèn pha xe ô tô ban đêm chỉ soi rõ vật phản quang. Quần áo màu đen hoặc sẫm sẽ nuốt trọn ánh sáng, hòa lẫn hoàn toàn vào bóng tối.\n• **Tác hại:** Tài xế chỉ phát hiện ra em khi xe đã tiến sát cách 2-3 mét, khoảng cách quá ngắn không thể nào phanh kịp và sẽ đâm trực diện!\n👉 Đi bộ buổi tối: Hãy mặc áo trắng, áo vàng sáng màu hoặc đeo balo có dải phản quang phát sáng nhé!"
+    "response": "**Vì mặc áo đen ban đêm biến em thành 'người vô hình' trước mũi xe ô tô! 🌑🚗⚠️**\n\n• **Nguyên nhân:** Đèn pha xe ô tô ban đêm chỉ soi rõ vật phản quang. Quần áo màu đen hoặc sẫm sẽ nuốt trọn ánh sáng, hòa lẫn hoàn toàn vào bóng tối.\n• **Tác hại:** Tài xế chỉ phát hiện ra em khi xe đã tiến sát cách 2-3 mét, khoảng cách quá ngắn không thể nào phanh kịp và sẽ đâm trực diện!\n👉 Đi bộ buổi tối: Hãy mặc áo trắng, áo vàng sáng màu hoặc đeo balo có dải phản quang phát sáng nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "legs_on_car_dashboard_airbag",
@@ -6380,7 +7199,12 @@ window.ENDY_KB = [
       "sao không được gác chân ghế phụ",
       "túi khí ô tô nổ có gãy chân không"
     ],
-    "response": "**Gác chân lên táp-lô ô tô là hành động nguy hiểm hàng đầu khi đi xe! 🚘🦵💥**\n\n• **Nguyên nhân:** Ngay dưới tấm bảng táp-lô trước mặt em là **túi khí cứu sinh**. Khi có va chạm nhẹ, túi khí sẽ phát nổ bung ra với tốc độ kinh hoàng lên tới 300 km/h!\n• **Tác hại:** Lực nổ như búa tạ sẽ đẩy gập đầu gối đập ngược vào mặt em, làm **bẻ gãy xương đùi, vỡ xương mặt và gãy vụn khung chậu vĩnh viễn**!\n👉 Ngồi xe ô tô: Hai chân luôn đặt bằng phẳng xuống sàn xe và thắt dây an toàn ngay ngắn nhé!"
+    "response": "**Gác chân lên táp-lô ô tô là hành động nguy hiểm hàng đầu khi đi xe! 🚘🦵💥**\n\n• **Nguyên nhân:** Ngay dưới tấm bảng táp-lô trước mặt em là **túi khí cứu sinh**. Khi có va chạm nhẹ, túi khí sẽ phát nổ bung ra với tốc độ kinh hoàng lên tới 300 km/h!\n• **Tác hại:** Lực nổ như búa tạ sẽ đẩy gập đầu gối đập ngược vào mặt em, làm **bẻ gãy xương đùi, vỡ xương mặt và gãy vụn khung chậu vĩnh viễn**!\n👉 Ngồi xe ô tô: Hai chân luôn đặt bằng phẳng xuống sàn xe và thắt dây an toàn ngay ngắn nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "long_scarf_tangled_in_wheel",
@@ -6393,7 +7217,12 @@ window.ENDY_KB = [
       "mặc áo mưa cánh dơi bị quấn bánh xe",
       "quần áo lòa xòa đi xe đạp"
     ],
-    "response": "**Khăn quàng dài hay áo mưa bay lòa xòa có thể siết nghẹt cổ em trong tích tắc! 🧣🚲😱**\n\n• **Nguyên nhân:** Bánh xe đang quay tròn với lực kéo cực khỏe. Hai đầu khăn hoặc vạt áo bay phấp phới sẽ bị nan hoa bánh xe cuốn chặt vào trục quay.\n• **Tác hại:** Khăn bị giật ngược lại như một sợi thòng lọng **siết nghẹt khí quản làm gãy cổ hoặc kéo ngã lộn nhào cả người xuống đường nhựa**.\n👉 Đi xe máy/xe đạp: Cuộn gọn khăn quàng vào trong cổ áo, túm gọn vạt áo mưa ngồi đè lên, không để bay lòng thòng!"
+    "response": "**Khăn quàng dài hay áo mưa bay lòa xòa có thể siết nghẹt cổ em trong tích tắc! 🧣🚲😱**\n\n• **Nguyên nhân:** Bánh xe đang quay tròn với lực kéo cực khỏe. Hai đầu khăn hoặc vạt áo bay phấp phới sẽ bị nan hoa bánh xe cuốn chặt vào trục quay.\n• **Tác hại:** Khăn bị giật ngược lại như một sợi thòng lọng **siết nghẹt khí quản làm gãy cổ hoặc kéo ngã lộn nhào cả người xuống đường nhựa**.\n👉 Đi xe máy/xe đạp: Cuộn gọn khăn quàng vào trong cổ áo, túm gọn vạt áo mưa ngồi đè lên, không để bay lòng thòng!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "loose_strap_fake_helmet",
@@ -6406,7 +7235,12 @@ window.ENDY_KB = [
       "đội mũ bảo hiểm thời trang",
       "mũ bảo hiểm rởm có sao không"
     ],
-    "response": "**Đội mũ bảo hiểm mà không cài quai thì coi như KHÔNG ĐỘI! 🪖🛵❌**\n\n• **Nguyên nhân:** Khi xe gặp sự cố ngã, gió và lực quán tính sẽ hất chiếc mũ bảo hiểm bay mất trước khi người em chạm đất một phần trăm giây.\n• **Tác hại:** Đầu em sẽ đập thẳng trực tiếp vào lòng đường hoặc dải phân cách mà không có gì che chắn, gây chấn thương sọ não nguy kịch.\n👉 Luôn cài khóa quai chắc chắn, chỉnh quai vừa khít đút lọt 2 ngón tay dưới cằm để chiếc mũ ôm bảo vệ đầu em nhé!"
+    "response": "**Đội mũ bảo hiểm mà không cài quai thì coi như KHÔNG ĐỘI! 🪖🛵❌**\n\n• **Nguyên nhân:** Khi xe gặp sự cố ngã, gió và lực quán tính sẽ hất chiếc mũ bảo hiểm bay mất trước khi người em chạm đất một phần trăm giây.\n• **Tác hại:** Đầu em sẽ đập thẳng trực tiếp vào lòng đường hoặc dải phân cách mà không có gì che chắn, gây chấn thương sọ não nguy kịch.\n👉 Luôn cài khóa quai chắc chắn, chỉnh quai vừa khít đút lọt 2 ngón tay dưới cằm để chiếc mũ ôm bảo vệ đầu em nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "tilt_head_back_nosebleed_myth",
@@ -6419,7 +7253,12 @@ window.ENDY_KB = [
       "sao chảy máu cam lại cúi đầu",
       "ngửa cổ cho máu cam không chảy"
     ],
-    "response": "**Chảy máu cam mà ngửa cổ ra sau là sai bét và rất nguy hiểm nha! 👃🩸❌**\n\n• **Nguyên nhân:** Ngửa cổ không làm máu ngừng chảy, mà chỉ làm dòng máu chảy ngược vào trong họng.\n• **Tác hại:** Máu trôi vào thực quản làm đau bụng nôn mửa, hoặc nghiêm trọng hơn là **chảy tràn vào khí quản gây nghẹt thở sặc máu**!\n👉 **Cách làm đúng:** Hơi cúi đầu nhẹ về phía trước, dùng ngón tay bóp chặt hai cánh mũi lại và thở bằng miệng trong 10 phút là máu sẽ tự cầm!"
+    "response": "**Chảy máu cam mà ngửa cổ ra sau là sai bét và rất nguy hiểm nha! 👃🩸❌**\n\n• **Nguyên nhân:** Ngửa cổ không làm máu ngừng chảy, mà chỉ làm dòng máu chảy ngược vào trong họng.\n• **Tác hại:** Máu trôi vào thực quản làm đau bụng nôn mửa, hoặc nghiêm trọng hơn là **chảy tràn vào khí quản gây nghẹt thở sặc máu**!\n👉 **Cách làm đúng:** Hơi cúi đầu nhẹ về phía trước, dùng ngón tay bóp chặt hai cánh mũi lại và thở bằng miệng trong 10 phút là máu sẽ tự cầm!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "swallow_rice_for_fish_bone",
@@ -6432,7 +7271,12 @@ window.ENDY_KB = [
       "hoc xuong ca lam sao",
       "nuốt cơm cho trôi xương"
     ],
-    "response": "**Nuốt cục cơm to khi hóc xương cá là 'tự hại mình' đấy em! 🐟🍚🚫**\n\n• **Nguyên nhân:** Cục cơm thô đặc khi trôi qua họng sẽ đè lên chiếc xương, bẻ cong và đẩy chiếc xương **cắm sâu ngập vào thành thực quản**.\n• **Tác hại:** Xương nhọn đâm thủng thực quản, rách mạch máu lớn gây chảy máu trong và nhiễm trùng mưng mủ cổ họng rất nguy hiểm.\n👉 Bị hóc xương: Dừng nhai nuốt ngay, ngậm miệng lại và báo bố mẹ đưa đến gặp bác sĩ gắp ra bằng nhíp y tế chỉ trong 1 phút!"
+    "response": "**Nuốt cục cơm to khi hóc xương cá là 'tự hại mình' đấy em! 🐟🍚🚫**\n\n• **Nguyên nhân:** Cục cơm thô đặc khi trôi qua họng sẽ đè lên chiếc xương, bẻ cong và đẩy chiếc xương **cắm sâu ngập vào thành thực quản**.\n• **Tác hại:** Xương nhọn đâm thủng thực quản, rách mạch máu lớn gây chảy máu trong và nhiễm trùng mưng mủ cổ họng rất nguy hiểm.\n👉 Bị hóc xương: Dừng nhai nuốt ngay, ngậm miệng lại và báo bố mẹ đưa đến gặp bác sĩ gắp ra bằng nhíp y tế chỉ trong 1 phút!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "rub_hot_balm_on_head_bump",
@@ -6445,7 +7289,12 @@ window.ENDY_KB = [
       "bươu đầu bôi gì",
       "té sưng u đầu xoa dầu"
     ],
-    "response": "**Bị sưng u đầu mà xoa dầu nóng thì cục u càng to đùng hơn! 🤕🔥❌**\n\n• **Nguyên nhân:** Dầu nóng có tính nhiệt làm các mạch máu nhỏ dưới da giãn nở to ra, máu tụ ồ ạt chảy dồn về vết thương.\n• **Tác hại:** Cục bươu sẽ sưng vù to hơn, tím tái và đau nhức nhối gấp đôi!\n👉 **Cách xử lý đúng:** Lấy một chiếc khăn sạch bọc vài viên đá lạnh hoặc khăn mát chườm nhẹ nhàng lên cục u trong 15 phút để mạch máu co lại, vết sưng sẽ xẹp ngay!"
+    "response": "**Bị sưng u đầu mà xoa dầu nóng thì cục u càng to đùng hơn! 🤕🔥❌**\n\n• **Nguyên nhân:** Dầu nóng có tính nhiệt làm các mạch máu nhỏ dưới da giãn nở to ra, máu tụ ồ ạt chảy dồn về vết thương.\n• **Tác hại:** Cục bươu sẽ sưng vù to hơn, tím tái và đau nhức nhối gấp đôi!\n👉 **Cách xử lý đúng:** Lấy một chiếc khăn sạch bọc vài viên đá lạnh hoặc khăn mát chườm nhẹ nhàng lên cục u trong 15 phút để mạch máu co lại, vết sưng sẽ xẹp ngay!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "do_not_pull_out_impaled_object",
@@ -6458,7 +7307,12 @@ window.ENDY_KB = [
       "rút mảnh kính cắm sâu vào tay",
       "vật nhọn cắm vào người làm gì"
     ],
-    "response": "**Vật nhọn cắm sâu vào người: TUYỆT ĐỐI KHÔNG TỰ Ý RÚT RA! 🔪🪵🛑**\n\n• **Nguyên nhân:** Thanh sắt, mảnh kính hay dao nhọn đang đóng vai trò như một chiếc 'nút chai' bịt kín miệng vết thương và mạch máu bị rách.\n• **Tác hại:** Nếu rút phắt ra, mạch máu bị toác miệng làm **máu phun trào ồ ạt không thể cầm được**, nạn nhân sẽ mất máu tử vong chỉ sau ít phút!\n👉 **Cách xử lý:** Giữ nguyên vật cắm, dùng băng gạc chèn cố định quanh gốc vết thương và gọi ngay **115** đưa đi viện mổ cấp cứu!"
+    "response": "**Vật nhọn cắm sâu vào người: TUYỆT ĐỐI KHÔNG TỰ Ý RÚT RA! 🔪🪵🛑**\n\n• **Nguyên nhân:** Thanh sắt, mảnh kính hay dao nhọn đang đóng vai trò như một chiếc 'nút chai' bịt kín miệng vết thương và mạch máu bị rách.\n• **Tác hại:** Nếu rút phắt ra, mạch máu bị toác miệng làm **máu phun trào ồ ạt không thể cầm được**, nạn nhân sẽ mất máu tử vong chỉ sau ít phút!\n👉 **Cách xử lý:** Giữ nguyên vật cắm, dùng băng gạc chèn cố định quanh gốc vết thương và gọi ngay **115** đưa đi viện mổ cấp cứu!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "stepped_on_used_syringe",
@@ -6471,7 +7325,12 @@ window.ENDY_KB = [
       "kim tiêm vỉa hè cắm vào chân",
       "bị kim đâm chảy máu"
     ],
-    "response": "**Dẫm phải kim tiêm vỉa hè: Bình tĩnh xử lý ngay theo các bước sau! 💉⚠️🦶**\n\n• **Tác hại:** Kim tiêm cũ có thể dính máu mang virus HIV hoặc viêm gan B lây nhiễm vào cơ thể.\n• **Các bước sơ cứu sống còn:**\n  1. **Tuyệt đối không nặn bóp:** Nặn bóp làm mạch máu tổn thương khiến virus chui sâu vào cơ thể nhanh hơn.\n  2. Để máu tự chảy nhẹ dưới **vòi nước sạch chảy liên tục cùng xà phòng trong 5 phút**.\n  3. Sát trùng bằng cồn đỏ, báo bố mẹ đưa đến trung tâm y tế tiêm thuốc phơi nhiễm trong **vòng 72 giờ vàng**!"
+    "response": "**Dẫm phải kim tiêm vỉa hè: Bình tĩnh xử lý ngay theo các bước sau! 💉⚠️🦶**\n\n• **Tác hại:** Kim tiêm cũ có thể dính máu mang virus HIV hoặc viêm gan B lây nhiễm vào cơ thể.\n• **Các bước sơ cứu sống còn:**\n  1. **Tuyệt đối không nặn bóp:** Nặn bóp làm mạch máu tổn thương khiến virus chui sâu vào cơ thể nhanh hơn.\n  2. Để máu tự chảy nhẹ dưới **vòi nước sạch chảy liên tục cùng xà phòng trong 5 phút**.\n  3. Sát trùng bằng cồn đỏ, báo bố mẹ đưa đến trung tâm y tế tiêm thuốc phơi nhiễm trong **vòng 72 giờ vàng**!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "swallow_magnetic_balls_toy",
@@ -6484,7 +7343,12 @@ window.ENDY_KB = [
       "bi nam châm hút trong ruột",
       "nuốt nam châm có chết không"
     ],
-    "response": "**Viên bi nam châm từ tính là món đồ chơi cực kỳ NGUY HIỂM nếu nuốt phải! 🧲☠️⚠️**\n\n• **Nguyên nhân:** Nam châm có lực hút cực khỏe. Khi em nuốt 2 viên trở lên vào bụng vào những thời điểm khác nhau, chúng sẽ nằm ở các khúc ruột khác nhau.\n• **Tác hại:** Chúng sẽ hút chặt lấy nhau xuyên qua thành ruột, **kẹp nghẹt và làm thủng hoại tử nhiều lỗ ruột**, gây nhiễm trùng màng bụng đe dọa tính mạng!\n👉 Đồ chơi nam châm chỉ để xếp hình trên bàn, tuyệt đối cấm ngậm vào miệng em nhé!"
+    "response": "**Viên bi nam châm từ tính là món đồ chơi cực kỳ NGUY HIỂM nếu nuốt phải! 🧲☠️⚠️**\n\n• **Nguyên nhân:** Nam châm có lực hút cực khỏe. Khi em nuốt 2 viên trở lên vào bụng vào những thời điểm khác nhau, chúng sẽ nằm ở các khúc ruột khác nhau.\n• **Tác hại:** Chúng sẽ hút chặt lấy nhau xuyên qua thành ruột, **kẹp nghẹt và làm thủng hoại tử nhiều lỗ ruột**, gây nhiễm trùng màng bụng đe dọa tính mạng!\n👉 Đồ chơi nam châm chỉ để xếp hình trên bàn, tuyệt đối cấm ngậm vào miệng em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "throw_chalk_dust_sand_eyes",
@@ -6497,7 +7361,12 @@ window.ENDY_KB = [
       "thổi bụi phấn trêu bạn",
       "ném đất cát vào mắt"
     ],
-    "response": "**Ném bụi phấn hay đất cát vào mặt bạn có thể làm mù mắt bạn đấy! 👁️🌪️❌**\n\n• **Nguyên nhân:** Bột phấn chứa thạch cao hút nước cực mạnh, còn hạt cát có cạnh sắc như những lưỡi dao hiển vi.\n• **Tác hại:** Khi bay vào mắt và bị dụi, hạt cát sẽ **cào xước rách giác mạc**, bụi phấn làm bỏng niêm mạc mắt dẫn đến viêm loét mù lòa!\n👉 Lỡ dính bụi vào mắt: Tuyệt đối không được dụi, hãy chớp mắt liên tục trong một bát nước sạch hoặc nhỏ nước muối sinh lý rửa trôi ra!"
+    "response": "**Ném bụi phấn hay đất cát vào mặt bạn có thể làm mù mắt bạn đấy! 👁️🌪️❌**\n\n• **Nguyên nhân:** Bột phấn chứa thạch cao hút nước cực mạnh, còn hạt cát có cạnh sắc như những lưỡi dao hiển vi.\n• **Tác hại:** Khi bay vào mắt và bị dụi, hạt cát sẽ **cào xước rách giác mạc**, bụi phấn làm bỏng niêm mạc mắt dẫn đến viêm loét mù lòa!\n👉 Lỡ dính bụi vào mắt: Tuyệt đối không được dụi, hãy chớp mắt liên tục trong một bát nước sạch hoặc nhỏ nước muối sinh lý rửa trôi ra!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "bug_crawl_into_ear_trap",
@@ -6510,7 +7379,12 @@ window.ENDY_KB = [
       "côn trùng bay vào tai",
       "bắt con bọ trong tai"
     ],
-    "response": "**Kiến hay bọ chui vào tai: CẤM lấy tăm hay que ngoáy chọc vào đuổi nó! 🐜👂🛑**\n\n• **Nguyên nhân:** Bị chọc que nhọn, con bọ sẽ hoảng sợ giãy giụa và dùng càng cắn xé sâu hơn vào màng nhĩ em.\n• **Tác hại:** Làm rách màng nhĩ gây đau đớn dữ dội, chảy máu tai và giảm thính lực.\n👉 **Mẹo thần kỳ:** Nghiêng tai lên trên, nhỏ vài giọt **nước muối sinh lý hoặc dầu ăn sạch** vào tai. Con bọ bị ngạt nước sẽ nổi lên mặt hoặc em nghiêng đầu lại cho nước chảy ra kéo theo con bọ!"
+    "response": "**Kiến hay bọ chui vào tai: CẤM lấy tăm hay que ngoáy chọc vào đuổi nó! 🐜👂🛑**\n\n• **Nguyên nhân:** Bị chọc que nhọn, con bọ sẽ hoảng sợ giãy giụa và dùng càng cắn xé sâu hơn vào màng nhĩ em.\n• **Tác hại:** Làm rách màng nhĩ gây đau đớn dữ dội, chảy máu tai và giảm thính lực.\n👉 **Mẹo thần kỳ:** Nghiêng tai lên trên, nhỏ vài giọt **nước muối sinh lý hoặc dầu ăn sạch** vào tai. Con bọ bị ngạt nước sẽ nổi lên mặt hoặc em nghiêng đầu lại cho nước chảy ra kéo theo con bọ!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "mouth_coins_marbles_hazard",
@@ -6523,7 +7397,12 @@ window.ENDY_KB = [
       "ngậm nắp chai trong miệng",
       "ngậm cúc áo chơi"
     ],
-    "response": "**Đừng biến miệng mình thành chiếc 'ví đựng tiền xu' hay hũ bi ve nhé! 🪙🔴😱**\n\n• **Nguyên nhân:** Đồng xu và bi ve rất trơn láng. Chỉ cần bạn vỗ vai giật mình, hoặc em lỡ bật cười, nuốt nước bọt là viên bi tụt thẳng xuống họng.\n• **Tác hại:** Kích thước tròn xoe của nó sẽ **bít kín mít đường thở (khí quản)**, làm em tím tái ngạt thở tử vong chỉ sau 3-5 phút nếu không được sơ cứu kịp!\n👉 Đồ vật nhỏ bằng kim loại, nhựa: Để trên bàn, không cho vào miệng nếm thử!"
+    "response": "**Đừng biến miệng mình thành chiếc 'ví đựng tiền xu' hay hũ bi ve nhé! 🪙🔴😱**\n\n• **Nguyên nhân:** Đồng xu và bi ve rất trơn láng. Chỉ cần bạn vỗ vai giật mình, hoặc em lỡ bật cười, nuốt nước bọt là viên bi tụt thẳng xuống họng.\n• **Tác hại:** Kích thước tròn xoe của nó sẽ **bít kín mít đường thở (khí quản)**, làm em tím tái ngạt thở tử vong chỉ sau 3-5 phút nếu không được sơ cứu kịp!\n👉 Đồ vật nhỏ bằng kim loại, nhựa: Để trên bàn, không cho vào miệng nếm thử!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "climb_tree_rotten_branch",
@@ -6536,7 +7415,12 @@ window.ENDY_KB = [
       "trèo cây hái quả ngã",
       "đu cành cây cao"
     ],
-    "response": "**Đu cành cây khô là 'đánh cược mạng sống' với thần may mắn đấy! 🌳🐒🚫**\n\n• **Nguyên nhân:** Cành cây khô nhìn bên ngoài to khỏe nhưng bên trong đã bị mối mọt ăn rỗng ruột và giòn tan như bánh xốp.\n• **Tác hại:** Khi em đu cả người lên, cành cây sẽ gãy 'rắc' bất thình lình. Em rơi tự do từ trên cao đập lưng xuống rễ cây hoặc tảng đá, gây gãy cột sống, vỡ tạng và bại liệt suốt đời.\n👉 Không trèo cây cao, không đu bám cành cây mục để bảo vệ tấm lưng của mình nhé!"
+    "response": "**Đu cành cây khô là 'đánh cược mạng sống' với thần may mắn đấy! 🌳🐒🚫**\n\n• **Nguyên nhân:** Cành cây khô nhìn bên ngoài to khỏe nhưng bên trong đã bị mối mọt ăn rỗng ruột và giòn tan như bánh xốp.\n• **Tác hại:** Khi em đu cả người lên, cành cây sẽ gãy 'rắc' bất thình lình. Em rơi tự do từ trên cao đập lưng xuống rễ cây hoặc tảng đá, gây gãy cột sống, vỡ tạng và bại liệt suốt đời.\n👉 Không trèo cây cao, không đu bám cành cây mục để bảo vệ tấm lưng của mình nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "jump_off_moving_swing_midair",
@@ -6549,7 +7433,12 @@ window.ENDY_KB = [
       "nhảy xích đu tiếp đất",
       "trò chơi nhảy xích đu"
     ],
-    "response": "**Trò nhảy khỏi xích đu giữa không trung cực kỳ nguy hiểm, đừng chơi nhé! 🎪🤕❌**\n\n• **Nguyên nhân:** Lực quán tính khi xích đu đang bay lên cực lớn, nó sẽ quăng văng người em đi xa hơn em tưởng và mất hoàn toàn khả năng giữ thăng bằng.\n• **Tác hại:** Em sẽ tiếp đất bằng mặt, gãy cổ chân, hoặc chiếc ghế xích đu bằng sắt sau khi thả ra sẽ **văng ngược trở lại đập vỡ sau gáy em**!\n👉 Muốn xuống xích đu: Hãy dùng chân rê nhẹ xuống cát cho xích đu dừng hẳn rồi mới bước xuống nhé!"
+    "response": "**Trò nhảy khỏi xích đu giữa không trung cực kỳ nguy hiểm, đừng chơi nhé! 🎪🤕❌**\n\n• **Nguyên nhân:** Lực quán tính khi xích đu đang bay lên cực lớn, nó sẽ quăng văng người em đi xa hơn em tưởng và mất hoàn toàn khả năng giữ thăng bằng.\n• **Tác hại:** Em sẽ tiếp đất bằng mặt, gãy cổ chân, hoặc chiếc ghế xích đu bằng sắt sau khi thả ra sẽ **văng ngược trở lại đập vỡ sau gáy em**!\n👉 Muốn xuống xích đu: Hãy dùng chân rê nhẹ xuống cát cho xích đu dừng hẳn rồi mới bước xuống nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "cracking_neck_knuckles_danger",
@@ -6562,7 +7451,12 @@ window.ENDY_KB = [
       "bẻ ngón tay kêu to",
       "vặn cổ như phim kiếm hiệp"
     ],
-    "response": "**Bắt chước phim ảnh vặn cổ rôm rốp có thể dẫn đến đột quỵ đấy em! 🥋🦴⚠️**\n\n• **Nguyên nhân:** Cột sống cổ chứa rất nhiều dây thần kinh điều khiển toàn bộ cơ thể và hai mạch máu lớn dẫn máu nuôi não.\n• **Tác hại:** Vặn lắc cổ quá mạnh và đột ngột có thể làm **rách thành động mạch cảnh gây tai biến đột quỵ**, hoặc trật khớp đốt sống cổ chèn ép tủy gây liệt tứ chi tức khắc!\n👉 Mỏi cổ: Em chỉ cần xoay tròn đầu nhẹ nhàng, gập ngửa chậm rãi để thư giãn là tốt nhất nhé!"
+    "response": "**Bắt chước phim ảnh vặn cổ rôm rốp có thể dẫn đến đột quỵ đấy em! 🥋🦴⚠️**\n\n• **Nguyên nhân:** Cột sống cổ chứa rất nhiều dây thần kinh điều khiển toàn bộ cơ thể và hai mạch máu lớn dẫn máu nuôi não.\n• **Tác hại:** Vặn lắc cổ quá mạnh và đột ngột có thể làm **rách thành động mạch cảnh gây tai biến đột quỵ**, hoặc trật khớp đốt sống cổ chèn ép tủy gây liệt tứ chi tức khắc!\n👉 Mỏi cổ: Em chỉ cần xoay tròn đầu nhẹ nhàng, gập ngửa chậm rãi để thư giãn là tốt nhất nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "barefoot_wet_open_refrigerator",
@@ -6576,7 +7470,12 @@ window.ENDY_KB = [
       "tủ lạnh bị giật tê tê",
       "đi chân đất mở tủ lạnh"
     ],
-    "response": "**Chân ướt đi chân đất mở tủ lạnh là 'nối dây dẫn điện' vào người đấy! ⚡❄️⚠️**\n\n• **Nguyên nhân:** Tủ lạnh dùng lâu ngày có thể bị rò rỉ một lượng điện nhỏ ra vỏ kim loại. Khi chân em ướt chạm thẳng xuống sàn nhà, cơ thể em trở thành một dây dẫn khép kín đưa dòng điện chạy thẳng xuống đất.\n• **Tác hại:** Em sẽ bị điện giật cứng cơ tay, dính chặt không buông tay nắm cửa ra được và ngừng tim nếu dòng điện quá mạnh!\n👉 **Quy tắc:** Luôn lau khô tay, đi dép xốp trong nhà trước khi mở tủ lạnh hoặc chạm vào các đồ điện lớn nhé!"
+    "response": "**Chân ướt đi chân đất mở tủ lạnh là 'nối dây dẫn điện' vào người đấy! ⚡❄️⚠️**\n\n• **Nguyên nhân:** Tủ lạnh dùng lâu ngày có thể bị rò rỉ một lượng điện nhỏ ra vỏ kim loại. Khi chân em ướt chạm thẳng xuống sàn nhà, cơ thể em trở thành một dây dẫn khép kín đưa dòng điện chạy thẳng xuống đất.\n• **Tác hại:** Em sẽ bị điện giật cứng cơ tay, dính chặt không buông tay nắm cửa ra được và ngừng tim nếu dòng điện quá mạnh!\n👉 **Quy tắc:** Luôn lau khô tay, đi dép xốp trong nhà trước khi mở tủ lạnh hoặc chạm vào các đồ điện lớn nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "unplug_while_appliance_still_on",
@@ -6589,7 +7488,12 @@ window.ENDY_KB = [
       "rut phich cam khi chua tat may",
       "tia lửa xẹt khi rút điện"
     ],
-    "response": "**Chưa tắt máy mà giật phích cắm sẽ làm bùng tia lửa điện đấy! 🔌💥🛑**\n\n• **Nguyên nhân:** Khi thiết bị công suất lớn đang hoạt động, dòng điện chạy qua phích cắm cực mạnh. Rút đột ngột sẽ sinh ra hiện tượng phóng 'hồ quang điện' xuyên qua không khí.\n• **Tác hại:** Tia lửa điện nổ xẹt kèm tiếng nổ 'đét' làm cháy xém đầu ngón tay em và làm hỏng chảy nhựa ổ cắm nhà mình.\n👉 Hãy luôn bấm nút TẮT (OFF) trên thiết bị trước, sau đó mới nhẹ nhàng rút phích cắm ra nhé!"
+    "response": "**Chưa tắt máy mà giật phích cắm sẽ làm bùng tia lửa điện đấy! 🔌💥🛑**\n\n• **Nguyên nhân:** Khi thiết bị công suất lớn đang hoạt động, dòng điện chạy qua phích cắm cực mạnh. Rút đột ngột sẽ sinh ra hiện tượng phóng 'hồ quang điện' xuyên qua không khí.\n• **Tác hại:** Tia lửa điện nổ xẹt kèm tiếng nổ 'đét' làm cháy xém đầu ngón tay em và làm hỏng chảy nhựa ổ cắm nhà mình.\n👉 Hãy luôn bấm nút TẮT (OFF) trên thiết bị trước, sau đó mới nhẹ nhàng rút phích cắm ra nhé!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "climb_transformer_station_fence",
@@ -6602,12 +7506,17 @@ window.ENDY_KB = [
       "nhặt cầu trong trạm điện",
       "nghịch gần trạm biến thế"
     ],
-    "response": "**Trạm biến áp có biển 'CẤM LẠI GẦN - CÓ ĐIỆN NGUY HIỂM CHẾT NGƯỜI' tuyệt đối không được chui vào! ⚡💀🚫**\n\n• **Nguyên nhân:** Điện áp trong trạm biến áp lên tới hàng nghìn Vôn (cực khủng khiếp). Em **không cần chạm vào dây**, luồng điện cao thế vẫn có thể phóng xuyên qua không khí đánh trúng em trong tầm 1-2 mét!\n• **Tác hại:** Cơ thể bị cháy thành than chỉ trong một cái chớp mắt, không ai có thể vào cứu kịp.\n👉 Đồ chơi rơi vào trạm điện: BỎ ĐI, không tiếc nuối và báo ngay chú bảo vệ xử lý!"
+    "response": "**Trạm biến áp có biển 'CẤM LẠI GẦN - CÓ ĐIỆN NGUY HIỂM CHẾT NGƯỜI' tuyệt đối không được chui vào! ⚡💀🚫**\n\n• **Nguyên nhân:** Điện áp trong trạm biến áp lên tới hàng nghìn Vôn (cực khủng khiếp). Em **không cần chạm vào dây**, luồng điện cao thế vẫn có thể phóng xuyên qua không khí đánh trúng em trong tầm 1-2 mét!\n• **Tác hại:** Cơ thể bị cháy thành than chỉ trong một cái chớp mắt, không ai có thể vào cứu kịp.\n👉 Đồ chơi rơi vào trạm điện: BỎ ĐI, không tiếc nuối và báo ngay chú bảo vệ xử lý!",
+    "followups": [
+      "Dùng que gỗ gạt dây điện được không?",
+      "Ngắt cầu dao ở đâu?",
+      "Cháy điện dội nước được không?"
+    ]
   },
   {
     "id": "pour_water_on_boiling_oil_fire",
     "category": "fire",
-    "badge": "",
+    "badge": "assets/illust_electric.png",
     "keywords": [
       "chảo dầu bốc cháy dội nước",
       "chao dau soi chay lay nuoc tat",
@@ -6615,7 +7524,12 @@ window.ENDY_KB = [
       "chảo rán cháy dội nước vào",
       "dầu ăn bốc cháy làm gì"
     ],
-    "response": "**Chảo dầu mỡ đang bốc cháy mà dội nước vào là bùng nổ như bom lửa! 🍳🔥💥**\n\n• **Nguyên nhân:** Nước nặng hơn dầu nên sẽ chìm xuống đáy chảo đang nóng bỏng. Tại đáy, nước sôi bốc hơi tức khắc, nổ tung và đẩy hàng triệu giọt dầu sôi rực lửa bắn tung tóe lên trần nhà.\n• **Tác hại:** Ngọn lửa bùng cao lên tận trần nhà, thiêu rụi cả gian bếp và tạt thẳng vào mặt người đứng cạnh gây bỏng nặng toàn thân!\n👉 **Cách tắt đúng:** Tuyệt đối không dùng nước! Hãy bình tĩnh tắt bếp, lấy **vung nồi đậy chặt lại** hoặc trùm khăn ướt lên miệng chảo để dập tắt không khí!"
+    "response": "**Chảo dầu mỡ đang bốc cháy mà dội nước vào là bùng nổ như bom lửa! 🍳🔥💥**\n\n• **Nguyên nhân:** Nước nặng hơn dầu nên sẽ chìm xuống đáy chảo đang nóng bỏng. Tại đáy, nước sôi bốc hơi tức khắc, nổ tung và đẩy hàng triệu giọt dầu sôi rực lửa bắn tung tóe lên trần nhà.\n• **Tác hại:** Ngọn lửa bùng cao lên tận trần nhà, thiêu rụi cả gian bếp và tạt thẳng vào mặt người đứng cạnh gây bỏng nặng toàn thân!\n👉 **Cách tắt đúng:** Tuyệt đối không dùng nước! Hãy bình tĩnh tắt bếp, lấy **vung nồi đậy chặt lại** hoặc trùm khăn ướt lên miệng chảo để dập tắt không khí!",
+    "followups": [
+      "Không có khăn ướt thì làm gì?",
+      "Tay nắm cửa nóng thì làm sao?",
+      "Thoát hiểm nhà cao tầng khi cháy"
+    ]
   },
   {
     "id": "biking_shoulder_to_shoulder_pack",
@@ -6628,7 +7542,12 @@ window.ENDY_KB = [
       "vừa đi xe vừa nắm tay bạn bè",
       "dàn hàng ngang đi học về"
     ],
-    "response": "**Dàn hàng 3, hàng 4 vừa đi vừa khoác vai nhau là 'bẫy ngã dây chuyền' cực nguy hiểm! 🚲👭⚠️**\n\n• **Nguyên nhân:** Khi đi sát nhau, chỉ cần tay lái của bạn này móc nhẹ vào tay phanh của bạn kia là cả hai xe đều bị khóa cứng tay lái.\n• **Tác hại:** Cả nhóm 3-4 bạn sẽ ngã đè lên nhau ngổn ngang ra giữa lòng đường, xe ô tô phía sau lao tới không kịp xử lý sẽ gây ra tai nạn thảm khốc!\n👉 Đi xe đạp theo hàng một nối đuôi nhau, giữ khoảng cách tối thiểu 2 mét với xe phía trước em nhé!"
+    "response": "**Dàn hàng 3, hàng 4 vừa đi vừa khoác vai nhau là 'bẫy ngã dây chuyền' cực nguy hiểm! 🚲👭⚠️**\n\n• **Nguyên nhân:** Khi đi sát nhau, chỉ cần tay lái của bạn này móc nhẹ vào tay phanh của bạn kia là cả hai xe đều bị khóa cứng tay lái.\n• **Tác hại:** Cả nhóm 3-4 bạn sẽ ngã đè lên nhau ngổn ngang ra giữa lòng đường, xe ô tô phía sau lao tới không kịp xử lý sẽ gây ra tai nạn thảm khốc!\n👉 Đi xe đạp theo hàng một nối đuôi nhau, giữ khoảng cách tối thiểu 2 mét với xe phía trước em nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "dart_across_street_between_parked_cars",
@@ -6641,7 +7560,12 @@ window.ENDY_KB = [
       "chạy băng qua đường bất ngờ",
       "khuất tầm nhìn qua đường"
     ],
-    "response": "**Lao vụt ra đường từ khe hở giữa 2 xe ô tô đang đỗ là hành động cực kỳ dại dột! 🚗🏃‍♂️💥**\n\n• **Nguyên nhân:** Thân xe ô tô to lớn che khuất hoàn toàn em. Xe cộ đang chạy trên đường bị 'mù tầm nhìn' và không biết có người sắp lao ra.\n• **Tác hại:** Khi em vừa thò đầu ra khỏi đuôi xe, xe máy hoặc ô tô đang chạy tới với tốc độ cao sẽ đâm trực diện vì không có lấy 1 giây để phản ứng!\n👉 Qua đường: Phải đi ra vị trí thông thoáng, dừng lại ngó nghiêng quan sát cả hai bên đường thật rõ ràng rồi mới bước qua!"
+    "response": "**Lao vụt ra đường từ khe hở giữa 2 xe ô tô đang đỗ là hành động cực kỳ dại dột! 🚗🏃‍♂️💥**\n\n• **Nguyên nhân:** Thân xe ô tô to lớn che khuất hoàn toàn em. Xe cộ đang chạy trên đường bị 'mù tầm nhìn' và không biết có người sắp lao ra.\n• **Tác hại:** Khi em vừa thò đầu ra khỏi đuôi xe, xe máy hoặc ô tô đang chạy tới với tốc độ cao sẽ đâm trực diện vì không có lấy 1 giây để phản ứng!\n👉 Qua đường: Phải đi ra vị trí thông thoáng, dừng lại ngó nghiêng quan sát cả hai bên đường thật rõ ràng rồi mới bước qua!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "open_car_door_without_looking",
@@ -6654,7 +7578,12 @@ window.ENDY_KB = [
       "mở bung cửa xe hơi",
       "mở cửa ô tô bị xe máy đâm"
     ],
-    "response": "**Mở cửa xe ô tô bất cẩn có thể cướp đi tính mạng của người đi đường! 🚪🚘⚠️**\n\n• **Nguyên nhân:** Cánh cửa ô tô mở bung ra tạo thành một bức tường sắt chặn đột ngột trên đường xe chạy.\n• **Tác hại:** Người đi xe máy từ phía sau lao tới sẽ đâm sầm vào cánh cửa xe, ngã văng ra giữa làn đường và bị các xe khác chèn qua vô cùng nguy kịch!\n👉 **Cách mở cửa an toàn kiểu Hà Lan:** Dùng **tay xa cửa** (ngồi bên phải dùng tay trái mở) để cả người tự động xoay lại nhìn gương chiếu hậu phía sau, thấy không có xe mới mở hé cửa từ từ!"
+    "response": "**Mở cửa xe ô tô bất cẩn có thể cướp đi tính mạng của người đi đường! 🚪🚘⚠️**\n\n• **Nguyên nhân:** Cánh cửa ô tô mở bung ra tạo thành một bức tường sắt chặn đột ngột trên đường xe chạy.\n• **Tác hại:** Người đi xe máy từ phía sau lao tới sẽ đâm sầm vào cánh cửa xe, ngã văng ra giữa làn đường và bị các xe khác chèn qua vô cùng nguy kịch!\n👉 **Cách mở cửa an toàn kiểu Hà Lan:** Dùng **tay xa cửa** (ngồi bên phải dùng tay trái mở) để cả người tự động xoay lại nhìn gương chiếu hậu phía sau, thấy không có xe mới mở hé cửa từ từ!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "heavy_backpack_on_one_shoulder_bike",
@@ -6667,7 +7596,12 @@ window.ENDY_KB = [
       "treo đồ lỉnh kỉnh ở tay lái",
       "lệch tay lái xe đạp"
     ],
-    "response": "**Treo cặp sách nặng vào một bên tay lái xe đạp rất dễ gây ngã gãy tay! 🎒🚲❌**\n\n• **Nguyên nhân:** Cặp sách nặng lắc lư qua lại sẽ làm mất trọng tâm, kéo ghì một bên tay lái xuống làm em không thể điều khiển thẳng hướng đi.\n• **Tác hại:** Khi gặp ổ gà hoặc phanh gấp, xe sẽ bị liệng quặt sang một bên, hất văng em ngã đập mặt xuống rãnh cống hoặc lòng đường.\n👉 Cặp sách nặng: Hãy đeo ngay ngắn trên hai vai hoặc chằng buộc thật chắc chắn trên giỏ xe/yên sau xe nhé!"
+    "response": "**Treo cặp sách nặng vào một bên tay lái xe đạp rất dễ gây ngã gãy tay! 🎒🚲❌**\n\n• **Nguyên nhân:** Cặp sách nặng lắc lư qua lại sẽ làm mất trọng tâm, kéo ghì một bên tay lái xuống làm em không thể điều khiển thẳng hướng đi.\n• **Tác hại:** Khi gặp ổ gà hoặc phanh gấp, xe sẽ bị liệng quặt sang một bên, hất văng em ngã đập mặt xuống rãnh cống hoặc lòng đường.\n👉 Cặp sách nặng: Hãy đeo ngay ngắn trên hai vai hoặc chằng buộc thật chắc chắn trên giỏ xe/yên sau xe nhé!",
+    "followups": [
+      "Không có vạch kẻ đường thì qua thế nào?",
+      "Đi xe đạp trời mưa thế nào?",
+      "Đèn giao thông màu vàng có được đi không?"
+    ]
   },
   {
     "id": "poke_friend_with_compass_pencil",
@@ -6680,7 +7614,12 @@ window.ENDY_KB = [
       "lấy ngòi bút bi đâm bạn",
       "nghịch compa trong lớp"
     ],
-    "response": "**Đầu nhọn compa hay bút chì KHÔNG PHẢI đồ chơi chọc ghẹo bạn bè! ✏️📐👁️🚫**\n\n• **Nguyên nhân:** Khi bị chọc bất ngờ, bạn sẽ giật thót mình quay phắt người lại theo phản xạ tự nhiên.\n• **Tác hại:** Đầu compa sắc nhọn cắm thẳng vào **mắt bạn làm vỡ nhãn cầu mù lòa**, hoặc đâm thủng tĩnh mạch ở cổ gây chảy máu ồ ạt nguy kịch!\n👉 Compa, kéo dùng xong phải đóng nắp hoặc cất ngay vào hộp bút, tuyệt đối cấm mang ra đùa nghịch!"
+    "response": "**Đầu nhọn compa hay bút chì KHÔNG PHẢI đồ chơi chọc ghẹo bạn bè! ✏️📐👁️🚫**\n\n• **Nguyên nhân:** Khi bị chọc bất ngờ, bạn sẽ giật thót mình quay phắt người lại theo phản xạ tự nhiên.\n• **Tác hại:** Đầu compa sắc nhọn cắm thẳng vào **mắt bạn làm vỡ nhãn cầu mù lòa**, hoặc đâm thủng tĩnh mạch ở cổ gây chảy máu ồ ạt nguy kịch!\n👉 Compa, kéo dùng xong phải đóng nắp hoặc cất ngay vào hộp bút, tuyệt đối cấm mang ra đùa nghịch!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "shoot_paper_bullet_rubber_band",
@@ -6693,7 +7632,12 @@ window.ENDY_KB = [
       "gấp đạn giấy bắn nhau",
       "súng bắn đạn chun học sinh"
     ],
-    "response": "**Bắn đạn giấy bằng dây chun có lực sát thương không khác gì súng cao su! 🏹📄👁️❌**\n\n• **Nguyên nhân:** Đạn giấy gấp chặt, cứng và góc nhọn, khi được bắn bằng lực co giãn của dây chun sẽ bay với vận tốc xé gió.\n• **Tác hại:** Bắn trúng mắt sẽ làm **rách giác mạc, xuất huyết tiền phòng mắt và làm hỏng thị lực vĩnh viễn**!\n👉 Đừng bao giờ tham gia trò bắn đạn giấy, và hãy báo ngay thầy cô nếu có bạn nào chơi trò này trong lớp nhé!"
+    "response": "**Bắn đạn giấy bằng dây chun có lực sát thương không khác gì súng cao su! 🏹📄👁️❌**\n\n• **Nguyên nhân:** Đạn giấy gấp chặt, cứng và góc nhọn, khi được bắn bằng lực co giãn của dây chun sẽ bay với vận tốc xé gió.\n• **Tác hại:** Bắn trúng mắt sẽ làm **rách giác mạc, xuất huyết tiền phòng mắt và làm hỏng thị lực vĩnh viễn**!\n👉 Đừng bao giờ tham gia trò bắn đạn giấy, và hãy báo ngay thầy cô nếu có bạn nào chơi trò này trong lớp nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "chew_swallow_pen_cap",
@@ -6706,7 +7650,12 @@ window.ENDY_KB = [
       "can nap but",
       "nuốt nắp bút bi có sao không"
     ],
-    "response": "**Thói quen vừa học vừa ngậm nắp bút bi cực kỳ nguy hiểm cho đường thở! 🖊️🫁⚠️**\n\n• **Nguyên nhân:** Khi đang ngậm nắp bút mà em giật mình, cười đùa hoặc hít thở sâu, nắp bút trơn tuột sẽ bị hút thẳng vào thanh quản.\n• **Tác hại:** Chiếc nắp bút sẽ **kẹt cứng làm tắc đường thở**, khiến em tím tái ngạt thở nguy kịch tính mạng!\n👉 Lỗ nhỏ trên đỉnh nắp bút chính là thiết kế của nhà sản xuất để không khí lọt qua một chút cứu mạng người lỡ nuốt, nhưng tốt nhất là TUYỆT ĐỐI KHÔNG ngậm cắn nắp bút nhé!"
+    "response": "**Thói quen vừa học vừa ngậm nắp bút bi cực kỳ nguy hiểm cho đường thở! 🖊️🫁⚠️**\n\n• **Nguyên nhân:** Khi đang ngậm nắp bút mà em giật mình, cười đùa hoặc hít thở sâu, nắp bút trơn tuột sẽ bị hút thẳng vào thanh quản.\n• **Tác hại:** Chiếc nắp bút sẽ **kẹt cứng làm tắc đường thở**, khiến em tím tái ngạt thở nguy kịch tính mạng!\n👉 Lỗ nhỏ trên đỉnh nắp bút chính là thiết kế của nhà sản xuất để không khí lọt qua một chút cứu mạng người lỡ nuốt, nhưng tốt nhất là TUYỆT ĐỐI KHÔNG ngậm cắn nắp bút nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "wrestling_suplex_prank_school",
@@ -6719,7 +7668,12 @@ window.ENDY_KB = [
       "bế bạn lên quật xuống sàn",
       "chơi trò đấu vật giờ ra chơi"
     ],
-    "response": "**Bắt chước các đòn đấu vật trên tivi có thể làm bạn bị GÃY CỔ LIỆT NGƯỜI! 🤼‍♂️💥🛑**\n\n• **Nguyên nhân:** Các đô vật trên tivi là diễn viên xiếc chuyên nghiệp và sàn đấu của họ có đệm lò xo đàn hồi. Còn sàn lớp học là nền bê tông gạch men cứng như đá.\n• **Tác hại:** Khi bị quật ngã, đầu và gáy bạn đập thẳng xuống đất gây **vỡ hộp sọ, gãy đốt sống cổ liệt toàn thân hoặc tử vong tại chỗ**!\n👉 Giờ ra chơi chỉ nên chơi các trò nhẹ nhàng, văn minh, cấm đem các đòn đánh bạo lực ra nghịch nhé!"
+    "response": "**Bắt chước các đòn đấu vật trên tivi có thể làm bạn bị GÃY CỔ LIỆT NGƯỜI! 🤼‍♂️💥🛑**\n\n• **Nguyên nhân:** Các đô vật trên tivi là diễn viên xiếc chuyên nghiệp và sàn đấu của họ có đệm lò xo đàn hồi. Còn sàn lớp học là nền bê tông gạch men cứng như đá.\n• **Tác hại:** Khi bị quật ngã, đầu và gáy bạn đập thẳng xuống đất gây **vỡ hộp sọ, gãy đốt sống cổ liệt toàn thân hoặc tử vong tại chỗ**!\n👉 Giờ ra chơi chỉ nên chơi các trò nhẹ nhàng, văn minh, cấm đem các đòn đánh bạo lực ra nghịch nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "wrap_tug_of_war_rope_around_wrist",
@@ -6732,7 +7686,12 @@ window.ENDY_KB = [
       "buộc dây kéo co vào người",
       "kéo co bị đứt ngón tay"
     ],
-    "response": "**Kéo co mà quấn dây quanh cổ tay là 'tự chặt đứt bàn tay mình' đấy! 🪢✋😱**\n\n• **Nguyên nhân:** Sức kéo của cả chục người phía bên kia tạo ra một lực giật cực lớn hàng trăm kilôgam. Khi đội em bị kéo ngã trượt, sợi dây thừng sẽ thít chặt lại như lưỡi dao cắt.\n• **Tác hại:** Sợi dây siết nghiến đứt lìa gân cơ, làm gãy nát xương cổ tay hoặc **cắt đứt lìa các ngón tay** trong chớp mắt!\n👉 Kéo co đúng cách: Chỉ dùng hai bàn tay nắm chặt thân dây, tuyệt đối KHÔNG quấn dây vòng quanh cổ tay hay quấn quanh hông!"
+    "response": "**Kéo co mà quấn dây quanh cổ tay là 'tự chặt đứt bàn tay mình' đấy! 🪢✋😱**\n\n• **Nguyên nhân:** Sức kéo của cả chục người phía bên kia tạo ra một lực giật cực lớn hàng trăm kilôgam. Khi đội em bị kéo ngã trượt, sợi dây thừng sẽ thít chặt lại như lưỡi dao cắt.\n• **Tác hại:** Sợi dây siết nghiến đứt lìa gân cơ, làm gãy nát xương cổ tay hoặc **cắt đứt lìa các ngón tay** trong chớp mắt!\n👉 Kéo co đúng cách: Chỉ dùng hai bàn tay nắm chặt thân dây, tuyệt đối KHÔNG quấn dây vòng quanh cổ tay hay quấn quanh hông!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "bite_nails_rip_hangnails",
@@ -6745,7 +7704,12 @@ window.ENDY_KB = [
       "tự giật da mép móng tay",
       "ngón tay bị chín mé mưng mủ"
     ],
-    "response": "**Cắn móng tay và giật xước măng-rô có thể làm nhiễm trùng ăn cụt ngón tay! 💅🦠⚠️**\n\n• **Nguyên nhân:** Răng xé toạc lớp da sát khóe móng tạo vết thương hở, vi khuẩn và nấm từ miệng cùng đất bẩn sẽ ồ ạt tấn công vào vết xước.\n• **Tác hại:** Gây bệnh 'chín mé', ngón tay sưng vù đỏ ửng như quả cà chua, mưng mủ thối rữa và có thể ăn sâu làm hoại tử xương ngón tay!\n👉 Thấy xước măng-rô: Lấy bấm móng tay cắt nhẹ sát gốc, tuyệt đối không dùng miệng cắn xé nhé!"
+    "response": "**Cắn móng tay và giật xước măng-rô có thể làm nhiễm trùng ăn cụt ngón tay! 💅🦠⚠️**\n\n• **Nguyên nhân:** Răng xé toạc lớp da sát khóe móng tạo vết thương hở, vi khuẩn và nấm từ miệng cùng đất bẩn sẽ ồ ạt tấn công vào vết xước.\n• **Tác hại:** Gây bệnh 'chín mé', ngón tay sưng vù đỏ ửng như quả cà chua, mưng mủ thối rữa và có thể ăn sâu làm hoại tử xương ngón tay!\n👉 Thấy xước măng-rô: Lấy bấm móng tay cắt nhẹ sát gốc, tuyệt đối không dùng miệng cắn xé nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "poke_finger_through_fan_cage",
@@ -6758,7 +7722,12 @@ window.ENDY_KB = [
       "sờ cánh quạt đang chạy",
       "chơi với lồng quạt máy"
     ],
-    "response": "**Cánh quạt đang quay nhanh chém đứt ngón tay như dao thái đấy! 🌀🔪✋**\n\n• **Nguyên nhân:** Cánh quạt quay với tốc độ hàng nghìn vòng mỗi phút tạo ra lực chém cực mạnh và sắc bén.\n• **Tác hại:** Chỉ cần ngón tay thò qua kẽ lồng quạt chạm vào mép cánh, ngón tay em sẽ bị **chém gãy xương, đứt gân duỗi và dập nát thịt** phải khâu nối phẫu thuật phức tạp!\n👉 Khi quạt đang chạy: Ngồi cách xa, không chọc que hay thò ngón tay vào lồng quạt em nhé!"
+    "response": "**Cánh quạt đang quay nhanh chém đứt ngón tay như dao thái đấy! 🌀🔪✋**\n\n• **Nguyên nhân:** Cánh quạt quay với tốc độ hàng nghìn vòng mỗi phút tạo ra lực chém cực mạnh và sắc bén.\n• **Tác hại:** Chỉ cần ngón tay thò qua kẽ lồng quạt chạm vào mép cánh, ngón tay em sẽ bị **chém gãy xương, đứt gân duỗi và dập nát thịt** phải khâu nối phẫu thuật phức tạp!\n👉 Khi quạt đang chạy: Ngồi cách xa, không chọc que hay thò ngón tay vào lồng quạt em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "stuck_eraser_clay_in_nostril",
@@ -6771,7 +7740,12 @@ window.ENDY_KB = [
       "hột hoa quả kẹt trong mũi",
       "làm sao khi có đồ vật kẹt trong mũi"
     ],
-    "response": "**Nhét đồ chơi vào mũi có thể làm nghẹt thở rơi thẳng vào phổi! 👃🔴😱**\n\n• **Nguyên nhân:** Hốc mũi rất trơn và nối thẳng xuống cuống họng. Càng lấy tay móc khều, vật lạ càng bị đẩy tụt sâu vào bên trong.\n• **Tác hại:** Đồ vật rơi tọt vào phế quản gây tắc thở cấp tính, hoặc nằm lâu ngày gây thối rữa, chảy mủ hôi tanh và viêm loét xoang mũi nặng nề.\n👉 **Cách xử lý:** Bịt bên mũi lành, xì mạnh bên mũi bị kẹt xem vật có văng ra không. Nếu không ra, đứng yên không hít mạnh và đến bác sĩ gắp ra ngay!"
+    "response": "**Nhét đồ chơi vào mũi có thể làm nghẹt thở rơi thẳng vào phổi! 👃🔴😱**\n\n• **Nguyên nhân:** Hốc mũi rất trơn và nối thẳng xuống cuống họng. Càng lấy tay móc khều, vật lạ càng bị đẩy tụt sâu vào bên trong.\n• **Tác hại:** Đồ vật rơi tọt vào phế quản gây tắc thở cấp tính, hoặc nằm lâu ngày gây thối rữa, chảy mủ hôi tanh và viêm loét xoang mũi nặng nề.\n👉 **Cách xử lý:** Bịt bên mũi lành, xì mạnh bên mũi bị kẹt xem vật có văng ra không. Nếu không ra, đứng yên không hít mạnh và đến bác sĩ gắp ra ngay!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "swallow_toothpick_accidental",
@@ -6784,7 +7758,12 @@ window.ENDY_KB = [
       "tăm đâm thủng ruột",
       "nuốt phải que tăm nhọn"
     ],
-    "response": "**Ngậm tăm xỉa răng chạy nhảy là trò nguy hiểm vô cùng! 🥢🩺☠️**\n\n• **Nguyên nhân:** Que tăm hai đầu nhọn hoắt làm bằng tre rất cứng. Khi em cười đùa hay trượt ngã, tăm sẽ trôi tuột xuống bụng mà không bị dịch dạ dày tiêu hóa.\n• **Tác hại:** Hai đầu nhọn của tăm sẽ như cây kim **chọc thủng dạ dày, đâm thủng thành ruột non** gây chảy máu trong và viêm màng bụng cấp phải mổ phanh cứu mạng!\n👉 Xỉa răng xong phải vứt tăm vào thùng rác ngay, tuyệt đối không vừa ngậm tăm vừa đi lại em nhé!"
+    "response": "**Ngậm tăm xỉa răng chạy nhảy là trò nguy hiểm vô cùng! 🥢🩺☠️**\n\n• **Nguyên nhân:** Que tăm hai đầu nhọn hoắt làm bằng tre rất cứng. Khi em cười đùa hay trượt ngã, tăm sẽ trôi tuột xuống bụng mà không bị dịch dạ dày tiêu hóa.\n• **Tác hại:** Hai đầu nhọn của tăm sẽ như cây kim **chọc thủng dạ dày, đâm thủng thành ruột non** gây chảy máu trong và viêm màng bụng cấp phải mổ phanh cứu mạng!\n👉 Xỉa răng xong phải vứt tăm vào thùng rác ngay, tuyệt đối không vừa ngậm tăm vừa đi lại em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "throw_rocks_clods_at_friends",
@@ -6797,7 +7776,12 @@ window.ENDY_KB = [
       "chọi bùn đất trêu nhau",
       "ném đá vỡ đầu"
     ],
-    "response": "**Trò chọi đá là trò chơi bạo lực làm vỡ đầu bạn bè! 🪨🤕❌**\n\n• **Nguyên nhân:** Hòn đá hay cục đất cứng bay trong không khí với lực ném mạnh có sức sát thương lớn như một viên đạn.\n• **Tác hại:** Bay trúng thái dương hoặc mắt sẽ làm **lún vỡ hộp sọ, chấn thương sọ não, mù mắt** hoặc để lại di chứng thần kinh suốt đời cho bạn!\n👉 Tuyệt đối không nhặt đá chọi nhau, thấy bạn nào ném đá phải tránh xa và báo ngay thầy cô giáo!"
+    "response": "**Trò chọi đá là trò chơi bạo lực làm vỡ đầu bạn bè! 🪨🤕❌**\n\n• **Nguyên nhân:** Hòn đá hay cục đất cứng bay trong không khí với lực ném mạnh có sức sát thương lớn như một viên đạn.\n• **Tác hại:** Bay trúng thái dương hoặc mắt sẽ làm **lún vỡ hộp sọ, chấn thương sọ não, mù mắt** hoặc để lại di chứng thần kinh suốt đời cho bạn!\n👉 Tuyệt đối không nhặt đá chọi nhau, thấy bạn nào ném đá phải tránh xa và báo ngay thầy cô giáo!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "slide_down_stairs_cardboard_box",
@@ -6810,7 +7794,12 @@ window.ENDY_KB = [
       "trượt cầu thang mạo hiểm",
       "chơi máng trượt cầu thang nhà"
     ],
-    "response": "**Ngồi thùng giấy trượt cầu thang là trò nghịch dại dẫn tới chấn thương nặng! 📦🪜💥**\n\n• **Nguyên nhân:** Cầu thang dốc đứng và có nhiều bậc gấp khúc. Chiếc thùng giấy trượt xuống không hề có phanh, tốc độ tăng vọt em không thể dừng lại được.\n• **Tác hại:** Thùng bị lật úp hất em bay thẳng đầu vào tường hoặc đâm sầm qua cửa kính chân cầu thang, gây gãy cổ và chấn thương cột sống tử vong!\n👉 Cầu thang chỉ dùng để bước từng bậc, không biến cầu thang thành máng trượt cảm giác mạnh em nhé!"
+    "response": "**Ngồi thùng giấy trượt cầu thang là trò nghịch dại dẫn tới chấn thương nặng! 📦🪜💥**\n\n• **Nguyên nhân:** Cầu thang dốc đứng và có nhiều bậc gấp khúc. Chiếc thùng giấy trượt xuống không hề có phanh, tốc độ tăng vọt em không thể dừng lại được.\n• **Tác hại:** Thùng bị lật úp hất em bay thẳng đầu vào tường hoặc đâm sầm qua cửa kính chân cầu thang, gây gãy cổ và chấn thương cột sống tử vong!\n👉 Cầu thang chỉ dùng để bước từng bậc, không biến cầu thang thành máng trượt cảm giác mạnh em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   },
   {
     "id": "skating_without_knee_elbow_pads",
@@ -6823,9 +7812,677 @@ window.ENDY_KB = [
       "ngã khi trượt patin",
       "đồ bảo hộ đầu gối patin có cần không"
     ],
-    "response": "**Trượt Patin hay trượt ván mà không đeo bảo vệ khớp là 'tự hại xương' mình! 🛼🛹🦵⚠️**\n\n• **Nguyên nhân:** Giày trượt patin có bánh xe lăn rất trơn. Khi mất thăng bằng ngã, phản xạ tự nhiên của em là chống hai lòng bàn tay và đập hai đầu gối xuống đường bê tông.\n• **Tác hại:** Lực đập cực mạnh làm vỡ vụn xương bánh chè đầu gối và **gãy gập xương cổ tay**, khiến em phải bó bột đau đớn hàng tháng trời không đi lại được!\n👉 Trượt patin/ván trượt bắt buộc phải trang bị đủ 4 món: Mũ bảo hiểm, bọc bảo vệ cổ tay, bọc khuỷu tay và bọc đầu gối em nhé!"
+    "response": "**Trượt Patin hay trượt ván mà không đeo bảo vệ khớp là 'tự hại xương' mình! 🛼🛹🦵⚠️**\n\n• **Nguyên nhân:** Giày trượt patin có bánh xe lăn rất trơn. Khi mất thăng bằng ngã, phản xạ tự nhiên của em là chống hai lòng bàn tay và đập hai đầu gối xuống đường bê tông.\n• **Tác hại:** Lực đập cực mạnh làm vỡ vụn xương bánh chè đầu gối và **gãy gập xương cổ tay**, khiến em phải bó bột đau đớn hàng tháng trời không đi lại được!\n👉 Trượt patin/ván trượt bắt buộc phải trang bị đủ 4 món: Mũ bảo hiểm, bọc bảo vệ cổ tay, bọc khuỷu tay và bọc đầu gối em nhé!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
+  },
+  {
+    "id": "breaststroke_dry_land_practice",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "sao phải tập bơi trên cạn",
+      "tập bơi trên bờ có tác dụng gì",
+      "chưa xuống nước tập bơi làm gì",
+      "tap boi ech tren can",
+      "tại sao phải tập tay chân trên cạn trước"
+    ],
+    "response": "**Tập thuần thục trên cạn là bí quyết vàng để xuống nước không bị chìm đấy! 🏊‍♂️🧘‍♂️✨**\n\n• **Nguyên nhân:** Khi mới xuống nước, em sẽ vừa sợ, vừa lạnh, vừa lo sặc nước nên não bộ không thể nhớ nổi tay chân phải quạt đạp ra sao.\n• **Tác hại nếu không tập trên cạn:** Vừa nhảy xuống hồ là tay chân quẫy đạp loạn xạ, mất sức cực nhanh, uống nước hồ và hoảng loạn chìm nghỉm.\n👉 **Cách tập đúng:** Đứng trên bờ tập quạt tay, ngồi mép bờ tập co bẻ đạp chân cho thật nhuần nhuyễn thành phản xạ tự nhiên rồi mới tự tin bước xuống hồ nhé!"
+  },
+  {
+    "id": "breaststroke_overview_for_kids",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "bơi ếch là gì",
+      "boi ech la nhu the nao",
+      "tại sao bơi ếch lại dễ học nhất",
+      "bơi ếch có lợi ích gì",
+      "bơi ếch có đứng nước được không"
+    ],
+    "response": "**Bơi ếch là kiểu bơi mô phỏng động tác bơi lội nhẹ nhàng của chú ếch ộp! 🐸💦**\n\n• **Tại sao ai cũng nên học bơi ếch đầu tiên?**\n  1. **Dễ thở nhất:** Động tác quạt tay tự nhiên sẽ nâng đầu em lên khỏi mặt nước để lấy hơi rất dễ dàng.\n  2. **Có thời gian nghỉ ngơi:** Sau mỗi nhịp đạp chân, em được nằm duỗi thẳng lướt đi êm ái trên mặt nước để lấy lại sức.\n  3. **Làm nền tảng tự cứu:** Biết bơi ếch sẽ giúp em biết đứng nước nổi một chỗ dễ dàng khi mệt mà không sợ chìm!"
+  },
+  {
+    "id": "breaststroke_arm_movement_4_steps",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "kỹ thuật quạt tay bơi ếch",
+      "4 bước quạt tay bơi ếch",
+      "quat tay boi ech the nao",
+      "tỳ nước kéo nước đẩy nước là gì",
+      "cách quạt tay bơi ếch đúng cách"
+    ],
+    "response": "**Kỹ thuật quạt tay bơi ếch hiện đại chuẩn 4 bước lướt như tên bắn:** 👐💨🏊\n\n1. **TỲ NƯỚC:** Hai tay duỗi thẳng phía trước, úp lòng bàn tay xuống và hơi nghiêng nhẹ ra ngoài để 'bắt' lấy làn nước.\n2. **KÉO NƯỚC:** Quạt hai tay vòng sang hai bên và hơi chếch xuống dưới (không quạt tay quá rộng ra sau lưng).\n3. **ĐẨY NƯỚC (ÔM NƯỚC):** Nhanh chóng khép hai khuỷu tay sát vào mạn sườn, chụm hai bàn tay trước ngực như đang ôm một quả bóng nước để nâng đầu nhô lên thở.\n4. **TRẢ TAY (VƯƠN TAY):** Phóng thẳng hai tay ra phía trước thật mũi nhọn để xuyên nước lướt đi!"
+  },
+  {
+    "id": "breaststroke_recover_arms_water_resistance",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "lỗi trả tay cản nước khi bơi ếch",
+      "sao vươn tay bơi ếch lại bị khựng lại",
+      "tra tay boi ech bi can nuoc",
+      "vươn tay bơi ếch bị chậm",
+      "cách duỗi tay bơi ếch không cản nước"
+    ],
+    "response": "**Tại sao vươn tay ra trước mà người lại bị 'phanh gấp' khựng lại? 🛑✋⚠️**\n\n• **Nguyên nhân:** Khi trả tay về phía trước, nhiều bạn mở xòe lòng bàn tay chắn ngang dòng nước như một chiếc mái chèo cản ngược chiều bơi!\n• **Tác hại:** Lực cản của nước sẽ triệt tiêu toàn bộ tốc độ em vừa tạo ra, làm em bơi rất nặng nhọc và nhanh mỏi cơ vai.\n👉 **Cách khắc phục:** Khi thu tay trước ngực, hãy chụm các ngón tay lại thành hình mũi tên nhọn, lòng bàn tay úp hoặc hướng vào nhau rồi phóng thẳng xuyên mượt qua nước!"
+  },
+  {
+    "id": "breaststroke_knees_too_wide_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "mở rộng đầu gối khi bơi ếch có sao không",
+      "sao không được mở toè đầu gối khi đạp chân ếch",
+      "loi mo rong dau goi boi ech",
+      "bơi ếch đầu gối bè ra hai bên",
+      "tại sao bơi ếch bị nặng đùi"
+    ],
+    "response": "**Mở bè hai đầu gối quá rộng là 'chiếc phanh hãm' tai hại nhất khi bơi ếch! 🦵🚫⚠️**\n\n• **Nguyên nhân:** Khi co chân mà mở toè hai đầu gối sang hai bên mép bể, hai chiếc bắp đùi to lớn của em sẽ biến thành một tấm chắn khổng lồ hứng trọn lực cản của nước.\n• **Tác hại:** Nước cản cực mạnh kéo tụt người em lại phía sau, bơi vừa mệt vừa xấu dáng và không thể tiến xa được.\n👉 **Kỹ thuật hiện đại:** Giữ hai đầu gối khép gọn gàng (chỉ mở rộng bằng bề ngang của vai), giấu đùi sau thân người và chỉ mở cẳng chân sang hai bên thôi nhé!"
+  },
+  {
+    "id": "breaststroke_heels_to_butt",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "co chân bơi ếch thế nào cho đúng",
+      "kéo gót chân sát mông bơi ếch",
+      "co chan boi ech dung cach",
+      "động tác co chân trong bơi ếch",
+      "cách co chân không bị cản nước"
+    ],
+    "response": "**Bí quyết co chân bơi ếch lướt mượt: Kéo gót chân chạm sát về mông! 🍑🦵✨**\n\n• **Kỹ thuật chuẩn:** Từ tư thế duỗi thẳng, từ từ gập đầu gối và kéo hai gót chân thu sát về phía mông của mình.\n• **Lợi ích tuyệt vời:**\n  1. Giúp giấu hoàn toàn bắp đùi phía sau thân người, triệt tiêu tối đa lực cản của nước.\n  2. Tạo ra một góc đòn bẩy hoàn hảo để hai bàn chân đạp bung nước ra phía sau với lực đẩy mạnh nhất!"
+  },
+  {
+    "id": "breaststroke_kick_foot_angle_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tại sao đạp chân ếch không tiến",
+      "đạp chân ếch mãi người vẫn đứng yên",
+      "sao đạp chân ếch không đi xa",
+      "lỗi chúc mũi chân khi bơi ếch",
+      "quên bẻ cổ chân bơi ếch"
+    ],
+    "response": "**Tại sao đạp chân ếch cật lực mà người vẫn đứng yên một chỗ? 🐸🦶❓**\n\n• **Nguyên nhân:** Do em **quên bẻ gập cổ chân** hoặc để mũi chân chúc thẳng xuống đáy bể, khiến mu bàn chân bị trượt nước tuồn tuột không có điểm tựa!\n• **Cách sửa đúng ngay lập tức:**\n  1. Khi co gót chân về mông, phải **bẻ gập cổ chân vuông góc** và xòe hai mũi chân hướng sang hai bên như bàn chân vịt.\n  2. Dùng toàn bộ **lòng bàn chân** đạp miết mạnh vòng cung ra phía sau để đẩy nước lùi lại, cơ thể em sẽ tự khắc phóng vọt về phía trước!"
+  },
+  {
+    "id": "breaststroke_glide_phase_relax",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "pha lướt nước trong bơi ếch là gì",
+      "tại sao đạp chân xong phải duỗi thẳng người",
+      "pha lướt nước bơi ếch",
+      "bơi ếch sao cho không mệt",
+      "thời gian nghỉ khi bơi ếch"
+    ],
+    "response": "**Pha lướt nước - 'Thời gian vàng' để cơ thể nghỉ ngơi thư giãn khi bơi ếch! 🧘‍♂️🌊💨**\n\n• **Nguyên nhân nhiều bạn nhanh kiệt sức:** Đạp chân xong là vội vàng quạt tay đạp chân tiếp liên tục mà không chịu lướt nước, làm cơ bắp không có lấy 1 giây phục hồi!\n• **Kỹ thuật chuẩn:** Ngay sau khi khép chân kết thúc cú đạp, hãy **duỗi thẳng toàn thân từ đầu ngón tay tới ngón chân như một mũi tên tên lửa** và thả lỏng trôi lướt đi trong 2 - 3 giây.\n• Đây chính là bí quyết giúp các vận động viên bơi hàng cây số mà không hề biết mệt!"
+  },
+  {
+    "id": "breaststroke_holding_breath_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "lỗi nín thở khi bơi ếch",
+      "tại sao nín thở bơi ếch lại mau mệt",
+      "sao ngoi lên thở không kịp",
+      "hết hơi khi bơi ếch",
+      "thở không đúng cách khi bơi ếch"
+    ],
+    "response": "**Nín thở dưới nước rồi ngoi lên mới thở là sai lầm làm em chìm nghỉm! 😮‍💨🫧❌**\n\n• **Nguyên nhân:** Khi nín thở suốt dưới nước, phổi em bị đầy khí cũ (CO2). Khi ngoi lên, em phải mất thời gian thở phì ra rồi mới kịp hít vào, làm đầu bị chìm xuống nước trước khi kịp lấy hơi!\n• **Cách thở đúng nhịp nhàng:**\n  1. **Ở dưới nước:** Dùng mũi từ từ thở nhẹ nhàng tạo bong bóng xả hết hơi cũ ra.\n  2. **Vừa nhô đầu lên:** Phổi đã rỗng sẵn, em chỉ việc há miệng 'đớp' ngay một ngụm không khí trong lành chỉ mất 0.5 giây rồi úp mặt xuống lướt tiếp!"
+  },
+  {
+    "id": "breaststroke_blow_water_from_mouth",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cách nhổ nước trong miệng khi bơi",
+      "ngoi lên bị nước vào mồm khi bơi ếch",
+      "thổi nước trong miệng khi lấy hơi",
+      "phồng má thổi nước khi bơi",
+      "không nuốt nước hồ bơi khi thở"
+    ],
+    "response": "**Mẹo 'Phồng má xả nước' để không bao giờ bị nuốt nước hồ vào bụng: 🐡💦✨**\n\n• **Vấn đề:** Khi ngoi đầu lên lấy hơi, sóng nước thường tràn vào khoang miệng làm em sợ hãi nuốt ực phải nước bẩn.\n• **Bí kíp tài liệu Dayboish hướng dẫn:**\n  1. Ngay khoảnh khắc miệng vừa nhô qua mặt nước, hãy **phồng nhẹ má và khép môi thổi phù một hơi thật dứt khoát** để tống sạch giọt nước đọng trên môi văng ra ngoài.\n  2. Ngay sau tiếng phù đó, miệng em lập tức há to hít trọn không khí sạch mà không dính một giọt nước nào!"
+  },
+  {
+    "id": "breaststroke_stiff_body_tired",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tại sao gồng cứng người khi bơi lại chìm",
+      "gồng người bơi ếch bị mệt",
+      "bơi ếch không thả lỏng",
+      "cách cảm nhận nước khi bơi",
+      "làm sao để bơi ếch thả lỏng"
+    ],
+    "response": "**Gồng cứng cơ bắp sẽ biến em thành 'tảng đá nặng trịch' dưới nước! 🗿💧⚠️**\n\n• **Nguyên nhân:** Khi sợ hãi, em gồng cứng ngắc cơ cổ, cơ lưng và đùi. Cơ bắp co cứng làm tăng tỷ trọng cơ thể và khiến em không cảm nhận được lực nâng của nước.\n• **Tác hại:** Nhanh đuối sức chỉ sau 10 mét, người nặng trịch cắm đầu xuống đáy và rất dễ bị chuột rút bẻ cong ngón chân.\n👉 **Bí quyết cảm nhận nước:** Hãy thả lỏng mềm mại như một cây rong biển. Nước sẽ tự nâng em nổi bồng bềnh, em chỉ cần dùng lực nhẹ nhàng đẩy nước để trôi đi thôi!"
+  },
+  {
+    "id": "breaststroke_rhythm_timing",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "nhịp phối hợp bơi ếch",
+      "câu thần chú bơi ếch",
+      "tay chân kết hợp bơi ếch thế nào",
+      "thứ tự động tác bơi ếch",
+      "tay trước hay chân trước khi bơi ếch"
+    ],
+    "response": "**Học thuộc 'Câu thần chú 3 nhịp' để tay chân phối hợp nhịp nhàng như vũ công:** 🎶🏊‍♂️\n\n👉 **Nhịp 1 (TAY QUẠT - ĐẦU LÊN - THỞ):** Hai tay quạt nước sang bên, ép khuỷu tay nâng cằm lên mặt nước và há miệng hít một hơi sâu.\n👉 **Nhịp 2 (TAY VƯƠN - CHÂN CO):** Úp mặt xuống nước, phóng hai tay thẳng ra phía trước đồng thời co gót chân về sát mông và bẻ cổ chân sẵn sàng.\n👉 **Nhịp 3 (CHÂN ĐẠP - NGƯỜI LƯỚT):** Đạp mạnh hai chân khép thẳng tắp lại, giữ người thẳng như mũi tên lướt vùn vụt trên mặt nước!\n\n*(Nhớ khẩu quyết: **TAY KÉO THỞ - TAY VƯƠN CHÂN CO - CHÂN ĐẠP LƯỚT NƯỚC** nhé!)*"
+  },
+  {
+    "id": "help_position_cold_water",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tư thế HELP giữ ấm dưới nước",
+      "tu the help duoi nuoc lanh",
+      "cách chống hạ thân nhiệt khi rơi xuống nước",
+      "tư thế cuộn người giữ nhiệt khi có áo phao",
+      "làm sao không bị cóng khi chờ cứu hộ"
+    ],
+    "response": "**Tư thế H.E.L.P - 'Áo giáp giữ ấm' khi bị rơi xuống nước lạnh chờ cứu hộ! 🥶🛡️🦺**\n\n• **Tác dụng:** Giúp cơ thể không bị mất nhiệt qua nách, ngực và bẹn, kéo dài thời gian sống sót gấp 3 lần khi mặc áo phao giữa dòng nước lạnh.\n• **Cách làm:**\n  1. Hai tay ôm chặt lấy phần ngực hoặc ôm chặt lấy thân áo phao.\n  2. Co hai đầu gối ép sát lên ngực, hai đùi khép chặt lại với nhau.\n  3. Giữ yên tư thế, đầu ngửa thở đều, không bơi lội lung tung để tránh bị mất nhiệt!"
+  },
+  {
+    "id": "beach_red_flag_meaning",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ đỏ cắm ở bãi biển là gì",
+      "y nghia co do o bien",
+      "thấy cờ đỏ ở biển có được tắm không",
+      "cờ đỏ cảnh báo gì",
+      "bãi biển cắm cờ đỏ"
+    ],
+    "response": "**CỜ ĐỎ Ở BIỂN: CẤM TẮM TUYỆT ĐỐI - NGUY HIỂM CHẾT NGƯỜI! 🚩🛑💀**\n\n• **Mức độ nguy hiểm: CỰC KỲ CAO.**\n• **Nguyên nhân cắm cờ đỏ:** Biển đang có sóng thần, sóng dữ cao vút, xuất hiện dòng chảy xa bờ (rip current) ngầm cực mạnh hoặc thời tiết chuẩn bị có bão to giông lốc.\n• **Tác hại:** Bất kỳ ai bước chân xuống nước dù bơi giỏi đến đâu cũng sẽ bị sóng dìm và cuốn phăng ra đại dương mất tích ngay lập tức!\n👉 Thấy cờ đỏ: Ở yên trên bãi cát, tuyệt đối không thò chân xuống mép nước!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "beach_yellow_flag_meaning",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ vàng cắm ở bãi biển là gì",
+      "y nghia co vang bai bien",
+      "cờ vàng có được bơi không",
+      "cờ vàng nguy hiểm thế nào",
+      "biển cắm cờ màu vàng"
+    ],
+    "response": "**CỜ VÀNG Ở BIỂN: CẢNH BÁO NGUY HIỂM TRUNG BÌNH - PHẢI CỰC KỲ CẨN TRỌNG! 🟨⚠️🏊**\n\n• **Mức độ nguy hiểm: TRUNG BÌNH.**\n• **Ý nghĩa:** Biển có sóng vừa, gió bắt đầu mạnh hoặc có dòng nước ngầm tiềm ẩn. Không phù hợp cho trẻ em hoặc người bơi yếu.\n👉 **Quy tắc an toàn:** Học sinh chỉ được tắm khi có bố mẹ ôm phao giữ chặt bên cạnh, không bơi ra xa và phải bơi ngay trong tầm quan sát của nhân viên cứu hộ!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "beach_red_yellow_flag_lifeguard",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ nửa đỏ nửa vàng ở biển",
+      "co soc do vang",
+      "tắm ở đâu trên bãi biển an toàn nhất",
+      "khu vực có cứu hộ ở biển",
+      "cờ đỏ vàng có ý nghĩa gì"
+    ],
+    "response": "**CỜ SỌC ĐỎ - VÀNG: KHU VỰC AN TOÀN NHẤT CÓ CỨU HỘ TUẦN TRA! 🏖️🛟✅**\n\n• **Ý nghĩa:** Khoảng bờ biển nằm giữa hai lá cờ sọc đỏ-vàng là nơi an toàn đã được các chú nhân viên cứu hộ kiểm tra đáy cát không có hố sụt và luôn có người túc trực canh gác.\n👉 **Lời khuyên của Endy:** Đi biển, cả nhà em hãy chọn đúng bãi cát nằm trong phạm vi hai lá cờ đỏ-vàng này để vui chơi an tâm nhất nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "water_depth_colors_pool",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "chữ số ghi trên thành bể bơi là gì",
+      "so 1m2 tren ho boi nghia la gi",
+      "độ sâu 1m4 1m8 ở hồ bơi",
+      "vạch chia màu xanh đỏ ở bể bơi",
+      "nhìn độ sâu hồ bơi thế nào"
+    ],
+    "response": "**Các con số ghi trên thành bể bơi chính là THƯỚC ĐO MỨC ĐỘ NGUY HIỂM đấy! 🏊‍♂️📏⚠️**\n\n• **Số 0.8m - 1.0m:** Nước cạn (ngang ngực trẻ em), dành cho các bạn tập bơi.\n• **Số 1.4m - 2.0m:** Nước sâu vượt quá đầu em! Nếu chưa biết bơi mà nhảy vào đây sẽ bị hụt chân chìm xuống đáy ngay lập tức.\n👉 Trước khi xuống bể bơi, hãy nhìn con số dưới chân: Chỉ xuống khu vực có độ sâu thấp hơn chiều cao của em nhé!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "hypothermia_blue_lips_shivering",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "bơi bị tím môi run rẩy",
+      "sao bơi lâu môi lại bị thâm tím",
+      "run bần bật răng đập vào nhau khi tắm hồ",
+      "bị hạ thân nhiệt khi bơi",
+      "tắm nước lạnh nổi da gà"
+    ],
+    "response": "**Môi tím ngắt và răng đập vào nhau là tín hiệu cơ thể đang KÊU CỨU KHẨN CẤP! 🥶👄🛑**\n\n• **Nguyên nhân:** Nước truyền nhiệt nhanh gấp 25 lần không khí. Ngâm nước quá lâu làm thân nhiệt tụt dốc không phanh (hạ thân nhiệt).\n• **Tác hại:** Máu bị dồn về nuôi tim phổi làm chân tay tê cóng mất cảm giác, cơ bắp co cứng chuột rút toàn thân và chìm nghỉm!\n👉 Thấy bạn môi thâm tím hoặc run rẩy: Bắt bạn **lên bờ ngay lập tức**, quấn khăn ấm, uống cốc nước gừng/nước đường ấm và lau khô người nhé!"
+  },
+  {
+    "id": "rule_3_no_water_safety",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "quy tắc 3 không phòng đuối nước",
+      "3 khong phong chong duoi nuoc la gi",
+      "ba điều không khi đi bơi",
+      "quy tac 3 khong cho hoc sinh",
+      "3 điều cấm kỵ gần sông hồ"
+    ],
+    "response": "**Quy tắc '3 KHÔNG' sống còn mà học sinh nào cũng phải thuộc lòng:** 🛡️🚫\n\n1. **KHÔNG tự ý xuống nước:** Khi không có sự đồng ý và giám sát trực tiếp của bố mẹ, thầy cô.\n2. **KHÔNG chơi đùa sát mép nguy hiểm:** Không đá bóng, bắt cá, chạy nhảy bên bờ ao, hồ, sông, suối, hố công trình.\n3. **KHÔNG nhảy xuống cứu bạn:** Khi thấy người đuối nước, tuyệt đối không nhảy theo mà phải **HÔ TO - GỌI NGƯỜI LỚN - NÉM VẬT NỔI**!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "rule_4_must_water_safety",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "quy tắc 4 phải khi đi bơi",
+      "4 điều phải làm trước khi xuống nước",
+      "quy tac 4 phai phong duoi nuoc",
+      "trước khi bơi phải làm gì",
+      "4 có khi đi bơi"
+    ],
+    "response": "**Quy tắc '4 PHẢI' chuẩn hiệp sĩ để luôn an toàn dưới nước:** 🛡️✅\n\n1. **PHẢI khởi động kỹ 10 - 15 phút:** Xoay tròn các khớp cổ chân, cổ tay, khớp gối và lườn để chống chuột rút.\n2. **PHẢI mặc áo phao:** Khi đi đò, tàu thuyền hoặc khi chưa bơi thành thạo.\n3. **PHẢI bơi ở nơi an toàn:** Nơi có nhân viên cứu hộ và có cờ báo cho phép tắm.\n4. **PHẢI lên bờ ngay:** Khi thấy trời chuyển mây đen dông bão hoặc cơ thể bắt đầu thấy lạnh, mệt mỏi!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "buddy_system_swimming",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "nguyên tắc đôi bạn đồng hành khi bơi",
+      "buddy system là gì",
+      "bơi theo cặp có tác dụng gì",
+      "tại sao phải bơi cùng bạn",
+      "quy tắc hai người đi bơi"
+    ],
+    "response": "**Quy tắc Buddy System (Đôi bạn cùng tiến) - Không bao giờ bơi đơn độc! 👬🛟**\n\n• **Cách thực hiện:** Khi xuống nước, em và bạn được phân công thành một cặp luôn để mắt tới nhau trong khoảng cách nhìn thấy.\n• **Tác dụng cứu mạng:** Đuối nước diễn ra trong im lặng cực nhanh. Nếu một bạn bị hụt chân hay chuột rút chìm xuống, người bạn đồng hành sẽ lập tức phát hiện và hét to báo cứu hộ ứng cứu kịp thời chỉ trong 5 giây vàng!"
+  },
+  {
+    "id": "test_water_depth_with_stick",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cách lấy cành cây đo độ sâu nước",
+      "dùng gậy thăm dò mực nước",
+      "lam sao biet nuoc sau hay nong khi di duong ngap",
+      "cầm que dò đường nước ngập",
+      "thử độ sâu của vũng nước"
+    ],
+    "response": "**Mẹo 'Gậy dò đường' của hiệp sĩ Endy khi bắt buộc phải qua chỗ ngập nước:** 🦯🌊⚠️\n\n• **Cách làm:** Tìm một cành cây hoặc khúc gỗ dài, chắc chắn. Trước mỗi bước chân đi tới, hãy dùng gậy chọc mạnh thẳng đứng xuống nước phía trước để thăm dò.\n• **Tác dụng:** Cây gậy sẽ báo cho em biết phía trước là mặt đường cứng bằng phẳng hay là một chiếc **hố ga mất nắp, rãnh cống sâu hút** để em kịp thời dừng bước né tránh!",
+    "followups": [
+      "Gọi không được ai thì sao?",
+      "Không có phao thì ném gì?",
+      "Bị chuột rút khi bơi làm sao?"
+    ]
+  },
+  {
+    "id": "drink_pool_chlorine_water_harm",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "uống nước hồ bơi có sao không",
+      "uống nhầm nước hồ bơi có mùi thuốc tẩy",
+      "nuốt nước hồ bơi bị đau bụng",
+      "nuoc ho boi co doc khong",
+      "lo uong nuoc be boi"
+    ],
+    "response": "**Nước bể bơi chứa hóa chất Clo và rất nhiều vi khuẩn, đừng uống nhé! 🏊‍♂️🧪🤢**\n\n• **Nguyên nhân:** Để giữ nước trong, người ta dùng hóa chất Clo khử trùng. Ngoài ra trong nước hồ còn có mồ hôi, bụi bẩn và vi khuẩn của hàng trăm người cùng tắm.\n• **Tác hại:** Nuốt phải một ngụm lớn sẽ làm bỏng rát họng, đau bụng tiêu chảy dữ dội hoặc nhiễm khuẩn đường ruột.\n👉 Nếu lỡ nuốt phải một ngụm nhỏ: Hãy nhổ bã ra ngay, súc miệng lại bằng nước sạch và uống bù một cốc nước lọc ấm nhé!"
+  },
+  {
+    "id": "sunburn_blister_swimming",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "tắm biển bị cháy nắng lột da",
+      "rát da sau khi đi bơi buổi trưa",
+      "cháy nắng phồng rộp da",
+      "tai sao di boi ve bi den da",
+      "chữa rát da cháy nắng"
+    ],
+    "response": "**Cháy nắng lột da không chỉ đen da mà là một dạng BỎNG NHIỆT đấy em! ☀️🏖️🧴**\n\n• **Nguyên nhân:** Tia cực tím (UV) gay gắt của mặt trời buổi trưa (10h - 15h) chiếu xuyên qua mặt nước đốt cháy lớp tế bào ngoài cùng của da.\n• **Tác hại:** Da bị đỏ rát như tôm luộc, phồng rộp bọng nước đau đớn và làm tăng nguy cơ ung thư da khi lớn lên.\n👉 **Bảo vệ da:** Thoa kem chống nắng trước khi bơi 20 phút, mặc áo bơi dài tay và tuyệt đối không tắm vào giữa trưa nắng gắt nhé!"
+  },
+  {
+    "id": "swimsuit_rule_body_boundary",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "quy tắc đồ bơi là gì",
+      "vùng kín trên cơ thể là gì",
+      "ai được chạm vào đồ lót của em",
+      "quy tac do boi phong xam hai",
+      "vùng đồ lót cấm chạm",
+      "chạm vào người làm em khó chịu"
+    ],
+    "response": "**Quy tắc đồ bơi: Cơ thể em là của riêng em, bất khả xâm phạm! 🩱🩲🛡️**\n\n• **Vùng đồ bơi gồm 4 chỗ:** Miệng, ngực, vùng giữa 2 đùi (vùng kín) và mông.\n• **Quy tắc sống còn:** Tuyệt đối **KHÔNG AI** được phép nhìn, chạm vào hoặc bắt em chạm vào vùng đồ bơi của họ!\n• **Ngoại lệ duy nhất:** Bố mẹ tắm rửa/vệ sinh khi em còn nhỏ, hoặc bác sĩ khám bệnh nhưng **bắt buộc phải có bố mẹ đứng cạnh giám sát**.\n👉 Nếu ai cố tình đụng chạm: Hét to **'CẤM ĐỤNG VÀO TÔI'**, chạy ngay đến chỗ đông người và báo bố mẹ hoặc gọi **111**!"
+  },
+  {
+    "id": "five_fingers_rule_touch",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "quy tắc 5 ngón tay là gì",
+      "quy tac 5 ngon tay phong xam hai",
+      "5 ngón tay phòng chống xâm hại",
+      "ai được ôm em",
+      "ai phải xua tay không cho chạm"
+    ],
+    "response": "**Quy tắc 5 ngón tay thần kỳ giúp em nhận diện ai được chạm vào mình:** 🖐️🛡️\n\n1. **Ngón cái (Gần nhất - Ôm hôn):** Bố mẹ, ông bà, anh chị em ruột trong nhà.\n2. **Ngón trỏ (Khoác tay, nắm tay):** Thầy cô giáo, bạn bè, họ hàng thân thiết.\n3. **Ngón giữa (Bắt tay):** Người quen biết (hàng xóm, bạn của bố mẹ).\n4. **Ngón áp út (Vẫy tay chào):** Người mới gặp lần đầu, người lạ thoáng qua.\n5. **Ngón út (Xua tay, hét to, bỏ chạy):** Người lạ mặt tiến sát, người làm em thấy sợ hãi hoặc cố tình đụng chạm vào cơ thể em!"
+  },
+  {
+    "id": "bad_secret_threat_silence",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "bí mật xấu là gì",
+      "bị người lớn đe dọa cấm kể bố mẹ",
+      "người ta bảo đây là bí mật của hai chú cháu",
+      "kể ra tao sẽ đánh",
+      "sợ không dám kể với mẹ"
+    ],
+    "response": "**Bí mật làm em sợ hãi là BÍ MẬT XẤU, phải kể ngay với bố mẹ! 🤐🚫🗣️**\n\n• **Thủ đoạn của kẻ xấu:** Kẻ xấu hay làm điều sai trái với cơ thể em rồi đe dọa: *'Cấm kể cho ai, kể ra tao đánh chết hoặc làm hại bố mẹ mày'*, làm em sợ hãi im lặng.\n• **Sự thật:** Kẻ xấu đang rất sợ hãi bị lộ tẩy nên mới đe dọa em. Em không hề có lỗi, em là nạn nhân được pháp luật bảo vệ!\n👉 **Hành động ngay:** Bất kể ai dọa nạt, hãy dũng cảm kể hết với bố mẹ, thầy cô hoặc gọi ngay tổng đài **111**. Mọi người sẽ bảo vệ em an toàn 100%!"
+  },
+  {
+    "id": "stranger_candy_toy_bribe",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "người lạ cho kẹo trước cổng trường",
+      "người lạ cho tiền có lấy không",
+      "nguoi la cho keo bim bim",
+      "cho trà sữa đi nhờ xe",
+      "người lạ tặng đồ chơi bảo đi theo"
+    ],
+    "response": "**Một viên kẹo ngọt có thể giấu 'cái bẫy bắt cóc' cực kỳ nguy hiểm! 🍬🍭🚗❌**\n\n• **Nguyên nhân:** Kẻ xấu thường lợi dụng lòng tin và sở thích ăn vặt của học sinh để tẩm thuốc mê vào kẹo/nước ngọt hoặc dụ dỗ em lên xe đi theo.\n• **Tác hại:** Em sẽ bị mất ý thức, bị bắt cóc tống tiền hoặc bán ra nước ngoài không bao giờ được gặp lại bố mẹ nữa!\n👉 **Quy tắc:** Lắc đầu dứt khoát: *'Cháu cảm ơn, bố mẹ cháu không cho nhận đồ lạ'*, lùi xa 3 bước và đi ngay vào trong phòng bác bảo vệ trường!"
+  },
+  {
+    "id": "stranger_says_parents_in_hospital",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "người lạ bảo bố mẹ bị tai nạn nhờ đón",
+      "có chú bảo mẹ gửi quà đến đón em",
+      "người lạ nói bố mẹ nằm viện",
+      "bảo bố mẹ bận nhờ chú đón",
+      "người lạ nhận là bạn của bố"
+    ],
+    "response": "**Đây là cái cớ bắt cóc kinh điển nhất, TUYỆT ĐỐI KHÔNG LÊN XE! 🏥🚗🛑**\n\n• **Kẻ xấu đánh vào tâm lý:** Biết em lo cho bố mẹ, kẻ xấu sẽ nói dối: *'Mẹ cháu bị xe đâm đang cấp cứu, chú là bạn mẹ đưa cháu đến viện gấp!'*.\n• **Cách vạch trần kẻ xấu:**\n  1. Đứng yên trong sân trường, hỏi ngay: **'MẬT MÃ BÍ MẬT của gia đình cháu là gì?'** (hãy quy ước 1 từ bí mật với bố mẹ ở nhà).\n  2. Chạy ngay đến phòng giám thị hoặc nhờ bác bảo vệ gọi điện thoại trực tiếp cho bố mẹ để kiểm tra!"
+  },
+  {
+    "id": "screaming_technique_stranger_grab",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "bị người lạ lôi kéo đi",
+      "bị bế thốc lên xe lôi đi",
+      "người lạ túm tay giật đi",
+      "bị bắt cóc hét câu gì",
+      "kêu cứu khi bị bắt cóc"
+    ],
+    "response": "**Khi bị kẻ lạ mặt túm kéo, phải hét thật to câu này để được cứu sống:** 🗣️🚨\n\n• **Câu hét cứu mạng:** **'CỨU CHÁU VỚI! ĐÂY KHÔNG PHẢI BỐ MẸ CHÁU! CỨU VỚI BẮT CÓC!'**\n• **Tại sao phải hét như vậy?** Nếu chỉ gào khóc *'Thả cháu ra, buông ra'*, người đi đường sẽ tưởng em đang hờn dỗi bố mẹ và không can thiệp!\n• **Động tác phối hợp:** Cắn mạnh vào tay kẻ xấu, ngồi thụt thụp xuống đất làm người nặng trịch, dùng hai chân đạp mạnh và giãy giụa hết sức!"
+  },
+  {
+    "id": "alone_at_home_stranger_knocks",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "ở nhà một mình có người lạ gõ cửa",
+      "người lạ xưng là thợ sửa ống nước",
+      "người giao hàng bấm chuông khi ở nhà một mình",
+      "o nha mot minh co nguoi go cua",
+      "người lạ bảo mở cửa cho chú vào"
+    ],
+    "response": "**Ở nhà một mình: KHÓA CHẶT CỬA VÀ TUYỆT ĐỐI KHÔNG MỞ CỬA! 🚪🔒🛑**\n\n• Dù người ngoài cửa xưng là thợ sửa điện, giao bưu phẩm hay bạn của bố mẹ, em cũng **không được mở then cài cửa**.\n• Nói to từ trong nhà: *'Bố mẹ cháu đang bận trong phòng ngủ, chú quay lại sau nhé!'* (để kẻ xấu tưởng trong nhà có người lớn).\n• Lập tức gọi điện thoại cho bố mẹ báo có người đang đứng trước cửa nhà mình!"
+  },
+  {
+    "id": "free_fire_roblox_diamonds_scam",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "đổi ảnh cởi đồ lấy kim cương game",
+      "chụp ảnh vùng kín nhận robux",
+      "bạn trên mạng bảo gửi ảnh không mặc đồ",
+      "tặng kim cương free fire bảo gửi ảnh cơ thể",
+      "gửi ảnh nhạy cảm nhận quà game"
+    ],
+    "response": "**BẪY TỐI NGUY HIỂM: Tuyệt đối không bao giờ chụp ảnh thân thể gửi lên mạng! 🎮💎☠️🚫**\n\n• **Thủ đoạn của kẻ biến thái:** Dụ dỗ tặng thẻ nạp, kim cương game, Robux để lừa em gửi ảnh khỏa thân hoặc video vùng nhạy cảm.\n• **Tác hại kinh hoàng:** Sau khi nhận ảnh, kẻ xấu sẽ đe dọa tung ảnh lên mạng xã hội, gửi cho bạn bè thầy cô để ép em làm những điều tồi tệ hơn!\n👉 Khi bị gạ gẫm: Không gửi, chụp màn hình tin nhắn lại, chặn nick kẻ đó và đưa cho bố mẹ/thầy cô xem ngay!"
+  },
+  {
+    "id": "click_strange_link_win_iphone",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bấm vào link trúng thưởng iphone trên mạng",
+      "đường link nhận xe đạp miễn phí",
+      "bam vao link la",
+      "link nhận kim cương game miễn phí",
+      "nhập tài khoản vào trang web lạ"
+    ],
+    "response": "**Không có bữa trưa nào miễn phí! Đừng bấm vào link trúng thưởng lạ! 🔗📱🎣❌**\n\n• **Nguyên nhân:** Đó là các trang web giả mạo gắn mã độc gián điệp (phishing) của tin tặc.\n• **Tác hại:** Chỉ cần bấm vào hoặc nhập số điện thoại, máy tính/điện thoại của em sẽ bị nhiễm virus, cướp sạch tài khoản Zalo, Facebook của bố mẹ và đánh cắp tiền trong tài khoản ngân hàng!\n👉 Thấy link lạ được gửi qua tin nhắn: Xóa ngay lập tức, không tò mò bấm vào!"
+  },
+  {
+    "id": "online_friend_meet_in_person",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bạn quen trên mạng rủ đi chơi riêng",
+      "gặp bạn trên game ngoài đời",
+      "bạn trên facebook rủ đi trà sữa",
+      "gap ban qua mang",
+      "bạn qua mạng hẹn gặp ở công viên"
+    ],
+    "response": "**Bạn quen qua mạng: Người trên ảnh có thể là một 'ác quỷ đội lốt'! 💻👥⚠️**\n\n• **Nguyên nhân:** Trên mạng ai cũng có thể lấy ảnh một bạn học sinh xinh xắn, dễ thương làm ảnh đại diện để làm quen, nhưng ngoài đời thực họ có thể là một kẻ bắt cóc hoặc buôn người lớn tuổi!\n• **Tác hại:** Đi gặp riêng một mình ở quán vắng hay công viên, em sẽ bị lừa đưa lên xe chở đi mất tích.\n👉 Tuyệt đối không đi gặp riêng bạn trên mạng. Nếu thật sự muốn gặp, phải hỏi ý kiến và **có bố mẹ đi cùng 100%**!"
+  },
+  {
+    "id": "cyberbullying_hate_group",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bị bạn lập nhóm nói xấu trên mạng",
+      "bị đăng ảnh dìm bôi nhọ trên facebook",
+      "bi bat nat tren mang",
+      "bạn bè tẩy chay xúc phạm trên tin nhắn",
+      "bị dọa đánh trên mạng xã hội"
+    ],
+    "response": "**Bắt nạt trên mạng (Cyberbullying): Đừng chịu đựng một mình, hãy làm 3 bước! 💻🛑🛡️**\n\n• **Tác hại:** Đọc những lời lăng mạ bôi nhọ độc hại sẽ làm em hoảng sợ, stress, mất ngủ và trầm cảm kéo dài.\n• **3 Bước hiệp sĩ Endy hướng dẫn:**\n  1. **Không đôi co cãi nhau:** Càng đáp trả kẻ bắt nạt càng hả hê trêu chọc.\n  2. **Chụp ảnh màn hình làm bằng chứng:** Lưu lại tất cả tin nhắn và bài đăng xúc phạm.\n  3. **Chặn nick (Block) và báo cáo:** Chia sẻ ngay bằng chứng với bố mẹ, thầy cô chủ nhiệm để nhà trường can thiệp xử lý kỷ luật bạn kia!"
+  },
+  {
+    "id": "share_house_address_online",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "đăng địa chỉ nhà lên mạng xã hội",
+      "chụp ảnh khoe vé máy bay thời khóa biểu",
+      "chia sẻ vị trí nhà trên tiktok",
+      "đăng số điện thoại lên facebook",
+      "khoe nhà vắng người lên mạng"
+    ],
+    "response": "**Khoe địa chỉ nhà và lịch trình lên mạng là 'mời trộm vào nhà' đấy! 🏠📍⚠️**\n\n• **Nguyên nhân:** Kẻ trộm, kẻ bắt cóc thường theo dõi các bài đăng công khai của học sinh để biết địa chỉ nhà, trường học và giờ giấc bố mẹ em vắng nhà.\n• **Tác hại:** Em có thể bị kẻ xấu phục kích bắt cóc trên đường đi học hoặc đột nhập vào nhà ăn trộm tài sản khi nhà vắng người!\n👉 Giữ bí mật thông tin cá nhân: Không bao giờ đăng số nhà, số điện thoại, tên trường lớp hay vé máy bay lên mạng!"
+  },
+  {
+    "id": "vape_electronic_cigarette_fruit",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "thuốc lá điện tử có hại không",
+      "hút thử pod vị dâu",
+      "vape hương hoa quả có nghiện không",
+      "hut thu thuoc la dien tu cho ngau",
+      "bạn rủ hút pod chill"
+    ],
+    "response": "**Thuốc lá điện tử núp bóng kẹo ngọt là 'cơn ác mộng đầu độc phổi'! 🍓💨☠️🚫**\n\n• **Nguyên nhân:** Dù có mùi thơm như kẹo hoa quả, tinh dầu thuốc lá điện tử chứa chất Nicotine cực độc gây nghiện não bộ và hàng trăm kim loại nặng (chì, niken).\n• **Tác hại:** Làm teo tế bào não học sinh, gây tổn thương phổi cấp tính (hội chứng EVALI) ho khạc ra máu, suy hô hấp khó thở và suy tim sớm!\n👉 Hãy dũng cảm từ chối: Hút khói độc không hề ngầu, giữ cho lá phổi trong lành mới là người thông minh!"
+  },
+  {
+    "id": "laughing_gas_balloon_danger",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "hít bóng cười có sao không",
+      "hít bóng cười cho vui",
+      "bóng cười có độc không",
+      "bóng cười làm liệt chân",
+      "bạn rủ thổi bóng cười"
+    ],
+    "response": "**Bóng cười không hề vui, nó giết chết dây thần kinh của em từng giây! 🎈😵💀**\n\n• **Nguyên nhân:** Khí trong bóng cười là Dinitơ oxit (N2O) - khí gây mê y tế. Hít vào sẽ cắt đứt tức khắc ô-xy lên não, tạo ảo giác đờ đẫn bật cười mất kiểm soát.\n• **Tác hại:** Khí này phá hủy tủy sống làm **tê liệt 2 chân vĩnh viễn không đi lại được**, teo não, mất trí nhớ và có thể ngừng tim đột tử ngay khi đang ôm quả bóng!\n👉 Tuyệt đối không thử dù chỉ một hơi, tránh xa những nơi tụ tập hút bóng cười!"
+  },
+  {
+    "id": "street_food_coloring_stomach",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "ăn đồ ăn vặt xanh đỏ cổng trường",
+      "ăn que cay cổng trường bị đau bụng",
+      "thịt bò khô giá rẻ cổng trường",
+      "ăn vặt không rõ nguồn gốc",
+      "bị ngộ độc đồ ăn cổng trường"
+    ],
+    "response": "**Đồ ăn vặt cay nồng xanh đỏ không rõ nguồn gốc là 'kho hóa chất' độc hại! 🌶️🤢⚠️**\n\n• **Nguyên nhân:** Các que cay, thịt hổ, xúc xích siêu rẻ ở gánh hàng rong thường làm từ mỡ ôi thiu, tẩm phẩm màu công nghiệp và đường hóa học vượt ngưỡng hàng trăm lần.\n• **Tác hại:** Phá hủy niêm mạc dạ dày gây viêm loét, tiêu chảy cấp mất nước nhập viện và tích tụ hóa chất gây ung thư gan thận.\n👉 Đói bụng: Hãy ăn bánh mì, sữa tươi có nhãn mác rõ ràng được bố mẹ chuẩn bị từ nhà nhé!"
+  },
+  {
+    "id": "pearl_milk_tea_choking",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "hút trân châu trà sữa bị sặc",
+      "hóc hạt trân châu",
+      "hut manh tran chau sac vao phoi",
+      "uống trà sữa bị nghẹn hạt",
+      "sặc hạt trà sữa nghẹt thở"
+    ],
+    "response": "**Hút ống hút trà sữa thật mạnh có thể làm hạt trân châu bắn thẳng vào phổi! 🧋🫁😱**\n\n• **Nguyên nhân:** Dùng ống hút to hút rột một hơi thật mạnh, lực hút không khí quá đà sẽ làm viên trân châu dẻo quánh bay thẳng qua nắp thanh quản rơi tọt vào khí quản.\n• **Tác hại:** Viên trân châu dính chặt làm tắc hoàn toàn đường thở, nạn nhân nghẹt thở tím tái và ngừng thở tử vong chỉ sau 3 phút!\n👉 **Cách uống an toàn:** Cắn nhỏ nhai kỹ từng hạt, không vừa chạy nhảy vừa hút trà sữa, không đùa giỡn cười to khi đang ngậm trân châu trong miệng!"
+  },
+  {
+    "id": "earthquake_at_school_desk",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "động đất ở trường học trốn ở đâu",
+      "lớp học bị rung lắc chạy đi đâu",
+      "dong dat trong lop hoc",
+      "quy tắc tam giác sự sống động đất",
+      "cách trốn khi có động đất"
+    ],
+    "response": "**Động đất rung lắc: Tuyệt đối không chạy ùa ra cầu thang chen lấn! 🏫💥🪑**\n\n• **Nguyên nhân:** Chen lấn xô đẩy ở cầu thang sẽ làm giẫm đạp lên nhau chết ngạt, và gạch đá trên trần nhà sẽ rơi thẳng trúng đầu em.\n• **Quy tắc vàng D.C.H (Drop - Cover - Hold on):**\n  1. **DROP (Hạ thấp):** Ngồi xổm ngay dưới gầm bàn học vững chắc.\n  2. **COVER (Che chắn):** Lấy cặp sách hoặc hai cánh tay ôm che kín đầu và gáy.\n  3. **HOLD ON (Giữ chặt):** Nắm chặt chân bàn học cho đến khi mặt đất hết rung lắc rồi mới theo sự hướng dẫn của thầy cô sơ tán ra sân trường trống!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
+  },
+  {
+    "id": "heatstroke_fainting_hot_sun",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "đá bóng giữa trưa nắng bị ngất",
+      "chơi thể thao nắng gắt say nắng",
+      "bị say nắng làm sao",
+      "tại sao say nắng nguy hiểm",
+      "triệu chứng sốc nhiệt say nắng"
+    ],
+    "response": "**Đá bóng giữa trưa nắng 40 độ có thể làm 'nấu chín' tế bào não (Sốc nhiệt)! ☀️⚽🥵**\n\n• **Nguyên nhân:** Vận động mạnh dưới nắng gắt khiến cơ thể mất nước quá nhanh qua mồ hôi, bộ phận điều hòa nhiệt của não bị tê liệt, thân nhiệt vọt lên trên 40 độ C.\n• **Tác hại:** Mặt đỏ bừng, co giật, hôn mê ngất xỉu và có thể tử vong do tổn thương đa tạng nếu không hạ sốt kịp thời.\n👉 Thấy bạn hoa mắt ngất xỉu vì nắng: Kéo bạn vào ngay **bóng râm mát**, nới lỏng cổ áo, chườm khăn mát vào trán, nách, bẹn và cho uống từng ngụm nước mát pha chút muối!"
+  },
+  {
+    "id": "finger_caught_in_door_crack",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "kẹt ngón tay vào khe cửa bản lề",
+      "bị dập móng tay do cửa kẹp",
+      "ket tay vao cua lop hoc",
+      "cửa gió thổi kẹp tay chảy máu",
+      "sơ cứu khi bị kẹp cửa dập tay"
+    ],
+    "response": "**Kẹt tay vào khe bản lề cửa có lực nghiến nát vụn đốt ngón tay! 🚪🩸✋**\n\n• **Nguyên nhân:** Khe bản lề cửa hoạt động như một chiếc đòn bẩy kìm cộng lực. Gió thổi mạnh đóng sập cửa lại sẽ nghiến với lực hàng trăm kilôgam vào ngón tay em.\n• **Tác hại:** Dập nát thịt, bong bật móng tay và gãy vụn xương đốt ngón tay.\n👉 **Cách sơ cứu ngay lập tức:**\n  1. Chườm ngay đá lạnh bọc khăn lên vết thương để giảm phù nề và cầm máu.\n  2. Giơ ngón tay cao hơn tim để bớt sưng đau.\n  3. Báo thầy cô hoặc bố mẹ đưa đi chụp X-quang kiểm tra xương ngay!",
+    "followups": [
+      "Chó xông vào cắn thì làm gì?",
+      "Chảy máu cam cúi hay ngửa đầu?",
+      "An toàn với dao kéo sắc nhọn"
+    ]
   }
 ];
+
+window.CATEGORY_FOLLOWUPS = {
+  "drowning": [
+    "Gọi không được ai thì sao?",
+    "Không có phao thì ném gì?",
+    "Bị chuột rút khi bơi làm sao?"
+  ],
+  "electric": [
+    "Dùng que gỗ gạt dây điện được không?",
+    "Ngắt cầu dao ở đâu?",
+    "Cháy điện dội nước được không?"
+  ],
+  "fire": [
+    "Không có khăn ướt thì làm gì?",
+    "Tay nắm cửa nóng thì làm sao?",
+    "Thoát hiểm nhà cao tầng khi cháy"
+  ],
+  "traffic": [
+    "Không có vạch kẻ đường thì qua thế nào?",
+    "Đi xe đạp trời mưa thế nào?",
+    "Đèn giao thông màu vàng có được đi không?"
+  ],
+  "burn": [
+    "Bôi kem đánh răng lên vết bỏng được không?",
+    "Bị bỏng nước sôi phải làm sao?",
+    "Các số điện thoại khẩn cấp"
+  ],
+  "choking": [
+    "Bị hóc nuốt cơm to được không?",
+    "Thủ thuật Heimlich cấp cứu hóc dị vật",
+    "Số điện thoại 115 là gì?"
+  ],
+  "injury": [
+    "Chó xông vào cắn thì làm gì?",
+    "Chảy máu cam cúi hay ngửa đầu?",
+    "An toàn với dao kéo sắc nhọn"
+  ],
+  "abuse": [
+    "Quy tắc 5 ngón tay phòng xâm hại",
+    "Quy tắc đồ lót là gì?",
+    "Số điện thoại 111 là gì?"
+  ],
+  "stranger": [
+    "Người lạ cho kẹo rủ đi theo thì làm sao?",
+    "Ở nhà một mình người lạ gõ cửa",
+    "Số điện thoại 113 là gì?"
+  ],
+  "school": [
+    "Bị bạn bắt nạt ở trường làm sao?",
+    "Làm sao để hòa đồng với bạn bè?",
+    "Tổng đài bảo vệ trẻ em 111"
+  ],
+  "quick": [
+    "Bốn số điện thoại cứu hộ khẩn cấp",
+    "Thấy người đuối nước có nên nhảy xuống cứu không?",
+    "Cháy do điện có được dội nước không?"
+  ]
+};
 
 // Chuẩn hóa tiếng Việt không dấu
 function removeVietnameseTones(str) {
@@ -6850,8 +8507,16 @@ const STOP_WORDS = new Set([
     'cho', 'em', 'ban', 'va', 'cua', 'o', 'dang', 'phai', 'voi', 'nhe', 'di', 'thi'
 ]);
 
-// BỘ MÁY TÌM KIẾM THÔNG MINH ENDY
-window.searchEndyKB = function(userQuery) {
+// Các từ khóa chỉ câu hỏi nối tiếp ngữ cảnh thông minh
+const CONTEXT_FOLLOWUP_INDICATORS = [
+    'thì sao', 'thi sao', 'làm sao', 'lam sao', 'thế nào', 'the nao',
+    'được không', 'duoc khong', 'không có', 'khong co', 'gọi không', 'goi khong',
+    'ở đâu', 'o dau', 'lấy gì', 'lay gi', 'tại sao', 'tai sao', 'sao',
+    'bị sao', 'bi sao', 'ai', 'cái gì', 'cai gi', 'dùng gì', 'dung gi'
+];
+
+// BỘ MÁY TÌM KIẾM THÔNG MINH ENDY HỖ TRỢ NGỮ CẢNH (CONTEXT-AWARE SEARCH)
+window.searchEndyKB = function(userQuery, context = null) {
     if (!userQuery || typeof userQuery !== 'string') return null;
     let query = userQuery.toLowerCase().trim();
     // Bỏ dấu hỏi chấm, chấm than ở cuối câu
@@ -6865,7 +8530,19 @@ window.searchEndyKB = function(userQuery) {
     if (['chào', 'xin chào', 'hi', 'hello', 'alo', 'bắt đầu', 'chào bạn', 'chào endy'].includes(query) ||
         ['chao', 'xin chao', 'chao ban', 'chao endy'].includes(queryNoTone)) {
         const greetItem = window.ENDY_KB.find(x => x.id === 'greeting');
-        if (greetItem) return { item: greetItem, score: 1000 };
+        if (greetItem) return { item: greetItem, score: 1000, followups: greetItem.followups || [] };
+    }
+
+    // Kiểm tra xem query có phải là câu hỏi ngắn ngữ cảnh tiếp nối không
+    let isFollowupQuery = false;
+    for (let ind of CONTEXT_FOLLOWUP_INDICATORS) {
+        if (query.includes(ind) || queryNoTone.includes(ind)) {
+            isFollowupQuery = true;
+            break;
+        }
+    }
+    if (query.split(/\s+/).length <= 6) {
+        isFollowupQuery = true;
     }
 
     let bestMatch = null;
@@ -6908,6 +8585,14 @@ window.searchEndyKB = function(userQuery) {
             if (wordNoToneMatch > 0) score += wordNoToneMatch * 15;
         }
 
+        // TĂNG ĐIỂM NGỮ CẢNH THÔNG MINH (CONTEXT AFFINITY BOOST)
+        if (context && context.lastCategory && isFollowupQuery) {
+            if (item.category === context.lastCategory) {
+                // Thêm điểm ưu tiên nếu cùng chủ đề đang nói chuyện
+                score += 120;
+            }
+        }
+
         if (score > highestScore) {
             highestScore = score;
             bestMatch = item;
@@ -6915,7 +8600,12 @@ window.searchEndyKB = function(userQuery) {
     }
 
     if (bestMatch && highestScore >= 35) {
-        return { item: bestMatch, score: highestScore };
+        // Gắn danh sách gợi ý thông minh nối tiếp
+        let followups = bestMatch.followups || [];
+        if (!followups || followups.length === 0) {
+            followups = window.CATEGORY_FOLLOWUPS[bestMatch.category] || [];
+        }
+        return { item: bestMatch, score: highestScore, followups: followups };
     }
 
     return null;

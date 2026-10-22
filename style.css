@@ -1988,3 +1988,67 @@ html, body {
     max-width: 110px;
   }
 }
+
+/* ==========================================================================
+   SMART CONTEXTUAL FOLLOW-UP QUESTIONS (CHẾ ĐỘ HỎI TIẾP THÔNG MINH)
+   ========================================================================== */
+.bot-smart-followups {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.smart-followup-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0369a1;
+  margin-bottom: 6px;
+}
+
+.smart-followup-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.smart-chip-btn {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  line-height: 1.35;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: inherit;
+}
+
+.smart-chip-btn:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.2);
+}
+
+.smart-chip-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .smart-chip-btn {
+    font-size: 11.5px;
+    padding: 4px 8px;
+    border-radius: 10px;
+  }
+}
+

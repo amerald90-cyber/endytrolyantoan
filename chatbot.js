@@ -7722,6 +7722,599 @@
     ],
     "response": "**Trượt Patin hay trượt ván mà không đeo bảo vệ khớp là 'tự hại xương' mình! 🛼🛹🦵⚠️**\n\n• **Nguyên nhân:** Giày trượt patin có bánh xe lăn rất trơn. Khi mất thăng bằng ngã, phản xạ tự nhiên của em là chống hai lòng bàn tay và đập hai đầu gối xuống đường bê tông.\n• **Tác hại:** Lực đập cực mạnh làm vỡ vụn xương bánh chè đầu gối và **gãy gập xương cổ tay**, khiến em phải bó bột đau đớn hàng tháng trời không đi lại được!\n👉 Trượt patin/ván trượt bắt buộc phải trang bị đủ 4 món: Mũ bảo hiểm, bọc bảo vệ cổ tay, bọc khuỷu tay và bọc đầu gối em nhé!"
   },
+{
+    "id": "breaststroke_dry_land_practice",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "sao phải tập bơi trên cạn",
+      "tập bơi trên bờ có tác dụng gì",
+      "chưa xuống nước tập bơi làm gì",
+      "tap boi ech tren can",
+      "tại sao phải tập tay chân trên cạn trước"
+    ],
+    "response": "**Tập thuần thục trên cạn là bí quyết vàng để xuống nước không bị chìm đấy! 🏊‍♂️🧘‍♂️✨**\n\n• **Nguyên nhân:** Khi mới xuống nước, em sẽ vừa sợ, vừa lạnh, vừa lo sặc nước nên não bộ không thể nhớ nổi tay chân phải quạt đạp ra sao.\n• **Tác hại nếu không tập trên cạn:** Vừa nhảy xuống hồ là tay chân quẫy đạp loạn xạ, mất sức cực nhanh, uống nước hồ và hoảng loạn chìm nghỉm.\n👉 **Cách tập đúng:** Đứng trên bờ tập quạt tay, ngồi mép bờ tập co bẻ đạp chân cho thật nhuần nhuyễn thành phản xạ tự nhiên rồi mới tự tin bước xuống hồ nhé!"
+  },
+  {
+    "id": "breaststroke_overview_for_kids",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "bơi ếch là gì",
+      "boi ech la nhu the nao",
+      "tại sao bơi ếch lại dễ học nhất",
+      "bơi ếch có lợi ích gì",
+      "bơi ếch có đứng nước được không"
+    ],
+    "response": "**Bơi ếch là kiểu bơi mô phỏng động tác bơi lội nhẹ nhàng của chú ếch ộp! 🐸💦**\n\n• **Tại sao ai cũng nên học bơi ếch đầu tiên?**\n  1. **Dễ thở nhất:** Động tác quạt tay tự nhiên sẽ nâng đầu em lên khỏi mặt nước để lấy hơi rất dễ dàng.\n  2. **Có thời gian nghỉ ngơi:** Sau mỗi nhịp đạp chân, em được nằm duỗi thẳng lướt đi êm ái trên mặt nước để lấy lại sức.\n  3. **Làm nền tảng tự cứu:** Biết bơi ếch sẽ giúp em biết đứng nước nổi một chỗ dễ dàng khi mệt mà không sợ chìm!"
+  },
+
+  // 2. KỸ THUẬT QUẠT TAY VÀ LỖI CẢN NƯỚC
+  {
+    "id": "breaststroke_arm_movement_4_steps",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "kỹ thuật quạt tay bơi ếch",
+      "4 bước quạt tay bơi ếch",
+      "quat tay boi ech the nao",
+      "tỳ nước kéo nước đẩy nước là gì",
+      "cách quạt tay bơi ếch đúng cách"
+    ],
+    "response": "**Kỹ thuật quạt tay bơi ếch hiện đại chuẩn 4 bước lướt như tên bắn:** 👐💨🏊\n\n1. **TỲ NƯỚC:** Hai tay duỗi thẳng phía trước, úp lòng bàn tay xuống và hơi nghiêng nhẹ ra ngoài để 'bắt' lấy làn nước.\n2. **KÉO NƯỚC:** Quạt hai tay vòng sang hai bên và hơi chếch xuống dưới (không quạt tay quá rộng ra sau lưng).\n3. **ĐẨY NƯỚC (ÔM NƯỚC):** Nhanh chóng khép hai khuỷu tay sát vào mạn sườn, chụm hai bàn tay trước ngực như đang ôm một quả bóng nước để nâng đầu nhô lên thở.\n4. **TRẢ TAY (VƯƠN TAY):** Phóng thẳng hai tay ra phía trước thật mũi nhọn để xuyên nước lướt đi!"
+  },
+  {
+    "id": "breaststroke_recover_arms_water_resistance",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "lỗi trả tay cản nước khi bơi ếch",
+      "sao vươn tay bơi ếch lại bị khựng lại",
+      "tra tay boi ech bi can nuoc",
+      "vươn tay bơi ếch bị chậm",
+      "cách duỗi tay bơi ếch không cản nước"
+    ],
+    "response": "**Tại sao vươn tay ra trước mà người lại bị 'phanh gấp' khựng lại? 🛑✋⚠️**\n\n• **Nguyên nhân:** Khi trả tay về phía trước, nhiều bạn mở xòe lòng bàn tay chắn ngang dòng nước như một chiếc mái chèo cản ngược chiều bơi!\n• **Tác hại:** Lực cản của nước sẽ triệt tiêu toàn bộ tốc độ em vừa tạo ra, làm em bơi rất nặng nhọc và nhanh mỏi cơ vai.\n👉 **Cách khắc phục:** Khi thu tay trước ngực, hãy chụm các ngón tay lại thành hình mũi tên nhọn, lòng bàn tay úp hoặc hướng vào nhau rồi phóng thẳng xuyên mượt qua nước!"
+  },
+
+  // 3. KỸ THUẬT ĐẠP CHÂN HIỆN ĐẠI & SỬA LỖI ĐÙI CẢN NƯỚC
+  {
+    "id": "breaststroke_knees_too_wide_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "mở rộng đầu gối khi bơi ếch có sao không",
+      "sao không được mở toè đầu gối khi đạp chân ếch",
+      "loi mo rong dau goi boi ech",
+      "bơi ếch đầu gối bè ra hai bên",
+      "tại sao bơi ếch bị nặng đùi"
+    ],
+    "response": "**Mở bè hai đầu gối quá rộng là 'chiếc phanh hãm' tai hại nhất khi bơi ếch! 🦵🚫⚠️**\n\n• **Nguyên nhân:** Khi co chân mà mở toè hai đầu gối sang hai bên mép bể, hai chiếc bắp đùi to lớn của em sẽ biến thành một tấm chắn khổng lồ hứng trọn lực cản của nước.\n• **Tác hại:** Nước cản cực mạnh kéo tụt người em lại phía sau, bơi vừa mệt vừa xấu dáng và không thể tiến xa được.\n👉 **Kỹ thuật hiện đại:** Giữ hai đầu gối khép gọn gàng (chỉ mở rộng bằng bề ngang của vai), giấu đùi sau thân người và chỉ mở cẳng chân sang hai bên thôi nhé!"
+  },
+  {
+    "id": "breaststroke_heels_to_butt",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "co chân bơi ếch thế nào cho đúng",
+      "kéo gót chân sát mông bơi ếch",
+      "co chan boi ech dung cach",
+      "động tác co chân trong bơi ếch",
+      "cách co chân không bị cản nước"
+    ],
+    "response": "**Bí quyết co chân bơi ếch lướt mượt: Kéo gót chân chạm sát về mông! 🍑🦵✨**\n\n• **Kỹ thuật chuẩn:** Từ tư thế duỗi thẳng, từ từ gập đầu gối và kéo hai gót chân thu sát về phía mông của mình.\n• **Lợi ích tuyệt vời:**\n  1. Giúp giấu hoàn toàn bắp đùi phía sau thân người, triệt tiêu tối đa lực cản của nước.\n  2. Tạo ra một góc đòn bẩy hoàn hảo để hai bàn chân đạp bung nước ra phía sau với lực đẩy mạnh nhất!"
+  },
+  {
+    "id": "breaststroke_kick_foot_angle_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tại sao đạp chân ếch không tiến",
+      "đạp chân ếch mãi người vẫn đứng yên",
+      "sao đạp chân ếch không đi xa",
+      "lỗi chúc mũi chân khi bơi ếch",
+      "quên bẻ cổ chân bơi ếch"
+    ],
+    "response": "**Tại sao đạp chân ếch cật lực mà người vẫn đứng yên một chỗ? 🐸🦶❓**\n\n• **Nguyên nhân:** Do em **quên bẻ gập cổ chân** hoặc để mũi chân chúc thẳng xuống đáy bể, khiến mu bàn chân bị trượt nước tuồn tuột không có điểm tựa!\n• **Cách sửa đúng ngay lập tức:**\n  1. Khi co gót chân về mông, phải **bẻ gập cổ chân vuông góc** và xòe hai mũi chân hướng sang hai bên như bàn chân vịt.\n  2. Dùng toàn bộ **lòng bàn chân** đạp miết mạnh vòng cung ra phía sau để đẩy nước lùi lại, cơ thể em sẽ tự khắc phóng vọt về phía trước!"
+  },
+  {
+    "id": "breaststroke_glide_phase_relax",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "pha lướt nước trong bơi ếch là gì",
+      "tại sao đạp chân xong phải duỗi thẳng người",
+      "pha lướt nước bơi ếch",
+      "bơi ếch sao cho không mệt",
+      "thời gian nghỉ khi bơi ếch"
+    ],
+    "response": "**Pha lướt nước - 'Thời gian vàng' để cơ thể nghỉ ngơi thư giãn khi bơi ếch! 🧘‍♂️🌊💨**\n\n• **Nguyên nhân nhiều bạn nhanh kiệt sức:** Đạp chân xong là vội vàng quạt tay đạp chân tiếp liên tục mà không chịu lướt nước, làm cơ bắp không có lấy 1 giây phục hồi!\n• **Kỹ thuật chuẩn:** Ngay sau khi khép chân kết thúc cú đạp, hãy **duỗi thẳng toàn thân từ đầu ngón tay tới ngón chân như một mũi tên tên lửa** và thả lỏng trôi lướt đi trong 2 - 3 giây.\n• Đây chính là bí quyết giúp các vận động viên bơi hàng cây số mà không hề biết mệt!"
+  },
+
+  // 4. KỸ THUẬT THỞ & SỬA LỖI THỞ SAI KHI BƠI
+  {
+    "id": "breaststroke_holding_breath_mistake",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "lỗi nín thở khi bơi ếch",
+      "tại sao nín thở bơi ếch lại mau mệt",
+      "sao ngoi lên thở không kịp",
+      "hết hơi khi bơi ếch",
+      "thở không đúng cách khi bơi ếch"
+    ],
+    "response": "**Nín thở dưới nước rồi ngoi lên mới thở là sai lầm làm em chìm nghỉm! 😮‍💨🫧❌**\n\n• **Nguyên nhân:** Khi nín thở suốt dưới nước, phổi em bị đầy khí cũ (CO2). Khi ngoi lên, em phải mất thời gian thở phì ra rồi mới kịp hít vào, làm đầu bị chìm xuống nước trước khi kịp lấy hơi!\n• **Cách thở đúng nhịp nhàng:**\n  1. **Ở dưới nước:** Dùng mũi từ từ thở nhẹ nhàng tạo bong bóng xả hết hơi cũ ra.\n  2. **Vừa nhô đầu lên:** Phổi đã rỗng sẵn, em chỉ việc há miệng 'đớp' ngay một ngụm không khí trong lành chỉ mất 0.5 giây rồi úp mặt xuống lướt tiếp!"
+  },
+  {
+    "id": "breaststroke_blow_water_from_mouth",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cách nhổ nước trong miệng khi bơi",
+      "ngoi lên bị nước vào mồm khi bơi ếch",
+      "thổi nước trong miệng khi lấy hơi",
+      "phồng má thổi nước khi bơi",
+      "không nuốt nước hồ bơi khi thở"
+    ],
+    "response": "**Mẹo 'Phồng má xả nước' để không bao giờ bị nuốt nước hồ vào bụng: 🐡💦✨**\n\n• **Vấn đề:** Khi ngoi đầu lên lấy hơi, sóng nước thường tràn vào khoang miệng làm em sợ hãi nuốt ực phải nước bẩn.\n• **Bí kíp tài liệu Dayboish hướng dẫn:**\n  1. Ngay khoảnh khắc miệng vừa nhô qua mặt nước, hãy **phồng nhẹ má và khép môi thổi phù một hơi thật dứt khoát** để tống sạch giọt nước đọng trên môi văng ra ngoài.\n  2. Ngay sau tiếng phù đó, miệng em lập tức há to hít trọn không khí sạch mà không dính một giọt nước nào!"
+  },
+  {
+    "id": "breaststroke_stiff_body_tired",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tại sao gồng cứng người khi bơi lại chìm",
+      "gồng người bơi ếch bị mệt",
+      "bơi ếch không thả lỏng",
+      "cách cảm nhận nước khi bơi",
+      "làm sao để bơi ếch thả lỏng"
+    ],
+    "response": "**Gồng cứng cơ bắp sẽ biến em thành 'tảng đá nặng trịch' dưới nước! 🗿💧⚠️**\n\n• **Nguyên nhân:** Khi sợ hãi, em gồng cứng ngắc cơ cổ, cơ lưng và đùi. Cơ bắp co cứng làm tăng tỷ trọng cơ thể và khiến em không cảm nhận được lực nâng của nước.\n• **Tác hại:** Nhanh đuối sức chỉ sau 10 mét, người nặng trịch cắm đầu xuống đáy và rất dễ bị chuột rút bẻ cong ngón chân.\n👉 **Bí quyết cảm nhận nước:** Hãy thả lỏng mềm mại như một cây rong biển. Nước sẽ tự nâng em nổi bồng bềnh, em chỉ cần dùng lực nhẹ nhàng đẩy nước để trôi đi thôi!"
+  },
+
+  // 5. NHỊP ĐIỆU PHỐI HỢP TOÀN THÂN
+  {
+    "id": "breaststroke_rhythm_timing",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "nhịp phối hợp bơi ếch",
+      "câu thần chú bơi ếch",
+      "tay chân kết hợp bơi ếch thế nào",
+      "thứ tự động tác bơi ếch",
+      "tay trước hay chân trước khi bơi ếch"
+    ],
+    "response": "**Học thuộc 'Câu thần chú 3 nhịp' để tay chân phối hợp nhịp nhàng như vũ công:** 🎶🏊‍♂️\n\n👉 **Nhịp 1 (TAY QUẠT - ĐẦU LÊN - THỞ):** Hai tay quạt nước sang bên, ép khuỷu tay nâng cằm lên mặt nước và há miệng hít một hơi sâu.\n👉 **Nhịp 2 (TAY VƯƠN - CHÂN CO):** Úp mặt xuống nước, phóng hai tay thẳng ra phía trước đồng thời co gót chân về sát mông và bẻ cổ chân sẵn sàng.\n👉 **Nhịp 3 (CHÂN ĐẠP - NGƯỜI LƯỚT):** Đạp mạnh hai chân khép thẳng tắp lại, giữ người thẳng như mũi tên lướt vùn vụt trên mặt nước!\n\n*(Nhớ khẩu quyết: **TAY KÉO THỞ - TAY VƯƠN CHÂN CO - CHÂN ĐẠP LƯỚT NƯỚC** nhé!)*"
+  },
+ {
+    "id": "help_position_cold_water",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "tư thế HELP giữ ấm dưới nước",
+      "tu the help duoi nuoc lanh",
+      "cách chống hạ thân nhiệt khi rơi xuống nước",
+      "tư thế cuộn người giữ nhiệt khi có áo phao",
+      "làm sao không bị cóng khi chờ cứu hộ"
+    ],
+    "response": "**Tư thế H.E.L.P - 'Áo giáp giữ ấm' khi bị rơi xuống nước lạnh chờ cứu hộ! 🥶🛡️🦺**\n\n• **Tác dụng:** Giúp cơ thể không bị mất nhiệt qua nách, ngực và bẹn, kéo dài thời gian sống sót gấp 3 lần khi mặc áo phao giữa dòng nước lạnh.\n• **Cách làm:**\n  1. Hai tay ôm chặt lấy phần ngực hoặc ôm chặt lấy thân áo phao.\n  2. Co hai đầu gối ép sát lên ngực, hai đùi khép chặt lại với nhau.\n  3. Giữ yên tư thế, đầu ngửa thở đều, không bơi lội lung tung để tránh bị mất nhiệt!"
+  },
+
+  // ==========================================================================
+  // NHÓM 2: MỨC ĐỘ NGUY HIỂM & Ý NGHĨA CÁC BIỂN BÁO - CỜ CẢNH BÁO
+  // ==========================================================================
+  {
+    "id": "beach_red_flag_meaning",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ đỏ cắm ở bãi biển là gì",
+      "y nghia co do o bien",
+      "thấy cờ đỏ ở biển có được tắm không",
+      "cờ đỏ cảnh báo gì",
+      "bãi biển cắm cờ đỏ"
+    ],
+    "response": "**CỜ ĐỎ Ở BIỂN: CẤM TẮM TUYỆT ĐỐI - NGUY HIỂM CHẾT NGƯỜI! 🚩🛑💀**\n\n• **Mức độ nguy hiểm: CỰC KỲ CAO.**\n• **Nguyên nhân cắm cờ đỏ:** Biển đang có sóng thần, sóng dữ cao vút, xuất hiện dòng chảy xa bờ (rip current) ngầm cực mạnh hoặc thời tiết chuẩn bị có bão to giông lốc.\n• **Tác hại:** Bất kỳ ai bước chân xuống nước dù bơi giỏi đến đâu cũng sẽ bị sóng dìm và cuốn phăng ra đại dương mất tích ngay lập tức!\n👉 Thấy cờ đỏ: Ở yên trên bãi cát, tuyệt đối không thò chân xuống mép nước!"
+  },
+  {
+    "id": "beach_yellow_flag_meaning",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ vàng cắm ở bãi biển là gì",
+      "y nghia co vang bai bien",
+      "cờ vàng có được bơi không",
+      "cờ vàng nguy hiểm thế nào",
+      "biển cắm cờ màu vàng"
+    ],
+    "response": "**CỜ VÀNG Ở BIỂN: CẢNH BÁO NGUY HIỂM TRUNG BÌNH - PHẢI CỰC KỲ CẨN TRỌNG! 🟨⚠️🏊**\n\n• **Mức độ nguy hiểm: TRUNG BÌNH.**\n• **Ý nghĩa:** Biển có sóng vừa, gió bắt đầu mạnh hoặc có dòng nước ngầm tiềm ẩn. Không phù hợp cho trẻ em hoặc người bơi yếu.\n👉 **Quy tắc an toàn:** Học sinh chỉ được tắm khi có bố mẹ ôm phao giữ chặt bên cạnh, không bơi ra xa và phải bơi ngay trong tầm quan sát của nhân viên cứu hộ!"
+  },
+  {
+    "id": "beach_red_yellow_flag_lifeguard",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cờ nửa đỏ nửa vàng ở biển",
+      "co soc do vang",
+      "tắm ở đâu trên bãi biển an toàn nhất",
+      "khu vực có cứu hộ ở biển",
+      "cờ đỏ vàng có ý nghĩa gì"
+    ],
+    "response": "**CỜ SỌC ĐỎ - VÀNG: KHU VỰC AN TOÀN NHẤT CÓ CỨU HỘ TUẦN TRA! 🏖️🛟✅**\n\n• **Ý nghĩa:** Khoảng bờ biển nằm giữa hai lá cờ sọc đỏ-vàng là nơi an toàn đã được các chú nhân viên cứu hộ kiểm tra đáy cát không có hố sụt và luôn có người túc trực canh gác.\n👉 **Lời khuyên của Endy:** Đi biển, cả nhà em hãy chọn đúng bãi cát nằm trong phạm vi hai lá cờ đỏ-vàng này để vui chơi an tâm nhất nhé!"
+  },
+  {
+    "id": "water_depth_colors_pool",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "chữ số ghi trên thành bể bơi là gì",
+      "so 1m2 tren ho boi nghia la gi",
+      "độ sâu 1m4 1m8 ở hồ bơi",
+      "vạch chia màu xanh đỏ ở bể bơi",
+      "nhìn độ sâu hồ bơi thế nào"
+    ],
+    "response": "**Các con số ghi trên thành bể bơi chính là THƯỚC ĐO MỨC ĐỘ NGUY HIỂM đấy! 🏊‍♂️📏⚠️**\n\n• **Số 0.8m - 1.0m:** Nước cạn (ngang ngực trẻ em), dành cho các bạn tập bơi.\n• **Số 1.4m - 2.0m:** Nước sâu vượt quá đầu em! Nếu chưa biết bơi mà nhảy vào đây sẽ bị hụt chân chìm xuống đáy ngay lập tức.\n👉 Trước khi xuống bể bơi, hãy nhìn con số dưới chân: Chỉ xuống khu vực có độ sâu thấp hơn chiều cao của em nhé!"
+  },
+  {
+    "id": "hypothermia_blue_lips_shivering",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "bơi bị tím môi run rẩy",
+      "sao bơi lâu môi lại bị thâm tím",
+      "run bần bật răng đập vào nhau khi tắm hồ",
+      "bị hạ thân nhiệt khi bơi",
+      "tắm nước lạnh nổi da gà"
+    ],
+    "response": "**Môi tím ngắt và răng đập vào nhau là tín hiệu cơ thể đang KÊU CỨU KHẨN CẤP! 🥶👄🛑**\n\n• **Nguyên nhân:** Nước truyền nhiệt nhanh gấp 25 lần không khí. Ngâm nước quá lâu làm thân nhiệt tụt dốc không phanh (hạ thân nhiệt).\n• **Tác hại:** Máu bị dồn về nuôi tim phổi làm chân tay tê cóng mất cảm giác, cơ bắp co cứng chuột rút toàn thân và chìm nghỉm!\n👉 Thấy bạn môi thâm tím hoặc run rẩy: Bắt bạn **lên bờ ngay lập tức**, quấn khăn ấm, uống cốc nước gừng/nước đường ấm và lau khô người nhé!"
+  },
+
+  // ==========================================================================
+  // NHÓM 3: BỘ QUY TẮC PHÒNG TRÁNH KINH ĐIỂN DỄ NHỚ
+  // ==========================================================================
+  {
+    "id": "rule_3_no_water_safety",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "quy tắc 3 không phòng đuối nước",
+      "3 khong phong chong duoi nuoc la gi",
+      "ba điều không khi đi bơi",
+      "quy tac 3 khong cho hoc sinh",
+      "3 điều cấm kỵ gần sông hồ"
+    ],
+    "response": "**Quy tắc '3 KHÔNG' sống còn mà học sinh nào cũng phải thuộc lòng:** 🛡️🚫\n\n1. **KHÔNG tự ý xuống nước:** Khi không có sự đồng ý và giám sát trực tiếp của bố mẹ, thầy cô.\n2. **KHÔNG chơi đùa sát mép nguy hiểm:** Không đá bóng, bắt cá, chạy nhảy bên bờ ao, hồ, sông, suối, hố công trình.\n3. **KHÔNG nhảy xuống cứu bạn:** Khi thấy người đuối nước, tuyệt đối không nhảy theo mà phải **HÔ TO - GỌI NGƯỜI LỚN - NÉM VẬT NỔI**!"
+  },
+  {
+    "id": "rule_4_must_water_safety",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "quy tắc 4 phải khi đi bơi",
+      "4 điều phải làm trước khi xuống nước",
+      "quy tac 4 phai phong duoi nuoc",
+      "trước khi bơi phải làm gì",
+      "4 có khi đi bơi"
+    ],
+    "response": "**Quy tắc '4 PHẢI' chuẩn hiệp sĩ để luôn an toàn dưới nước:** 🛡️✅\n\n1. **PHẢI khởi động kỹ 10 - 15 phút:** Xoay tròn các khớp cổ chân, cổ tay, khớp gối và lườn để chống chuột rút.\n2. **PHẢI mặc áo phao:** Khi đi đò, tàu thuyền hoặc khi chưa bơi thành thạo.\n3. **PHẢI bơi ở nơi an toàn:** Nơi có nhân viên cứu hộ và có cờ báo cho phép tắm.\n4. **PHẢI lên bờ ngay:** Khi thấy trời chuyển mây đen dông bão hoặc cơ thể bắt đầu thấy lạnh, mệt mỏi!"
+  },
+  {
+    "id": "buddy_system_swimming",
+    "category": "swimming",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "nguyên tắc đôi bạn đồng hành khi bơi",
+      "buddy system là gì",
+      "bơi theo cặp có tác dụng gì",
+      "tại sao phải bơi cùng bạn",
+      "quy tắc hai người đi bơi"
+    ],
+    "response": "**Quy tắc Buddy System (Đôi bạn cùng tiến) - Không bao giờ bơi đơn độc! 👬🛟**\n\n• **Cách thực hiện:** Khi xuống nước, em và bạn được phân công thành một cặp luôn để mắt tới nhau trong khoảng cách nhìn thấy.\n• **Tác dụng cứu mạng:** Đuối nước diễn ra trong im lặng cực nhanh. Nếu một bạn bị hụt chân hay chuột rút chìm xuống, người bạn đồng hành sẽ lập tức phát hiện và hét to báo cứu hộ ứng cứu kịp thời chỉ trong 5 giây vàng!"
+  },
+  {
+    "id": "test_water_depth_with_stick",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "cách lấy cành cây đo độ sâu nước",
+      "dùng gậy thăm dò mực nước",
+      "lam sao biet nuoc sau hay nong khi di duong ngap",
+      "cầm que dò đường nước ngập",
+      "thử độ sâu của vũng nước"
+    ],
+    "response": "**Mẹo 'Gậy dò đường' của hiệp sĩ Endy khi bắt buộc phải qua chỗ ngập nước:** 🦯🌊⚠️\n\n• **Cách làm:** Tìm một cành cây hoặc khúc gỗ dài, chắc chắn. Trước mỗi bước chân đi tới, hãy dùng gậy chọc mạnh thẳng đứng xuống nước phía trước để thăm dò.\n• **Tác dụng:** Cây gậy sẽ báo cho em biết phía trước là mặt đường cứng bằng phẳng hay là một chiếc **hố ga mất nắp, rãnh cống sâu hút** để em kịp thời dừng bước né tránh!"
+  },
+
+  // ==========================================================================
+  // NHÓM 4: HIỂU LẦM TAI HẠI VỀ NƯỚC BẨN & CHÁY NẮNG
+  // ==========================================================================
+  {
+    "id": "drink_pool_chlorine_water_harm",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "uống nước hồ bơi có sao không",
+      "uống nhầm nước hồ bơi có mùi thuốc tẩy",
+      "nuốt nước hồ bơi bị đau bụng",
+      "nuoc ho boi co doc khong",
+      "lo uong nuoc be boi"
+    ],
+    "response": "**Nước bể bơi chứa hóa chất Clo và rất nhiều vi khuẩn, đừng uống nhé! 🏊‍♂️🧪🤢**\n\n• **Nguyên nhân:** Để giữ nước trong, người ta dùng hóa chất Clo khử trùng. Ngoài ra trong nước hồ còn có mồ hôi, bụi bẩn và vi khuẩn của hàng trăm người cùng tắm.\n• **Tác hại:** Nuốt phải một ngụm lớn sẽ làm bỏng rát họng, đau bụng tiêu chảy dữ dội hoặc nhiễm khuẩn đường ruột.\n👉 Nếu lỡ nuốt phải một ngụm nhỏ: Hãy nhổ bã ra ngay, súc miệng lại bằng nước sạch và uống bù một cốc nước lọc ấm nhé!"
+  },
+  {
+    "id": "sunburn_blister_swimming",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "tắm biển bị cháy nắng lột da",
+      "rát da sau khi đi bơi buổi trưa",
+      "cháy nắng phồng rộp da",
+      "tai sao di boi ve bi den da",
+      "chữa rát da cháy nắng"
+    ],
+    "response": "**Cháy nắng lột da không chỉ đen da mà là một dạng BỎNG NHIỆT đấy em! ☀️🏖️🧴**\n\n• **Nguyên nhân:** Tia cực tím (UV) gay gắt của mặt trời buổi trưa (10h - 15h) chiếu xuyên qua mặt nước đốt cháy lớp tế bào ngoài cùng của da.\n• **Tác hại:** Da bị đỏ rát như tôm luộc, phồng rộp bọng nước đau đớn và làm tăng nguy cơ ung thư da khi lớn lên.\n👉 **Bảo vệ da:** Thoa kem chống nắng trước khi bơi 20 phút, mặc áo bơi dài tay và tuyệt đối không tắm vào giữa trưa nắng gắt nhé!"
+  },
+{
+    "id": "swimsuit_rule_body_boundary",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "quy tắc đồ bơi là gì",
+      "vùng kín trên cơ thể là gì",
+      "ai được chạm vào đồ lót của em",
+      "quy tac do boi phong xam hai",
+      "vùng đồ lót cấm chạm",
+      "chạm vào người làm em khó chịu"
+    ],
+    "response": "**Quy tắc đồ bơi: Cơ thể em là của riêng em, bất khả xâm phạm! 🩱🩲🛡️**\n\n• **Vùng đồ bơi gồm 4 chỗ:** Miệng, ngực, vùng giữa 2 đùi (vùng kín) và mông.\n• **Quy tắc sống còn:** Tuyệt đối **KHÔNG AI** được phép nhìn, chạm vào hoặc bắt em chạm vào vùng đồ bơi của họ!\n• **Ngoại lệ duy nhất:** Bố mẹ tắm rửa/vệ sinh khi em còn nhỏ, hoặc bác sĩ khám bệnh nhưng **bắt buộc phải có bố mẹ đứng cạnh giám sát**.\n👉 Nếu ai cố tình đụng chạm: Hét to **'CẤM ĐỤNG VÀO TÔI'**, chạy ngay đến chỗ đông người và báo bố mẹ hoặc gọi **111**!"
+  },
+  {
+    "id": "five_fingers_rule_touch",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "quy tắc 5 ngón tay là gì",
+      "quy tac 5 ngon tay phong xam hai",
+      "5 ngón tay phòng chống xâm hại",
+      "ai được ôm em",
+      "ai phải xua tay không cho chạm"
+    ],
+    "response": "**Quy tắc 5 ngón tay thần kỳ giúp em nhận diện ai được chạm vào mình:** 🖐️🛡️\n\n1. **Ngón cái (Gần nhất - Ôm hôn):** Bố mẹ, ông bà, anh chị em ruột trong nhà.\n2. **Ngón trỏ (Khoác tay, nắm tay):** Thầy cô giáo, bạn bè, họ hàng thân thiết.\n3. **Ngón giữa (Bắt tay):** Người quen biết (hàng xóm, bạn của bố mẹ).\n4. **Ngón áp út (Vẫy tay chào):** Người mới gặp lần đầu, người lạ thoáng qua.\n5. **Ngón út (Xua tay, hét to, bỏ chạy):** Người lạ mặt tiến sát, người làm em thấy sợ hãi hoặc cố tình đụng chạm vào cơ thể em!"
+  },
+  {
+    "id": "bad_secret_threat_silence",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "bí mật xấu là gì",
+      "bị người lớn đe dọa cấm kể bố mẹ",
+      "người ta bảo đây là bí mật của hai chú cháu",
+      "kể ra tao sẽ đánh",
+      "sợ không dám kể với mẹ"
+    ],
+    "response": "**Bí mật làm em sợ hãi là BÍ MẬT XẤU, phải kể ngay với bố mẹ! 🤐🚫🗣️**\n\n• **Thủ đoạn của kẻ xấu:** Kẻ xấu hay làm điều sai trái với cơ thể em rồi đe dọa: *'Cấm kể cho ai, kể ra tao đánh chết hoặc làm hại bố mẹ mày'*, làm em sợ hãi im lặng.\n• **Sự thật:** Kẻ xấu đang rất sợ hãi bị lộ tẩy nên mới đe dọa em. Em không hề có lỗi, em là nạn nhân được pháp luật bảo vệ!\n👉 **Hành động ngay:** Bất kể ai dọa nạt, hãy dũng cảm kể hết với bố mẹ, thầy cô hoặc gọi ngay tổng đài **111**. Mọi người sẽ bảo vệ em an toàn 100%!"
+  },
+  {
+    "id": "stranger_candy_toy_bribe",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "người lạ cho kẹo trước cổng trường",
+      "người lạ cho tiền có lấy không",
+      "nguoi la cho keo bim bim",
+      "cho trà sữa đi nhờ xe",
+      "người lạ tặng đồ chơi bảo đi theo"
+    ],
+    "response": "**Một viên kẹo ngọt có thể giấu 'cái bẫy bắt cóc' cực kỳ nguy hiểm! 🍬🍭🚗❌**\n\n• **Nguyên nhân:** Kẻ xấu thường lợi dụng lòng tin và sở thích ăn vặt của học sinh để tẩm thuốc mê vào kẹo/nước ngọt hoặc dụ dỗ em lên xe đi theo.\n• **Tác hại:** Em sẽ bị mất ý thức, bị bắt cóc tống tiền hoặc bán ra nước ngoài không bao giờ được gặp lại bố mẹ nữa!\n👉 **Quy tắc:** Lắc đầu dứt khoát: *'Cháu cảm ơn, bố mẹ cháu không cho nhận đồ lạ'*, lùi xa 3 bước và đi ngay vào trong phòng bác bảo vệ trường!"
+  },
+  {
+    "id": "stranger_says_parents_in_hospital",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "người lạ bảo bố mẹ bị tai nạn nhờ đón",
+      "có chú bảo mẹ gửi quà đến đón em",
+      "người lạ nói bố mẹ nằm viện",
+      "bảo bố mẹ bận nhờ chú đón",
+      "người lạ nhận là bạn của bố"
+    ],
+    "response": "**Đây là cái cớ bắt cóc kinh điển nhất, TUYỆT ĐỐI KHÔNG LÊN XE! 🏥🚗🛑**\n\n• **Kẻ xấu đánh vào tâm lý:** Biết em lo cho bố mẹ, kẻ xấu sẽ nói dối: *'Mẹ cháu bị xe đâm đang cấp cứu, chú là bạn mẹ đưa cháu đến viện gấp!'*.\n• **Cách vạch trần kẻ xấu:**\n  1. Đứng yên trong sân trường, hỏi ngay: **'MẬT MÃ BÍ MẬT của gia đình cháu là gì?'** (hãy quy ước 1 từ bí mật với bố mẹ ở nhà).\n  2. Chạy ngay đến phòng giám thị hoặc nhờ bác bảo vệ gọi điện thoại trực tiếp cho bố mẹ để kiểm tra!"
+  },
+  {
+    "id": "screaming_technique_stranger_grab",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "bị người lạ lôi kéo đi",
+      "bị bế thốc lên xe lôi đi",
+      "người lạ túm tay giật đi",
+      "bị bắt cóc hét câu gì",
+      "kêu cứu khi bị bắt cóc"
+    ],
+    "response": "**Khi bị kẻ lạ mặt túm kéo, phải hét thật to câu này để được cứu sống:** 🗣️🚨\n\n• **Câu hét cứu mạng:** **'CỨU CHÁU VỚI! ĐÂY KHÔNG PHẢI BỐ MẸ CHÁU! CỨU VỚI BẮT CÓC!'**\n• **Tại sao phải hét như vậy?** Nếu chỉ gào khóc *'Thả cháu ra, buông ra'*, người đi đường sẽ tưởng em đang hờn dỗi bố mẹ và không can thiệp!\n• **Động tác phối hợp:** Cắn mạnh vào tay kẻ xấu, ngồi thụt thụp xuống đất làm người nặng trịch, dùng hai chân đạp mạnh và giãy giụa hết sức!"
+  },
+  {
+    "id": "alone_at_home_stranger_knocks",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "ở nhà một mình có người lạ gõ cửa",
+      "người lạ xưng là thợ sửa ống nước",
+      "người giao hàng bấm chuông khi ở nhà một mình",
+      "o nha mot minh co nguoi go cua",
+      "người lạ bảo mở cửa cho chú vào"
+    ],
+    "response": "**Ở nhà một mình: KHÓA CHẶT CỬA VÀ TUYỆT ĐỐI KHÔNG MỞ CỬA! 🚪🔒🛑**\n\n• Dù người ngoài cửa xưng là thợ sửa điện, giao bưu phẩm hay bạn của bố mẹ, em cũng **không được mở then cài cửa**.\n• Nói to từ trong nhà: *'Bố mẹ cháu đang bận trong phòng ngủ, chú quay lại sau nhé!'* (để kẻ xấu tưởng trong nhà có người lớn).\n• Lập tức gọi điện thoại cho bố mẹ báo có người đang đứng trước cửa nhà mình!"
+  },
+
+  // ==========================================================================
+  // NHÓM 2: AN TOÀN TRÊN KHÔNG GIAN MẠNG (GAME & INTERNET)
+  // ==========================================================================
+  {
+    "id": "free_fire_roblox_diamonds_scam",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "đổi ảnh cởi đồ lấy kim cương game",
+      "chụp ảnh vùng kín nhận robux",
+      "bạn trên mạng bảo gửi ảnh không mặc đồ",
+      "tặng kim cương free fire bảo gửi ảnh cơ thể",
+      "gửi ảnh nhạy cảm nhận quà game"
+    ],
+    "response": "**BẪY TỐI NGUY HIỂM: Tuyệt đối không bao giờ chụp ảnh thân thể gửi lên mạng! 🎮💎☠️🚫**\n\n• **Thủ đoạn của kẻ biến thái:** Dụ dỗ tặng thẻ nạp, kim cương game, Robux để lừa em gửi ảnh khỏa thân hoặc video vùng nhạy cảm.\n• **Tác hại kinh hoàng:** Sau khi nhận ảnh, kẻ xấu sẽ đe dọa tung ảnh lên mạng xã hội, gửi cho bạn bè thầy cô để ép em làm những điều tồi tệ hơn!\n👉 Khi bị gạ gẫm: Không gửi, chụp màn hình tin nhắn lại, chặn nick kẻ đó và đưa cho bố mẹ/thầy cô xem ngay!"
+  },
+  {
+    "id": "click_strange_link_win_iphone",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bấm vào link trúng thưởng iphone trên mạng",
+      "đường link nhận xe đạp miễn phí",
+      "bam vao link la",
+      "link nhận kim cương game miễn phí",
+      "nhập tài khoản vào trang web lạ"
+    ],
+    "response": "**Không có bữa trưa nào miễn phí! Đừng bấm vào link trúng thưởng lạ! 🔗📱🎣❌**\n\n• **Nguyên nhân:** Đó là các trang web giả mạo gắn mã độc gián điệp (phishing) của tin tặc.\n• **Tác hại:** Chỉ cần bấm vào hoặc nhập số điện thoại, máy tính/điện thoại của em sẽ bị nhiễm virus, cướp sạch tài khoản Zalo, Facebook của bố mẹ và đánh cắp tiền trong tài khoản ngân hàng!\n👉 Thấy link lạ được gửi qua tin nhắn: Xóa ngay lập tức, không tò mò bấm vào!"
+  },
+  {
+    "id": "online_friend_meet_in_person",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bạn quen trên mạng rủ đi chơi riêng",
+      "gặp bạn trên game ngoài đời",
+      "bạn trên facebook rủ đi trà sữa",
+      "gap ban qua mang",
+      "bạn qua mạng hẹn gặp ở công viên"
+    ],
+    "response": "**Bạn quen qua mạng: Người trên ảnh có thể là một 'ác quỷ đội lốt'! 💻👥⚠️**\n\n• **Nguyên nhân:** Trên mạng ai cũng có thể lấy ảnh một bạn học sinh xinh xắn, dễ thương làm ảnh đại diện để làm quen, nhưng ngoài đời thực họ có thể là một kẻ bắt cóc hoặc buôn người lớn tuổi!\n• **Tác hại:** Đi gặp riêng một mình ở quán vắng hay công viên, em sẽ bị lừa đưa lên xe chở đi mất tích.\n👉 Tuyệt đối không đi gặp riêng bạn trên mạng. Nếu thật sự muốn gặp, phải hỏi ý kiến và **có bố mẹ đi cùng 100%**!"
+  },
+  {
+    "id": "cyberbullying_hate_group",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "bị bạn lập nhóm nói xấu trên mạng",
+      "bị đăng ảnh dìm bôi nhọ trên facebook",
+      "bi bat nat tren mang",
+      "bạn bè tẩy chay xúc phạm trên tin nhắn",
+      "bị dọa đánh trên mạng xã hội"
+    ],
+    "response": "**Bắt nạt trên mạng (Cyberbullying): Đừng chịu đựng một mình, hãy làm 3 bước! 💻🛑🛡️**\n\n• **Tác hại:** Đọc những lời lăng mạ bôi nhọ độc hại sẽ làm em hoảng sợ, stress, mất ngủ và trầm cảm kéo dài.\n• **3 Bước hiệp sĩ Endy hướng dẫn:**\n  1. **Không đôi co cãi nhau:** Càng đáp trả kẻ bắt nạt càng hả hê trêu chọc.\n  2. **Chụp ảnh màn hình làm bằng chứng:** Lưu lại tất cả tin nhắn và bài đăng xúc phạm.\n  3. **Chặn nick (Block) và báo cáo:** Chia sẻ ngay bằng chứng với bố mẹ, thầy cô chủ nhiệm để nhà trường can thiệp xử lý kỷ luật bạn kia!"
+  },
+  {
+    "id": "share_house_address_online",
+    "category": "cyber_safety",
+    "badge": "",
+    "keywords": [
+      "đăng địa chỉ nhà lên mạng xã hội",
+      "chụp ảnh khoe vé máy bay thời khóa biểu",
+      "chia sẻ vị trí nhà trên tiktok",
+      "đăng số điện thoại lên facebook",
+      "khoe nhà vắng người lên mạng"
+    ],
+    "response": "**Khoe địa chỉ nhà và lịch trình lên mạng là 'mời trộm vào nhà' đấy! 🏠📍⚠️**\n\n• **Nguyên nhân:** Kẻ trộm, kẻ bắt cóc thường theo dõi các bài đăng công khai của học sinh để biết địa chỉ nhà, trường học và giờ giấc bố mẹ em vắng nhà.\n• **Tác hại:** Em có thể bị kẻ xấu phục kích bắt cóc trên đường đi học hoặc đột nhập vào nhà ăn trộm tài sản khi nhà vắng người!\n👉 Giữ bí mật thông tin cá nhân: Không bao giờ đăng số nhà, số điện thoại, tên trường lớp hay vé máy bay lên mạng!"
+  },
+
+  // ==========================================================================
+  // NHÓM 3: ĐỘC CHẤT CỔNG TRƯỜNG & THÓI QUEN ĐỘC HẠI
+  // ==========================================================================
+  {
+    "id": "vape_electronic_cigarette_fruit",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "thuốc lá điện tử có hại không",
+      "hút thử pod vị dâu",
+      "vape hương hoa quả có nghiện không",
+      "hut thu thuoc la dien tu cho ngau",
+      "bạn rủ hút pod chill"
+    ],
+    "response": "**Thuốc lá điện tử núp bóng kẹo ngọt là 'cơn ác mộng đầu độc phổi'! 🍓💨☠️🚫**\n\n• **Nguyên nhân:** Dù có mùi thơm như kẹo hoa quả, tinh dầu thuốc lá điện tử chứa chất Nicotine cực độc gây nghiện não bộ và hàng trăm kim loại nặng (chì, niken).\n• **Tác hại:** Làm teo tế bào não học sinh, gây tổn thương phổi cấp tính (hội chứng EVALI) ho khạc ra máu, suy hô hấp khó thở và suy tim sớm!\n👉 Hãy dũng cảm từ chối: Hút khói độc không hề ngầu, giữ cho lá phổi trong lành mới là người thông minh!"
+  },
+  {
+    "id": "laughing_gas_balloon_danger",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "hít bóng cười có sao không",
+      "hít bóng cười cho vui",
+      "bóng cười có độc không",
+      "bóng cười làm liệt chân",
+      "bạn rủ thổi bóng cười"
+    ],
+    "response": "**Bóng cười không hề vui, nó giết chết dây thần kinh của em từng giây! 🎈😵💀**\n\n• **Nguyên nhân:** Khí trong bóng cười là Dinitơ oxit (N2O) - khí gây mê y tế. Hít vào sẽ cắt đứt tức khắc ô-xy lên não, tạo ảo giác đờ đẫn bật cười mất kiểm soát.\n• **Tác hại:** Khí này phá hủy tủy sống làm **tê liệt 2 chân vĩnh viễn không đi lại được**, teo não, mất trí nhớ và có thể ngừng tim đột tử ngay khi đang ôm quả bóng!\n👉 Tuyệt đối không thử dù chỉ một hơi, tránh xa những nơi tụ tập hút bóng cười!"
+  },
+  {
+    "id": "street_food_coloring_stomach",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "ăn đồ ăn vặt xanh đỏ cổng trường",
+      "ăn que cay cổng trường bị đau bụng",
+      "thịt bò khô giá rẻ cổng trường",
+      "ăn vặt không rõ nguồn gốc",
+      "bị ngộ độc đồ ăn cổng trường"
+    ],
+    "response": "**Đồ ăn vặt cay nồng xanh đỏ không rõ nguồn gốc là 'kho hóa chất' độc hại! 🌶️🤢⚠️**\n\n• **Nguyên nhân:** Các que cay, thịt hổ, xúc xích siêu rẻ ở gánh hàng rong thường làm từ mỡ ôi thiu, tẩm phẩm màu công nghiệp và đường hóa học vượt ngưỡng hàng trăm lần.\n• **Tác hại:** Phá hủy niêm mạc dạ dày gây viêm loét, tiêu chảy cấp mất nước nhập viện và tích tụ hóa chất gây ung thư gan thận.\n👉 Đói bụng: Hãy ăn bánh mì, sữa tươi có nhãn mác rõ ràng được bố mẹ chuẩn bị từ nhà nhé!"
+  },
+  {
+    "id": "pearl_milk_tea_choking",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "hút trân châu trà sữa bị sặc",
+      "hóc hạt trân châu",
+      "hut manh tran chau sac vao phoi",
+      "uống trà sữa bị nghẹn hạt",
+      "sặc hạt trà sữa nghẹt thở"
+    ],
+    "response": "**Hút ống hút trà sữa thật mạnh có thể làm hạt trân châu bắn thẳng vào phổi! 🧋🫁😱**\n\n• **Nguyên nhân:** Dùng ống hút to hút rột một hơi thật mạnh, lực hút không khí quá đà sẽ làm viên trân châu dẻo quánh bay thẳng qua nắp thanh quản rơi tọt vào khí quản.\n• **Tác hại:** Viên trân châu dính chặt làm tắc hoàn toàn đường thở, nạn nhân nghẹt thở tím tái và ngừng thở tử vong chỉ sau 3 phút!\n👉 **Cách uống an toàn:** Cắn nhỏ nhai kỹ từng hạt, không vừa chạy nhảy vừa hút trà sữa, không đùa giỡn cười to khi đang ngậm trân châu trong miệng!"
+  },
+
+  // ==========================================================================
+  // NHÓM 4: THIÊN TAI TRƯỜNG HỌC & SƠ CỨU THƯỜNG GẶP
+  // ==========================================================================
+  {
+    "id": "earthquake_at_school_desk",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "động đất ở trường học trốn ở đâu",
+      "lớp học bị rung lắc chạy đi đâu",
+      "dong dat trong lop hoc",
+      "quy tắc tam giác sự sống động đất",
+      "cách trốn khi có động đất"
+    ],
+    "response": "**Động đất rung lắc: Tuyệt đối không chạy ùa ra cầu thang chen lấn! 🏫💥🪑**\n\n• **Nguyên nhân:** Chen lấn xô đẩy ở cầu thang sẽ làm giẫm đạp lên nhau chết ngạt, và gạch đá trên trần nhà sẽ rơi thẳng trúng đầu em.\n• **Quy tắc vàng D.C.H (Drop - Cover - Hold on):**\n  1. **DROP (Hạ thấp):** Ngồi xổm ngay dưới gầm bàn học vững chắc.\n  2. **COVER (Che chắn):** Lấy cặp sách hoặc hai cánh tay ôm che kín đầu và gáy.\n  3. **HOLD ON (Giữ chặt):** Nắm chặt chân bàn học cho đến khi mặt đất hết rung lắc rồi mới theo sự hướng dẫn của thầy cô sơ tán ra sân trường trống!"
+  },
+  {
+    "id": "heatstroke_fainting_hot_sun",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "đá bóng giữa trưa nắng bị ngất",
+      "chơi thể thao nắng gắt say nắng",
+      "bị say nắng làm sao",
+      "tại sao say nắng nguy hiểm",
+      "triệu chứng sốc nhiệt say nắng"
+    ],
+    "response": "**Đá bóng giữa trưa nắng 40 độ có thể làm 'nấu chín' tế bào não (Sốc nhiệt)! ☀️⚽🥵**\n\n• **Nguyên nhân:** Vận động mạnh dưới nắng gắt khiến cơ thể mất nước quá nhanh qua mồ hôi, bộ phận điều hòa nhiệt của não bị tê liệt, thân nhiệt vọt lên trên 40 độ C.\n• **Tác hại:** Mặt đỏ bừng, co giật, hôn mê ngất xỉu và có thể tử vong do tổn thương đa tạng nếu không hạ sốt kịp thời.\n👉 Thấy bạn hoa mắt ngất xỉu vì nắng: Kéo bạn vào ngay **bóng râm mát**, nới lỏng cổ áo, chườm khăn mát vào trán, nách, bẹn và cho uống từng ngụm nước mát pha chút muối!"
+  },
+  {
+    "id": "finger_caught_in_door_crack",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "kẹt ngón tay vào khe cửa bản lề",
+      "bị dập móng tay do cửa kẹp",
+      "ket tay vao cua lop hoc",
+      "cửa gió thổi kẹp tay chảy máu",
+      "sơ cứu khi bị kẹp cửa dập tay"
+    ],
+    "response": "**Kẹt tay vào khe bản lề cửa có lực nghiến nát vụn đốt ngón tay! 🚪🩸✋**\n\n• **Nguyên nhân:** Khe bản lề cửa hoạt động như một chiếc đòn bẩy kìm cộng lực. Gió thổi mạnh đóng sập cửa lại sẽ nghiến với lực hàng trăm kilôgam vào ngón tay em.\n• **Tác hại:** Dập nát thịt, bong bật móng tay và gãy vụn xương đốt ngón tay.\n👉 **Cách sơ cứu ngay lập tức:**\n  1. Chườm ngay đá lạnh bọc khăn lên vết thương để giảm phù nề và cầm máu.\n  2. Giơ ngón tay cao hơn tim để bớt sưng đau.\n  3. Báo thầy cô hoặc bố mẹ đưa đi chụp X-quang kiểm tra xương ngay!"
+  },
+
 
     ];
 const keywordAliases = {
