@@ -633,70 +633,44 @@ function initVoiceInput() {
 }
 
 // =============================================================================
-// 8. SAFETY QUIZ GAME (ĐỐ VUI AN TOÀN)
+// 8. SAFETY QUIZ GAME (ĐỐ VUI AN TOÀN - KHO 200 CÂU HỎI NGẪU NHIÊN)
 // =============================================================================
-const QUIZ_QUESTIONS = [
-  {
-    q: "Khi thấy bạn không may rơi xuống nước sâu, việc em nên làm ĐẦU TIÊN là gì?",
-    options: [
-      "Nhảy ngay xuống nước để kéo bạn lên",
-      "Hô thật to gọi người lớn và tìm vật nổi ném cho bạn",
-      "Bỏ chạy về nhà không nói với ai",
-      "Đứng im xem bạn bơi thế nào"
-    ],
-    correct: 1,
-    explain: "Chính xác! Trẻ em tuyệt đối không tự nhảy xuống nước cứu bạn vì rất dễ bị kéo chìm theo. Hãy hô to và ném vật nổi!"
-  },
-  {
-    q: "Khi xảy ra cháy do chập điện, em có được dùng nước để dội vào dập lửa không?",
-    options: [
-      "Được, cứ lấy nước dội thật nhiều cho nhanh tắt",
-      "Tuyệt đối KHÔNG, vì nước dẫn điện gây nguy cơ điện giật tử vong",
-      "Dùng nước nóng thì được, nước lạnh thì không",
-      "Dội nước rồi mới rút phích cắm"
-    ],
-    correct: 1,
-    explain: "Rất giỏi! Nước dẫn điện, dội nước vào đám cháy điện cực kỳ nguy hiểm. Phải ngắt cầu dao và gọi 114!"
-  },
-  {
-    q: "Số điện thoại khẩn cấp nào sau đây dùng để gọi CỨU HỎA và CỨU NẠN CỨU HỘ?",
-    options: [
-      "113",
-      "115",
-      "114",
-      "111"
-    ],
-    correct: 2,
-    explain: "Đúng rồi! 114 là số cứu hỏa; 113 là công an; 115 là cấp cứu y tế; 111 là bảo vệ trẻ em!"
-  },
-  {
-    q: "Khi đi qua đường lớn có xe cộ, quy tắc an toàn đúng nhất là gì?",
-    options: [
-      "Chạy thật nhanh sang đường không cần nhìn",
-      "Đi đúng vạch kẻ đường, nhìn trái - phải - trái, giơ tay cao và đi cùng người lớn",
-      "Vừa đi vừa cúi đầu bấm điện thoại",
-      "Đi bất cứ chỗ nào mình thích"
-    ],
-    correct: 1,
-    explain: "Tuyệt vời! Luôn đi trên vạch kẻ dành cho người đi bộ, quan sát kỹ và đi cùng người lớn để an toàn tuyệt đối!"
-  },
-  {
-    q: "Khi một bạn nhỏ bị hóc dị vật hoặc nghẹn kẹo khó thở, ta tuyệt đối KHÔNG NÊN làm gì?",
-    options: [
-      "Dùng tay móc sâu bừa bãi vào cổ họng bạn",
-      "Khuyến khích bạn ho mạnh nếu bạn còn ho được",
-      "Báo ngay cho người lớn để làm thủ thuật vỗ lưng / ép bụng",
-      "Gọi số 115 đưa đi cấp cứu"
-    ],
-    correct: 0,
-    explain: "Chính xác! Dùng tay móc họng bừa bãi có thể vô tình đẩy dị vật vào sâu khí quản hơn, gây nghẹt thở hoàn toàn!"
-  }
-];
-
+const QUIZ_ROUND_SIZE = 10;
+let currentRoundQuestions = [];
 let quizIndex = 0;
 let quizScore = 0;
 
+function shuffleQuizArray(arr) {
+  const array = [...arr];
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 function openQuiz() {
+  const bank = (typeof QUIZ_BANK !== 'undefined' && QUIZ_BANK.length > 0) ? QUIZ_BANK : [];
+  if (bank.length > 0) {
+    const shuffled = shuffleQuizArray(bank);
+    currentRoundQuestions = shuffled.slice(0, Math.min(QUIZ_ROUND_SIZE, shuffled.length));
+  } else {
+    currentRoundQuestions = [
+      {
+        q: "Khi thấy bạn không may rơi xuống nước sâu, việc em nên làm ĐẦU TIÊN là gì?",
+        options: [
+          "Nhảy ngay xuống nước để kéo bạn lên",
+          "Hô thật to gọi người lớn và tìm vật nổi ném cho bạn",
+          "Bỏ chạy về nhà không nói với ai",
+          "Đứng im xem bạn bơi thế nào"
+        ],
+        correct: 1,
+        explain: "Chính xác! Trẻ em tuyệt đối không tự nhảy xuống nước cứu bạn vì rất dễ bị kéo chìm theo. Hãy hô to và ném vật nổi!",
+        category: "Đuối nước"
+      }
+    ];
+  }
+
   quizIndex = 0;
   quizScore = 0;
   document.getElementById('quiz-container').style.display = 'block';
@@ -706,8 +680,15 @@ function openQuiz() {
 }
 
 function renderQuizQuestion() {
-  const q = QUIZ_QUESTIONS[quizIndex];
-  document.getElementById('quiz-step-indicator').textContent = `Câu ${quizIndex + 1} / ${QUIZ_QUESTIONS.length}`;
+  const q = currentRoundQuestions[quizIndex];
+  if (!q) return;
+
+  const totalBankCount = (typeof QUIZ_BANK !== 'undefined') ? QUIZ_BANK.length : 200;
+  const indicator = document.getElementById('quiz-step-indicator');
+  if (indicator) {
+    indicator.innerHTML = `Câu <b>${quizIndex + 1}</b> / ${currentRoundQuestions.length} <span style="margin-left: 8px; font-weight: 700; color: #0284c7; background: #e0f2fe; padding: 2px 8px; border-radius: 12px; font-size: 11px;">${q.category || 'An toàn'}</span> <span style="color: #64748b; font-size: 11px; margin-left: 4px;">• Kho ${totalBankCount} câu</span>`;
+  }
+
   document.getElementById('quiz-question-text').textContent = q.q;
 
   const optContainer = document.getElementById('quiz-options-list');
@@ -729,7 +710,7 @@ function renderQuizQuestion() {
 }
 
 function selectQuizOption(chosenIdx, clickedBtn) {
-  const q = QUIZ_QUESTIONS[quizIndex];
+  const q = currentRoundQuestions[quizIndex];
   const allBtns = document.querySelectorAll('.quiz-opt-btn');
   allBtns.forEach(b => b.disabled = true);
 
@@ -747,7 +728,7 @@ function selectQuizOption(chosenIdx, clickedBtn) {
     playTingSound();
   } else {
     clickedBtn.classList.add('wrong');
-    allBtns[q.correct].classList.add('correct');
+    if (allBtns[q.correct]) allBtns[q.correct].classList.add('correct');
     feedback.className = 'quiz-feedback';
     feedback.style.display = 'block';
     feedback.style.background = '#fee2e2';
@@ -756,9 +737,10 @@ function selectQuizOption(chosenIdx, clickedBtn) {
   }
 
   nextBtn.style.display = 'flex';
+  nextBtn.textContent = (quizIndex + 1 < currentRoundQuestions.length) ? 'Câu tiếp theo ➜' : 'Xem kết quả thử thách 🏆';
   nextBtn.onclick = () => {
     quizIndex++;
-    if (quizIndex < QUIZ_QUESTIONS.length) {
+    if (quizIndex < currentRoundQuestions.length) {
       renderQuizQuestion();
     } else {
       showQuizResult();
@@ -771,8 +753,40 @@ function showQuizResult() {
   const resContainer = document.getElementById('quiz-result-container');
   resContainer.style.display = 'block';
 
-  document.getElementById('quiz-score-text').textContent =
-    `Em đã trả lời đúng ${quizScore} / ${QUIZ_QUESTIONS.length} câu hỏi!`;
+  const scoreText = document.getElementById('quiz-score-text');
+  if (scoreText) {
+    scoreText.textContent = `Em đã trả lời đúng ${quizScore} / ${currentRoundQuestions.length} câu hỏi!`;
+  }
+
+  let titleBadge = '🎖️ Danh hiệu: "Dũng Sĩ An Toàn Endy"';
+  let badgeColor = '#0369a1';
+  let badgeBg = '#e0f2fe';
+  let badgeBorder = '#38bdf8';
+
+  if (quizScore >= 9) {
+    titleBadge = '🌟 Danh hiệu: "Kiện Tướng An Toàn Xuất Sắc"';
+    badgeColor = '#854d0e';
+    badgeBg = '#fef08a';
+    badgeBorder = '#ca8a04';
+  } else if (quizScore >= 7) {
+    titleBadge = '🏅 Danh hiệu: "Chiến Binh An Toàn Thông Thái"';
+    badgeColor = '#15803d';
+    badgeBg = '#dcfce7';
+    badgeBorder = '#22c55e';
+  } else if (quizScore < 5) {
+    titleBadge = '💪 Cố lên em nhé! Cùng Endy luyện tập thêm nào!';
+    badgeColor = '#0369a1';
+    badgeBg = '#f1f5f9';
+    badgeBorder = '#cbd5e1';
+  }
+
+  const badgeEl = resContainer.querySelector('.quiz-badge') || resContainer.querySelector('div[style*="border: 2px dashed"]');
+  if (badgeEl) {
+    badgeEl.textContent = titleBadge;
+    badgeEl.style.color = badgeColor;
+    badgeEl.style.background = badgeBg;
+    badgeEl.style.borderColor = badgeBorder;
+  }
 
   playTingSound();
 }

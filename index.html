@@ -89,17 +89,6 @@
         </div>
       </div>
 
-      <!-- Center Motto Badge -->
-      <div class="header-center">
-        <div class="safety-motto-badge">
-          <span class="motto-icon">🛡️</span>
-          <div class="motto-text">
-            Học an toàn hôm nay<br>Cho ngày mai tươi sáng
-          </div>
-          <span class="motto-icon">☀️</span>
-        </div>
-      </div>
-
       <!-- Header Right Actions -->
       <div class="header-right">
         <!-- QR Code Button in Chat Header -->
@@ -200,15 +189,12 @@
               Xin chào! <span>Mình là Endy</span>
             </h2>
             <p class="hero-subtitle">
-              Tớ giúp bạn học về an toàn giao thông, phòng chống đuối nước, phòng cháy chữa cháy và phòng tránh tai nạn thương tích.
+              Cùng em rèn luyện kỹ năng an toàn và bảo vệ bản thân mỗi ngày! ✨
             </p>
           </div>
 
           <div class="hero-banner-right">
             <img src="assets/avatar_endy.png" alt="Mascot Endy" class="hero-mascot-img" id="chat-hero-mascot">
-            <div class="hero-signboard">
-              HỌC AN TOÀN<br>SỐNG TỰ TIN<br>LỚN LÊN VỮNG VÀNG ❤️
-            </div>
           </div>
         </div>
 
@@ -227,7 +213,7 @@
 
         <!-- Suggested Questions Row -->
         <div class="chat-suggestions-bar" id="suggestions-bar">
-          <span class="suggestions-label">⚡ Gợi ý câu hỏi cho em:</span>
+          <span class="suggestions-label">⚡ Gợi ý cho em:</span>
           <button class="suggestion-chip" onclick="sendSuggestion('Nếu thấy bạn rơi xuống nước thì làm gì?')">🛟 Nếu thấy bạn rơi xuống nước?</button>
           <button class="suggestion-chip" onclick="sendSuggestion('Cháy điện có được dội nước không?')">🚒 Cháy điện dội nước được không?</button>
           <button class="suggestion-chip" onclick="sendSuggestion('Đi qua đường thế nào cho an toàn?')">🚦 Đi qua đường an toàn?</button>
@@ -275,8 +261,8 @@
       </div>
       <div class="modal-body">
         <div id="quiz-container">
-          <div id="quiz-step-indicator" style="font-size: 12px; font-weight: 700; color: #0284c7; margin-bottom: 8px;">
-            Câu 1 / 5
+          <div id="quiz-step-indicator" style="font-size: 13px; font-weight: 800; color: #0284c7; margin-bottom: 10px;">
+            Câu 1 / 10 • Kho 200 câu hỏi
           </div>
           <div class="quiz-q-title" id="quiz-question-text">
             Khi thấy bạn rơi xuống nước, việc đầu tiên em nên làm là gì?
@@ -294,13 +280,13 @@
           <div style="font-size: 52px; margin-bottom: 12px;">🏆</div>
           <h3 style="font-size: 20px; color: #0284c7; margin-bottom: 8px;">Chúc mừng em đã hoàn thành thử thách!</h3>
           <p id="quiz-score-text" style="font-size: 15px; font-weight: 700; color: #334155; margin-bottom: 16px;">
-            Em trả lời đúng 5 / 5 câu!
+            Em trả lời đúng 10 / 10 câu!
           </p>
-          <div style="background: #fef08a; padding: 12px; border-radius: 12px; border: 2px dashed #ca8a04; font-weight: 800; color: #854d0e; margin-bottom: 20px;">
-            🎖️ Danh hiệu: "Dũng Sĩ An Toàn Endy Cấp 1"
+          <div class="quiz-badge" style="background: #e0f2fe; padding: 12px; border-radius: 12px; border: 2px dashed #0284c7; font-weight: 800; color: #0369a1; margin-bottom: 20px;">
+            🎖️ Danh hiệu: "Dũng Sĩ An Toàn Endy"
           </div>
           <button class="btn-send-msg" onclick="restartQuiz()" style="margin: 0 auto;">
-            🔄 Chơi lại lần nữa
+            🔄 Chơi lượt mới (10 câu ngẫu nhiên khác)
           </button>
         </div>
       </div>
@@ -406,6 +392,7 @@
 
   <!-- SCRIPTS -->
   <script src="chatbot-data.js"></script>
+  <script src="quiz_data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

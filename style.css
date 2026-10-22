@@ -486,35 +486,6 @@ html, body {
   color: #475569;
 }
 
-/* Center Badge */
-.header-center {
-  display: flex;
-  align-items: center;
-}
-
-.safety-motto-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);
-  padding: 6px 18px;
-  border-radius: var(--radius-full);
-  border: 1.5px solid #fde047;
-  box-shadow: 0 2px 6px rgba(234, 179, 8, 0.15);
-}
-
-.motto-icon {
-  font-size: 16px;
-}
-
-.motto-text {
-  font-size: 12.5px;
-  font-weight: 800;
-  color: #854d0e;
-  line-height: 1.2;
-  text-align: center;
-}
-
 /* Header Right Actions */
 .header-right {
   display: flex;
@@ -634,43 +605,49 @@ html, body {
 }
 
 .category-btn:hover {
-  background: #f1f5f9;
+  background: #f0f9ff;
+  color: #0284c7;
   transform: translateX(4px);
 }
 
 .category-btn.active {
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-  color: #0369a1;
-  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12);
-  border-left: 4px solid var(--primary-blue);
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+  border-left: none;
+}
+
+.category-btn.active span {
+  color: #ffffff;
+  font-weight: 800;
 }
 
 .cat-icon-badge {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   flex-shrink: 0;
-  background: #f8fafc;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  background: #f0f9ff;
+  border: 1.5px solid #e0f2fe;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.06);
+  transition: var(--transition);
+}
+
+.category-btn:hover .cat-icon-badge {
+  background: #ffffff;
+  border-color: #38bdf8;
 }
 
 .category-btn.active .cat-icon-badge {
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.2);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  box-shadow: none;
 }
-
-/* Specific Cat Badge Accents */
-.cat-home .cat-icon-badge { background: #dbeafe; color: #1d4ed8; }
-.cat-drowning .cat-icon-badge { background: #e0f2fe; color: #0284c7; }
-.cat-traffic .cat-icon-badge { background: #dcfce7; color: #15803d; }
-.cat-fire .cat-icon-badge { background: #fee2e2; color: #b91c1c; }
-.cat-injury .cat-icon-badge { background: #f3e8ff; color: #7e22ce; }
-.cat-electric .cat-icon-badge { background: #fef3c7; color: #b45309; }
-.cat-quick .cat-icon-badge { background: #e0e7ff; color: #4338ca; }
 
 /* Sidebar Bottom Section */
 .sidebar-bottom {
@@ -735,12 +712,12 @@ html, body {
 
 /* Hero Welcome Banner inside Chat */
 .chat-hero-banner {
-  height: 98px;
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 60%, #7dd3fc 100%);
+  height: 80px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 55%, #bae6fd 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 24px;
   border-bottom: 1.5px solid #bae6fd;
   position: relative;
   overflow: hidden;
@@ -749,25 +726,25 @@ html, body {
 
 .hero-banner-content {
   z-index: 2;
-  max-width: 65%;
+  max-width: 75%;
 }
 
 .hero-title-greeting {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 900;
   color: #0284c7;
   line-height: 1.2;
 }
 
 .hero-title-greeting span {
-  color: #ea580c;
+  color: #0369a1;
 }
 
 .hero-subtitle {
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 600;
-  color: #334155;
-  margin-top: 3px;
+  color: #475569;
+  margin-top: 4px;
   line-height: 1.35;
 }
 
@@ -779,29 +756,16 @@ html, body {
 }
 
 .hero-mascot-img {
-  width: 78px;
-  height: 78px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 4px 10px rgba(2, 132, 199, 0.2));
   animation: floatMascot 3s ease-in-out infinite;
 }
 
 @keyframes floatMascot {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
-}
-
-.hero-signboard {
-  background: #fef08a;
-  border: 2px solid #ca8a04;
-  border-radius: var(--radius-sm);
-  padding: 6px 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  font-size: 10.5px;
-  font-weight: 800;
-  color: #854d0e;
-  line-height: 1.3;
 }
 
 /* 4. Chat Messages Scroll Area */
@@ -1046,7 +1010,7 @@ html, body {
 .suggestions-label {
   font-size: 12px;
   font-weight: 800;
-  color: #ea580c;
+  color: #0284c7;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -1503,9 +1467,6 @@ html, body {
 @media (max-width: 992px) {
   .app-sidebar {
     width: 210px;
-  }
-  .safety-motto-badge {
-    display: none;
   }
   .cover-school-pill {
     padding: 6px 14px;
