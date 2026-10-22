@@ -8314,7 +8314,283 @@
     ],
     "response": "**Kẹt tay vào khe bản lề cửa có lực nghiến nát vụn đốt ngón tay! 🚪🩸✋**\n\n• **Nguyên nhân:** Khe bản lề cửa hoạt động như một chiếc đòn bẩy kìm cộng lực. Gió thổi mạnh đóng sập cửa lại sẽ nghiến với lực hàng trăm kilôgam vào ngón tay em.\n• **Tác hại:** Dập nát thịt, bong bật móng tay và gãy vụn xương đốt ngón tay.\n👉 **Cách sơ cứu ngay lập tức:**\n  1. Chườm ngay đá lạnh bọc khăn lên vết thương để giảm phù nề và cầm máu.\n  2. Giơ ngón tay cao hơn tim để bớt sưng đau.\n  3. Báo thầy cô hoặc bố mẹ đưa đi chụp X-quang kiểm tra xương ngay!"
   },
+{
+    "id": "play_fun_and_stay_safe_rule",
+    "category": "quick",
+    "badge": "",
+    "keywords": [
+      "làm sao để chơi vui mà vẫn an toàn",
+      "lam sao de choi vui ma van an toan",
+      "chơi thế nào cho an toàn",
+      "bí quyết chơi vui không bị thương",
+      "quy tắc chơi an toàn cho học sinh",
+      "vui chơi an toàn nhớ gì"
+    ],
+    "response": "**Bí kíp 3 chữ VÀNG của Hiệp sĩ Endy để 'Chơi cực vui mà vẫn siêu an toàn': 🛡️✨🎮**\n\n1. **QUAN SÁT TRƯỚC (Nhìn quanh 5 giây):** Trước khi chơi, hãy ngó xem có hố sâu, dây điện hở, mảnh kính vỡ hay xe cộ đang lao tới không.\n2. **CHỌN CHỖ ĐÚNG:** Chơi thể thao vào sân bóng; bơi lội vào bể bơi có cứu hộ; chạy nhảy ở sân bằng phẳng, tránh xa mép sông, mép ao, ban công!\n3. **BIẾT ĐIỂM DỪNG:** Đang chơi mà thấy mệt, trời chuyển dông sét, hoặc bạn bè rủ chơi trò mạo hiểm thì kiên quyết **NÓI KHÔNG** và rủ bạn chơi trò khác an toàn hơn nhé!"
+  },
+  {
+    "id": "boiling_water_spilled_on_clothes",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "nước sôi đổ vào quần áo phải làm sao",
+      "em phải làm gì khi bị đổ nước nóng vào người",
+      "bị bỏng nước canh vào áo",
+      "do nuoc soi vao quan ao",
+      "nước sôi dính vào quần áo cởi ra hay để nguyên"
+    ],
+    "response": "**Khi bị nước sôi đổ ướt sũng quần áo, em hãy làm ngay 3 bước sau:** 💧🩹⚠️\n\n1. **XẢ NƯỚC MÁT LÊN CẢ QUẦN ÁO NGAY LẬP TỨC:** Xả nhẹ vòi nước mát sạch trực tiếp lên chỗ vải đang ướt nước sôi để hạ nhiệt cấp tốc.\n2. **TUYỆT ĐỐI KHÔNG GIẬT PHẮNG ÁO RA:** Giật áo vội vàng sẽ lột phăng luôn cả mảng da thịt đang dính chặt vào vải! Hãy dùng kéo nhẹ nhàng cắt rời phần vải xung quanh vết bỏng.\n3. Ngâm tiếp vùng da bỏng trong nước mát 15 - 20 phút rồi nhờ bố mẹ đưa ngay đến cơ sở y tế!"
+  },
+  {
+    "id": "rescue_friend_electric_shock_safe",
+    "category": "electric",
+    "badge": "assets/illust_electric.png",
+    "keywords": [
+      "thấy bạn bị điện giật em phải làm gì",
+      "bạn bị dính vào dây điện cứu thế nào",
+      "thay ban bi dien giat lam sao",
+      "cách cứu người bị điện giật",
+      "có được chạm vào người bị điện giật không"
+    ],
+    "response": "**TUYỆT ĐỐI KHÔNG ĐƯỢC CHẠM TAY VÀO BẠN ĐANG BỊ ĐIỆN GIẬT! ⚡🚫🛑**\n\n• Cơ thể bạn lúc này đang mang điện, em chạm vào là bị giật dính theo ngay lập tức!\n• **3 Bước cứu bạn chuẩn xác:**\n  1. **Hô to báo người lớn:** Hét thật to *'Có người bị điện giật, ngắt cầu dao ngay!'*.\n  2. **Ngắt nguồn điện:** Nếu ở gần cầu dao/aptomat an toàn, lập tức gạt cầu dao xuống.\n  3. **Tách nguồn điện bằng vật KHÔ:** Dùng một cây gậy gỗ khô, chổi nhựa khô gạt mạnh sợi dây điện ra khỏi người bạn (tuyệt đối không dùng gậy kim loại hay que ướt) rồi gọi ngay **115**!"
+  },
+  {
+    "id": "how_to_swim_without_cramps",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "làm sao để bơi không bị chuột rút",
+      "lam sao de boi khong bi chuot rut",
+      "cách phòng tránh chuột rút khi đi bơi",
+      "bơi thế nào để không bị co chân",
+      "chuẩn bị gì trước khi bơi để không chuột rút"
+    ],
+    "response": "**Để thỏa sức bơi lội mà không sợ bị 'con chuột rút' ghé thăm:** 🏊‍♂️🛡️💪\n\n1. **Khởi động kỹ 10 - 15 phút trên cạn:** Xoay tròn các khớp cổ chân, cổ tay, khớp gối và kéo căng cơ bắp chuối đùi trước khi xuống nước.\n2. **Uống một cốc nước lọc:** Uống nước trước khi bơi để cơ bắp không bị thiếu nước và khoáng chất.\n3. **Tưới nước làm quen:** Trước khi nhảy xuống, hãy vục nước xoa lên ngực, gáy và chân tay để cơ thể không bị sốc nhiệt trước nước lạnh.\n4. **Không bơi khi đang quá đói, quá no hoặc vừa chạy nhảy kiệt sức!**"
+  },
 
+  // ==========================================================================
+  // NHÓM 2: TAI NẠN THƯƠNG TÍCH & SƠ CỨU HỌC ĐƯỜNG
+  // ==========================================================================
+  {
+    "id": "cut_finger_heavy_bleeding_action",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "em phải làm gì khi bị đứt tay chảy nhiều máu",
+      "bị đứt tay chảy máu đầm đìa",
+      "dut tay chay mau phai lam sao",
+      "cách cầm máu khi bị đứt tay",
+      "chảy máu tay lấy gì bịt"
+    ],
+    "response": "**Khi bị đứt tay chảy nhiều máu, bình tĩnh làm đúng 3 bước:** 🩸🩹✋\n\n1. **ÉP CHẶT TRỰC TIẾP:** Lấy một miếng gạc sạch, khăn tay sạch hoặc vạt áo sạch ấn đè thật chặt trực tiếp lên miệng vết thương trong 5 - 10 phút (không mở ra xem liên tục).\n2. **GIƠ TAY CAO HƠN TIM:** Giơ bàn tay bị đứt lên cao hơn ngực để giảm áp lực máu chảy về vết thương.\n3. Nếu máu thấm ướt khăn: Không gỡ khăn cũ ra mà đặt thêm một lớp khăn sạch khác đè chặt lên tiếp và báo ngay thầy cô, bố mẹ đưa đi băng bó!"
+  },
+  {
+    "id": "friend_broken_bone_fall_action",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "bạn bị ngã gãy tay em phải làm sao",
+      "thấy bạn ngã không đứng dậy được",
+      "bạn ngã gãy chân làm gì",
+      "sơ cứu bạn bị gãy xương",
+      "có được bế bạn bị gãy chân không"
+    ],
+    "response": "**Khi thấy bạn ngã từ trên cao xuống nghi bị gãy xương: TUYỆT ĐỐI KHÔNG BẾ HAY KÉO BẠN DẬY! 🦴🤕🛑**\n\n1. **Bảo bạn nằm yên:** Động viên bạn nằm nguyên vị trí, không cử động cánh tay hoặc cẳng chân đang đau nhức.\n2. **Không nắn bóp:** Không tự ý bẻ, kéo nắn hay xoa dầu nóng vì sẽ làm xương gãy đâm rách mạch máu và cơ bắp bên trong.\n3. **Hô to gọi thầy cô giáo y tế học đường:** Để người lớn dùng nẹp cố định cánh tay/chân bị gãy trước khi di chuyển bạn đến bệnh viện!"
+  },
+  {
+    "id": "nosebleed_in_classroom_action",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "em phải làm gì khi bị chảy máu cam trong lớp",
+      "đang học bị chảy máu mũi làm sao",
+      "chay mau cam trong gio hoc",
+      "bị chảy máu cam ở trường",
+      "cách xử lý chảy máu cam nhanh"
+    ],
+    "response": "**Đang ngồi học mà bị chảy máu cam bất ngờ, em hãy làm ngay:** 👃🩸🎒\n\n1. **Hơi cúi đầu về phía trước:** (Tuyệt đối không ngửa cổ ra sau kẻo máu chảy ngược vào họng gây sặc nôn mửa).\n2. **Bóp chặt hai cánh mũi:** Dùng ngón cái và ngón trỏ bóp chặt hai bên cánh mũi mềm lại, thở đều bằng miệng trong 10 phút.\n3. Giơ tay xin phép thầy cô ra phòng y tế để được các cô y tá chườm khăn mát lên sống mũi giúp cầm máu hoàn toàn nhé!"
+  },
+  {
+    "id": "friend_head_injury_unconscious",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "bạn ngã đập đầu bất tỉnh em phải làm sao",
+      "thấy bạn ngã đập đầu ngất xỉu",
+      "bạn đập đầu nằm im gọi không thưa",
+      "so cuu ban dap dau ngat",
+      "bạn bị ngất ở sân trường"
+    ],
+    "response": "**Khi thấy bạn đập đầu xuống đất và nằm im bất tỉnh nhân sự:** 🚑🤕⚠️\n\n1. **Hô thật to:** *'Có bạn bị ngất, các bạn gọi thầy cô và phòng y tế nhanh lên!'*.\n2. **Không lắc mạnh hay đỡ bạn ngồi dậy:** Nếu cổ bạn bị tổn thương, việc xốc bế bạn có thể làm liệt tủy sống cổ!\n3. Quan sát xem bạn còn thở không. Nếu bạn nôn ói, nhẹ nhàng nghiêng cả người bạn sang một bên (tư thế nằm nghiêng an toàn) để đờm nhớt không làm tắc đường thở của bạn!"
+  },
+  {
+    "id": "broken_glass_cup_on_floor_action",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "lỡ làm vỡ cốc thủy tinh trên sàn phải làm sao",
+      "em làm vỡ bát đĩa làm gì",
+      "vo coc thuy tinh tren san nha",
+      "dọn mảnh chai vỡ thế nào cho an toàn",
+      "cốc vỡ có lấy tay nhặt không"
+    ],
+    "response": "**Lỡ tay làm rơi vỡ cốc thủy tinh, bình tĩnh xử lý siêu an toàn theo các bước:** 🥛💥🧹\n\n1. **Đứng yên và hô to:** Nhắc các bạn xung quanh: *'Cẩn thận có thủy tinh vỡ, đừng ai chạy lại đây!'*.\n2. **Đi dép vào chân ngay:** Tuyệt đối không đi chân đất quanh khu vực có mảnh vỡ.\n3. **Không lấy tay nhặt mảnh vụn nhỏ:** Nhờ người lớn hoặc dùng chổi quét gom vào hót rác, sau đó dùng khăn ướt hoặc băng dính chấm lên sàn để hút sạch các vụn thủy tinh li ti tàng hình nhé!"
+  },
+
+  // ==========================================================================
+  // NHÓM 3: KHẨN CẤP CHÁY NỔ, KHÍ ĐỘC & Ở NHÀ MỘT MÌNH
+  // ==========================================================================
+  {
+    "id": "smell_gas_leak_in_kitchen",
+    "category": "fire",
+    "badge": "assets/illust_electric.png",
+    "keywords": [
+      "ngửi thấy mùi gas nồng nặc phải làm sao",
+      "ngui thay mui ga trong nha lam gi",
+      "nhà bị rò rỉ gas phải làm gì",
+      "mùi ga bốc lên có được bật điện không",
+      "rò rỉ khí gas trong bếp"
+    ],
+    "response": "**Ngửi thấy mùi gas nồng nặc: TUYỆT ĐỐI CẤM BẬT CÔNG TẮC ĐIỆN HAY BẬT LỬA! 🛑🦨💥**\n\n• Chỉ một tia lửa điện nhỏ xíu từ công tắc đèn cũng có thể kích nổ cả căn nhà!\n• **4 Bước sống còn:**\n  1. Lấy khăn che kín mũi miệng, không bật/tắt bất kỳ thiết bị điện nào.\n  2. Nhẹ nhàng mở toang tất cả các cửa sổ, cửa ra vào để gió lùa khí gas ra ngoài.\n  3. Nếu biết vị trí van bình gas, nhanh tay khóa van lại.\n  4. Chạy ra ngoài đường thoáng khí và gọi ngay người lớn hoặc số **114**!"
+  },
+  {
+    "id": "spot_black_smoke_in_house",
+    "category": "fire",
+    "badge": "assets/illust_electric.png",
+    "keywords": [
+      "thấy khói đen bốc lên trong nhà em phải làm sao",
+      "nhìn thấy khói đen làm gì",
+      "thay khoi den trong nha",
+      "phát hiện đám cháy trong nhà làm gì",
+      "khói bốc lên từ phòng bên cạnh"
+    ],
+    "response": "**Thấy khói đen bốc lên trong nhà: Thoát hiểm ngay, không tiếc đồ đạc! 🏃‍♂️💨🧯**\n\n1. **Hô to báo động:** Hét thật lớn: *'CHÁY RỒI! CHÁY RỒI! BÀ CON ƠI CHÁY!'* để cả nhà cùng biết.\n2. **Che mũi miệng:** Lấy ngay chiếc khăn, khẩu trang hoặc vạt áo nhúng đẫm nước bịt chặt mũi miệng.\n3. **Hạ thấp người bò sát sàn nhà:** Men theo chân tường di chuyển nhanh nhất ra phía cửa chính thoát hiểm.\n4. Ra đến nơi an toàn lập tức nhờ người lớn bấm số **114** gọi các chú lính cứu hỏa!"
+  },
+  {
+    "id": "stay_safe_home_alone_rules",
+    "category": "quick",
+    "badge": "",
+    "keywords": [
+      "làm sao để an toàn khi ở nhà một mình",
+      "lam sao de an toan khi o nha mot minh",
+      "bố mẹ vắng nhà em cần nhớ gì",
+      "ở nhà một mình không sợ hãi",
+      "quy tắc an toàn khi ở nhà một mình"
+    ],
+    "response": "**Bí kíp hiệp sĩ để luôn an toàn và tự tin khi ở nhà một mình: 🏠🛡️✨**\n\n1. **Khóa chặt cửa chính và cửa sổ:** Luôn gài chốt an toàn ngay sau khi bố mẹ ra ngoài.\n2. **Quy tắc 'Cửa đóng then cài':** Tuyệt đối không mở cửa cho bất kỳ người lạ nào (thợ sửa máy, người giao hàng, người xưng quen bố mẹ).\n3. **Không nghịch đồ nguy hiểm:** Không tự ý bật bếp gas, không nghịch dao kéo, không trèo lan can cửa sổ.\n4. **Ghi nhớ số điện thoại:** Thuộc lòng số của bố mẹ, người thân gần nhà và số khẩn cấp **111, 113, 114, 115**!"
+  },
+  {
+    "id": "trapped_in_dark_stalled_elevator",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "thang máy đột ngột dừng lại mất điện em phải làm sao",
+      "bị kẹt trong thang máy tối om làm gì",
+      "ket thang may toi om phai lam sao",
+      "thang máy bị kẹt có ngạt thở không",
+      "làm sao khi thang máy đứng im"
+    ],
+    "response": "**Bị kẹt trong thang máy mất điện: ĐỪNG HOẢNG SỢ, không bị ngạt thở đâu! 🏢🛗⚠️**\n\n• Thang máy luôn có các khe thông khí vô hình, em hoàn toàn không lo bị thiếu ô-xy!\n• **Các bước thoát hiểm bình tĩnh:**\n  1. **Không cạy cửa hay nhảy nhót:** Cạy cửa rất nguy hiểm vì thang có thể nằm giữa 2 tầng lầu.\n  2. **Bấm nút gọi khẩn cấp:** Tìm nút có hình **chiếc chuông 🔔 hoặc chiếc điện thoại 📞** trên bảng điều khiển và bấm giữ liên tục để báo cho bảo vệ.\n  3. Đập nhẹ vào cửa và hô to: *'Có người kẹt trong thang máy, giúp cháu với!'*, sau đó ngồi tựa lưng vào vách chờ người đến cứu!"
+  },
+
+  // ==========================================================================
+  // NHÓM 4: GIAO THÔNG, ĐƯỜNG PHỐ & LẠC ĐƯỜNG
+  // ==========================================================================
+  {
+    "id": "lost_in_crowd_supermarket_action",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "em phải làm gì khi bị lạc bố mẹ ở siêu thị",
+      "bị lạc ở chỗ đông người làm sao",
+      "bi lac bo me o sieu thi",
+      "bị lạc đường tìm ai giúp",
+      "lạc ở công viên tìm ai"
+    ],
+    "response": "**Bị lạc bố mẹ ở siêu thị hay chỗ đông người: DỪNG LẠI và tìm đúng 3 người này! 🏬👨‍👩‍👧🛑**\n\n1. **ĐỨNG YÊN TẠI CHỖ:** Tuyệt đối không chạy lung tung tìm kiếm vì sẽ càng lạc xa hơn.\n2. **Tìm người giúp đỡ đáng tin cậy nhất:**\n   • **Chú công an / Cảnh sát giao thông** mặc quân phục.\n   • **Cô thu ngân / Chú bảo vệ siêu thị** mặc đồng phục và đeo bảng tên.\n   • **Một người mẹ đang dắt theo các bạn nhỏ** đi cùng.\n3. Đọc to số điện thoại của bố mẹ để nhờ gọi điện hoặc nhờ phát loa thông báo toàn siêu thị nhé!"
+  },
+  {
+    "id": "stranger_stalking_following_home",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "có người lạ bám theo em trên đường phải làm sao",
+      "thấy có người đi theo sau em",
+      "người lạ theo dõi trên đường đi học",
+      "bi nguoi la bam theo phai lam gi",
+      "người lạ đi sau lưng em"
+    ],
+    "response": "**Phát hiện có người lạ đi theo bám đuôi em: Lập tức làm 3 bước này! 🚶‍♂️👀🚨**\n\n1. **KHÔNG ĐI VÀO NGÕ VẮNG HOẶC ĐI THẲNG VỀ NHÀ:** (Nếu về nhà kẻ xấu sẽ biết nhà em đang vắng người).\n2. **BƯỚC NHANH VÀO NƠI ĐÔNG NGƯỜI NHẤT:** Rẽ ngay vào một cửa hàng tạp hóa, đồn công an, hiệu thuốc hoặc trường học gần nhất.\n3. Nói to với bác chủ quán: *'Bác ơi giúp cháu với, có người lạ mặt đang bám theo cháu từ nãy đến giờ!'* và nhờ bác gọi bố mẹ đến đón!"
+  },
+  {
+    "id": "cross_busy_intersection_safely",
+    "category": "traffic",
+    "badge": "assets/illust_traffic.png",
+    "keywords": [
+      "làm sao để qua đường ở ngã tư đông xe",
+      "qua đường ngã tư thế nào cho an toàn",
+      "di qua duong o nga tu dong duc",
+      "cách qua đường an toàn khi có nhiều ô tô",
+      "qua đường đông xe không có đèn giao thông"
+    ],
+    "response": "**Cách qua đường ở ngã tư đông xe an toàn như một hiệp sĩ tí hon: 🚦🚶‍♂️🚗**\n\n1. **Tìm vạch kẻ đường:** Chỉ qua đường tại đúng vạch kẻ sọc trắng dành cho người đi bộ.\n2. **Quan sát 3 hướng: NHÌN TRÁI - NHÌN PHẢI - NHÌN TRÁI LẦN NỮA:** Đảm bảo xe cộ từ xa đã giảm tốc độ nhường đường.\n3. **GIƠ CAO TAY LÊN TRỜI:** Giơ một cánh tay lên cao ngang đầu suốt quá trình bước đi để các bác tài xế ô tô to dễ dàng nhìn thấy em từ xa.\n4. **Bước đi dứt khoát, không chạy vụt:** Không vừa qua đường vừa cúi gập bấm điện thoại hay đùa giỡn nhé!"
+  },
+
+  // ==========================================================================
+  // NHÓM 5: ĐỘNG VẬT & MÔI TRƯỜNG NƯỚC NGOÀI TRỜI
+  // ==========================================================================
+  {
+    "id": "chased_by_swarm_of_bees",
+    "category": "injury",
+    "badge": "",
+    "keywords": [
+      "bị đàn ong đuổi theo em phải làm gì",
+      "bị ong đuổi có nhảy xuống nước không",
+      "bi ong duoi phai chay the nao",
+      "cách trốn khi bị ong đốt",
+      "đàn ong bay theo đốt"
+    ],
+    "response": "**Bị đàn ong đuổi theo: TUYỆT ĐỐI KHÔNG NHẢY XUỐNG AO HỒ TRỐN! 🐝🏃‍♂️❌**\n\n• **Tại sao không nhảy xuống nước?** Đàn ong sẽ bay lượn ngay trên mặt nước chờ em. Khi em ngoi đầu lên thở, chúng sẽ chích túi bụi vào đầu và mặt làm em ngạt nước chìm luôn!\n• **Cách thoát thân đúng chuẩn:**\n  1. Lấy áo, khăn trùm kín mặt, mắt, mũi và cổ.\n  2. Chạy nhanh theo đường zíc-zắc xuôi theo chiều gió tới chui vào một ngôi nhà kiên cố đóng chặt cửa sổ lại!"
+  },
+  {
+    "id": "action_when_seeing_unfenced_pond",
+    "category": "drowning",
+    "badge": "assets/illust_drowning.png",
+    "keywords": [
+      "thấy ao hồ không có rào chắn em phải làm gì",
+      "thấy hố nước sâu nguy hiểm phải làm sao",
+      "thay ho nuoc sau khong co bien bao",
+      "báo cho ai khi thấy ao nguy hiểm",
+      "phát hiện chỗ nước sâu gần trường"
+    ],
+    "response": "**Khi phát hiện ao, hồ, hố công trình sâu hoắm không có rào chắn hay biển báo: 🌊⚠️🚧**\n\n1. **Lùi xa mép nước ít nhất 5 mét:** Tuyệt đối không đứng sát mép bờ chụp ảnh hay ngó nhìn.\n2. **Nhắc nhở bạn bè:** Hét to cảnh báo các bạn nhỏ khác: *'Chỗ này sâu và trơn lắm, không được lại gần chơi đâu nhé!'*.\n3. **Báo cáo ngay cho người lớn:** Kể ngay với bố mẹ, thầy cô giáo hoặc bác tổ trưởng dân phố để người lớn cắm biển cảnh báo và dựng rào chắn bảo vệ mọi người!"
+  },
+  {
+    "id": "protect_eyes_screen_time_online",
+    "category": "health",
+    "badge": "",
+    "keywords": [
+      "làm sao để không bị cận khi xem điện thoại",
+      "bảo vệ mắt khi học online thế nào",
+      "xem ipad nhiều mỏi mắt phải làm sao",
+      "quy tắc 20 20 20 bảo vệ mắt",
+      "làm sao cho mắt sáng khi dùng máy tính"
+    ],
+    "response": "**Bí kíp '20 - 20 - 20' của hiệp sĩ Endy để đôi mắt luôn sáng long lanh khi dùng điện thoại, máy tính: 📱👀✨**\n\n• Cứ sau **20 phút** nhìn màn hình học tập hoặc giải trí:\n• Hãy rời mắt nhìn xa ra khoảng cách **20 feet (khoảng 6 mét)**.\n• Giữ tầm nhìn thư giãn trong vòng **20 giây** và chớp mắt nhẹ nhàng vài cái.\n👉 Ngồi học thẳng lưng, giữ màn hình cách mắt tối thiểu 50 cm và tuyệt đối cấm trùm chăn tắt đèn xem điện thoại ban đêm em nhé!"
+  },
+  {
+    "id": "bullied_extorted_money_at_school",
+    "category": "body_safety",
+    "badge": "",
+    "keywords": [
+      "em phải làm gì khi bị bạn trấn lột tiền",
+      "bị bạn đe dọa đánh ở trường làm sao",
+      "bi bat nat o truong phai lam gi",
+      "bạn chặn đường đòi tiền ăn vặt",
+      "làm sao khi bị bạo lực học đường"
+    ],
+    "response": "**Khi bị bạn bè bắt nạt, đe dọa hoặc trấn lột tiền: DŨNG CẢM LÊN TIẾNG, không sợ hãi! 🎒🛑🗣️**\n\n1. **Ưu tiên an toàn tính mạng:** Nếu bị bao vây đòi tiền, hãy đưa tiền để bảo vệ thân thể mình không bị đánh, sau đó chạy ngay đến phòng giám thị.\n2. **Không che giấu:** Đừng sợ lời đe dọa *'kể ra tao đánh tiếp'*. Kẻ bắt nạt chỉ bắt nạt được khi em chịu im lặng.\n3. Kể ngay mọi chuyện với thầy cô chủ nhiệm, bố mẹ hoặc gọi đường dây nóng **111**. Thầy cô và nhà trường luôn có biện pháp xử lý kỷ luật và bảo vệ em tuyệt đối an toàn!"
+  },
 
     ];
 const keywordAliases = {
