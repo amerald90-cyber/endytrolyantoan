@@ -43,14 +43,18 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Segoe UI', 'Nunito', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   color: var(--text-main);
   background-color: var(--bg-app);
   overflow: hidden;
+  height: 100%;
   height: 100vh;
+  height: 100dvh;
+  width: 100%;
   width: 100vw;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* ==========================================================================
@@ -59,7 +63,9 @@ body {
 .view-screen {
   display: none !important;
   width: 100vw;
+  width: 100%;
   height: 100vh;
+  height: 100dvh;
   position: fixed;
   top: 0;
   left: 0;
@@ -87,7 +93,9 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  width: 100%;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background: radial-gradient(circle at 50% 30%, #5ec7f8 0%, #38bdf8 55%, #0284c7 100%);
   flex-direction: column;
@@ -405,62 +413,14 @@ body {
   color: #e0f2fe;
 }
 
-/* Responsive adjustments for mobile/tablets */
-@media (max-width: 768px) {
-  .cover-top-bar {
-    top: 10px;
-    left: 12px;
-    right: 12px;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .cover-school-pill {
-    font-size: 11px;
-    padding: 6px 14px;
-  }
-  .cover-music-pill {
-    padding: 6px 12px;
-  }
-  .cover-poster-stage {
-    padding: 95px 10px 16px;
-  }
-  .cover-poster-wrap {
-    border-radius: 16px;
-    border-width: 2.5px;
-  }
-  .cover-bottom-right-cta {
-    bottom: 12px;
-    right: 12px;
-  }
-  .btn-endy-corner {
-    padding: 8px 16px 8px 10px;
-    gap: 8px;
-  }
-  .corner-avatar-ring {
-    width: 38px;
-    height: 38px;
-  }
-  .corner-endy-avatar {
-    width: 34px;
-    height: 34px;
-  }
-  .corner-cta-title {
-    font-size: 13px;
-  }
-  .corner-cta-sub {
-    font-size: 10px;
-  }
-  .cover-bottom-hint-bar {
-    display: none;
-  }
-}
-
 /* ==========================================================================
    SCREEN 2: GIAO DIỆN CHATBOT ENDY (MAIN WEB APP)
    ========================================================================== */
 #app-screen {
   width: 100vw;
+  width: 100%;
   height: 100vh;
+  height: 100dvh;
   display: flex !important;
   flex-direction: column !important;
   background-color: var(--bg-app);
@@ -1538,6 +1498,8 @@ body {
 /* ==========================================================================
    RESPONSIVE DESIGN (TABLETS & PHONES)
    ========================================================================== */
+
+/* Tablet Landscape & Small Laptops (<= 992px) */
 @media (max-width: 992px) {
   .app-sidebar {
     width: 210px;
@@ -1545,59 +1507,523 @@ body {
   .safety-motto-badge {
     display: none;
   }
-  .brand-3d-name {
-    font-size: 48px;
+  .cover-school-pill {
+    padding: 6px 14px;
+    font-size: 12px;
   }
-  .mascot-speech-bubble {
-    display: none;
-  }
-  .btn-enter-wonderland {
-    font-size: 19px;
-    padding: 15px 38px;
+  .cover-poster-wrap {
+    max-width: 96vw;
+    max-height: calc(100vh - 84px);
   }
 }
 
+/* Tablets Portrait & All Mobile Phones (<= 768px) */
 @media (max-width: 768px) {
-  .app-main {
-    flex-direction: column;
-    padding: 8px;
-  }
-  .app-sidebar {
-    width: 100%;
-    max-height: 120px;
-  }
-  .sidebar-nav {
-    flex-direction: row;
-    overflow-x: auto;
-    padding: 8px;
-  }
-  .category-btn {
-    width: auto;
-    white-space: nowrap;
-  }
-  .sidebar-bottom {
-    display: none;
-  }
-  .brand-3d-name {
-    font-size: 38px;
-  }
-  .brand-3d-sub {
-    font-size: 15px;
-    padding: 4px 18px;
-  }
-  .btn-enter-wonderland {
-    font-size: 16px;
-    padding: 13px 28px;
+  /* --- SCREEN 1: COVER SCREEN RESPONSIVE --- */
+  .cover-top-bar {
+    top: max(8px, env(safe-area-inset-top, 8px));
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
   }
   .cover-school-pill {
+    display: none !important;
+  }
+  .cover-top-right-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .cover-qr-pill-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    height: 36px;
+    box-sizing: border-box;
+  }
+  .cover-music-pill {
+    padding: 5px 12px 5px 8px;
+    gap: 6px;
+    height: 36px;
+    box-sizing: border-box;
+  }
+  .cover-music-pill .music-equalizer {
+    height: 14px;
+    width: 16px;
+    gap: 2px;
+  }
+  .cover-music-pill .music-pill-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 9.5px;
+  }
+  .cover-music-pill .music-pill-text {
+    font-size: 11.5px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .cover-music-pill .music-slider {
+    display: none !important;
+  }
+  .cover-poster-stage {
+    padding: max(56px, calc(env(safe-area-inset-top, 0px) + 50px)) 10px max(100px, calc(env(safe-area-inset-bottom, 0px) + 90px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .cover-poster-wrap {
+    width: 100%;
+    max-width: 480px;
+    max-height: 100%;
+    border-radius: 18px;
+    border-width: 2.5px;
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.35);
+  }
+  .cover-poster-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    display: block;
+  }
+  .cover-bottom-hint-bar {
+    display: none !important;
+  }
+  .cover-bottom-right-cta {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    bottom: max(14px, env(safe-area-inset-bottom, 14px)) !important;
+    width: calc(100% - 24px);
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    animation: none;
+  }
+  .mascot-speech-mini {
+    font-size: 11.5px;
+    font-weight: 800;
+    padding: 4px 14px;
+    border-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: #ffffff;
+    color: #0369a1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  }
+  .btn-endy-corner {
+    width: 100%;
+    justify-content: center;
+    padding: 9px 16px;
+    gap: 10px;
+    border-radius: 40px;
+    border-width: 2.5px;
+    box-shadow: 0 8px 24px rgba(2, 132, 199, 0.5);
+    box-sizing: border-box;
+  }
+  .corner-avatar-ring {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .corner-endy-avatar {
+    width: 36px;
+    height: 36px;
+  }
+  .corner-cta-title {
+    font-size: 13.5px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+  }
+  .corner-cta-sub {
+    font-size: 10.5px;
+  }
+
+  /* --- SCREEN 2: CHAT INTERFACE RESPONSIVE --- */
+  .app-header {
+    height: calc(52px + env(safe-area-inset-top, 0px));
+    padding: env(safe-area-inset-top, 0px) 10px 0 10px;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .header-left {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .endy-logo-wrap {
+    gap: 6px;
+  }
+  .endy-logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    padding: 1px;
+  }
+  .endy-brand-name {
+    font-size: 17px;
+  }
+  .endy-brand-sub {
+    display: none !important;
+  }
+  .header-center {
+    display: none !important;
+  }
+  .header-right {
+    gap: 5px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  .header-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+    height: 32px;
+    min-width: 32px;
+    justify-content: center;
+    border-radius: var(--radius-full);
+  }
+  #btn-open-qr-app span:nth-child(2) {
+    display: none !important;
+  }
+  #app-music-text {
+    display: none !important;
+  }
+  #app-music-toggle {
+    padding: 5px 8px;
+    font-size: 12px;
+    min-width: 32px;
+    height: 32px;
+  }
+  #btn-open-quiz span:nth-child(2) {
+    display: none !important;
+  }
+  #btn-open-tips {
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    font-size: 12px;
+  }
+  #btn-back-cover span:nth-child(2) {
+    display: none !important;
+  }
+  .user-profile-capsule {
+    padding: 1px;
+    border-radius: 50%;
+    border: 1.5px solid #bae6fd;
+    background: transparent;
+  }
+  .user-avatar-img {
+    width: 28px;
+    height: 28px;
+    border: none;
+  }
+  .user-greeting {
+    display: none !important;
+  }
+
+  /* App Main Layout */
+  .app-main {
+    flex-direction: column;
+    padding: 6px 8px 8px 8px;
+    gap: 6px;
+    flex: 1;
+    overflow: hidden;
+    height: auto;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Compact Horizontal Category Bar */
+  .app-sidebar {
+    width: 100%;
+    height: auto;
+    min-height: 42px;
+    max-height: 46px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #e0f2fe;
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+  }
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    padding: 4px 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .sidebar-nav::-webkit-scrollbar {
     display: none;
+  }
+  .category-btn {
+    flex-shrink: 0;
+    width: auto;
+    height: 32px;
+    padding: 3px 10px;
+    font-size: 11.5px;
+    font-weight: 700;
+    gap: 5px;
+    border-radius: var(--radius-full);
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+  }
+  .category-btn.active {
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+    color: #0369a1;
+    border-color: #38bdf8;
+    border-left: 1px solid #38bdf8;
+    box-shadow: 0 1px 4px rgba(2, 132, 199, 0.15);
+  }
+  .cat-icon-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 5px;
+  }
+  .sidebar-bottom {
+    display: none !important;
+  }
+
+  /* Chat Panel */
+  .app-chat-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+    border-radius: 14px;
+    border: 1px solid #e0f2fe;
+    background: #ffffff;
+  }
+
+  /* Compact Hero Banner */
+  .chat-hero-banner {
+    height: 46px;
+    min-height: 46px;
+    padding: 0 12px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  }
+  .hero-banner-content {
+    max-width: 80%;
+  }
+  .hero-title-greeting {
+    font-size: 13.5px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  .hero-subtitle {
+    display: none !important;
+  }
+  .hero-mascot-img {
+    width: 36px;
+    height: 36px;
   }
   .hero-signboard {
+    display: none !important;
+  }
+
+  /* Chat Messages Scroll Container */
+  .chat-messages-container {
+    padding: 10px 8px;
+    gap: 8px;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 0;
+  }
+  .msg-row {
+    gap: 6px;
+  }
+  .msg-avatar {
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    border-width: 1.5px;
+    flex-shrink: 0;
+  }
+  .msg-content-wrapper {
+    max-width: 88%;
+  }
+  .msg-bubble {
+    padding: 8px 12px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    border-radius: 14px;
+  }
+  .bot-header-name {
+    font-size: 11.5px;
+    margin-bottom: 2px;
+    gap: 4px;
+  }
+  .bot-badge-shield {
+    font-size: 11px;
+  }
+  .bot-body-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .bot-text-area {
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
+  .bot-illustration-img {
+    width: 80px;
+    max-height: 70px;
+    align-self: flex-start;
+    border-radius: 8px;
+  }
+  .msg-actions {
+    margin-top: 4px;
+    padding-top: 3px;
+    gap: 4px;
+  }
+  .msg-action-btn {
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+
+  /* Suggestions Bar */
+  .chat-suggestions-bar {
+    padding: 5px 8px;
+    gap: 5px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-shrink: 0;
+  }
+  .chat-suggestions-bar::-webkit-scrollbar {
     display: none;
   }
-  .cover-sun-wrap {
-    right: 4%;
-    width: 70px;
-    height: 70px;
+  .suggestions-label {
+    font-size: 10.5px;
+    flex-shrink: 0;
+  }
+  .suggestion-chip {
+    padding: 4px 10px;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+
+  /* Input Bar */
+  .chat-input-bar {
+    padding: 6px 8px;
+    gap: 6px;
+    flex-shrink: 0;
+    background: #ffffff;
+  }
+  .btn-clear-chat {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .input-field-wrap {
+    flex: 1;
+  }
+  .chat-input {
+    padding: 8px 32px 8px 28px;
+    font-size: 16px;
+    border-radius: var(--radius-full);
+  }
+  .input-pencil-icon {
+    left: 8px;
+    font-size: 11px;
+  }
+  .voice-input-btn {
+    right: 8px;
+    font-size: 14px;
+  }
+  .btn-send-msg {
+    padding: 8px 14px;
+    font-size: 12.5px;
+    gap: 4px;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+  }
+
+  /* Footer Copyright Bar */
+  .chat-footer-copyright {
+    padding: 4px 8px max(4px, env(safe-area-inset-bottom, 4px));
+    font-size: 9px;
+    line-height: 1.25;
+    flex-shrink: 0;
+  }
+
+  /* Modals */
+  .modal-card {
+    width: 92%;
+    max-width: 360px;
+    max-height: 85vh;
+    border-radius: 16px;
+  }
+  .modal-header {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  .modal-body {
+    padding: 14px 12px;
+  }
+  .qr-modal-body {
+    padding: 14px 10px;
+    gap: 10px;
+  }
+  .qr-code-img {
+    width: 170px;
+    height: 170px;
+  }
+  .qr-school-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+  .qr-link-box {
+    padding: 6px 10px;
+  }
+  .qr-link-url {
+    font-size: 11px;
+  }
+  .btn-copy-url {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  .btn-download-qr {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Extra Narrow Mobile Phones (<= 380px) */
+@media (max-width: 380px) {
+  .btn-send-msg span:nth-child(2) {
+    display: none !important;
+  }
+  .btn-send-msg {
+    padding: 8px 10px;
+    min-width: 36px;
+    justify-content: center;
+  }
+  .cover-music-pill .music-pill-text {
+    max-width: 110px;
   }
 }
